@@ -1,0 +1,21 @@
+{
+  "version": "0.1.0",
+  "name": "language-pawn",
+  "description": "Atom language support for SA-MP pawn",
+  "homepage": "https://atom.github.io/language-pawn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atom/language-pawn.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atom/language-pawn/issues"
+  },
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "devDependencies": {
+    "coffeelint": "^1.10.1"
+  }
+}
