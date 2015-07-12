@@ -51,6 +51,18 @@
   'forward':
      'prefix': 'forward'
      'body': 'forward ${1:function}(${2:/* arguments */});'
+  'atan':
+     'prefix': 'atan'
+     'body': 'atan(${1:Float:value})'
+  'floatsin':
+     'prefix': 'floatsin'
+     'body': 'floatsin(${1:Float:value}, ${2:anglemode:mode=radian})'
+  'floattan':
+     'prefix': 'floattan'
+     'body': 'floattan(${1:Float:value}, ${2:anglemode:mode=radian})'
+  'floatcos':
+     'prefix': 'floatcos'
+     'body': 'floatcos(${1:Float:value}, ${2:anglemode:mode=radian})'
   'write file':
      'prefix': 'wfile'
      'body': 'new File:${1:file} = fopen(${2:filename.extension}, io_write);\nif(${1:file}) {\n\tfwrite(${1:file}, ${3:text_to_write});\n\tfclose(${1:file});\n}${4:}'
@@ -1007,7 +1019,7 @@
      'body': 'IsPlayerInCheckpoint(${1:playerid})${2:}'
   'SetPlayerCheckpoint':
      'prefix': 'SetPlayerCheckpoint'
-     'body': 'SetPlayerCheckpoint(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:size})${6:}'
+     'body': 'SetPlayerCheckpoint(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:size});${6:}'
   #race
   'DisablePlayerRaceCheckpoint':
      'prefix': 'DisablePlayerRaceCheckpoint'
@@ -1017,4 +1029,35 @@
      'body': 'IsPlayerInRaceCheckpoint(${1:playerid})${2:}'
   'SetPlayerRaceCheckpoint':
      'prefix': 'SetPlayerRaceCheckpoint'
-     'body': 'SetPlayerRaceCheckpoint(${1:playerid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:nextx}, ${7:Float:nexty}, ${8:Float:nextz}, ${9:Float:size})${10:}'
+     'body': 'SetPlayerRaceCheckpoint(${1:playerid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:nextx}, ${7:Float:nexty}, ${8:Float:nextz}, ${9:Float:size});${10:}'
+#gangzones
+  'GangZoneCreate':
+     'prefix': 'GangZoneCreate'
+     'body': 'GangZoneCreate(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy});${5:}'
+  'GangZoneDestroy':
+     'prefix': 'GangZoneDestroy'
+     'body': 'GangZoneDestroy(${1:zone});${2:}'
+  'GangZoneFlashForAll':
+     'prefix': 'GangZoneFlashForAll'
+     'body': 'GangZoneFlashForAll(${1:zone}, ${2:flashcolor});${3:}'
+  'GangZoneFlashForPlayer':
+     'prefix': 'GangZoneFlashForPlayer'
+     'body': 'GangZoneFlashForPlayer(${1:playerid}, ${2:zone}, ${3:flashcolor});${4:}'
+  'GangZoneHideForAll':
+     'prefix': 'GangZoneHideForAll'
+     'body': 'GangZoneHideForAll(${1:zone});${2:}'
+  'GangZoneHideForPlayer':
+     'prefix': 'GangZoneHideForPlayer'
+     'body': 'GangZoneHideForPlayer(${1:playerid}, ${2:zone});${3:}'
+  'GangZoneShowForAll':
+     'prefix': 'GangZoneShowForAll'
+     'body': 'GangZoneShowForAll(${1:zone}, ${2:color});${3:}'
+  'GangZoneShowForPlayer':
+     'prefix': 'GangZoneShowForPlayer'
+     'body': 'GangZoneShowForPlayer(${1:playerid}, ${2:zone}, ${3:color});${4:}'
+  'GangZoneStopFlashForAll':
+     'prefix': 'GangZoneStopFlashForAll'
+     'body': 'GangZoneStopFlashForAll(${1:zone});${2:}'
+  'GangZoneStopFlashForPlayer':
+     'prefix': 'GangZoneStopFlashForPlayer'
+     'body': 'GangZoneStopFlashForPlayer(${1:playerid}, ${2:zone});${3:}'
