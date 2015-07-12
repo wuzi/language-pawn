@@ -322,6 +322,24 @@
   'RemovePlayerFromVehicle':
      'prefix': 'RemovePlayerFromVehicle'
      'body': 'RemovePlayerFromVehicle(${1:playerid});${2:}'
+  'DisableRemoteVehicleCollisions':
+     'prefix': 'DisableRemoteVehicleCollisions'
+     'body': 'DisableRemoteVehicleCollisions(${1:playerid}, ${2:disable});${3:}'
+  'GetVehicleParamsCarWindows':
+     'prefix': 'GetVehicleParamsCarWindows'
+     'body': 'GetVehicleParamsCarWindows(${1:vehicleid}, ${2:&driver}, ${3:&passenger}, ${4:&backleft}, ${5:&backright});${6:}'
+  'SetVehicleParamsCarWindows':
+     'prefix': 'SetVehicleParamsCarWindows'
+     'body': 'SetVehicleParamsCarWindows(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright});${6:}'
+  'GetVehicleParamsSirenState':
+     'prefix': 'GetVehicleParamsSirenState'
+     'body': 'GetVehicleParamsSirenState(${1:vehicleid});${2:}'
+  'GetVehicleParamsCarDoors':
+     'prefix': 'GetVehicleParamsCarDoors'
+     'body': 'GetVehicleParamsCarDoors(${1:vehicleid}, ${2:&driver}, ${3:&passenger}, ${4:&backleft}, ${5:&backright});${6:}'
+  'SetVehicleParamsCarDoors':
+     'prefix': 'SetVehicleParamsCarDoors'
+     'body': 'SetVehicleParamsCarDoors(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright});${6:}'
   'RemoveVehicleComponent':
      'prefix': 'RemoveVehicleComponent'
      'body': 'RemoveVehicleComponent(${1:vehicleid}, ${2:componentid});${3:}'
@@ -491,6 +509,9 @@
   'GetPlayerAnimationIndex':
      'prefix': 'GetPlayerAnimationIndex'
      'body': 'GetPlayerAnimationIndex(${1:playerid})${2:}'
+  'EnablePlayerCameraTarget':
+     'prefix': 'EnablePlayerCameraTarget'
+     'body': 'EnablePlayerCameraTarget(${1:playerid}, ${2:enable});${3:}'
   'GetPlayerCameraAspectRatio':
      'prefix': 'GetPlayerCameraAspectRatio'
      'body': 'GetPlayerCameraAspectRatio(${1:playerid})${2:}'
