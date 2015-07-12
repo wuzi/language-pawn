@@ -668,6 +668,19 @@
   'SetSpawnInfo':
      'prefix': 'SetSpawnInfo'
      'body': 'SetSpawnInfo(${1:playerid}, ${2:team}, ${3:skin}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:Float:Angle}, ${8:weapon1}, ${9:weapon1_ammo}, ${10:weapon2}, ${11:weapon2_ammo}, ${12:weapon3}, ${13:weapon3_ammo});${14:}'
+     #messages
+  'SendClientMessage':
+     'prefix': 'SendClientMessage'
+     'body': 'SendClientMessage(${1:playerid}, ${2:color}, ${3:const message[]});${4:}'
+  'SendClientMessageToAll':
+     'prefix': 'SendClientMessageToAll'
+     'body': 'SendClientMessageToAll(${1:color}, ${2:const message[]});${3:}'
+  'SendPlayerMessageToPlayer':
+     'prefix': 'SendPlayerMessageToPlayer'
+     'body': 'SendPlayerMessageToPlayer(${1:playerid}, ${2:senderid}, ${3:const message[]});${4:}'
+  'SendPlayerMessageToAll':
+     'prefix': 'SendPlayerMessageToAll'
+     'body': 'SendPlayerMessageToAll(${1:senderid}, ${2:const message[]});${3:}'
 #player variables
   'DeletePVar':
      'prefix': 'DeletePVar'
@@ -699,6 +712,68 @@
   'GetPVarsUpperIndex':
      'prefix': 'GetPVarsUpperIndex'
      'body': 'GetPVarsUpperIndex(${1:playerid})${2:}'
+#actors
+  'ApplyActorAnimation':
+     'prefix': 'ApplyActorAnimation'
+     'body': 'ApplyActorAnimation(${1:actorid}, ${2:animlib[]}, ${3:animname[]}, ${4:Float:fDelta}, ${5:loop}, ${6:lockx}, ${7:locky}, ${8:freeze}, ${9:time}, ${10:forcesync});${11:}'
+  'ClearActorAnimations':
+     'prefix': 'ClearActorAnimations'
+     'body': 'ClearActorAnimations(${1:actorid});${2:}'
+  'CreateActor':
+     'prefix': 'CreateActor'
+     'body': 'CreateActor(${1:modelid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z}, ${5:Float:Rotation});${6:}'
+  'DestroyActor':
+     'prefix': 'DestroyActor'
+     'body': 'DestroyActor(${1:actorid});${2:}'
+  'GetActorFacingAngle':
+     'prefix': 'GetActorFacingAngle'
+     'body': 'GetActorFacingAngle(${1:actorid}, ${2:&Float:a});${3:}'
+  'SetActorFacingAngle':
+     'prefix': 'SetActorFacingAngle'
+     'body': 'SetActorFacingAngle(${1:actorid}, ${2:Float:a});${3:}'
+  'GetActorPos':
+     'prefix': 'GetActorPos'
+     'body': 'GetActorPos(${1:actorid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z});${5:}'
+  'SetActorPos':
+     'prefix': 'SetActorPos'
+     'body': 'SetActorPos(${1:actorid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z});${5:}'
+  'GetActorHealth':
+     'prefix': 'GetActorHealth'
+     'body': 'GetActorHealth(${1:actorid}, ${2:&Float:health});${3:}'
+  'SetActorHealth':
+     'prefix': 'SetActorHealth'
+     'body': 'SetActorHealth(${1:actorid}, ${2:Float:health});${3:}'
+  'SetActorInvulnerable':
+     'prefix': 'SetActorInvulnerable'
+     'body': 'SetActorInvulnerable(${1:actorid}, ${2:invulnerable = true});${3:}'
+  'GetActorVirtualWorld':
+     'prefix': 'GetActorVirtualWorld'
+     'body': 'GetActorVirtualWorld(${1:actorid})${2:}'
+  'SetActorVirtualWorld':
+     'prefix': 'SetActorVirtualWorld'
+     'body': 'SetActorVirtualWorld(${1:actorid}, ${2:virtualworld});${3:}'
+  'IsActorStreamedIn':
+     'prefix': 'IsActorStreamedIn'
+     'body': 'IsActorStreamedIn(${1:actorid}, ${2:forplayerid})${3:}'
+  'IsActorInvulnerable':
+     'prefix': 'IsActorInvulnerable'
+     'body': 'IsActorInvulnerable(${1:actorid})${2:}'
+  'IsValidActor':
+     'prefix': 'IsValidActor'
+     'body': 'IsValidActor(${1:actorid})${2:}'
+  'GetActorPoolSize':
+     'prefix': 'GetActorPoolSize'
+     'body': 'GetActorPoolSize()${1:}'
+#pickups
+  'AddStaticPickup':
+     'prefix': 'AddStaticPickup'
+     'body': 'AddStaticPickup(${1:model}, ${2:type}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z}, ${6:Virtualworld});${7:}'
+  'CreatePickup':
+     'prefix': 'CreatePickup'
+     'body': 'CreatePickup(${1:model}, ${2:type}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z}, ${6:Virtualworld});${7:}'
+  'DestroyPickup':
+     'prefix': 'DestroyPickup'
+     'body': 'DestroyPickup(${1:pickupid});${2:}'
 #server
   'GetNetworkStats':
      'prefix': 'GetNetworkStats'
@@ -724,6 +799,9 @@
   'GetGravity':
      'prefix': 'GetGravity'
      'body': 'GetGravity();${1:}'
+  'AllowInteriorWeapons':
+     'prefix': 'AllowInteriorWeapons'
+     'body': 'AllowInteriorWeapons(${1:allow});${2:}'
 #menu
   'AddMenuItem':
      'prefix': 'AddMenuItem'
