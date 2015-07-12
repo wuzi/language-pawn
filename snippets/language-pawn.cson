@@ -714,6 +714,12 @@
   'SendPlayerMessageToAll':
      'prefix': 'SendPlayerMessageToAll'
      'body': 'SendPlayerMessageToAll(${1:senderid}, ${2:const message[]});${3:}'
+  'GameTextForAll':
+     'prefix': 'GameTextForAll'
+     'body': 'GameTextForAll(${1:const string[]}, ${2:time}, ${3:style});${4:}'
+  'GameTextForPlayer':
+     'prefix': 'GameTextForPlayer'
+     'body': 'GameTextForPlayer(${1:playerid}, ${2:const string[]}, ${3:time}, ${4:style});${5:}'
 #player variables
   'DeletePVar':
      'prefix': 'DeletePVar'
