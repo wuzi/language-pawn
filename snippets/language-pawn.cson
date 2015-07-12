@@ -9,31 +9,31 @@
   'main()':
     'prefix': 'main'
     'body': 'main() {\n\t${1:/* code */}\n\treturn 1;\n}'
-  'For Loop':
+  'for loop':
     'prefix': 'for'
     'body': 'for (new ${1:i} = 0; $1 < ${2:count}; $1${3:++}) {\n\t${4:/* code */}\n}'
-  'Include-Guard':
+  'include guard':
     'prefix': 'inc'
     'body': '#if !defined _INC_${1:SYMBOL}\n\t#endinput\n#endif\n#define _INC_$1'
-  'Do While Loop':
+  'do while loop':
     'prefix': 'do'
     'body': 'do {\n\t${0:/* code */}\n} while(${1:/* condition */});'
-  'While Loop':
+  'while loop':
     'prefix': 'while'
     'body': 'while (${1:/* condition */}) {\n\t${2:/* code */}\n}'
-  'If Condition':
+  'if condition':
     'prefix': 'if'
     'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n}'
-  'If Else':
+  'if else':
     'prefix': 'ife'
     'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n}\nelse {\n\t${3:/* code */}\n}'
-  'If ElseIf':
+  'if elseif':
     'prefix': 'iff'
     'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n}\nelse if (${3:/* condition */}) {\n\t${4:/* code */}\n}'
-  'If ElseIf Else':
+  'if elseif else':
     'prefix': 'iffe'
     'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n}\nelse if (${3:/* condition */}) {\n\t${4:/* code */}\n}\nelse {\n\t${5:/* code */}\n}'
-  'Switch Statement':
+  'switch statement':
     'prefix': 'switch'
     'body': 'switch (${1:/* expression */}) {\n\tcase ${2:/* value */}:\n}'
   'case':
@@ -57,6 +57,9 @@
   'stock':
      'prefix': 'stock'
      'body': 'stock ${1:function}(${2:/* arguments */}) {\n\t${4:/* code */}\n\treturn ${3:1};\n}'
+  'write file':
+     'prefix': 'wfile'
+     'body': 'new File:${1:file} = fopen(${2:filename.extension}, io_write);\nif(${1:file}) {\n\tfwrite(${1:file}, ${3:text_to_write});\n\tfclose(${1:file});\n}${4:}'
 # callbacks
   'OnActorStreamIn':
      'prefix': 'OnActorStreamIn'
@@ -237,9 +240,181 @@
      'prefix': 'OnRecordingPlaybackEnd'
      'body': 'public OnRecordingPlaybackEnd() {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
 #functions
+  #vehicle
   'AddStaticVehicle':
      'prefix': 'AddStaticVehicle'
      'body': 'AddStaticVehicleEx(${1:modelid}, ${2:Float:spawn_x}, ${3:Float:spawn_y}, ${4:Float:spawn_z}, ${5:Float:angle}, ${6:color1}, ${7:color2});${8:}'
   'AddStaticVehicleEx':
      'prefix': 'AddStaticVehicleEx'
      'body': 'AddStaticVehicleEx(${1:modelid}, ${2:Float:spawn_x}, ${3:Float:spawn_y}, ${4:Float:spawn_z}, ${5:Float:angle}, ${6:color1}, ${7:color2}, ${8:respawn_delay}, ${9:addsiren=0});${10:}'
+  'AddVehicleComponent':
+     'prefix': 'AddVehicleComponent'
+     'body': 'AddVehicleComponent(${1:vehicleid}, ${2:componentid});${3:}'
+  'AttachTrailerToVehicle':
+     'prefix': 'AttachTrailerToVehicle'
+     'body': 'AttachTrailerToVehicle(${1:trailerid}, ${2:vehicleid});${3:}'
+  'ChangeVehicleColor':
+     'prefix': 'ChangeVehicleColor'
+     'body': 'ChangeVehicleColor(${1:vehicleid}, ${2:color1}, ${3:color2});${4:}'
+  'ChangeVehiclePaintjob':
+     'prefix': 'ChangeVehiclePaintjob'
+     'body': 'ChangeVehiclePaintjob(${1:vehicleid}, ${2:paintjobid});${3:}'
+  'CreateVehicle':
+     'prefix': 'CreateVehicle'
+     'body': 'CreateVehicle(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:angle}, ${6:color1}, ${7:color2}, ${8:respawn_delay}, ${9:addsiren=0});${10:}'
+  'DestroyVehicle':
+     'prefix': 'DestroyVehicle'
+     'body': 'DestroyVehicle(${1:vehicleid});${2:}'
+  'DetachTrailerFromVehicle':
+     'prefix': 'DetachTrailerFromVehicle'
+     'body': 'DetachTrailerFromVehicle(${1:vehicleid});${2:}'
+  'GetPlayerSurfingVehicleID':
+     'prefix': 'GetPlayerSurfingVehicleID'
+     'body': 'GetPlayerSurfingVehicleID(${1:playerid});${2:}'
+  'GetPlayerVehicleID':
+     'prefix': 'GetPlayerVehicleID'
+     'body': 'GetPlayerVehicleID(${1:playerid});${2:}'
+  'GetVehicleComponentInSlot':
+     'prefix': 'GetVehicleComponentInSlot'
+     'body': 'GetVehicleComponentInSlot(${1:vehicleid}, ${2:slot});${3:}'
+  'GetVehicleComponentType':
+     'prefix': 'GetVehicleComponentType'
+     'body': 'GetVehicleComponentType(${1:component});${2:}'
+  'GetVehicleDamageStatus':
+     'prefix': 'GetVehicleDamageStatus'
+     'body': 'GetVehicleDamageStatus(${1:vehicleid}, ${2:&panels}, ${3:&doors}, ${4:&lights}, ${5:&tires});${6:}'
+  'GetVehicleHealth':
+     'prefix': 'GetVehicleHealth'
+     'body': 'GetVehicleHealth(${1:vehicleid}, ${2:&health});${3:}'
+  'GetVehicleModel':
+     'prefix': 'GetVehicleModel'
+     'body': 'GetVehicleModel(${1:vehicleid});${2:}'
+  'GetVehiclePos':
+     'prefix': 'GetVehiclePos'
+     'body': 'GetVehiclePos(${1:vehicleid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z});${5:}'
+  'GetVehicleTrailer':
+     'prefix': 'GetVehicleTrailer'
+     'body': 'GetVehicleTrailer(${1:vehicleid});${2:}'
+  'GetVehicleVelocity':
+     'prefix': 'GetVehicleVelocity'
+     'body': 'GetVehicleVelocity(${1:vehicleid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z});${5:}'
+  'GetVehicleVirtualWorld':
+     'prefix': 'GetVehicleVirtualWorld'
+     'body': 'GetVehicleVirtualWorld(${1:vehicleid});${2:}'
+  'GetVehicleZAngle':
+     'prefix': 'GetVehicleZAngle'
+     'body': 'GetVehicleZAngle(${1:vehicleid}, ${2:Float:a});${3:}'
+  'IsPlayerInAnyVehicle':
+     'prefix': 'IsPlayerInAnyVehicle'
+     'body': 'IsPlayerInAnyVehicle(${1:playerid});${2:}'
+  'IsPlayerInVehicle':
+     'prefix': 'IsPlayerInVehicle'
+     'body': 'IsPlayerInVehicle(${1:playerid}, ${2:vehicleid});${3:}'
+  'IsTrailerAttachedToVehicle':
+     'prefix': 'IsTrailerAttachedToVehicle'
+     'body': 'IsTrailerAttachedToVehicle(${1:vehicleid});${2:}'
+  'IsVehicleStreamedIn':
+     'prefix': 'IsVehicleStreamedIn'
+     'body': 'IsVehicleStreamedIn(${1:vehicleid}, ${2:forplayerid});${3:}'
+  'LinkVehicleToInterior':
+     'prefix': 'LinkVehicleToInterior'
+     'body': 'LinkVehicleToInterior(${1:vehicleid}, ${2:interiorid});${3:}'
+  'PlayerSpectateVehicle':
+     'prefix': 'PlayerSpectateVehicle'
+     'body': 'PlayerSpectateVehicle(${1:playerid}, ${2:vehicleid}, ${3:mode = SPECTATE_MODE_NORMAL});${4:}'
+  'PutPlayerInVehicle':
+     'prefix': 'PutPlayerInVehicle'
+     'body': 'PutPlayerInVehicle(${1:playerid}, ${2:vehicleid}, ${3:seatid});${4:}'
+  'RemovePlayerFromVehicle':
+     'prefix': 'RemovePlayerFromVehicle'
+     'body': 'RemovePlayerFromVehicle(${1:playerid});${2:}'
+  'RemoveVehicleComponent':
+     'prefix': 'RemoveVehicleComponent'
+     'body': 'RemoveVehicleComponent(${1:vehicleid}, ${2:componentid});${3:}'
+  'RepairVehicle':
+     'prefix': 'RepairVehicle'
+     'body': 'RepairVehicle(${1:vehicleid});${2:}'
+  'SetVehicleHealth':
+     'prefix': 'SetVehicleHealth'
+     'body': 'SetVehicleHealth(${1:vehicleid}, ${2:Float:health});${3:}'
+  'SetVehicleParamsForPlayer':
+     'prefix': 'SetVehicleParamsForPlayer'
+     'body': 'SetVehicleParamsForPlayer(${1:vehicleid}, ${2:playerid}, ${3:objective}, ${4:doorslocked});${5:}'
+  'SetVehiclePos':
+     'prefix': 'SetVehiclePos'
+     'body': 'SetVehiclePos(${1:vehicleid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z});${5:}'
+  'SetVehicleToRespawn':
+     'prefix': 'SetVehicleToRespawn'
+     'body': 'SetVehicleToRespawn(${1:vehicleid});${2:}'
+  'SetVehicleVelocity':
+     'prefix': 'SetVehicleVelocity'
+     'body': 'SetVehicleVelocity(${1:vehicleid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z});${5:}'
+  'SetVehicleVirtualWorld':
+     'prefix': 'SetVehicleVirtualWorld'
+     'body': 'SetVehicleVirtualWorld(${1:vehicleid}, ${2:virtualworld});${3:}'
+  'SetVehicleZAngle':
+     'prefix': 'SetVehicleZAngle'
+     'body': 'SetVehicleZAngle(${1:vehicleid}, ${2:Float:a});${3:}'
+  'UpdateVehicleDamageStatus':
+     'prefix': 'UpdateVehicleDamageStatus'
+     'body': 'UpdateVehicleDamageStatus(${1:vehicleid}, ${2:panels}, ${3:doors}, ${4:lights}, ${5:tires});${6:}'
+#object functions
+  #global
+    'AttachCameraToObject':
+       'prefix': 'AttachCameraToObject'
+       'body': 'AttachCameraToObject(${1:playerid}, ${2:objectid});${3:}'
+    'AttachObjectToObject':
+       'prefix': 'AttachObjectToObject'
+       'body': 'AttachObjectToObject(${1:objectid}, ${2:attachtoid}, ${3:Float:OffsetX}, ${4:Float:OffsetY}, ${5:Float:OffsetZ}, ${6:Float:RotX}, ${7:Float:RotY}, ${8:Float:RotZ}, ${9:SyncRotation = 1});${10:}'
+    'AttachObjectToPlayer':
+       'prefix': 'AttachObjectToPlayer'
+       'body': 'AttachObjectToPlayer(${1:objectid}, ${2:playerid}, ${3:Float:OffsetX}, ${4:Float:OffsetY}, ${5:Float:OffsetZ}, ${6:Float:RotX}, ${7:Float:RotY}, ${8:Float:RotZ});${9:}'
+    'AttachObjectToVehicle':
+       'prefix': 'AttachObjectToVehicle'
+       'body': 'AttachObjectToVehicle(${1:objectid}, ${2:vehicleid}, ${3:Float:OffsetX}, ${4:Float:OffsetY}, ${5:Float:OffsetZ}, ${6:Float:RotX}, ${7:Float:RotY}, ${8:Float:RotZ});${9:}'
+    'CreateObject':
+       'prefix': 'CreateObject'
+       'body': 'CreateObject(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rX}, ${6:Float:rY}, ${7:Float:rZ}, ${8:Float:DrawDistance});${9:}'
+    'DestroyObject':
+       'prefix': 'DestroyObject'
+       'body': 'DestroyObject(${1:objectid});${2:}'
+    'EditObject':
+       'prefix': 'EditObject'
+       'body': 'EditObject(${1:playerid}, ${2:objectid});${3:}'
+    'GetObjectPos':
+       'prefix': 'GetObjectPos'
+       'body': 'GetObjectPos(${1:objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z});${5:}'
+    'GetObjectRot':
+       'prefix': 'GetObjectRot'
+       'body': 'GetObjectRot(${1:objectid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz});${5:}'
+    'IsValidObject':
+       'prefix': 'IsValidObject'
+       'body': 'IsValidObject(${1:objectid});${2:}'
+    'MoveObject':
+       'prefix': 'MoveObject'
+       'body': 'MoveObject(${1:objectid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z}, ${5:Float:Speed}, ${6:Float:RotX = -1000.0}, ${7:Float:RotY = -1000.0}, ${8:Float:RotZ = -1000.0});${9:}'
+    'SelectObject':
+       'prefix': 'SelectObject'
+       'body': 'SelectObject(${1:playerid});${2:}'
+    'SetObjectMaterial':
+       'prefix': 'SetObjectMaterial'
+       'body': 'SetObjectMaterial(${1:objectid}, ${2:materialindex}, ${3:modelid}, ${4:txdname[]}, ${5:texturename[]}, ${6:materialcolor});${7:}'
+    'SetObjectMaterialText':
+       'prefix': 'SetObjectMaterialText'
+       'body': 'SetObjectMaterialText(${1:objectid}, ${2:text[]}, ${3:materialindex = 0}, ${4:materialsize = OBJECT_MATERIAL_SIZE_256x128}, ${5:fontface[] = "Arial"}, ${6:fontsize = 24}, ${7:bold = 1}, ${8:fontcolor = 0xFFFFFFFF}, ${9:backcolor = 0}, ${10:textalignment = 0});${11:}'
+  'SetObjectPos':
+     'prefix': 'SetObjectPos'
+     'body': 'SetObjectPos(${1:objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z});${5:}'
+  'StopObject':
+     'prefix': 'StopObject'
+     'body': 'StopObject(${1:objectid});${2:}'
+#player
+  'SetPlayerPosFindZ':
+     'prefix': 'SetPlayerPosFindZ'
+     'body': 'SetPlayerPosFindZ(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z});${5:}'
+  'SetPlayerPos':
+     'prefix': 'SetPlayerPos'
+     'body': 'SetPlayerPos(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z});${5:}'
+  'GetPlayerPos':
+     'prefix': 'GetPlayerPos'
+     'body': 'GetPlayerPos(${1:playerid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z});${5:}'
