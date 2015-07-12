@@ -861,3 +861,139 @@
   'IsPlayerAdmin':
      'prefix': 'IsPlayerAdmin'
      'body': 'IsPlayerAdmin(${1:playerid})${2:}'
+#textdraw
+  #global
+  'TextDrawAlignment':
+     'prefix': 'TextDrawAlignment'
+     'body': 'TextDrawAlignment(${1:Text:text}, ${2:alignment});${3:}'
+  'TextDrawBackgroundColor':
+     'prefix': 'TextDrawBackgroundColor'
+     'body': 'TextDrawBackgroundColor(${1:Text:text}, ${2:color});${3:}'
+  'TextDrawBoxColor':
+     'prefix': 'TextDrawBoxColor'
+     'body': 'TextDrawBoxColor(${1:Text:text}, ${2:color});${3:}'
+  'TextDrawColor':
+     'prefix': 'TextDrawColor'
+     'body': 'TextDrawColor(${1:Text:text}, ${2:color});${3:}'
+  'TextDrawCreate':
+     'prefix': 'TextDrawCreate'
+     'body': 'TextDrawCreate(${1:Float:x}, ${2:Float:y}, ${3:text[]});${4:}'
+  'TextDrawDestroy':
+     'prefix': 'TextDrawDestroy'
+     'body': 'TextDrawDestroy(${1:Text:text});${2:}'
+  'TextDrawFont':
+     'prefix': 'TextDrawFont'
+     'body': 'TextDrawFont(${1:Text:text}, ${2:font});${3:}'
+  'TextDrawHideForAll':
+     'prefix': 'TextDrawHideForAll'
+     'body': 'TextDrawHideForAll(${1:Text:text});${2:}'
+  'TextDrawHideForPlayer':
+     'prefix': 'TextDrawHideForPlayer'
+     'body': 'TextDrawHideForPlayer(${1:playerid}, ${2:Text:text});${3:}'
+  'TextDrawLetterSize':
+     'prefix': 'TextDrawLetterSize'
+     'body': 'TextDrawLetterSize(${1:Text:text}, ${2:Float:x}, ${3:Float:y});${4:}'
+  'TextDrawSetOutline':
+     'prefix': 'TextDrawSetOutline'
+     'body': 'TextDrawSetOutline(${1:Text:text}, ${2:size});${3:}'
+  'TextDrawSetProportional':
+     'prefix': 'TextDrawSetProportional'
+     'body': 'TextDrawSetProportional(${1:Text:text}, ${2:set});${3:}'
+  'TextDrawSetShadow':
+     'prefix': 'TextDrawSetShadow'
+     'body': 'TextDrawSetShadow(${1:Text:text}, ${2:size});${3:}'
+  'TextDrawSetString':
+     'prefix': 'TextDrawSetString'
+     'body': 'TextDrawSetString(${1:Text:text}, ${2:string[]});${3:}'
+  'TextDrawShowForAll':
+     'prefix': 'TextDrawShowForAll'
+     'body': 'TextDrawShowForAll(${1:Text:text});${2:}'
+  'TextDrawShowForPlayer':
+     'prefix': 'TextDrawShowForPlayer'
+     'body': 'TextDrawShowForPlayer(${1:playerid}, ${2:Text:text});${3:}'
+  'TextDrawTextSize':
+     'prefix': 'TextDrawTextSize'
+     'body': 'TextDrawTextSize(${1:Text:text}, ${2:Float:x}, ${3:Float:y});${4:}'
+  'TextDrawUseBox':
+     'prefix': 'TextDrawUseBox'
+     'body': 'TextDrawUseBox(${1:Text:text}, ${2:use});${3:}'
+  'TextDrawSetSelectable':
+     'prefix': 'TextDrawSetSelectable'
+     'body': 'TextDrawSetSelectable(${1:Text:text}, ${2:set});${3:}'
+  'TextDrawSetPreviewModel':
+     'prefix': 'TextDrawSetPreviewModel'
+     'body': 'TextDrawSetPreviewModel(${1:Text:text}, ${2:modelindex});${3:}'
+  'TextDrawSetPreviewRot':
+     'prefix': 'TextDrawSetPreviewRot'
+     'body': 'TextDrawSetPreviewRot(${1:Text:text}, ${2:Float:fRotX}, ${3:Float:fRotY}, ${4:Float:fRotZ}, ${5:Float:fZoom});${6:}'
+  'TextDrawSetPreviewVehCol':
+     'prefix': 'TextDrawSetPreviewVehCol'
+     'body': 'TextDrawSetPreviewVehCol(${1:Text:text}, ${2:color1}, ${3:color2});${4:}'
+  #player
+  'CreatePlayerTextDraw':
+     'prefix': 'CreatePlayerTextDraw'
+     'body': 'CreatePlayerTextDraw(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:text[]});${5:}'
+  'PlayerTextDrawAlignment':
+     'prefix': 'PlayerTextDrawAlignment'
+     'body': 'PlayerTextDrawAlignment(${1:playerid}, ${2:PlayerText:text}, ${3:alignment});${4:}'
+  'PlayerTextDrawBackgroundColor':
+     'prefix': 'PlayerTextDrawBackgroundColor'
+     'body': 'PlayerTextDrawBackgroundColor(${1:playerid}, ${2:PlayerText:text}, ${3:color});${4:}'
+  'PlayerTextDrawBoxColor':
+     'prefix': 'PlayerTextDrawBoxColor'
+     'body': 'PlayerTextDrawBoxColor(${1:playerid}, ${2:PlayerText:text}, ${3:color});${4:}'
+  'PlayerTextDrawColor':
+     'prefix': 'PlayerTextDrawColor'
+     'body': 'PlayerTextDrawColor(${1:playerid}, ${2:PlayerText:text}, ${3:color});${4:}'
+  'PlayerTextDrawDestroy':
+     'prefix': 'PlayerTextDrawDestroy'
+     'body': 'PlayerTextDrawDestroy(${1:playerid}, ${2:PlayerText:text});${3:}'
+  'PlayerTextDrawFont':
+     'prefix': 'PlayerTextDrawFont'
+     'body': 'PlayerTextDrawFont(${1:playerid}, ${2:PlayerText:text}, ${3:font});${4:}'
+  'PlayerTextDrawHide':
+     'prefix': 'PlayerTextDrawHide'
+     'body': 'PlayerTextDrawHide(${1:playerid}, ${2:PlayerText:text});${3:}'
+  'PlayerTextDrawLetterSize':
+     'prefix': 'PlayerTextDrawLetterSize'
+     'body': 'PlayerTextDrawLetterSize(${1:playerid}, ${2:PlayerText:text}, ${3:Float:x}, ${4:Float:y});${5:}'
+  'PlayerTextDrawSetOutline':
+     'prefix': 'PlayerTextDrawSetOutline'
+     'body': 'PlayerTextDrawSetOutline(${1:playerid}, ${2:PlayerText:text}, ${3:size});${4:}'
+  'PlayerTextDrawSetProportional':
+     'prefix': 'PlayerTextDrawSetProportional'
+     'body': 'PlayerTextDrawSetProportional(${1:playerid}, ${2:PlayerText:text}, ${3:set});${4:}'
+  'PlayerTextDrawSetShadow':
+     'prefix': 'PlayerTextDrawSetShadow'
+     'body': 'PlayerTextDrawSetShadow(${1:playerid}, ${2:PlayerText:text}, ${3:size});${4:}'
+  'PlayerTextDrawSetString':
+     'prefix': 'PlayerTextDrawSetString'
+     'body': 'PlayerTextDrawSetString(${1:playerid}, ${2:PlayerText:text}, ${3:string[]});${4:}'
+  'PlayerTextDrawShow':
+     'prefix': 'PlayerTextDrawShow'
+     'body': 'PlayerTextDrawShow(${1:playerid}, ${2:PlayerText:text});${3:}'
+  'PlayerTextDrawTextSize':
+     'prefix': 'PlayerTextDrawTextSize'
+     'body': 'PlayerTextDrawTextSize(${1:playerid}, ${2:PlayerText:text}, ${3:Float:x}, ${4:Float:y});${5:}'
+  'PlayerTextDrawUseBox':
+     'prefix': 'PlayerTextDrawUseBox'
+     'body': 'PlayerTextDrawUseBox(${1:playerid}, ${2:PlayerText:text}, ${3:use});${4:}'
+  'PlayerTextDrawSetSelectable':
+     'prefix': 'PlayerTextDrawSetSelectable'
+     'body': 'PlayerTextDrawSetSelectable(${1:playerid}, ${2:PlayerText:text}, ${3:set});${4:}'
+  'PlayerTextDrawSetPreviewModel':
+     'prefix': 'PlayerTextDrawSetPreviewModel'
+     'body': 'PlayerTextDrawSetPreviewModel(${1:playerid}, ${2:PlayerText:text}, ${3:modelindex});${4:}'
+  'PlayerTextDrawSetPreviewRot':
+     'prefix': 'PlayerTextDrawSetPreviewRot'
+     'body': 'PlayerTextDrawSetPreviewRot(${1:playerid}, ${2:PlayerText:text}, ${3:Float:fRotX}, ${4:Float:fRotY}, ${5:Float:fRotZ}, ${6:Float:fZoom});${7:}'
+  'PlayerTextDrawSetPreviewVehCol':
+     'prefix': 'PlayerTextDrawSetPreviewVehCol'
+     'body': 'PlayerTextDrawSetPreviewVehCol(${1:playerid}, ${2:PlayerText:text}, ${3:color1}, ${4:color2});${5:}'
+  #selection
+  'SelectTextDraw':
+     'prefix': 'SelectTextDraw'
+     'body': 'SelectTextDraw(${1:playerid}, ${2:hovercolor});${3:}'
+  'CancelSelectTextDraw':
+     'prefix': 'CancelSelectTextDraw'
+     'body': 'CancelSelectTextDraw(${1:playerid});${2:}'
