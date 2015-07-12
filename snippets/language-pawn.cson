@@ -566,9 +566,6 @@
   'GetPlayerLastShotVectors':
      'prefix': 'GetPlayerLastShotVectors'
      'body': 'GetPlayerLastShotVectors(${1:playerid}, ${2:&Float:fOriginX}, ${3:&Float:fOriginY}, ${4:&Float:fOriginZ}, ${5:&Float:fHitPosX}, ${6:&Float:fHitPosY}, ${7:&Float:fHitPosZ});${8:}'
-  'GetPlayerMenu':
-     'prefix': 'GetPlayerMenu'
-     'body': 'GetPlayerMenu(${1:playerid})${2:}'
   'GetPlayerMoney':
      'prefix': 'GetPlayerMoney'
      'body': 'GetPlayerMoney(${1:playerid})${2:}'
@@ -656,6 +653,21 @@
   'ResetPlayerWeapons':
      'prefix': 'ResetPlayerWeapons'
      'body': 'ResetPlayerWeapons(${1:playerid});${2:}'
+  'SpawnPlayer':
+     'prefix': 'SpawnPlayer'
+     'body': 'SpawnPlayer(${1:playerid});${2:}'
+  'ForceClassSelection':
+     'prefix': 'ForceClassSelection'
+     'body': 'ForceClassSelection(${1:playerid});${2:}'
+  'AddPlayerClass':
+     'prefix': 'AddPlayerClass'
+     'body': 'AddPlayerClass(${1:skin}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:Angle}, ${6:weapon1}, ${7:weapon1_ammo}, ${8:weapon2}, ${9:weapon2_ammo}, ${10:weapon3}, ${11:weapon3_ammo});${12:}'
+  'AddPlayerClassEx':
+     'prefix': 'AddPlayerClassEx'
+     'body': 'AddPlayerClassEx(${1:team}, ${2:skin}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:Angle}, ${7:weapon1}, ${8:weapon1_ammo}, ${9:weapon2}, ${10:weapon2_ammo}, ${11:weapon3}, ${12:weapon3_ammo});${13:}'
+  'SetSpawnInfo':
+     'prefix': 'SetSpawnInfo'
+     'body': 'SetSpawnInfo(${1:playerid}, ${2:team}, ${3:skin}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:Float:Angle}, ${8:weapon1}, ${9:weapon1_ammo}, ${10:weapon2}, ${11:weapon2_ammo}, ${12:weapon3}, ${13:weapon3_ammo});${14:}'
 #player variables
   'DeletePVar':
      'prefix': 'DeletePVar'
@@ -712,6 +724,28 @@
   'GetGravity':
      'prefix': 'GetGravity'
      'body': 'GetGravity();${1:}'
+#menu
+  'AddMenuItem':
+     'prefix': 'AddMenuItem'
+     'body': 'AddMenuItem(${1:Menu:menuid}, ${2:column}, ${3:title[]});${4:}'
+  'CreateMenu':
+     'prefix': 'CreateMenu'
+     'body': 'CreateMenu(${1:title[]}, ${2:columns}, ${3:Float:x}, ${4:Float:y}, ${5:Float:col1width}, ${6:Float:col2width});${7:}'
+  'SetMenuColumnHeader':
+     'prefix': 'SetMenuColumnHeader'
+     'body': 'SetMenuColumnHeader(${1:menuid}, ${2:column}, ${3:text[]});${4:}'
+  'DestroyMenu':
+     'prefix': 'DestroyMenu'
+     'body': 'DestroyMenu(${1:menuid});${2:}'
+  'ShowMenuForPlayer':
+     'prefix': 'ShowMenuForPlayer'
+     'body': 'ShowMenuForPlayer(${1:menuid}, ${2:playerid});${3:}'
+  'HideMenuForPlayer':
+     'prefix': 'HideMenuForPlayer'
+     'body': 'HideMenuForPlayer(${1:menuid}, ${2:playerid});${3:}'
+  'GetPlayerMenu':
+     'prefix': 'GetPlayerMenu'
+     'body': 'GetPlayerMenu(${1:playerid})${2:}'
 #administration
   'Ban':
      'prefix': 'Ban'
