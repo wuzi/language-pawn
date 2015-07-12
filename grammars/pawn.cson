@@ -23,7 +23,7 @@
     'name': 'keyword.control.c'
   }
   {
-    'match': '\\b(asm|auto|bool|char|double|enum|Float|new|float|Text|Menu|PlayerText|File)\\b'
+    'match': '\\b(asm|auto|bool|char|double|enum|Float|new|float|Text|3DText|Menu|PlayerText|File)\\b'
     'name': 'storage.type.c'
   }
   {
