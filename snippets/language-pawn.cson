@@ -997,3 +997,24 @@
   'CancelSelectTextDraw':
      'prefix': 'CancelSelectTextDraw'
      'body': 'CancelSelectTextDraw(${1:playerid});${2:}'
+#checkpoints
+  #normal
+  'DisablePlayerCheckpoint':
+     'prefix': 'DisablePlayerCheckpoint'
+     'body': 'DisablePlayerCheckpoint(${1:playerid});${2:}'
+  'IsPlayerInCheckpoint':
+     'prefix': 'IsPlayerInCheckpoint'
+     'body': 'IsPlayerInCheckpoint(${1:playerid})${2:}'
+  'SetPlayerCheckpoint':
+     'prefix': 'SetPlayerCheckpoint'
+     'body': 'SetPlayerCheckpoint(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:size})${6:}'
+  #race
+  'DisablePlayerRaceCheckpoint':
+     'prefix': 'DisablePlayerRaceCheckpoint'
+     'body': 'DisablePlayerRaceCheckpoint(${1:playerid});${2:}'
+  'IsPlayerInRaceCheckpoint':
+     'prefix': 'IsPlayerInRaceCheckpoint'
+     'body': 'IsPlayerInRaceCheckpoint(${1:playerid})${2:}'
+  'SetPlayerRaceCheckpoint':
+     'prefix': 'SetPlayerRaceCheckpoint'
+     'body': 'SetPlayerRaceCheckpoint(${1:playerid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:nextx}, ${7:Float:nexty}, ${8:Float:nextz}, ${9:Float:size})${10:}'
