@@ -2,10 +2,10 @@
 #common
   '#include <>':
     'prefix': 'Inc'
-    'body': '#include <${1:.h}>'
+    'body': '#include <${1:}>'
   '#include ""':
     'prefix': 'inc'
-    'body': '#include "${1:.h}"'
+    'body': '#include "${1:.inc}"'
   'main()':
     'prefix': 'main'
     'body': 'main() {\n\t${1:/* code */}\n\treturn 1;\n}'
