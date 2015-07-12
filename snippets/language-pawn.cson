@@ -820,6 +820,9 @@
   'GetMaxPlayers':
      'prefix': 'GetMaxPlayers'
      'body': 'GetMaxPlayers()${1:}'
+  'GameModeExit':
+     'prefix': 'GameModeExit'
+     'body': 'GameModeExit()${1:}'
   'SetWorldTime':
      'prefix': 'SetWorldTime'
      'body': 'SetWorldTime(${1:hour});${2:}'
@@ -1061,3 +1064,28 @@
   'GangZoneStopFlashForPlayer':
      'prefix': 'GangZoneStopFlashForPlayer'
      'body': 'GangZoneStopFlashForPlayer(${1:playerid}, ${2:zone});${3:}'
+#3d text labels
+  'Attach3DTextLabelToPlayer':
+     'prefix': 'Attach3DTextLabelToPlayer'
+     'body': 'Attach3DTextLabelToPlayer(${1:Text3D:id}, ${2:playerid}, ${3:Float:OffsetX}, ${4:Float:OffsetY}, ${5:Float:OffsetZ});${6:}'
+  'Attach3DTextLabelToVehicle':
+     'prefix': 'Attach3DTextLabelToVehicle'
+     'body': 'Attach3DTextLabelToVehicle(${1:Text3D:id}, ${2:vehicleid}, ${3:Float:OffsetX}, ${4:Float:OffsetY}, ${5:Float:OffsetZ});${6:}'
+  'Create3DTextLabel':
+     'prefix': 'Create3DTextLabel'
+     'body': 'Create3DTextLabel(${1:text[]}, ${2:color}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z}, ${6:Float:DrawDistance}, ${7:virtualworld}, ${8:testLOS});${9:}'
+  'CreatePlayer3DTextLabel':
+     'prefix': 'CreatePlayer3DTextLabel'
+     'body': 'CreatePlayer3DTextLabel(${1:playerid}, ${2:text[]}, ${3:color}, ${4:Float:X}, ${5:Float:Y}, ${6:Float:Z}, ${7:Float:DrawDistance}, ${8:attachedplayer}, ${9:attachedvehicle}, ${10:testLOS});${11:}'
+  'Delete3DTextLabel':
+     'prefix': 'Delete3DTextLabel'
+     'body': 'Delete3DTextLabel(${1:Text3D:text});${2:}'
+  'DeletePlayer3DTextLabel':
+     'prefix': 'DeletePlayer3DTextLabel'
+     'body': 'DeletePlayer3DTextLabel(${1:playerid}, ${2:Text3D:text});${3:}'
+  'Update3DTextLabelText':
+     'prefix': 'Update3DTextLabelText'
+     'body': 'Update3DTextLabelText(${1:Text3D:text}, ${2:color}, ${3:text[]});${4:}'
+  'UpdatePlayer3DTextLabelText':
+     'prefix': 'UpdatePlayer3DTextLabelText'
+     'body': 'UpdatePlayer3DTextLabelText(${1:playerid}, ${2:Text3D:text}, ${3:color}, ${4:text[]});${5:}'
