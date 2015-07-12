@@ -1,40 +1,26 @@
 '.source.pwn':
-  '#ifndef … #define … #endif':
-    'prefix': 'def'
-    'body': '#ifndef ${1:SYMBOL}\n#define $1 ${2:value}\n#endif'
+#common
   '#include <>':
     'prefix': 'Inc'
     'body': '#include <${1:.h}>'
   '#include ""':
     'prefix': 'inc'
     'body': '#include "${1:.h}"'
-  '#pragma mark':
-    'prefix': 'mark'
-    'body': '#if 0\n${1:#pragma mark -\n}#pragma mark $2\n#endif\n\n$0'
   'main()':
     'prefix': 'main'
-    'body': 'int main(int argc, char const *argv[]) {\n\t${1:/* code */}\n\treturn 0;\n}'
+    'body': 'main() {\n\t${1:/* code */}\n\treturn 1;\n}'
   'For Loop':
     'prefix': 'for'
-    'body': 'for (size_t ${1:i} = 0; $1 < ${2:count}; $1${3:++}) {\n\t${4:/* code */}\n}'
-  'Header Include-Guard':
-    'prefix': 'once'
-    'body': '#ifndef ${1:SYMBOL}\n#define $1\n\n${2}\n\n#endif /* end of include guard: $1 */\n'
-  'Shared Pointer':
-    'prefix': 'sp'
-    'body': 'typedef std::shared_ptr<${2:${1:my_type}_t}> ${3:${4:my_type}_ptr};'
-  'Typedef':
-    'prefix': 'td'
-    'body': 'typedef ${1:int} ${2:MyCustomType};'
+    'body': 'for (new ${1:i} = 0; $1 < ${2:count}; $1${3:++}) {\n\t${4:/* code */}\n}'
+  'Include-Guard':
+    'prefix': 'inc'
+    'body': '#if !defined _INC_${1:SYMBOL}\n\t#endinput\n#endif\n#define _INC_$1'
   'Do While Loop':
     'prefix': 'do'
     'body': 'do {\n\t${0:/* code */}\n} while(${1:/* condition */});'
   'While Loop':
     'prefix': 'while'
     'body': 'while (${1:/* condition */}) {\n\t${2:/* code */}\n}'
-  'fprintf':
-    'prefix': 'fprintf'
-    'body': 'fprintf(${1:stderr}, "${2:%s}\\\\n", $3);$4'
   'If Condition':
     'prefix': 'if'
     'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n}'
@@ -51,63 +37,209 @@
     'prefix': 'switch'
     'body': 'switch (${1:/* expression */}) {\n\tcase ${2:/* value */}:\n}'
   'case':
-    'prefix': 'cs'
+    'prefix': 'case'
     'body': 'case ${1:/* value */}:$0'
   'printf':
     'prefix': 'printf'
     'body': 'printf("${1:%s}\\\\n", $2);$3'
-  'scanf':
-    'prefix': 'scanf'
-    'body': 'scanf(\"${1:%s}\\\\n\", $2);$3'
-  'Struct':
-    'prefix': 'st'
-    'body': 'struct ${1:name_t} {\n\t${2:/* data */}\n};'
-  'void':
-    'prefix': 'void'
-    'body': 'void ${1:name}(${2:/* arguments */}) {\n\t${3:/* code */}\n}'
-  'any function':
-    'prefix': 'func'
-    'body': '${1:int} ${2:name}(${3:/* arguments */}) {\n\t${5:/* code */}\n\treturn ${4:0};\n}'
-  'write file':
-    'prefix': 'wf'
-    'body': 'FILE *${1:fp};\n${1:fp} = fopen ("${2:filename.txt}","w");\nif (${1:fp}!=NULL)\n{\n\tfprintf(${1:fp},"${3:Some String\\\\n}");\n\tfclose (${1:fp});\n}'
-  'read file':
-    'prefix': 'rf'
-    'body': 'FILE *${1:fp};\n${1:fp} = fopen ("${2:filename.txt}","r");\nif (${1:fp}!=NULL)\n{\n\tfscanf(${1:fp},"${3:Some String\\\\n}", ${3:&var});\n\tfclose (${1:fp});\n}'
-'.source.cpp, .source.objcpp':
-  'Enumeration':
-    'prefix': 'enum'
-    'body': 'enum ${1:name} { $0 };'
-  'Class':
-    'prefix': 'cl'
-    'body': 'class ${1:name_t} {\nprivate:\n\t${0:/* data */}\npublic:\n\t${1:name_t} (${2:arguments});\n\tvirtual ~${1:name_t} ();\n\n};'
-  'Namespace':
-    'prefix': 'ns'
-    'body': 'namespace ${1:name} {\n\t$2\n} /* $1 */'
-  'cout':
-    'prefix': 'cout'
-    'body': 'std::cout << \"${1:/* message */}\" << std::endl;'
-  'cin':
-    'prefix': 'cin'
-    'body': 'std::cin >> ${1:/* variable */};'
-  'cerr':
-    'prefix': 'cerr'
-    'body': 'std::cerr << \"${1:/* error message */}\" << std::endl;'
-  'std::map':
-    'prefix': 'map'
-    'body': 'std::map<${1:key}, ${2:value}> map$3;'
-  'std::string':
-    'prefix': 'str'
-    'body': 'std::string'
-  'std::vector':
-    'prefix': 'vector'
-    'body': 'std::vector<${1:char}> v$2;'
-  'template <typename>':
-    'prefix': 'tp'
-    'body': 'template <typename ${1:_InputIter}>'
-  'output file':
-    'prefix': 'outf'
-    'body': 'ofstream ${1:afile} ("${2:filename.txt}", ios::out);\nif(${1:afile}.is_open()) { \n\t${1:afile} << "${3:This is a line.}\\\\n";\n\t${1:afile}.close();\n}'
-  'input file':
-    'prefix': 'inf'
-    'body': 'ifstream ${1:afile} ("${2:filename.txt}",ios::in);\nif(${1:afile}.is_open()) { \n\tstring buffer;\n\twhile( getline(myfile,buffer) ) {\n\t\tcout << line << endl;\n\t}\n\t\t${1:afile}.close();\n\t}\nelse {\n\tcout << "Unable to open file" << endl;\n}'
+  'sscanf':
+    'prefix': 'sscanf'
+    'body': 'sscanf(${1:}, ${2:}, ${3:});$4'
+  'stock':
+    'prefix': 'stock'
+    'body': 'stock ${1:function}(${2:/* arguments */}) {\n\t${4:/* code */}\n\treturn ${3:1};\n}'
+  'public':
+    'prefix': 'public'
+    'body': 'public ${1:function}(${2:/* arguments */}) {\n\t${4:/* code */}\n\treturn ${3:1};\n}'
+  'forward':
+     'prefix': 'foward'
+     'body': 'forward ${1:function}(${2:/* arguments */});'
+  'stock':
+     'prefix': 'stock'
+     'body': 'stock ${1:function}(${2:/* arguments */}) {\n\t${4:/* code */}\n\treturn ${3:1};\n}'
+# callbacks
+  'OnActorStreamIn':
+     'prefix': 'OnActorStreamIn'
+     'body': 'public OnActorStreamIn(actorid, forplayerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnActorStreamOut':
+     'prefix': 'OnActorStreamOut'
+     'body': 'public OnActorStreamOut(actorid, forplayerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnDialogResponse':
+     'prefix': 'OnDialogResponse'
+     'body': 'public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnEnterExitModShop':
+     'prefix': 'OnEnterExitModShop'
+     'body': 'public OnEnterExitModShop(playerid, enterexit, interiorid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnFilterScriptExit':
+     'prefix': 'OnFilterScriptExit'
+     'body': 'public OnFilterScriptExit() {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnGameModeExit':
+     'prefix': 'OnGameModeExit'
+     'body': 'public OnGameModeExit() {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnGameModeInit':
+     'prefix': 'OnGameModeInit'
+     'body': 'public OnGameModeInit() {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnIncomingConnection':
+     'prefix': 'OnIncomingConnection'
+     'body': 'public OnIncomingConnection(playerid, ip_address[], port) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnObjectMoved':
+     'prefix': 'OnObjectMoved'
+     'body': 'public OnObjectMoved(objectid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerClickMap':
+     'prefix': 'OnPlayerClickMap'
+     'body': 'public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerClickPlayer':
+     'prefix': 'OnPlayerClickPlayer'
+     'body': 'public OnPlayerClickPlayer(playerid, clickedplayerid, source) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerClickPlayerTextDraw':
+     'prefix': 'OnPlayerClickPlayerTextDraw'
+     'body': 'public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerClickTextDraw':
+     'prefix': 'OnPlayerClickTextDraw'
+     'body': 'public OnPlayerClickTextDraw(playerid, Text:clickedid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerCommandText':
+     'prefix': 'OnPlayerCommandText'
+     'body': 'public OnPlayerCommandText(playerid, cmdtext[]) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerConnect':
+     'prefix': 'OnPlayerConnect'
+     'body': 'public OnPlayerConnect(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerDeath':
+     'prefix': 'OnPlayerDeath'
+     'body': 'public OnPlayerDeath(playerid, killerid, reason) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerDisconnect':
+     'prefix': 'OnPlayerDisconnect'
+     'body': 'public OnPlayerDisconnect(playerid, reason) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerEditAttachedObject':
+     'prefix': 'OnPlayerEditAttachedObject'
+     'body': 'public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerEditObject':
+     'prefix': 'OnPlayerEditObject'
+     'body': 'public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerEnterCheckpoint':
+     'prefix': 'OnPlayerEnterCheckpoint'
+     'body': 'public OnPlayerEnterCheckpoint(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerEnterRaceCheckpoint':
+     'prefix': 'OnPlayerEnterRaceCheckpoint'
+     'body': 'public OnPlayerEnterRaceCheckpoint(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerEnterVehicle':
+     'prefix': 'OnPlayerEnterVehicle'
+     'body': 'public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerExitVehicle':
+     'prefix': 'OnPlayerExitVehicle'
+     'body': 'public OnPlayerExitVehicle(playerid, vehicleid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerExitedMenu':
+     'prefix': 'OnPlayerExitedMenu'
+     'body': 'public OnPlayerExitedMenu(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerGiveDamage':
+     'prefix': 'OnPlayerGiveDamage'
+     'body': 'public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerGiveDamageActor':
+     'prefix': 'OnPlayerGiveDamageActor'
+     'body': 'public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, weaponid, bodypart) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerInteriorChange':
+     'prefix': 'OnPlayerInteriorChange'
+     'body': 'public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerKeyStateChange':
+     'prefix': 'OnPlayerKeyStateChange'
+     'body': 'public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerLeaveCheckpoint':
+     'prefix': 'OnPlayerLeaveCheckpoint'
+     'body': 'public OnPlayerLeaveCheckpoint(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerLeaveRaceCheckpoint':
+     'prefix': 'OnPlayerLeaveRaceCheckpoint'
+     'body': 'public OnPlayerLeaveRaceCheckpoint(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerObjectMoved':
+     'prefix': 'OnPlayerObjectMoved'
+     'body': 'public OnPlayerObjectMoved(playerid, objectid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerPickUpPickup':
+     'prefix': 'OnPlayerPickUpPickup'
+     'body': 'public OnPlayerPickUpPickup(playerid, pickupid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerRequestClass':
+     'prefix': 'OnPlayerRequestClass'
+     'body': 'public OnPlayerRequestClass(playerid, classid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerRequestSpawn':
+     'prefix': 'OnPlayerRequestSpawn'
+     'body': 'public OnPlayerRequestSpawn(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerSelectObject':
+     'prefix': 'OnPlayerSelectObject'
+     'body': 'public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:fY, Float:fZ) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerSelectedMenuRow':
+     'prefix': 'OnPlayerSelectedMenuRow'
+     'body': 'public OnPlayerSelectedMenuRow(playerid, row) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerSpawn':
+     'prefix': 'OnPlayerSpawn'
+     'body': 'public OnPlayerSpawn(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerStateChange':
+     'prefix': 'OnPlayerStateChange'
+     'body': 'public OnPlayerStateChange(playerid, newstate, oldstate) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerStreamIn':
+     'prefix': 'OnPlayerStreamIn'
+     'body': 'public OnPlayerStreamIn(playerid, forplayerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerStreamOut':
+     'prefix': 'OnPlayerStreamOut'
+     'body': 'public OnPlayerStreamOut(playerid, forplayerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerTakeDamage':
+     'prefix': 'OnPlayerTakeDamage'
+     'body': 'public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerText':
+     'prefix': 'OnPlayerText'
+     'body': 'public OnPlayerText(playerid, text[]) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerUpdate':
+     'prefix': 'OnPlayerUpdate'
+     'body': 'public OnPlayerUpdate(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnPlayerWeaponShot':
+     'prefix': 'OnPlayerWeaponShot'
+     'body': 'public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnRconCommand':
+     'prefix': 'OnRconCommand'
+     'body': 'public OnRconCommand(cmd[]) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnRconLoginAttempt':
+     'prefix': 'OnRconLoginAttempt'
+     'body': 'public OnRconLoginAttempt(ip[], password[], success) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnTrailerUpdate':
+     'prefix': 'OnTrailerUpdate'
+     'body': 'public OnTrailerUpdate(playerid, vehicleid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnUnoccupiedVehicleUpdate':
+     'prefix': 'OnUnoccupiedVehicleUpdate'
+     'body': 'public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_x, Float:new_y, Float:new_z, Float:vel_x, Float:vel_y, Float:vel_z) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnVehicleDamageStatusUpdate':
+     'prefix': 'OnVehicleDamageStatusUpdate'
+     'body': 'public OnVehicleDamageStatusUpdate(vehicleid, playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnVehicleDeath':
+     'prefix': 'OnVehicleDeath'
+     'body': 'public OnVehicleDeath(vehicleid, killerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnVehicleMod':
+     'prefix': 'OnVehicleMod'
+     'body': 'public OnVehicleMod(playerid, vehicleid, componentid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnVehiclePaintjob':
+     'prefix': 'OnVehiclePaintjob'
+     'body': 'public OnVehiclePaintjob(playerid, vehicleid, paintjobid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnVehicleRespray':
+     'prefix': 'OnVehicleRespray'
+     'body': 'public OnVehicleRespray(playerid, vehicleid, color1, color2) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnVehicleSirenStateChange':
+     'prefix': 'OnVehicleSirenStateChange'
+     'body': 'public OnVehicleSirenStateChange(playerid, vehicleid, newstate) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnVehicleSpawn':
+     'prefix': 'OnVehicleSpawn'
+     'body': 'public OnVehicleSpawn(vehicleid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnVehicleStreamIn':
+     'prefix': 'OnVehicleStreamIn'
+     'body': 'public OnVehicleStreamIn(vehicleid, forplayerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnVehicleStreamOut':
+     'prefix': 'OnVehicleStreamOut'
+     'body': 'public OnVehicleStreamOut(vehicleid, forplayerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+#npc callbacks
+  'OnClientMessage':
+     'prefix': 'OnClientMessage'
+     'body': 'public OnClientMessage(color, text[]) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+  'OnRecordingPlaybackEnd':
+     'prefix': 'OnRecordingPlaybackEnd'
+     'body': 'public OnRecordingPlaybackEnd() {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+#functions
+  'AddStaticVehicle':
+     'prefix': 'AddStaticVehicle'
+     'body': 'AddStaticVehicleEx(${1:modelid}, ${2:Float:spawn_x}, ${3:Float:spawn_y}, ${4:Float:spawn_z}, ${5:Float:angle}, ${6:color1}, ${7:color2});${8:}'
+  'AddStaticVehicleEx':
+     'prefix': 'AddStaticVehicleEx'
+     'body': 'AddStaticVehicleEx(${1:modelid}, ${2:Float:spawn_x}, ${3:Float:spawn_y}, ${4:Float:spawn_z}, ${5:Float:angle}, ${6:color1}, ${7:color2}, ${8:respawn_delay}, ${9:addsiren=0});${10:}'
