@@ -41,7 +41,64 @@
     'body': 'case ${1:/* value */}:$0'
   'printf':
     'prefix': 'printf'
-    'body': 'printf("${1:%s}\\\\n", $2);$3'
+    'body': 'printf("${1:%s}\\\\n", ${2:output});$3'
+  'print':
+    'prefix': 'print'
+    'body': 'print("${1:output}\\\\n");$2'
+  'random':
+    'prefix': 'random'
+    'body': 'random(${1:max})$2'
+  'minrandom':
+    'prefix': 'minrandom'
+    'body': '(random(${1:min} - ${2:max}) + $2)'
+  'getdate':
+    'prefix': 'getdate'
+    'body': 'getdate(${1:year}, ${2:month}, ${3:day})$4'
+  'gettime':
+    'prefix': 'gettime'
+    'body': 'gettime(${1:hour}, ${2:minute}, ${3:second})$4'
+  'tolower':
+    'prefix': 'tolower'
+    'body': 'tolower(${1:c});$2'
+  'toupper':
+    'prefix': 'toupper'
+    'body': 'toupper(${1:c});$2'
+  'valstr':
+    'prefix': 'valstr'
+    'body': 'valstr(${1:dest[]}, ${2:value});$3'
+  'strcat':
+    'prefix': 'strcat'
+    'body': 'strcat(${1:dest[]}, ${2:const source[]});$3'
+  'ispacked':
+    'prefix': 'ispacked'
+    'body': 'ispacked(${1:const string[]});$2'
+  'strpack':
+    'prefix': 'strpack'
+    'body': 'strpack(${1:dest[]}, ${2:const source[]});$3'
+  'strunpack':
+    'prefix': 'strunpack'
+    'body': 'strunpack(${1:dest[]}, ${2:const source[]});$3'
+  'strcmp':
+    'prefix': 'strcmp'
+    'body': 'strcmp(${1:const string1[]}, ${2:const string2[]})$3'
+  'strdel':
+    'prefix': 'strdel'
+    'body': 'strdel(${1:string[]}, ${2:start}, ${3:end});$4'
+  'strfind':
+    'prefix': 'strfind'
+    'body': 'strfind(${1:const string[]}, ${2:const sub[]})$3'
+  'strins':
+    'prefix': 'strins'
+    'body': 'strins(${1:string[]}, ${2:const sub[]}, ${3:pos});$4'
+  'strlen':
+    'prefix': 'strlen'
+    'body': 'strlen(${1:const string[]})$2'
+  'strval':
+    'prefix': 'strval'
+    'body': 'strval(${1:const string[]})$2'
+  'strmid':
+    'prefix': 'strmid'
+    'body': 'strmid(${1:dest[]}, ${2:const source[]}, ${3:start}, ${4:end});$5'
   'stock':
     'prefix': 'stock'
     'body': 'stock ${1:function}(${2:/* arguments */}) {\n\t${4:/* code */}\n\treturn ${3:1};\n}'
@@ -63,6 +120,9 @@
   'floatcos':
      'prefix': 'floatcos'
      'body': 'floatcos(${1:Float:value}, ${2:anglemode:mode=radian})'
+  'format':
+     'prefix': 'format'
+     'body': 'format(${1:output[]}, sizeof(${1:}), ${2:const format[]}, ${3:{Float,_}:...});${4:}'
   'write file':
      'prefix': 'wfile'
      'body': 'new File:${1:file} = fopen(${2:filename.extension}, io_write);\nif(${1:file}) {\n\tfwrite(${1:file}, ${3:text_to_write});\n\tfclose(${1:file});\n}${4:}'
@@ -256,6 +316,15 @@
   'AddVehicleComponent':
      'prefix': 'AddVehicleComponent'
      'body': 'AddVehicleComponent(${1:vehicleid}, ${2:componentid});${3:}'
+  'GetVehicleDistanceFromPoint':
+     'prefix': 'GetVehicleDistanceFromPoint'
+     'body': 'GetVehicleDistanceFromPoint(${1:vehicleid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})${5:}'
+  'GetVehicleModelInfo':
+     'prefix': 'GetVehicleModelInfo'
+     'body': 'GetVehicleModelInfo(${1:vehiclemodel}, ${2:infotype}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z});${6:}'
+  'GetVehicleRotationQuat':
+     'prefix': 'GetVehicleRotationQuat'
+     'body': 'GetVehicleRotationQuat(${1:vehicleid}, ${2:Float:w}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z});${6:}'
   'AttachTrailerToVehicle':
      'prefix': 'AttachTrailerToVehicle'
      'body': 'AttachTrailerToVehicle(${1:trailerid}, ${2:vehicleid});${3:}'
@@ -343,6 +412,12 @@
   'SetVehicleParamsCarWindows':
      'prefix': 'SetVehicleParamsCarWindows'
      'body': 'SetVehicleParamsCarWindows(${1:vehicleid}, ${2:driver}, ${3:passenger}, ${4:backleft}, ${5:backright});${6:}'
+  'SetVehicleParamsEx':
+     'prefix': 'SetVehicleParamsEx'
+     'body': 'SetVehicleParamsEx(${1:vehicleid}, ${2:engine}, ${3:lights}, ${4:alarm}, ${5:doors}, ${6:bonnet}, ${7:boot}, ${8:objective});${9:}'
+  'GetVehicleParamsEx':
+     'prefix': 'GetVehicleParamsEx'
+     'body': 'GetVehicleParamsEx(${1:vehicleid}, ${2:&engine}, ${3:&lights}, ${4:&alarm}, ${5:&doors}, ${6:&bonnet}, ${7:&boot}, ${8:&objective});${9:}'
   'GetVehicleParamsSirenState':
      'prefix': 'GetVehicleParamsSirenState'
      'body': 'GetVehicleParamsSirenState(${1:vehicleid});${2:}'
@@ -358,6 +433,9 @@
   'RepairVehicle':
      'prefix': 'RepairVehicle'
      'body': 'RepairVehicle(${1:vehicleid});${2:}'
+  'IsValidVehicle':
+     'prefix': 'IsValidVehicle'
+     'body': 'IsValidVehicle(${1:vehicleid});${2:}'
   'SetVehicleHealth':
      'prefix': 'SetVehicleHealth'
      'body': 'SetVehicleHealth(${1:vehicleid}, ${2:Float:health});${3:}'
@@ -373,9 +451,15 @@
   'SetVehicleVelocity':
      'prefix': 'SetVehicleVelocity'
      'body': 'SetVehicleVelocity(${1:vehicleid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z});${5:}'
+  'SetVehicleAngularVelocity':
+     'prefix': 'SetVehicleAngularVelocity'
+     'body': 'SetVehicleAngularVelocity(${1:vehicleid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z});${5:}'
   'SetVehicleVirtualWorld':
      'prefix': 'SetVehicleVirtualWorld'
      'body': 'SetVehicleVirtualWorld(${1:vehicleid}, ${2:virtualworld});${3:}'
+  'SetVehicleNumberPlate':
+     'prefix': 'SetVehicleNumberPlate'
+     'body': 'SetVehicleNumberPlate(${1:vehicleid}, ${2:numberplate[]});${3:}'
   'SetVehicleZAngle':
      'prefix': 'SetVehicleZAngle'
      'body': 'SetVehicleZAngle(${1:vehicleid}, ${2:Float:a});${3:}'
@@ -405,6 +489,12 @@
   'EditObject':
      'prefix': 'EditObject'
      'body': 'EditObject(${1:playerid}, ${2:objectid});${3:}'
+  'IsObjectMoving':
+     'prefix': 'IsObjectMoving'
+     'body': 'IsObjectMoving(${1:objectid});${2:}'
+  'CancelEdit':
+     'prefix': 'CancelEdit'
+     'body': 'CancelEdit(${1:playerid});${2:}'
   'GetObjectPos':
      'prefix': 'GetObjectPos'
      'body': 'GetObjectPos(${1:objectid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z});${5:}'
@@ -423,6 +513,12 @@
   'MoveObject':
      'prefix': 'MoveObject'
      'body': 'MoveObject(${1:objectid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z}, ${5:Float:Speed}, ${6:Float:RotX = -1000.0}, ${7:Float:RotY = -1000.0}, ${8:Float:RotZ = -1000.0});${9:}'
+  'SetObjectNoCameraCol':
+     'prefix': 'SetObjectNoCameraCol'
+     'body': 'SetObjectNoCameraCol(${1:objectid});${2:}'
+  'SetObjectsDefaultCameraCol':
+     'prefix': 'SetObjectsDefaultCameraCol'
+     'body': 'SetObjectsDefaultCameraCol(${1:disable});${2:}'
   'SelectObject':
      'prefix': 'SelectObject'
      'body': 'SelectObject(${1:playerid});${2:}'
@@ -466,9 +562,21 @@
   'IsValidPlayerObject':
      'prefix': 'IsValidPlayerObject'
      'body': 'IsValidPlayerObject(${1:playerid}, ${2:objectid});${3:}'
+  'SetPlayerObjectNoCameraCol':
+     'prefix': 'SetPlayerObjectNoCameraCol'
+     'body': 'SetPlayerObjectNoCameraCol(${1:playerid}, ${2:objectid});${3:}'
+  'SetPlayerObjectMaterialText':
+     'prefix': 'SetPlayerObjectMaterialText'
+     'body': 'SetPlayerObjectMaterialText(${1:playerid}, ${2:objectid}, ${3:text[]});${4:}'
+  'IsPlayerObjectMoving':
+     'prefix': 'IsPlayerObjectMoving'
+     'body': 'IsPlayerObjectMoving(${1:playerid}, ${2:objectid});${3:}'
   'MovePlayerObject':
      'prefix': 'MovePlayerObject'
      'body': 'MovePlayerObject(${1:playerid}, ${2:objectid}, ${3:Float:X}, ${4:Float:Y}, ${5:Float:Z}, ${6:Float:Speed}, ${7:Float:RotX = -1000.0}, ${8:Float:RotY = -1000.0}, ${9:Float:RotZ = -1000.0});${10:}'
+  'SetPlayerObjectMaterial':
+     'prefix': 'SetPlayerObjectMaterial'
+     'body': 'SetPlayerObjectMaterial(${1:playerid}, ${2:objectid}, ${3:materialindex}, ${4:modelid}, ${5:txdname[]}, ${6:texturename[]}, ${7:materialcolor});${8:}'
   'SetPlayerObjectPos':
      'prefix': 'SetPlayerObjectPos'
      'body': 'SetPlayerObjectPos(${1:playerid}, ${2:objectid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z});${6:}'
@@ -478,6 +586,21 @@
   'StopPlayerObject':
      'prefix': 'StopPlayerObject'
      'body': 'StopPlayerObject(${1:playerid}, ${2:objectid});${3:}'
+  'EditPlayerObject':
+     'prefix': 'EditPlayerObject'
+     'body': 'EditPlayerObject(${1:playerid}, ${2:objectid});${3:}'
+  'EditAttachedObject':
+     'prefix': 'EditAttachedObject'
+     'body': 'EditAttachedObject(${1:playerid}, ${2:index});${3:}'
+  'RemovePlayerAttachedObject':
+     'prefix': 'RemovePlayerAttachedObject'
+     'body': 'RemovePlayerAttachedObject(${1:playerid}, ${2:index});${3:}'
+  'IsPlayerAttachedObjectSlotUsed':
+     'prefix': 'IsPlayerAttachedObjectSlotUsed'
+     'body': 'IsPlayerAttachedObjectSlotUsed(${1:playerid}, ${2:index})${3:}'
+  'SetPlayerAttachedObject':
+     'prefix': 'SetPlayerAttachedObject'
+     'body': 'SetPlayerAttachedObject(${1:playerid}, ${2:index}, ${3:modelid}, ${4:bone}, ${5:Float:fOffsetX}, ${6:Float:fOffsetY}, ${7:Float:fOffsetZ}, ${8:Float:fRotX}, ${9:Float:fRotY}, ${10:Float:fRotZ}, ${11:Float:fScaleX}, ${12:Float:fScaleY}, ${13:Float:fScaleZ}, ${14:materialcolor1}, ${15:materialcolor2});${16:}'
 #player functions
   'ApplyAnimation':
      'prefix': 'ApplyAnimation'
@@ -485,12 +608,30 @@
   'ClearAnimations':
      'prefix': 'ClearAnimations'
      'body': 'ClearAnimations(${1:playerid});${2:}'
+  'SetPlayerMapIcon':
+     'prefix': 'SetPlayerMapIcon'
+     'body': 'SetPlayerMapIcon(${1:playerid}, ${2:iconid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:markertype}, ${7:color}, ${8:style});${9:}'
+  'RemovePlayerMapIcon':
+     'prefix': 'RemovePlayerMapIcon'
+     'body': 'RemovePlayerMapIcon(${1:playerid}, ${2:iconid});${3:}'
+  'RemoveBuildingForPlayer':
+     'prefix': 'RemoveBuildingForPlayer'
+     'body': 'RemoveBuildingForPlayer(${1:playerid}, ${2:modelid}, ${3:Float:fX}, ${4:Float:fY}, ${5:Float:fZ}, ${7:Float:fRadius});${8:}'
   'GetPlayerSpecialAction':
      'prefix': 'GetPlayerSpecialAction'
      'body': 'GetPlayerSpecialAction(${1:playerid})${2:}'
   'SetPlayerSpecialAction':
      'prefix': 'SetPlayerSpecialAction'
      'body': 'SetPlayerSpecialAction(${1:playerid}, ${2:actionid});${3:}'
+  'IsPlayerStreamedIn':
+     'prefix': 'IsPlayerStreamedIn'
+     'body': 'IsPlayerStreamedIn(${1:playerid}, ${2:forplayerid});${3:}'
+  'SetPlayerWeather':
+     'prefix': 'SetPlayerWeather'
+     'body': 'SetPlayerWeather(${1:playerid}, ${2:weatherid});${3:}'
+  'SetPlayerWorldBounds':
+     'prefix': 'SetPlayerWorldBounds'
+     'body': 'SetPlayerWorldBounds(${1:playerid}, ${2:Float:x_max}, ${3:Float:x_min}, ${4:Float:y_max}, ${5:Float:y_min});${6:}'
   'GetPlayerState':
      'prefix': 'GetPlayerState'
      'body': 'GetPlayerState(${1:playerid})${2:}'
@@ -521,6 +662,12 @@
   'TogglePlayerSpectating':
      'prefix': 'TogglePlayerSpectating'
      'body': 'TogglePlayerSpectating(${1:playerid}, ${2:toggle});${3:}'
+  'TogglePlayerClock':
+     'prefix': 'TogglePlayerClock'
+     'body': 'TogglePlayerClock(${1:playerid}, ${2:toggle});${3:}'
+  'TogglePlayerControllable':
+     'prefix': 'TogglePlayerControllable'
+     'body': 'TogglePlayerControllable(${1:playerid}, ${2:toggle});${3:}'
   'GetPlayerAmmo':
      'prefix': 'GetPlayerAmmo'
      'body': 'GetPlayerAmmo(${1:playerid})${2:}'
@@ -572,6 +719,9 @@
   'SetPlayerColor':
      'prefix': 'SetPlayerColor'
      'body': 'SetPlayerColor(${1:playerid}, ${2:color});${3:}'
+  'IsPlayerInRangeOfPoint':
+     'prefix': 'IsPlayerInRangeOfPoint'
+     'body': 'IsPlayerInRangeOfPoint(${1:playerid}, ${2:Float:range}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})${6:}'
   'GetPlayerDistanceFromPoint':
      'prefix': 'GetPlayerDistanceFromPoint'
      'body': 'GetPlayerDistanceFromPoint(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})${5:}'
@@ -590,6 +740,15 @@
   'GetPlayerFightingStyle':
      'prefix': 'GetPlayerFightingStyle'
      'body': 'GetPlayerFightingStyle(${1:playerid})${2:}'
+  'SetPlayerFightingStyle':
+     'prefix': 'SetPlayerFightingStyle'
+     'body': 'SetPlayerFightingStyle(${1:playerid}, ${2:style});${3:}'
+  'SetPlayerSkillLevel':
+     'prefix': 'SetPlayerSkillLevel'
+     'body': 'SetPlayerSkillLevel(${1:playerid}, ${2:skill}, ${3:level});${4:}'
+  'SetPlayerShopName':
+     'prefix': 'SetPlayerShopName'
+     'body': 'SetPlayerShopName(${1:playerid}, ${2:shopname[]});${3:}'
   'GetPlayerInterior':
      'prefix': 'GetPlayerInterior'
      'body': 'GetPlayerInterior(${1:playerid})${2:}'
@@ -616,7 +775,7 @@
      'body': 'ResetPlayerMoney(${1:playerid});${2:}'
   'GetPlayerName':
      'prefix': 'GetPlayerName'
-     'body': 'GetPlayerName(${1:playerid}, ${2:const name[]}, ${3:len});${4:}'
+     'body': 'GetPlayerName(${1:playerid}, ${2:const name[]}, sizeof(${2:}));${3:}'
   'SetPlayerName':
      'prefix': 'SetPlayerName'
      'body': 'SetPlayerName(${1:playerid}, ${2:name[]});${3:}'
@@ -680,6 +839,21 @@
   'GetPlayerWeapon':
      'prefix': 'GetPlayerWeapon'
      'body': 'GetPlayerWeapon(${1:playerid})${2:}'
+  'GetPlayerWeaponState':
+     'prefix': 'GetPlayerWeaponState'
+     'body': 'GetPlayerWeaponState(${1:playerid})${2:}'
+  'SetPlayerCameraLookAt':
+     'prefix': 'SetPlayerCameraLookAt'
+     'body': 'SetPlayerCameraLookAt(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:CAMERA_CUT});${6:}'
+  'SetPlayerCameraPos':
+     'prefix': 'SetPlayerCameraPos'
+     'body': 'SetPlayerCameraPos(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z});${5:}'
+  'SetPlayerChatBubble':
+     'prefix': 'SetPlayerChatBubble'
+     'body': 'SetPlayerChatBubble(${1:playerid}, ${2:text[]}, ${3:color}, ${4:Float:drawdistance}, ${5:expiretime});${6:}'
+  'SetPlayerAmmo':
+     'prefix': 'SetPlayerAmmo'
+     'body': 'SetPlayerAmmo(${1:playerid}, ${2:weaponslot}, ${3:ammo});${4:}'
   'GivePlayerWeapon':
      'prefix': 'GivePlayerWeapon'
      'body': 'GivePlayerWeapon(${1:playerid}, ${2:weaponid}, ${3:ammo});${4:}'
@@ -692,12 +866,21 @@
   'ResetPlayerWeapons':
      'prefix': 'ResetPlayerWeapons'
      'body': 'ResetPlayerWeapons(${1:playerid});${2:}'
+  'ShowPlayerDialog':
+     'prefix': 'ShowPlayerDialog'
+     'body': 'ShowPlayerDialog(${1:playerid}, ${2:dialogid}, ${3:style}, ${4:caption[]}, ${5:info[]}, ${6:button1[]}, ${7:button2[]});${8:}'
   'SpawnPlayer':
      'prefix': 'SpawnPlayer'
      'body': 'SpawnPlayer(${1:playerid});${2:}'
+  'SetCameraBehindPlayer':
+     'prefix': 'SetCameraBehindPlayer'
+     'body': 'SetCameraBehindPlayer(${1:playerid});${2:}'
   'ForceClassSelection':
      'prefix': 'ForceClassSelection'
      'body': 'ForceClassSelection(${1:playerid});${2:}'
+  'CreateExplosionForPlayer':
+     'prefix': 'CreateExplosionForPlayer'
+     'body': 'CreateExplosionForPlayer(${1:playerid}, ${2:Float:X}, ${3:Float:Y}, ${4:Float:Z}, ${5:type}, ${6:Float:Radius});${7:}'
   'AddPlayerClass':
      'prefix': 'AddPlayerClass'
      'body': 'AddPlayerClass(${1:skin}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:Angle}, ${6:weapon1}, ${7:weapon1_ammo}, ${8:weapon2}, ${9:weapon2_ammo}, ${10:weapon3}, ${11:weapon3_ammo});${12:}'
@@ -707,6 +890,39 @@
   'SetSpawnInfo':
      'prefix': 'SetSpawnInfo'
      'body': 'SetSpawnInfo(${1:playerid}, ${2:team}, ${3:skin}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:Float:Angle}, ${8:weapon1}, ${9:weapon1_ammo}, ${10:weapon2}, ${11:weapon2_ammo}, ${12:weapon3}, ${13:weapon3_ammo});${14:}'
+  'EnableStuntBonusForPlayer':
+     'prefix': 'EnableStuntBonusForPlayer'
+     'body': 'EnableStuntBonusForPlayer(${1:playerid}, ${2:enable});${3:}'
+  'ShowPlayerNameTagForPlayer':
+     'prefix': 'ShowPlayerNameTagForPlayer'
+     'body': 'ShowPlayerNameTagForPlayer(${1:playerid}, ${2:showplayerid}, ${3:show});${4:}'
+  'SetPlayerMarkerForPlayer':
+     'prefix': 'SetPlayerMarkerForPlayer'
+     'body': 'SetPlayerMarkerForPlayer(${1:playerid}, ${2:showplayerid}, ${3:color});${4:}'
+  'StartRecordingPlayerData':
+     'prefix': 'StartRecordingPlayerData'
+     'body': 'StartRecordingPlayerData(${1:playerid}, ${2:recordtype}, ${3:recordname[]});${4:}'
+  'StopRecordingPlayerData':
+     'prefix': 'StopRecordingPlayerData'
+     'body': 'StopRecordingPlayerData(${1:playerid});${2:}'
+  'PlayerPlaySound':
+     'prefix': 'PlayerPlaySound'
+     'body': 'PlayerPlaySound(${1:playerid}, ${2:sounid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z});${6:}'
+  'PlayCrimeReportForPlayer':
+     'prefix': 'PlayCrimeReportForPlayer'
+     'body': 'PlayCrimeReportForPlayer(${1:playerid}, ${2:suspectid}, ${3:crimeid});${4:}'
+  'PlayAudioStreamForPlayer':
+     'prefix': 'PlayAudioStreamForPlayer'
+     'body': 'PlayAudioStreamForPlayer(${1:playerid}, ${2:url[]});${3:}'
+  'StopAudioStreamForPlayer':
+     'prefix': 'StopAudioStreamForPlayer'
+     'body': 'StopAudioStreamForPlayer(${1:playerid});${2:}'
+  'InterpolateCameraLookAt':
+     'prefix': 'InterpolateCameraLookAt'
+     'body': 'InterpolateCameraLookAt(${1:playerid}, ${2:Float:FromX}, ${3:Float:FromY}, ${4:Float:FromZ}, ${5:Float:ToX}, ${6:Float:ToY}, ${7:Float:ToZ}, ${8:time}, ${9:CAMERA_CUT});${10:}'
+  'InterpolateCameraPos':
+     'prefix': 'InterpolateCameraPos'
+     'body': 'InterpolateCameraPos(${1:playerid}, ${2:Float:FromX}, ${3:Float:FromY}, ${4:Float:FromZ}, ${5:Float:ToX}, ${6:Float:ToY}, ${7:Float:ToZ}, ${8:time}, ${9:CAMERA_CUT});${10:}'
      #messages
   'SendClientMessage':
      'prefix': 'SendClientMessage'
@@ -726,6 +942,12 @@
   'GameTextForPlayer':
      'prefix': 'GameTextForPlayer'
      'body': 'GameTextForPlayer(${1:playerid}, ${2:const string[]}, ${3:time}, ${4:style});${5:}'
+  'SendDeathMessageToPlayer':
+     'prefix': 'SendDeathMessageToPlayer'
+     'body': 'SendDeathMessageToPlayer(${1:playerid}, ${2:killer}, ${3:killee}, ${4:weapon});${5:}'
+  'SendDeathMessage':
+     'prefix': 'SendDeathMessage'
+     'body': 'SendDeathMessage(${1:killer}, ${2:killee}, ${3:weapon});${4:}'
 #player variables
   'DeletePVar':
      'prefix': 'DeletePVar'
@@ -820,6 +1042,36 @@
      'prefix': 'DestroyPickup'
      'body': 'DestroyPickup(${1:pickupid});${2:}'
 #server
+  'GetServerVarAsString':
+     'prefix': 'GetServerVarAsString'
+     'body': 'GetServerVarAsString(${1:const varname[]}, ${2:buffer[]}, sizeof(${2:}));${3:}'
+  'GetServerVarAsInt':
+     'prefix': 'GetServerVarAsInt'
+     'body': 'GetServerVarAsInt(${1:const varname[]})${2:}'
+  'GetServerVarAsBool':
+     'prefix': 'GetServerVarAsBool'
+     'body': 'GetServerVarAsBool(${1:const varname[]})${2:}'
+  'GetServerTickRate':
+     'prefix': 'GetServerTickRate'
+     'body': 'GetServerTickRate()${1:}'
+  'GetTickCount':
+     'prefix': 'GetTickCount'
+     'body': 'GetTickCount()${1:}'
+  'tickcount':
+     'prefix': 'tickcount'
+     'body': 'tickcount(${1:&granularity=0})${2:}'
+  'SetNameTagDrawDistance':
+     'prefix': 'SetNameTagDrawDistance'
+     'body': 'SetNameTagDrawDistance(${1:Float:distance});${2:}'
+  'SetGameModeText':
+     'prefix': 'SetGameModeText'
+     'body': 'SetGameModeText(${1:const string[]});${2:}'
+  'ShowNameTags':
+     'prefix': 'ShowNameTags'
+     'body': 'ShowNameTags(${1:enabled});${2:}'
+  'DisableNameTagLOS':
+     'prefix': 'DisableNameTagLOS'
+     'body': 'DisableNameTagLOS()${1:}'
   'GetNetworkStats':
      'prefix': 'GetNetworkStats'
      'body': 'GetNetworkStats(${1:&retstr[]}, ${2:retstr_size});${3:}'
@@ -835,6 +1087,12 @@
   'GameModeExit':
      'prefix': 'GameModeExit'
      'body': 'GameModeExit()${1:}'
+  'LimitGlobalChatRadius':
+     'prefix': 'LimitGlobalChatRadius'
+     'body': 'LimitGlobalChatRadius(${1:Float:chat_radius});${2:}'
+  'LimitPlayerMarkerRadius':
+     'prefix': 'LimitPlayerMarkerRadius'
+     'body': 'LimitPlayerMarkerRadius(${1:Float:marker_radius});${2:}'
   'SetWorldTime':
      'prefix': 'SetWorldTime'
      'body': 'SetWorldTime(${1:hour});${2:}'
@@ -844,15 +1102,39 @@
   'SetGravity':
      'prefix': 'SetGravity'
      'body': 'SetGravity(${1:Float:gravity});${2:}'
+  'ManualVehicleEngineAndLights':
+     'prefix': 'ManualVehicleEngineAndLights'
+     'body': 'ManualVehicleEngineAndLights();${1:}'
   'GetGravity':
      'prefix': 'GetGravity'
      'body': 'GetGravity();${1:}'
+  'DisableInteriorEnterExits':
+     'prefix': 'DisableInteriorEnterExits'
+     'body': 'DisableInteriorEnterExits();${1:}'
   'AllowInteriorWeapons':
      'prefix': 'AllowInteriorWeapons'
      'body': 'AllowInteriorWeapons(${1:allow});${2:}'
   'BlockIpAddress':
      'prefix': 'BlockIpAddress'
      'body': 'BlockIpAddress(${1:ip_address[]}, ${2:time_ms});${3:}'
+  'UnBlockIpAddress':
+     'prefix': 'UnBlockIpAddress'
+     'body': 'UnBlockIpAddress(${1:ip_address[]});${2:}'
+  'CreateExplosion':
+     'prefix': 'CreateExplosion'
+     'body': 'CreateExplosion(${1:Float:X}, ${2:Float:Y}, ${3:Float:Z}, ${4:type}, ${5:Float:radius});${6:}'
+  'EnableStuntBonusForAll':
+     'prefix': 'EnableStuntBonusForAll'
+     'body': 'EnableStuntBonusForAll(${1:enable});${2:}'
+  'EnableVehicleFriendlyFire':
+     'prefix': 'EnableVehicleFriendlyFire'
+     'body': 'EnableVehicleFriendlyFire();${1:}'
+  'UsePlayerPedAnims':
+     'prefix': 'UsePlayerPedAnims'
+     'body': 'UsePlayerPedAnims();${1:}'
+  'ShowPlayerMarkers':
+     'prefix': 'ShowPlayerMarkers'
+     'body': 'ShowPlayerMarkers(${1:mode});${2:}'
 #menu
   'AddMenuItem':
      'prefix': 'AddMenuItem'
@@ -875,6 +1157,12 @@
   'GetPlayerMenu':
      'prefix': 'GetPlayerMenu'
      'body': 'GetPlayerMenu(${1:playerid})${2:}'
+  'DisableMenu':
+     'prefix': 'DisableMenu'
+     'body': 'DisableMenu(${1:Menu:menuid})${2:}'
+  'DisableMenuRow':
+     'prefix': 'DisableMenuRow'
+     'body': 'DisableMenuRow(${1:Menu:menuid}, ${2:row})${3:}'
 #administration
   'Ban':
      'prefix': 'Ban'
@@ -1104,3 +1392,38 @@
   'UpdatePlayer3DTextLabelText':
      'prefix': 'UpdatePlayer3DTextLabelText'
      'body': 'UpdatePlayer3DTextLabelText(${1:playerid}, ${2:Text3D:text}, ${3:color}, ${4:text[]});${5:}'
+#scripting
+  'CallLocalFunction':
+     'prefix': 'CallLocalFunction'
+     'body': 'CallLocalFunction(${1:const function[]}, ${2:const format[]}, ${3:{Float,_}:...});${4:}'
+  'CallRemoteFunction':
+     'prefix': 'CallRemoteFunction'
+     'body': 'CallRemoteFunction(${1:const function[]}, ${2:const format[]}, ${3:{Float,_}:...});${4:}'
+  'KillTimer':
+     'prefix': 'KillTimer'
+     'body': 'KillTimer(${1:timerid});${2:}'
+  'SetTimer':
+     'prefix': 'SetTimer'
+     'body': 'SetTimer(${1:funcname[]}, ${2:interval}, ${3:repeating});${4:}'
+  'SetTimerEx':
+     'prefix': 'SetTimerEx'
+     'body': 'SetTimerEx(${1:funcname[]}, ${2:interval}, ${3:repeating}, ${4:const format[]}, ${5:{Float,_}:...});${6:}'
+  'GetAnimationName':
+     'prefix': 'GetAnimationName'
+     'body': 'GetAnimationName(${1:index}, ${2:animlib[]}, ${3:len1}, ${4:animname[]}, ${5:len2});${6:}'
+  'GetWeaponName':
+     'prefix': 'GetWeaponName'
+     'body': 'GetWeaponName(${1:weaponid}, ${2:const name[]}, sizeof(${2:}));${3:}'
+  'HTTP':
+     'prefix': 'HTTP'
+     'body': 'HTTP(${1:index}, ${2:type}, ${3:url[]}, ${4:data[]}, ${5:callback[]});${6:}'
+  'SHA256':
+     'prefix': 'SHA256'
+     'body': 'SHA256(${1:password[]}, ${2:salt[]}, ${3:ret_has[]}, sizeof(${3:}));${4:}'
+#NPC
+  'ConnectNPC':
+     'prefix': 'ConnectNPC'
+     'body': 'ConnectNPC(${1:name[]}, ${2:script[]});${3:}'
+  'IsPlayerNPC':
+     'prefix': 'IsPlayerNPC'
+     'body': 'IsPlayerNPC(${1:playerid})${2:}'
