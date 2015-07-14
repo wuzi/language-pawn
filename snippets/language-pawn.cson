@@ -11,7 +11,7 @@
     'body': 'main() {\n\t${1:/* code */}\n\treturn 1;\n}'
   'for loop':
     'prefix': 'for'
-    'body': 'for (new ${1:i} = 0; $1 < ${2:count}; $1${3:++}) {\n\t${4:/* code */}\n}'
+    'body': 'for (new ${1:i} = 0; ${1:i} < ${2:count}; ${1:i}${3:++}) {\n\t${4:/* code */}\n}'
   'include guard':
     'prefix': 'incgrd'
     'body': '#if !defined _INC_${1:SYMBOL}\n\t#endinput\n#endif\n#define _INC_$1'
