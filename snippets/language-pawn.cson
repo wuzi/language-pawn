@@ -114,6 +114,12 @@
   'floatsin':
      'prefix': 'floatsin'
      'body': 'floatsin(${1:Float:value}, ${2:anglemode:mode=radian})'
+  'floatround':
+     'prefix': 'floatround'
+     'body': 'floatround(${1:Float:value})${2:}'
+  'floatdiv':
+     'prefix': 'floatdiv'
+     'body': 'floatdiv(${1:Float:dividend}, ${2:Float:divisor})${3:}'
   'floattan':
      'prefix': 'floattan'
      'body': 'floattan(${1:Float:value}, ${2:anglemode:mode=radian})'
