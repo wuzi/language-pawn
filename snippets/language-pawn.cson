@@ -122,7 +122,7 @@
      'body': 'floatcos(${1:Float:value}, ${2:anglemode:mode=radian})'
   'format':
      'prefix': 'format'
-     'body': 'format(${1:output[]}, sizeof(${1:}), ${2:const format[]}, ${3:{Float,_}:...});${4:}'
+     'body': 'format(${1:output[]}, sizeof(${1:}), ${2:const format[]}, ${3:args});${4:}'
   'write file':
      'prefix': 'wfile'
      'body': 'new File:${1:file} = fopen(${2:filename.extension}, io_write);\nif(${1:file}) {\n\tfwrite(${1:file}, ${3:text_to_write});\n\tfclose(${1:file});\n}${4:}'
@@ -345,16 +345,16 @@
      'body': 'DetachTrailerFromVehicle(${1:vehicleid});${2:}'
   'GetPlayerSurfingVehicleID':
      'prefix': 'GetPlayerSurfingVehicleID'
-     'body': 'GetPlayerSurfingVehicleID(${1:playerid});${2:}'
+     'body': 'GetPlayerSurfingVehicleID(${1:playerid})${2:}'
   'GetPlayerVehicleID':
      'prefix': 'GetPlayerVehicleID'
-     'body': 'GetPlayerVehicleID(${1:playerid});${2:}'
+     'body': 'GetPlayerVehicleID(${1:playerid})${2:}'
   'GetVehicleComponentInSlot':
      'prefix': 'GetVehicleComponentInSlot'
-     'body': 'GetVehicleComponentInSlot(${1:vehicleid}, ${2:slot});${3:}'
+     'body': 'GetVehicleComponentInSlot(${1:vehicleid}, ${2:slot})${3:}'
   'GetVehicleComponentType':
      'prefix': 'GetVehicleComponentType'
-     'body': 'GetVehicleComponentType(${1:component});${2:}'
+     'body': 'GetVehicleComponentType(${1:component})${2:}'
   'GetVehicleDamageStatus':
      'prefix': 'GetVehicleDamageStatus'
      'body': 'GetVehicleDamageStatus(${1:vehicleid}, ${2:&panels}, ${3:&doors}, ${4:&lights}, ${5:&tires});${6:}'
@@ -1395,10 +1395,10 @@
 #scripting
   'CallLocalFunction':
      'prefix': 'CallLocalFunction'
-     'body': 'CallLocalFunction(${1:const function[]}, ${2:const format[]}, ${3:{Float,_}:...});${4:}'
+     'body': 'CallLocalFunction(${1:const function[]}, ${2:const format[]}, ${3:args});${4:}'
   'CallRemoteFunction':
      'prefix': 'CallRemoteFunction'
-     'body': 'CallRemoteFunction(${1:const function[]}, ${2:const format[]}, ${3:{Float,_}:...});${4:}'
+     'body': 'CallRemoteFunction(${1:const function[]}, ${2:const format[]}, ${3:args});${4:}'
   'KillTimer':
      'prefix': 'KillTimer'
      'body': 'KillTimer(${1:timerid});${2:}'
@@ -1407,7 +1407,7 @@
      'body': 'SetTimer(${1:funcname[]}, ${2:interval}, ${3:repeating});${4:}'
   'SetTimerEx':
      'prefix': 'SetTimerEx'
-     'body': 'SetTimerEx(${1:funcname[]}, ${2:interval}, ${3:repeating}, ${4:const format[]}, ${5:{Float,_}:...});${6:}'
+     'body': 'SetTimerEx(${1:funcname[]}, ${2:interval}, ${3:repeating}, ${4:const format[]}, ${5:args});${6:}'
   'GetAnimationName':
      'prefix': 'GetAnimationName'
      'body': 'GetAnimationName(${1:index}, ${2:animlib[]}, ${3:len1}, ${4:animname[]}, ${5:len2});${6:}'
