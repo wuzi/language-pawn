@@ -988,7 +988,7 @@
 #actors
   'ApplyActorAnimation':
      'prefix': 'ApplyActorAnimation'
-     'body': 'ApplyActorAnimation(${1:actorid}, ${2:animlib[]}, ${3:animname[]}, ${4:Float:fDelta}, ${5:loop}, ${6:lockx}, ${7:locky}, ${8:freeze}, ${9:time}, ${10:forcesync});${11:}'
+     'body': 'ApplyActorAnimation(${1:actorid}, ${2:animlib[]}, ${3:animname[]}, ${4:Float:fDelta}, ${5:loop}, ${6:lockx}, ${7:locky}, ${8:freeze}, ${9:time});${10:}'
   'ClearActorAnimations':
      'prefix': 'ClearActorAnimations'
      'body': 'ClearActorAnimations(${1:actorid});${2:}'
