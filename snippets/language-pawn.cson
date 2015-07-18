@@ -913,7 +913,7 @@
      'body': 'StopRecordingPlayerData(${1:playerid});${2:}'
   'PlayerPlaySound':
      'prefix': 'PlayerPlaySound'
-     'body': 'PlayerPlaySound(${1:playerid}, ${2:sounid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z});${6:}'
+     'body': 'PlayerPlaySound(${1:playerid}, ${2:soundid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z});${6:}'
   'PlayCrimeReportForPlayer':
      'prefix': 'PlayCrimeReportForPlayer'
      'body': 'PlayCrimeReportForPlayer(${1:playerid}, ${2:suspectid}, ${3:crimeid});${4:}'
