@@ -19,7 +19,7 @@
     'include': '#comments'
   }
   {
-    'match': '\\b(break|case|continue|default|do|else|for|goto|if|pragma|return|switch|while|public|stock|forward)\\b'
+    'match': '\\b(break|case|continue|default|do|else|for|goto|if|pragma|return|switch|while|public|stock|forward|native)\\b'
     'name': 'keyword.control.c'
   }
   {
