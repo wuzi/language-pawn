@@ -40,6 +40,10 @@
     'name': 'variable.other.readwrite.global.mac-classic.c'
   }
   {
+    'match': '\\bg_[A-Z]\\w*\\b'
+    'name': 'variable.other.readwrite.global.mac-classic.c'
+  }
+  {
     'match': '\\bs[A-Z]\\w*\\b'
     'name': 'variable.other.readwrite.static.mac-classic.c'
   }

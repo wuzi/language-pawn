@@ -8,34 +8,34 @@
     'body': '#include "${1:.inc}"'
   'main()':
     'prefix': 'main'
-    'body': 'main() {\n\t${1:/* code */}\n\treturn 1;\n}'
+    'body': 'main()\n{\n\t${1:/* code */}\n\treturn 1;\n}'
   'for loop':
     'prefix': 'for'
-    'body': 'for (new ${1:i} = 0; ${1:i} < ${2:count}; ${1:i}${3:++}) {\n\t${4:/* code */}\n}'
+    'body': 'for(new ${1:i} = 0; ${1:i} < ${2:count}; ${1:i}${3:++})\n{\n\t${4:/* code */}\n}'
   'include guard':
     'prefix': 'incgrd'
     'body': '#if !defined _INC_${1:SYMBOL}\n\t#endinput\n#endif\n#define _INC_$1'
   'do while loop':
     'prefix': 'do'
-    'body': 'do {\n\t${0:/* code */}\n} while(${1:/* condition */});'
+    'body': 'do\n{\n\t${0:/* code */}\n} while(${1:/* condition */});'
   'while loop':
     'prefix': 'while'
-    'body': 'while (${1:/* condition */}) {\n\t${2:/* code */}\n}'
+    'body': 'while (${1:/* condition */})\n{\n\t${2:/* code */}\n}'
   'if condition':
     'prefix': 'if'
-    'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n}'
+    'body': 'if(${1:/* condition */})\n{\n\t${2:/* code */}\n}'
   'if else':
     'prefix': 'ife'
-    'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n}\nelse {\n\t${3:/* code */}\n}'
+    'body': 'if(${1:/* condition */})\n{\n\t${2:/* code */}\n}\nelse {\n\t${3:/* code */}\n}'
   'if elseif':
     'prefix': 'iff'
-    'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n}\nelse if (${3:/* condition */}) {\n\t${4:/* code */}\n}'
+    'body': 'if(${1:/* condition */})\n{\n\t${2:/* code */}\n}\nelse if (${3:/* condition */})\n{\n\t${4:/* code */}\n}'
   'if elseif else':
     'prefix': 'iffe'
-    'body': 'if (${1:/* condition */}) {\n\t${2:/* code */}\n}\nelse if (${3:/* condition */}) {\n\t${4:/* code */}\n}\nelse {\n\t${5:/* code */}\n}'
+    'body': 'if(${1:/* condition */})\n{\n\t${2:/* code */}\n}\nelse if (${3:/* condition */})\n{\n\t${4:/* code */}\n}\nelse {\n\t${5:/* code */}\n}'
   'switch statement':
     'prefix': 'switch'
-    'body': 'switch (${1:/* expression */}) {\n\tcase ${2:/* value */}:\n}'
+    'body': 'switch (${1:/* expression */})\n{\n\tcase ${2:/* value */}:\n}'
   'case':
     'prefix': 'case'
     'body': 'case ${1:/* value */}:$0'
@@ -101,10 +101,10 @@
     'body': 'strmid(${1:dest[]}, ${2:const source[]}, ${3:start}, ${4:end});$5'
   'stock':
     'prefix': 'stock'
-    'body': 'stock ${1:function}(${2:/* arguments */}) {\n\t${4:/* code */}\n\treturn ${3:1};\n}'
+    'body': 'stock ${1:function}(${2:/* arguments */})\n{\n\t${4:/* code */}\n\treturn ${3:1};\n}'
   'public':
     'prefix': 'public'
-    'body': 'public ${1:function}(${2:/* arguments */}) {\n\t${4:/* code */}\n\treturn ${3:1};\n}'
+    'body': 'public ${1:function}(${2:/* arguments */})\n{\n\t${4:/* code */}\n\treturn ${3:1};\n}'
   'forward':
      'prefix': 'forward'
      'body': 'forward ${1:function}(${2:/* arguments */});'
@@ -131,186 +131,186 @@
      'body': 'format(${1:output[]}, sizeof(${1:}), ${2:const format[]}, ${3:args});${4:}'
   'write file':
      'prefix': 'wfile'
-     'body': 'new File:${1:file} = fopen(${2:filename.extension}, io_write);\nif(${1:file}) {\n\tfwrite(${1:file}, ${3:text_to_write});\n\tfclose(${1:file});\n}${4:}'
+     'body': 'new File:${1:file} = fopen(${2:filename.extension}, io_write);\nif(${1:file})\n{\n\tfwrite(${1:file}, ${3:text_to_write});\n\tfclose(${1:file});\n}${4:}'
 # callbacks
   'OnActorStreamIn':
      'prefix': 'OnActorStreamIn'
-     'body': 'public OnActorStreamIn(actorid, forplayerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnActorStreamIn(actorid, forplayerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnActorStreamOut':
      'prefix': 'OnActorStreamOut'
-     'body': 'public OnActorStreamOut(actorid, forplayerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnActorStreamOut(actorid, forplayerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnDialogResponse':
      'prefix': 'OnDialogResponse'
-     'body': 'public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[]) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnEnterExitModShop':
      'prefix': 'OnEnterExitModShop'
-     'body': 'public OnEnterExitModShop(playerid, enterexit, interiorid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnEnterExitModShop(playerid, enterexit, interiorid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnFilterScriptExit':
      'prefix': 'OnFilterScriptExit'
-     'body': 'public OnFilterScriptExit() {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnFilterScriptExit()\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnGameModeExit':
      'prefix': 'OnGameModeExit'
-     'body': 'public OnGameModeExit() {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnGameModeExit()\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnGameModeInit':
      'prefix': 'OnGameModeInit'
-     'body': 'public OnGameModeInit() {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnGameModeInit()\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnIncomingConnection':
      'prefix': 'OnIncomingConnection'
-     'body': 'public OnIncomingConnection(playerid, ip_address[], port) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnIncomingConnection(playerid, ip_address[], port)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnObjectMoved':
      'prefix': 'OnObjectMoved'
-     'body': 'public OnObjectMoved(objectid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnObjectMoved(objectid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerClickMap':
      'prefix': 'OnPlayerClickMap'
-     'body': 'public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerClickPlayer':
      'prefix': 'OnPlayerClickPlayer'
-     'body': 'public OnPlayerClickPlayer(playerid, clickedplayerid, source) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerClickPlayer(playerid, clickedplayerid, source)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerClickPlayerTextDraw':
      'prefix': 'OnPlayerClickPlayerTextDraw'
-     'body': 'public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerClickTextDraw':
      'prefix': 'OnPlayerClickTextDraw'
-     'body': 'public OnPlayerClickTextDraw(playerid, Text:clickedid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerClickTextDraw(playerid, Text:clickedid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerCommandText':
      'prefix': 'OnPlayerCommandText'
-     'body': 'public OnPlayerCommandText(playerid, cmdtext[]) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerCommandText(playerid, cmdtext[])\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerConnect':
      'prefix': 'OnPlayerConnect'
-     'body': 'public OnPlayerConnect(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerConnect(playerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerDeath':
      'prefix': 'OnPlayerDeath'
-     'body': 'public OnPlayerDeath(playerid, killerid, reason) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerDeath(playerid, killerid, reason)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerDisconnect':
      'prefix': 'OnPlayerDisconnect'
-     'body': 'public OnPlayerDisconnect(playerid, reason) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerDisconnect(playerid, reason)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerEditAttachedObject':
      'prefix': 'OnPlayerEditAttachedObject'
-     'body': 'public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, Float:fOffsetX, Float:fOffsetY, Float:fOffsetZ, Float:fRotX, Float:fRotY, Float:fRotZ, Float:fScaleX, Float:fScaleY, Float:fScaleZ)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerEditObject':
      'prefix': 'OnPlayerEditObject'
-     'body': 'public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerEditObject(playerid, playerobject, objectid, response, Float:fX, Float:fY, Float:fZ, Float:fRotX, Float:fRotY, Float:fRotZ)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerEnterCheckpoint':
      'prefix': 'OnPlayerEnterCheckpoint'
-     'body': 'public OnPlayerEnterCheckpoint(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerEnterCheckpoint(playerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerEnterRaceCheckpoint':
      'prefix': 'OnPlayerEnterRaceCheckpoint'
-     'body': 'public OnPlayerEnterRaceCheckpoint(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerEnterRaceCheckpoint(playerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerEnterVehicle':
      'prefix': 'OnPlayerEnterVehicle'
-     'body': 'public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerExitVehicle':
      'prefix': 'OnPlayerExitVehicle'
-     'body': 'public OnPlayerExitVehicle(playerid, vehicleid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerExitVehicle(playerid, vehicleid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerExitedMenu':
      'prefix': 'OnPlayerExitedMenu'
-     'body': 'public OnPlayerExitedMenu(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerExitedMenu(playerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerGiveDamage':
      'prefix': 'OnPlayerGiveDamage'
-     'body': 'public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerGiveDamage(playerid, damagedid, Float:amount, weaponid, bodypart)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerGiveDamageActor':
      'prefix': 'OnPlayerGiveDamageActor'
-     'body': 'public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, weaponid, bodypart) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerGiveDamageActor(playerid, damaged_actorid, Float:amount, weaponid, bodypart)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerInteriorChange':
      'prefix': 'OnPlayerInteriorChange'
-     'body': 'public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerKeyStateChange':
      'prefix': 'OnPlayerKeyStateChange'
-     'body': 'public OnPlayerKeyStateChange(playerid, newkeys, oldkeys) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerLeaveCheckpoint':
      'prefix': 'OnPlayerLeaveCheckpoint'
-     'body': 'public OnPlayerLeaveCheckpoint(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerLeaveCheckpoint(playerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerLeaveRaceCheckpoint':
      'prefix': 'OnPlayerLeaveRaceCheckpoint'
-     'body': 'public OnPlayerLeaveRaceCheckpoint(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerLeaveRaceCheckpoint(playerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerObjectMoved':
      'prefix': 'OnPlayerObjectMoved'
-     'body': 'public OnPlayerObjectMoved(playerid, objectid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerObjectMoved(playerid, objectid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerPickUpPickup':
      'prefix': 'OnPlayerPickUpPickup'
-     'body': 'public OnPlayerPickUpPickup(playerid, pickupid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerPickUpPickup(playerid, pickupid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerRequestClass':
      'prefix': 'OnPlayerRequestClass'
-     'body': 'public OnPlayerRequestClass(playerid, classid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerRequestClass(playerid, classid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerRequestSpawn':
      'prefix': 'OnPlayerRequestSpawn'
-     'body': 'public OnPlayerRequestSpawn(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerRequestSpawn(playerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerSelectObject':
      'prefix': 'OnPlayerSelectObject'
-     'body': 'public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:fY, Float:fZ) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerSelectObject(playerid, type, objectid, modelid, Float:fX, Float:fY, Float:fZ)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerSelectedMenuRow':
      'prefix': 'OnPlayerSelectedMenuRow'
-     'body': 'public OnPlayerSelectedMenuRow(playerid, row) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerSelectedMenuRow(playerid, row)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerSpawn':
      'prefix': 'OnPlayerSpawn'
-     'body': 'public OnPlayerSpawn(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerSpawn(playerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerStateChange':
      'prefix': 'OnPlayerStateChange'
-     'body': 'public OnPlayerStateChange(playerid, newstate, oldstate) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerStateChange(playerid, newstate, oldstate)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerStreamIn':
      'prefix': 'OnPlayerStreamIn'
-     'body': 'public OnPlayerStreamIn(playerid, forplayerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerStreamIn(playerid, forplayerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerStreamOut':
      'prefix': 'OnPlayerStreamOut'
-     'body': 'public OnPlayerStreamOut(playerid, forplayerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerStreamOut(playerid, forplayerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerTakeDamage':
      'prefix': 'OnPlayerTakeDamage'
-     'body': 'public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerTakeDamage(playerid, issuerid, Float:amount, weaponid, bodypart)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerText':
      'prefix': 'OnPlayerText'
-     'body': 'public OnPlayerText(playerid, text[]) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerText(playerid, text[])\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerUpdate':
      'prefix': 'OnPlayerUpdate'
-     'body': 'public OnPlayerUpdate(playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerUpdate(playerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnPlayerWeaponShot':
      'prefix': 'OnPlayerWeaponShot'
-     'body': 'public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, Float:fZ)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnRconCommand':
      'prefix': 'OnRconCommand'
-     'body': 'public OnRconCommand(cmd[]) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnRconCommand(cmd[])\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnRconLoginAttempt':
      'prefix': 'OnRconLoginAttempt'
-     'body': 'public OnRconLoginAttempt(ip[], password[], success) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnRconLoginAttempt(ip[], password[], success)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnTrailerUpdate':
      'prefix': 'OnTrailerUpdate'
-     'body': 'public OnTrailerUpdate(playerid, vehicleid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnTrailerUpdate(playerid, vehicleid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnUnoccupiedVehicleUpdate':
      'prefix': 'OnUnoccupiedVehicleUpdate'
-     'body': 'public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_x, Float:new_y, Float:new_z, Float:vel_x, Float:vel_y, Float:vel_z) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_x, Float:new_y, Float:new_z, Float:vel_x, Float:vel_y, Float:vel_z)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnVehicleDamageStatusUpdate':
      'prefix': 'OnVehicleDamageStatusUpdate'
-     'body': 'public OnVehicleDamageStatusUpdate(vehicleid, playerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnVehicleDamageStatusUpdate(vehicleid, playerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnVehicleDeath':
      'prefix': 'OnVehicleDeath'
-     'body': 'public OnVehicleDeath(vehicleid, killerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnVehicleDeath(vehicleid, killerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnVehicleMod':
      'prefix': 'OnVehicleMod'
-     'body': 'public OnVehicleMod(playerid, vehicleid, componentid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnVehicleMod(playerid, vehicleid, componentid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnVehiclePaintjob':
      'prefix': 'OnVehiclePaintjob'
-     'body': 'public OnVehiclePaintjob(playerid, vehicleid, paintjobid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnVehiclePaintjob(playerid, vehicleid, paintjobid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnVehicleRespray':
      'prefix': 'OnVehicleRespray'
-     'body': 'public OnVehicleRespray(playerid, vehicleid, color1, color2) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnVehicleRespray(playerid, vehicleid, color1, color2)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnVehicleSirenStateChange':
      'prefix': 'OnVehicleSirenStateChange'
-     'body': 'public OnVehicleSirenStateChange(playerid, vehicleid, newstate) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnVehicleSirenStateChange(playerid, vehicleid, newstate)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnVehicleSpawn':
      'prefix': 'OnVehicleSpawn'
-     'body': 'public OnVehicleSpawn(vehicleid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnVehicleSpawn(vehicleid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnVehicleStreamIn':
      'prefix': 'OnVehicleStreamIn'
-     'body': 'public OnVehicleStreamIn(vehicleid, forplayerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnVehicleStreamIn(vehicleid, forplayerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnVehicleStreamOut':
      'prefix': 'OnVehicleStreamOut'
-     'body': 'public OnVehicleStreamOut(vehicleid, forplayerid) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnVehicleStreamOut(vehicleid, forplayerid)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
 #npc callbacks
   'OnClientMessage':
      'prefix': 'OnClientMessage'
-     'body': 'public OnClientMessage(color, text[]) {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnClientMessage(color, text[])\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
   'OnRecordingPlaybackEnd':
      'prefix': 'OnRecordingPlaybackEnd'
-     'body': 'public OnRecordingPlaybackEnd() {\n\t${1:/* code */}\n\treturn ${2:1};\n}'
+     'body': 'public OnRecordingPlaybackEnd()\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
 #functions
   #vehicle
   'AddStaticVehicle':
@@ -387,16 +387,16 @@
      'body': 'GetVehicleZAngle(${1:vehicleid}, ${2:Float:a});${3:}'
   'IsPlayerInAnyVehicle':
      'prefix': 'IsPlayerInAnyVehicle'
-     'body': 'IsPlayerInAnyVehicle(${1:playerid});${2:}'
+     'body': 'IsPlayerInAnyVehicle(${1:playerid})${2:}'
   'IsPlayerInVehicle':
      'prefix': 'IsPlayerInVehicle'
-     'body': 'IsPlayerInVehicle(${1:playerid}, ${2:vehicleid});${3:}'
+     'body': 'IsPlayerInVehicle(${1:playerid}, ${2:vehicleid})${3:}'
   'IsTrailerAttachedToVehicle':
      'prefix': 'IsTrailerAttachedToVehicle'
-     'body': 'IsTrailerAttachedToVehicle(${1:vehicleid});${2:}'
+     'body': 'IsTrailerAttachedToVehicle(${1:vehicleid})${2:}'
   'IsVehicleStreamedIn':
      'prefix': 'IsVehicleStreamedIn'
-     'body': 'IsVehicleStreamedIn(${1:vehicleid}, ${2:forplayerid});${3:}'
+     'body': 'IsVehicleStreamedIn(${1:vehicleid}, ${2:forplayerid})${3:}'
   'LinkVehicleToInterior':
      'prefix': 'LinkVehicleToInterior'
      'body': 'LinkVehicleToInterior(${1:vehicleid}, ${2:interiorid});${3:}'
