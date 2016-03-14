@@ -130,10 +130,12 @@
     ]
   }
   {
-    'begin': '^\\s*#\\s*(error|warning)\\b'
+    'begin': '^\\s*#\\s*(error|warning)\\s+(.*?)(?:(?=(?://|/\\*))|$)'
     'captures':
       '1':
         'name': 'keyword.control.import.error.c'
+      '2':
+        'name': 'string.quoted.double.c'
     'end': '(?<!\\\\)(?=\\n)'
     'name': 'meta.preprocessor.diagnostic.c'
     'patterns': [
