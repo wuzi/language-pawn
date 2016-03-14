@@ -183,7 +183,7 @@
     'include': '#pragma-mark'
   }
   {
-    'begin': '^\\s*#\\s*(else|elseif|if|line)\\b'
+    'begin': '^\\s*#\\s*(assert|endinput|file|else|line|section)\\b'
     'captures':
       '1':
         'name': 'keyword.control.import.c'
