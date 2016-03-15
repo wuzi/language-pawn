@@ -364,7 +364,7 @@
       }
     ]
   'disabled':
-    'begin': '^\\s*#\\s*if\\s*(!?defined)?\\b.*$'
+    'begin': '^\\s*#\\s*(if|elseif)\\s*(!?defined)?\\b.*$'
     'comment': 'eat nested preprocessor if(def)s'
     'end': '^\\s*#\\s*endif\\b'
     'patterns': [
@@ -557,7 +557,7 @@
       }
     ]
   'preprocessor-rule-inline':
-    'begin': '^\\s*(#\\s*(elseif|pragma|undef)\\b\\s*([a-zA-Z0-9_]*)?(?:(?=(?://|/\\*))|$))'
+    'begin': '^\\s*(#\\s*(pragma|undef)\\b\\s*([a-zA-Z0-9_]*)?(?:(?=(?://|/\\*))|$))'
     'captures':
       '1':
         'name': 'meta.preprocessor.c'
@@ -572,13 +572,13 @@
       }
     ]
   'preprocessor-rule-other':
-    'begin': '^\\s*(#\\s*(if\\s*(!?defined)?)\\b\\s*([a-zA-Z0-9_]*)?(?:(?=(?://|/\\*))|$))'
+    'begin': '^\\s*(#\\s*((if|elseif)\\s*(!?defined)?)\\b\\s*([a-zA-Z0-9_]*)?(?:(?=(?://|/\\*))|$))'
     'captures':
       '1':
         'name': 'meta.preprocessor.c'
       '2':
         'name': 'keyword.control.import.c'
-      '4':
+      '5':
         'name': 'entity.name.function.preprocessor.c'
     'end': '^\\s*(#\\s*(endif)\\b)'
     'patterns': [
@@ -587,13 +587,13 @@
       }
     ]
   'preprocessor-rule-other-block':
-    'begin': '^\\s*(#\\s*(if\\s*(!?defined)?)\\b\\s*([a-zA-Z0-9_]*)?(?:(?=(?://|/\\*))|$))'
+    'begin': '^\\s*(#\\s*((if|elseif)\\s*(!?defined)?)\\b\\s*([a-zA-Z0-9_]*)?(?:(?=(?://|/\\*))|$))'
     'captures':
       '1':
         'name': 'meta.preprocessor.c'
       '2':
         'name': 'keyword.control.import.c'
-      '4':
+      '5':
         'name': 'entity.name.function.preprocessor.c'
     'end': '^\\s*(#\\s*(endif)\\b)'
     'patterns': [
