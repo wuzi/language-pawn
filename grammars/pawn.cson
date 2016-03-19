@@ -572,7 +572,7 @@
       }
     ]
   'preprocessor-rule-other':
-    'begin': '^\\s*(#\\s*((if|elseif)\\s*(!?defined)?)\\b\\s*([a-zA-Z0-9_]*)?(?:(?=(?://|/\\*))|$))'
+    'begin': '^\\s*(#\\s*((if|elseif)\\s*(!?defined)?)\\b\\s*(.*)?(?:(?=(?://|/\\*))|$))'
     'captures':
       '1':
         'name': 'meta.preprocessor.c'
@@ -587,7 +587,7 @@
       }
     ]
   'preprocessor-rule-other-block':
-    'begin': '^\\s*(#\\s*((if|elseif)\\s*(!?defined)?)\\b\\s*([a-zA-Z0-9_]*)?(?:(?=(?://|/\\*))|$))'
+    'begin': '^\\s*(#\\s*((if|elseif)\\s*(!?defined)?)\\b\\s*(.*)?(?:(?=(?://|/\\*))|$))'
     'captures':
       '1':
         'name': 'meta.preprocessor.c'
