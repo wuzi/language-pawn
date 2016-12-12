@@ -14,7 +14,7 @@
     'body': 'for(new ${1:i} = 0; ${1:i} < ${2:count}; ${1:i}${3:++})\n{\n\t${4:/* code */}\n}'
   'include guard':
     'prefix': 'incgrd'
-    'body': '#if !defined _INC_${1:SYMBOL}\n\t#endinput\n#endif\n#define _INC_$1'
+    'body': '#if defined _INC_${1:SYMBOL}\n\t#endinput\n#endif\n#define _INC_$1'
   'do while loop':
     'prefix': 'do'
     'body': 'do\n{\n\t${0:/* code */}\n} while(${1:/* condition */});'
