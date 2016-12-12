@@ -1,0 +1,71 @@
+# SIF.Craft.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'DefineItemCraftSet':
+    'prefix': 'DefineItemCraftSet'
+    'body': 'DefineItemCraftSet(${1:ItemType:result}, ${2:...})'
+
+  'GetCraftSetUniqueID':
+    'prefix': 'GetCraftSetUniqueID'
+    'body': 'GetCraftSetUniqueID(${1:craftset}, ${2:id[]}, ${3:maxlength = sizeof(id})'
+
+  'IsValidCraftSet':
+    'prefix': 'IsValidCraftSet'
+    'body': 'IsValidCraftSet(${1:craftset})'
+
+  'GetCraftSetIngredients':
+    'prefix': 'GetCraftSetIngredients'
+    'body': 'GetCraftSetIngredients(${1:craftset}, ${2:output[CFT_MAX_CRAFT_SET_ITEMS][e_craft_item_data]})'
+
+  'GetCraftSetItemType':
+    'prefix': 'GetCraftSetItemType'
+    'body': 'GetCraftSetItemType(${1:craftset}, ${2:index})'
+
+  'GetCraftSetItemKeep':
+    'prefix': 'GetCraftSetItemKeep'
+    'body': 'GetCraftSetItemKeep(${1:craftset}, ${2:index})'
+
+  'GetCraftSetItemCount':
+    'prefix': 'GetCraftSetItemCount'
+    'body': 'GetCraftSetItemCount(${1:craftset})'
+
+  'GetCraftSetResult':
+    'prefix': 'GetCraftSetResult'
+    'body': 'GetCraftSetResult(${1:craftset})'
+
+  'GetCraftSetTotal':
+    'prefix': 'GetCraftSetTotal'
+    'body': 'GetCraftSetTotal()'
+
+  'GetPlayerSelectedCraftItems':
+    'prefix': 'GetPlayerSelectedCraftItems'
+    'body': 'GetPlayerSelectedCraftItems(${1:playerid}, ${2:output[CFT_MAX_CRAFT_SET_ITEMS][e_selected_item_data]})'
+
+  'GetPlayerSelectedCraftItemType':
+    'prefix': 'GetPlayerSelectedCraftItemType'
+    'body': 'GetPlayerSelectedCraftItemType(${1:playerid}, ${2:index})'
+
+  'GetPlayerSelectedCraftItemID':
+    'prefix': 'GetPlayerSelectedCraftItemID'
+    'body': 'GetPlayerSelectedCraftItemID(${1:playerid}, ${2:index})'
+
+  'GetPlayerSelectedCraftItemCount':
+    'prefix': 'GetPlayerSelectedCraftItemCount'
+    'body': 'GetPlayerSelectedCraftItemCount(${1:playerid})'
+
+  'GetPlayerCraftEnvironment':
+    'prefix': 'GetPlayerCraftEnvironment'
+    'body': 'GetPlayerCraftEnvironment(${1:playerid})'
+
+  'ItemTypeResultForCraftingSet':
+    'prefix': 'ItemTypeResultForCraftingSet'
+    'body': 'ItemTypeResultForCraftingSet(${1:ItemType:itemtype})'
+
+  'OnPlayerCraft':
+    'prefix': 'OnPlayerCraft'
+    'body': 'OnPlayerCraft(${1:playerid}, ${2:craftset})'
+
+  'OnPlayerCrafted':
+    'prefix': 'OnPlayerCrafted'
+    'body': 'OnPlayerCrafted(${1:playerid}, ${2:craftset}, ${3:result})'

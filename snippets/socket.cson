@@ -1,0 +1,119 @@
+# Socket Plugin Atom Snippets from Sublime Text Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia.
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'socket_create':
+    'prefix': 'socket_create'
+    'body': 'socket_create(${1:pType:TCP})'
+
+  'socket_bind':
+    'prefix': 'socket_bind'
+    'body': 'socket_bind(${1:Socket:id}, ${2:ip[]})'
+
+  'socket_connect':
+    'prefix': 'socket_connect'
+    'body': 'socket_connect(${1:Socket:id}, ${2:host[]}, ${3:port})'
+
+  'socket_listen':
+    'prefix': 'socket_listen'
+    'body': 'socket_listen(${1:Socket:id}, ${2:port})'
+
+  'socket_stop_listen':
+    'prefix': 'socket_stop_listen'
+    'body': 'socket_stop_listen(${1:Socket:id})'
+
+  'socket_destroy':
+    'prefix': 'socket_destroy'
+    'body': 'socket_destroy(${1:Socket:id})'
+
+  'socket_send':
+    'prefix': 'socket_send'
+    'body': 'socket_send(${1:Socket:id}, ${2:data[]}, ${3:len})'
+
+  'socket_sendto':
+    'prefix': 'socket_sendto'
+    'body': 'socket_sendto(${1:Socket:id}, ${2:const ip[]}, ${3:port}, ${4:data[]}, ${5:len})'
+
+  'socket_send_array':
+    'prefix': 'socket_send_array'
+    'body': 'socket_send_array(${1:Socket:id}, ${2:data[]}, ${3:size=sizeof(data})'
+
+  'is_socket_valid':
+    'prefix': 'is_socket_valid'
+    'body': 'is_socket_valid(${1:Socket:id})'
+
+  'socket_set_max_connections':
+    'prefix': 'socket_set_max_connections'
+    'body': 'socket_set_max_connections(${1:Socket:id}, ${2:max_remote_clients})'
+
+  'socket_close_remote_client':
+    'prefix': 'socket_close_remote_client'
+    'body': 'socket_close_remote_client(${1:Socket:id}, ${2:remote_clientid})'
+
+  'socket_sendto_remote_client':
+    'prefix': 'socket_sendto_remote_client'
+    'body': 'socket_sendto_remote_client(${1:Socket:id}, ${2:remote_clientid}, ${3:data[]})'
+
+  'socket_remote_client_connected':
+    'prefix': 'socket_remote_client_connected'
+    'body': 'socket_remote_client_connected(${1:Socket:id}, ${2:remote_clientid})'
+
+  'get_remote_client_ip':
+    'prefix': 'get_remote_client_ip'
+    'body': 'get_remote_client_ip(${1:Socket:id}, ${2:remote_clientid}, ${3:ip[]})'
+
+  'ssl_init':
+    'prefix': 'ssl_init'
+    'body': 'ssl_init()'
+
+  'ssl_create_context':
+    'prefix': 'ssl_create_context'
+    'body': 'ssl_create_context(${1:Socket:id}, ${2:method})'
+
+  'ssl_connect':
+    'prefix': 'ssl_connect'
+    'body': 'ssl_connect(${1:Socket:id})'
+
+  'ssl_load_cert_into_context':
+    'prefix': 'ssl_load_cert_into_context'
+    'body': 'ssl_load_cert_into_context(${1:Socket:id}, ${2:const certificate[]}, ${3:const private_key[]})'
+
+  'ssl_shutdown':
+    'prefix': 'ssl_shutdown'
+    'body': 'ssl_shutdown(${1:Socket:id})'
+
+  'ssl_get_peer_certificate':
+    'prefix': 'ssl_get_peer_certificate'
+    'body': 'ssl_get_peer_certificate(${1:Socket:id}, ${2:method}, ${3:subject[]}, ${4:issuer[]}, ${5:remote_clientid = 0xFFFF})'
+
+  'ssl_set_accept_timeout':
+    'prefix': 'ssl_set_accept_timeout'
+    'body': 'ssl_set_accept_timeout(${1:Socket:id}, ${2:interval})'
+
+  'ssl_set_mode':
+    'prefix': 'ssl_set_mode'
+    'body': 'ssl_set_mode(${1:Socket:id}, ${2:mode})'
+
+  'onUDPReceiveData':
+    'prefix': 'onUDPReceiveData'
+    'body': 'onUDPReceiveData(${1:Socket:id}, ${2:data[]}, ${3:data_len}, ${4:remote_client_ip[]}, ${5:remote_client_port})'
+
+  'onSocketAnswer':
+    'prefix': 'onSocketAnswer'
+    'body': 'onSocketAnswer(${1:Socket:id}, ${2:data[]}, ${3:data_len})'
+
+  'onSocketClose':
+    'prefix': 'onSocketClose'
+    'body': 'onSocketClose(${1:Socket:id})'
+
+  'onSocketReceiveData':
+    'prefix': 'onSocketReceiveData'
+    'body': 'onSocketReceiveData(${1:Socket:id}, ${2:remote_clientid}, ${3:data[]}, ${4:data_len})'
+
+  'onSocketRemoteConnect':
+    'prefix': 'onSocketRemoteConnect'
+    'body': 'onSocketRemoteConnect(${1:Socket:id}, ${2:remote_client[]}, ${3:remote_clientid})'
+
+  'onSocketRemoteDisconnect':
+    'prefix': 'onSocketRemoteDisconnect'
+    'body': 'onSocketRemoteDisconnect(${1:Socket:id}, ${2:remote_clientid})'

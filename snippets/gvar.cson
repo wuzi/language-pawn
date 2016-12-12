@@ -1,0 +1,43 @@
+# GVar snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'SetGVarInt':
+    'prefix': 'SetGVarInt'
+    'body': 'SetGVarInt(${1:const name[]}, ${2:value}, ${3:id = 0})'
+
+  'GetGVarInt':
+    'prefix': 'GetGVarInt'
+    'body': 'GetGVarInt(${1:const name[]}, ${2:id = 0})'
+
+  'SetGVarString':
+    'prefix': 'SetGVarString'
+    'body': 'SetGVarString(${1:const name[]}, ${2:const value[]}, ${3:id = 0})'
+
+  'GetGVarString':
+    'prefix': 'GetGVarString'
+    'body': 'GetGVarString(${1:const name[]}, ${2:dest[]}, ${3:maxlength = sizeof dest}, ${4:id = 0})'
+
+  'SetGVarFloat':
+    'prefix': 'SetGVarFloat'
+    'body': 'SetGVarFloat(${1:const name[]}, ${2:Float:value}, ${3:id = 0})'
+
+  'GetGVarFloat':
+    'prefix': 'GetGVarFloat'
+    'body': 'GetGVarFloat(${1:const name[]}, ${2:id = 0})'
+
+  'DeleteGVar':
+    'prefix': 'DeleteGVar'
+    'body': 'DeleteGVar(${1:const name[]}, ${2:id = 0})'
+
+  'GetGVarsUpperIndex':
+    'prefix': 'GetGVarsUpperIndex'
+    'body': 'GetGVarsUpperIndex(${1:id = 0})'
+
+  'GetGVarNameAtIndex':
+    'prefix': 'GetGVarNameAtIndex'
+    'body': 'GetGVarNameAtIndex(${1:index}, ${2:dest[]}, ${3:maxlength = sizeof dest}, ${4:id = 0})'
+
+  'GetGVarType':
+    'prefix': 'GetGVarType'
+    'body': 'GetGVarType(${1:const name[]}, ${2:id = 0})'

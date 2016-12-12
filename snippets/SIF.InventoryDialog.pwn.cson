@@ -1,0 +1,71 @@
+# SIF.InventoryDialog.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'DisplayPlayerInventory':
+    'prefix': 'DisplayPlayerInventory'
+    'body': 'DisplayPlayerInventory(${1:playerid})'
+
+  'ClosePlayerInventory':
+    'prefix': 'ClosePlayerInventory'
+    'body': 'ClosePlayerInventory(${1:playerid}, ${2:call = false})'
+
+  'GetPlayerSelectedInventorySlot':
+    'prefix': 'GetPlayerSelectedInventorySlot'
+    'body': 'GetPlayerSelectedInventorySlot(${1:playerid})'
+
+  'AddInventoryListItem':
+    'prefix': 'AddInventoryListItem'
+    'body': 'AddInventoryListItem(${1:playerid}, ${2:itemname[]})'
+
+  'AddInventoryOption':
+    'prefix': 'AddInventoryOption'
+    'body': 'AddInventoryOption(${1:playerid}, ${2:option[]})'
+
+  'GetInventoryListItems':
+    'prefix': 'GetInventoryListItems'
+    'body': 'GetInventoryListItems(${1:playerid})'
+
+  'GetInventoryOptions':
+    'prefix': 'GetInventoryOptions'
+    'body': 'GetInventoryOptions(${1:playerid})'
+
+  'GetInventoryListItemCount':
+    'prefix': 'GetInventoryListItemCount'
+    'body': 'GetInventoryListItemCount(${1:playerid})'
+
+  'GetInventoryOptionCount':
+    'prefix': 'GetInventoryOptionCount'
+    'body': 'GetInventoryOptionCount(${1:playerid})'
+
+  'IsPlayerViewingInventory':
+    'prefix': 'IsPlayerViewingInventory'
+    'body': 'IsPlayerViewingInventory(${1:playerid})'
+
+  'OnPlayerOpenInventory':
+    'prefix': 'OnPlayerOpenInventory'
+    'body': 'OnPlayerOpenInventory(${1:playerid})'
+
+  'OnPlayerCloseInventory':
+    'prefix': 'OnPlayerCloseInventory'
+    'body': 'OnPlayerCloseInventory(${1:playerid})'
+
+  'OnPlayerSelectExtraItem':
+    'prefix': 'OnPlayerSelectExtraItem'
+    'body': 'OnPlayerSelectExtraItem(${1:playerid}, ${2:item})'
+
+  'OnPlayerRemoveFromInventory':
+    'prefix': 'OnPlayerRemoveFromInventory'
+    'body': 'OnPlayerRemoveFromInventory(${1:playerid}, ${2:slotid})'
+
+  'OnPlayerRemovedFromInventory':
+    'prefix': 'OnPlayerRemovedFromInventory'
+    'body': 'OnPlayerRemovedFromInventory(${1:playerid}, ${2:slotid})'
+
+  'OnPlayerViewInventoryOpt':
+    'prefix': 'OnPlayerViewInventoryOpt'
+    'body': 'OnPlayerViewInventoryOpt(${1:playerid})'
+
+  'OnPlayerSelectInventoryOpt':
+    'prefix': 'OnPlayerSelectInventoryOpt'
+    'body': 'OnPlayerSelectInventoryOpt(${1:playerid}, ${2:option})'

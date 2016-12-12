@@ -1,0 +1,71 @@
+# SIF.ItemList.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'ITM_LST_OF_ITEMS(%0)':
+    'prefix': 'ITM_LST_OF_ITEMS(%0)'
+    'body': 'ITM_LST_OF_ITEMS(${1:0})'
+
+  'CreateItemList':
+    'prefix': 'CreateItemList'
+    'body': 'CreateItemList(${1:items[]}, ${2:maxitems = sizeof(items})'
+
+  'ExtractItemList':
+    'prefix': 'ExtractItemList'
+    'body': 'ExtractItemList(${1:list[]}, ${2:length = sizeof(list})'
+
+  'DestroyItemList':
+    'prefix': 'DestroyItemList'
+    'body': 'DestroyItemList(${1:itemlist})'
+
+  'GetItemList':
+    'prefix': 'GetItemList'
+    'body': 'GetItemList(${1:itemlist}, ${2:output[]})'
+
+  'GetItemListSize':
+    'prefix': 'GetItemListSize'
+    'body': 'GetItemListSize(${1:itemlist})'
+
+  'GetItemListElement':
+    'prefix': 'GetItemListElement'
+    'body': 'GetItemListElement(${1:itemlist}, ${2:index})'
+
+  'GetItemListItemCount':
+    'prefix': 'GetItemListItemCount'
+    'body': 'GetItemListItemCount(${1:itemlist})'
+
+  'GetItemListItem':
+    'prefix': 'GetItemListItem'
+    'body': 'GetItemListItem(${1:itemlist}, ${2:index})'
+
+  'GetItemListItemPos':
+    'prefix': 'GetItemListItemPos'
+    'body': 'GetItemListItemPos(${1:itemlist}, ${2:index}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+
+  'GetItemListItemRot':
+    'prefix': 'GetItemListItemRot'
+    'body': 'GetItemListItemRot(${1:itemlist}, ${2:index}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+
+  'GetItemListItemWorld':
+    'prefix': 'GetItemListItemWorld'
+    'body': 'GetItemListItemWorld(${1:itemlist}, ${2:index})'
+
+  'GetItemListItemInterior':
+    'prefix': 'GetItemListItemInterior'
+    'body': 'GetItemListItemInterior(${1:itemlist}, ${2:index})'
+
+  'GetItemListItemArrayData':
+    'prefix': 'GetItemListItemArrayData'
+    'body': 'GetItemListItemArrayData(${1:itemlist}, ${2:index}, ${3:output[]})'
+
+  'GetItemListItemArrayDataSize':
+    'prefix': 'GetItemListItemArrayDataSize'
+    'body': 'GetItemListItemArrayDataSize(${1:itemlist}, ${2:index})'
+
+  'CreateItemFromListItem':
+    'prefix': 'CreateItemFromListItem'
+    'body': 'CreateItemFromListItem(${1:itemlist}, ${2:index})'
+
+  'SetItemArrayDataFromListItem':
+    'prefix': 'SetItemArrayDataFromListItem'
+    'body': 'SetItemArrayDataFromListItem(${1:itemid}, ${2:itemlist}, ${3:index})'

@@ -1,0 +1,43 @@
+# SIF.Debug.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'sif_debug_register_handler':
+    'prefix': 'sif_debug_register_handler'
+    'body': 'sif_debug_register_handler(${1:name[]}, ${2:initstate = 0})'
+
+  'sif_debug_level':
+    'prefix': 'sif_debug_level'
+    'body': 'sif_debug_level(${1:handler}, ${2:level})'
+
+  'sif_debug_plevel':
+    'prefix': 'sif_debug_plevel'
+    'body': 'sif_debug_plevel(${1:playerid}, ${2:handler}, ${3:level})'
+
+  'sif_debug_print':
+    'prefix': 'sif_debug_print'
+    'body': 'sif_debug_print(${1:handler}, ${2:level}, ${3:playerid}, ${4:msg[]})'
+
+  'sif_debug_printf':
+    'prefix': 'sif_debug_printf'
+    'body': 'sif_debug_printf(${1:handler}, ${2:level}, ${3:playerid}, ${4:string[]}, ${5:va_args<>})'
+
+  'sif_debug_handler_search':
+    'prefix': 'sif_debug_handler_search'
+    'body': 'sif_debug_handler_search(${1:name[]})'
+
+  'sif_debug_get_handler_name':
+    'prefix': 'sif_debug_get_handler_name'
+    'body': 'sif_debug_get_handler_name(${1:handler}, ${2:output[]})'
+
+  'SIF_IS_VALID_HANDLER(%0)':
+    'prefix': 'SIF_IS_VALID_HANDLER(%0)'
+    'body': 'SIF_IS_VALID_HANDLER(${1:0})'
+
+  'sif_dp:%0:%1(%2)<%3>':
+    'prefix': 'sif_dp:%0:%1(%2)<%3>'
+    'body': 'sif_dp:${1:0}:${2:1}(${3:2})<${4:3}>'
+
+  'sif_d:%0:%1(%2)':
+    'prefix': 'sif_d:%0:%1(%2)'
+    'body': 'sif_d:${1:0}:${2:1}(${3:2})'

@@ -1,0 +1,27 @@
+# crashdetect snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'PrintAmxBacktrace':
+    'prefix': 'PrintAmxBacktrace'
+    'body': 'PrintAmxBacktrace()'
+
+  'PrintNativeBacktrace':
+    'prefix': 'PrintNativeBacktrace'
+    'body': 'PrintNativeBacktrace()'
+
+  'GetAmxBacktrace':
+    'prefix': 'GetAmxBacktrace'
+    'body': 'GetAmxBacktrace(${1:string[]}, ${2:size = sizeof(string})'
+
+  'GetNativeBacktrace':
+    'prefix': 'GetNativeBacktrace'
+    'body': 'GetNativeBacktrace(${1:string[]}, ${2:size = sizeof(string})'
+
+  'OnRuntimeError':
+    'prefix': 'OnRuntimeError'
+    'body': 'OnRuntimeError(${1:code}, ${2:bool:suppress})'
+
+  'IsCrashDetectPresent':
+    'prefix': 'IsCrashDetectPresent'
+    'body': 'IsCrashDetectPresent()'

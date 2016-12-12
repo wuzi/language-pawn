@@ -1,0 +1,203 @@
+# IRC Plugin Atom Snippets from Sublime Text Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia.
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'IRC_Connect':
+    'prefix': 'IRC_Connect'
+    'body': 'IRC_Connect(${1:const server[]}, ${2:port}, ${3:const nickname[]}, ${4:const realname[]}, ${5:const username[]}, ${6:bool:ssl = false}, ${7:const localip[] = \"\"}, ${8:const serverpassword[] = \"\"})'
+
+  'IRC_Quit':
+    'prefix': 'IRC_Quit'
+    'body': 'IRC_Quit(${1:botid}, ${2:const message[] = \"\"})'
+
+  'IRC_JoinChannel':
+    'prefix': 'IRC_JoinChannel'
+    'body': 'IRC_JoinChannel(${1:botid}, ${2:const channel[]}, ${3:const key[] = \"\"})'
+
+  'IRC_PartChannel':
+    'prefix': 'IRC_PartChannel'
+    'body': 'IRC_PartChannel(${1:botid}, ${2:const channel[]}, ${3:const message[] = \"\"})'
+
+  'IRC_ChangeNick':
+    'prefix': 'IRC_ChangeNick'
+    'body': 'IRC_ChangeNick(${1:botid}, ${2:const nick[]})'
+
+  'IRC_SetMode':
+    'prefix': 'IRC_SetMode'
+    'body': 'IRC_SetMode(${1:botid}, ${2:const target[]}, ${3:const mode[]})'
+
+  'IRC_Say':
+    'prefix': 'IRC_Say'
+    'body': 'IRC_Say(${1:botid}, ${2:const target[]}, ${3:const message[]})'
+
+  'IRC_Notice':
+    'prefix': 'IRC_Notice'
+    'body': 'IRC_Notice(${1:botid}, ${2:const target[]}, ${3:const message[]})'
+
+  'IRC_IsUserOnChannel':
+    'prefix': 'IRC_IsUserOnChannel'
+    'body': 'IRC_IsUserOnChannel(${1:botid}, ${2:const channel[]}, ${3:const user[]})'
+
+  'IRC_InviteUser':
+    'prefix': 'IRC_InviteUser'
+    'body': 'IRC_InviteUser(${1:botid}, ${2:const channel[]}, ${3:const user[]})'
+
+  'IRC_KickUser':
+    'prefix': 'IRC_KickUser'
+    'body': 'IRC_KickUser(${1:botid}, ${2:const channel[]}, ${3:const user[]}, ${4:const message[] = \"\"})'
+
+  'IRC_GetUserChannelMode':
+    'prefix': 'IRC_GetUserChannelMode'
+    'body': 'IRC_GetUserChannelMode(${1:botid}, ${2:const channel[]}, ${3:const user[]}, ${4:dest[]})'
+
+  'IRC_GetChannelUserList':
+    'prefix': 'IRC_GetChannelUserList'
+    'body': 'IRC_GetChannelUserList(${1:botid}, ${2:const channel[]}, ${3:dest[]}, ${4:maxlength = sizeof dest})'
+
+  'IRC_SetChannelTopic':
+    'prefix': 'IRC_SetChannelTopic'
+    'body': 'IRC_SetChannelTopic(${1:botid}, ${2:const channel[]}, ${3:const topic[]})'
+
+  'IRC_RequestCTCP':
+    'prefix': 'IRC_RequestCTCP'
+    'body': 'IRC_RequestCTCP(${1:botid}, ${2:const user[]}, ${3:const message[]})'
+
+  'IRC_ReplyCTCP':
+    'prefix': 'IRC_ReplyCTCP'
+    'body': 'IRC_ReplyCTCP(${1:botid}, ${2:const user[]}, ${3:const message[]})'
+
+  'IRC_SendRaw':
+    'prefix': 'IRC_SendRaw'
+    'body': 'IRC_SendRaw(${1:botid}, ${2:const message[]})'
+
+  'IRC_CreateGroup':
+    'prefix': 'IRC_CreateGroup'
+    'body': 'IRC_CreateGroup()'
+
+  'IRC_DestroyGroup':
+    'prefix': 'IRC_DestroyGroup'
+    'body': 'IRC_DestroyGroup(${1:groupid})'
+
+  'IRC_AddToGroup':
+    'prefix': 'IRC_AddToGroup'
+    'body': 'IRC_AddToGroup(${1:groupid}, ${2:botid})'
+
+  'IRC_RemoveFromGroup':
+    'prefix': 'IRC_RemoveFromGroup'
+    'body': 'IRC_RemoveFromGroup(${1:groupid}, ${2:botid})'
+
+  'IRC_GroupSay':
+    'prefix': 'IRC_GroupSay'
+    'body': 'IRC_GroupSay(${1:groupid}, ${2:const target[]}, ${3:const message[]})'
+
+  'IRC_GroupNotice':
+    'prefix': 'IRC_GroupNotice'
+    'body': 'IRC_GroupNotice(${1:groupid}, ${2:const target[]}, ${3:const message[]})'
+
+  'IRC_SetIntData':
+    'prefix': 'IRC_SetIntData'
+    'body': 'IRC_SetIntData(${1:botid}, ${2:data}, ${3:value})'
+
+  'IRC_OnConnect':
+    'prefix': 'IRC_OnConnect'
+    'body': 'IRC_OnConnect(${1:botid}, ${2:ip[]}, ${3:port})'
+
+  'IRC_OnDisconnect':
+    'prefix': 'IRC_OnDisconnect'
+    'body': 'IRC_OnDisconnect(${1:botid}, ${2:ip[]}, ${3:port}, ${4:reason[]})'
+
+  'IRC_OnConnectAttempt':
+    'prefix': 'IRC_OnConnectAttempt'
+    'body': 'IRC_OnConnectAttempt(${1:botid}, ${2:ip[]}, ${3:port})'
+
+  'IRC_OnConnectAttemptFail':
+    'prefix': 'IRC_OnConnectAttemptFail'
+    'body': 'IRC_OnConnectAttemptFail(${1:botid}, ${2:ip[]}, ${3:port}, ${4:reason[]})'
+
+  'IRC_OnJoinChannel':
+    'prefix': 'IRC_OnJoinChannel'
+    'body': 'IRC_OnJoinChannel(${1:botid}, ${2:channel[]})'
+
+  'IRC_OnLeaveChannel':
+    'prefix': 'IRC_OnLeaveChannel'
+    'body': 'IRC_OnLeaveChannel(${1:botid}, ${2:channel[]}, ${3:message[]})'
+
+  'IRC_OnInvitedToChannel':
+    'prefix': 'IRC_OnInvitedToChannel'
+    'body': 'IRC_OnInvitedToChannel(${1:botid}, ${2:channel[]}, ${3:invitinguser[]}, ${4:invitinghost[]})'
+
+  'IRC_OnKickedFromChannel':
+    'prefix': 'IRC_OnKickedFromChannel'
+    'body': 'IRC_OnKickedFromChannel(${1:botid}, ${2:channel[]}, ${3:oppeduser[]}, ${4:oppedhost[]}, ${5:message[]})'
+
+  'IRC_OnUserDisconnect':
+    'prefix': 'IRC_OnUserDisconnect'
+    'body': 'IRC_OnUserDisconnect(${1:botid}, ${2:user[]}, ${3:host[]}, ${4:message[]})'
+
+  'IRC_OnUserJoinChannel':
+    'prefix': 'IRC_OnUserJoinChannel'
+    'body': 'IRC_OnUserJoinChannel(${1:botid}, ${2:channel[]}, ${3:user[]}, ${4:host[]})'
+
+  'IRC_OnUserLeaveChannel':
+    'prefix': 'IRC_OnUserLeaveChannel'
+    'body': 'IRC_OnUserLeaveChannel(${1:botid}, ${2:channel[]}, ${3:user[]}, ${4:host[]}, ${5:message[]})'
+
+  'IRC_OnUserKickedFromChannel':
+    'prefix': 'IRC_OnUserKickedFromChannel'
+    'body': 'IRC_OnUserKickedFromChannel(${1:botid}, ${2:channel[]}, ${3:kickeduser[]}, ${4:oppeduser[]}, ${5:oppedhost[]}, ${6:message[]})'
+
+  'IRC_OnUserNickChange':
+    'prefix': 'IRC_OnUserNickChange'
+    'body': 'IRC_OnUserNickChange(${1:botid}, ${2:oldnick[]}, ${3:newnick[]}, ${4:host[]})'
+
+  'IRC_OnUserSetChannelMode':
+    'prefix': 'IRC_OnUserSetChannelMode'
+    'body': 'IRC_OnUserSetChannelMode(${1:botid}, ${2:channel[]}, ${3:user[]}, ${4:host[]}, ${5:mode[]})'
+
+  'IRC_OnUserSetChannelTopic':
+    'prefix': 'IRC_OnUserSetChannelTopic'
+    'body': 'IRC_OnUserSetChannelTopic(${1:botid}, ${2:channel[]}, ${3:user[]}, ${4:host[]}, ${5:topic[]})'
+
+  'IRC_OnUserSay':
+    'prefix': 'IRC_OnUserSay'
+    'body': 'IRC_OnUserSay(${1:botid}, ${2:recipient[]}, ${3:user[]}, ${4:host[]}, ${5:message[]})'
+
+  'IRC_OnUserNotice':
+    'prefix': 'IRC_OnUserNotice'
+    'body': 'IRC_OnUserNotice(${1:botid}, ${2:recipient[]}, ${3:user[]}, ${4:host[]}, ${5:message[]})'
+
+  'IRC_OnUserRequestCTCP':
+    'prefix': 'IRC_OnUserRequestCTCP'
+    'body': 'IRC_OnUserRequestCTCP(${1:botid}, ${2:user[]}, ${3:host[]}, ${4:message[]})'
+
+  'IRC_OnUserReplyCTCP':
+    'prefix': 'IRC_OnUserReplyCTCP'
+    'body': 'IRC_OnUserReplyCTCP(${1:botid}, ${2:user[]}, ${3:host[]}, ${4:message[]})'
+
+  'IRC_OnReceiveNumeric':
+    'prefix': 'IRC_OnReceiveNumeric'
+    'body': 'IRC_OnReceiveNumeric(${1:botid}, ${2:numeric}, ${3:message[]})'
+
+  'IRC_OnReceiveRaw':
+    'prefix': 'IRC_OnReceiveRaw'
+    'body': 'IRC_OnReceiveRaw(${1:botid}, ${2:message[]})'
+
+  'IRC_IsVoice':
+    'prefix': 'IRC_IsVoice'
+    'body': 'IRC_IsVoice(${1:botid}, ${2:channel[]}, ${3:user[]})'
+
+  'IRC_IsHalfop':
+    'prefix': 'IRC_IsHalfop'
+    'body': 'IRC_IsHalfop(${1:botid}, ${2:channel[]}, ${3:user[]})'
+
+  'IRC_IsOp':
+    'prefix': 'IRC_IsOp'
+    'body': 'IRC_IsOp(${1:botid}, ${2:channel[]}, ${3:user[]})'
+
+  'IRC_IsAdmin':
+    'prefix': 'IRC_IsAdmin'
+    'body': 'IRC_IsAdmin(${1:botid}, ${2:channel[]}, ${3:user[]})'
+
+  'IRC_IsOwner':
+    'prefix': 'IRC_IsOwner'
+    'body': 'IRC_IsOwner(${1:botid}, ${2:channel[]}, ${3:user[]})'

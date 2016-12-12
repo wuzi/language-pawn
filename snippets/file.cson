@@ -1,0 +1,59 @@
+# Atom Snippets from Sublime Text Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia.
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'fopen':
+    'prefix': 'fopen'
+    'body': 'fopen(${1:const name[]}, ${2:filemode: mode = io_readwrite})'
+
+  'fclose':
+    'prefix': 'fclose'
+    'body': 'fclose(${1:File: handle})'
+
+  'ftemp':
+    'prefix': 'ftemp'
+    'body': 'ftemp()'
+
+  'fremove':
+    'prefix': 'fremove'
+    'body': 'fremove(${1:const name[]})'
+
+  'fwrite':
+    'prefix': 'fwrite'
+    'body': 'fwrite(${1:File: handle}, ${2:const string[]})'
+
+  'fread':
+    'prefix': 'fread'
+    'body': 'fread(${1:File: handle}, ${2:string[]}, ${3:size = sizeof string}, ${4:bool: pack = false})'
+
+  'fputchar':
+    'prefix': 'fputchar'
+    'body': 'fputchar(${1:File: handle}, ${2:value}, ${3:bool: utf8 = true})'
+
+  'fgetchar':
+    'prefix': 'fgetchar'
+    'body': 'fgetchar(${1:File: handle}, ${2:value}, ${3:bool: utf8 = true})'
+
+  'fblockwrite':
+    'prefix': 'fblockwrite'
+    'body': 'fblockwrite(${1:File: handle}, ${2:const buffer[]}, ${3:size = sizeof buffer})'
+
+  'fblockread':
+    'prefix': 'fblockread'
+    'body': 'fblockread(${1:File: handle}, ${2:buffer[]}, ${3:size = sizeof buffer})'
+
+  'fseek':
+    'prefix': 'fseek'
+    'body': 'fseek(${1:File: handle}, ${2:position = 0}, ${3:seek_whence: whence = seek_start})'
+
+  'flength':
+    'prefix': 'flength'
+    'body': 'flength(${1:File: handle})'
+
+  'fexist':
+    'prefix': 'fexist'
+    'body': 'fexist(${1:const pattern[]})'
+
+  'fmatch':
+    'prefix': 'fmatch'
+    'body': 'fmatch(${1:name[]}, ${2:const pattern[]}, ${3:index = 0}, ${4:size = sizeof name})'

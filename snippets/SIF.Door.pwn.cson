@@ -1,0 +1,119 @@
+# SIF.Door.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'CreateDoor':
+    'prefix': 'CreateDoor'
+    'body': 'CreateDoor(${1:model}, ${2:buttonids[]}, ${3:Float:px}, ${4:Float:py}, ${5:Float:pz}, ${6:Float:rx}, ${7:Float:ry}, ${8:Float:rz}, ${9:Float:mpx}, ${10:Float:mpy}, ${11:Float:mpz}, ${12:Float:mrx}, ${13:Float:mry}, ${14:Float:mrz}, ${15:Float:movespeed = 1.0}, ${16:closedelay = 3000}, ${17:maxbuttons = sizeof(buttonids})'
+
+  'DestroyDoor':
+    'prefix': 'DestroyDoor'
+    'body': 'DestroyDoor(${1:doorid})'
+
+  'OpenDoor':
+    'prefix': 'OpenDoor'
+    'body': 'OpenDoor(${1:doorid})'
+
+  'CloseDoor':
+    'prefix': 'CloseDoor'
+    'body': 'CloseDoor(${1:doorid})'
+
+  'IsValidDOor':
+    'prefix': 'IsValidDOor'
+    'body': 'IsValidDOor(${1:doorid})'
+
+  'GetDoorObjectID':
+    'prefix': 'GetDoorObjectID'
+    'body': 'GetDoorObjectID(${1:doorid})'
+
+  'GetDoorModel':
+    'prefix': 'GetDoorModel'
+    'body': 'GetDoorModel(${1:doorid})'
+
+  'SetDoorModel':
+    'prefix': 'SetDoorModel'
+    'body': 'SetDoorModel(${1:doorid}, ${2:model})'
+
+  'GetDoorButton':
+    'prefix': 'GetDoorButton'
+    'body': 'GetDoorButton(${1:doorid}, ${2:slot})'
+
+  'GetDoorButtonCount':
+    'prefix': 'GetDoorButtonCount'
+    'body': 'GetDoorButtonCount(${1:doorid})'
+
+  'GetDoorCloseDelay':
+    'prefix': 'GetDoorCloseDelay'
+    'body': 'GetDoorCloseDelay(${1:doorid})'
+
+  'SetDoorCloseDelay':
+    'prefix': 'SetDoorCloseDelay'
+    'body': 'SetDoorCloseDelay(${1:doorid}, ${2:closedelay})'
+
+  'GetDoorMoveSpeed':
+    'prefix': 'GetDoorMoveSpeed'
+    'body': 'GetDoorMoveSpeed(${1:doorid})'
+
+  'SetDoorMoveSpeed':
+    'prefix': 'SetDoorMoveSpeed'
+    'body': 'SetDoorMoveSpeed(${1:doorid}, ${2:Float:movespeed})'
+
+  'GetDoorMoveSound':
+    'prefix': 'GetDoorMoveSound'
+    'body': 'GetDoorMoveSound(${1:doorid})'
+
+  'SetDoorMoveSound':
+    'prefix': 'SetDoorMoveSound'
+    'body': 'SetDoorMoveSound(${1:doorid}, ${2:movesound})'
+
+  'GetDoorStopSound':
+    'prefix': 'GetDoorStopSound'
+    'body': 'GetDoorStopSound(${1:doorid})'
+
+  'SetDoorStopSound':
+    'prefix': 'SetDoorStopSound'
+    'body': 'SetDoorStopSound(${1:doorid}, ${2:stopsound})'
+
+  'GetDoorPos':
+    'prefix': 'GetDoorPos'
+    'body': 'GetDoorPos(${1:doorid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'SetDoorPos':
+    'prefix': 'SetDoorPos'
+    'body': 'SetDoorPos(${1:doorid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'GetDoorRot':
+    'prefix': 'GetDoorRot'
+    'body': 'GetDoorRot(${1:doorid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
+
+  'SetDoorRot':
+    'prefix': 'SetDoorRot'
+    'body': 'SetDoorRot(${1:doorid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
+
+  'GetDoorMovePos':
+    'prefix': 'GetDoorMovePos'
+    'body': 'GetDoorMovePos(${1:doorid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'SetDoorMovePos':
+    'prefix': 'SetDoorMovePos'
+    'body': 'SetDoorMovePos(${1:doorid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'GetDoorMoveRot':
+    'prefix': 'GetDoorMoveRot'
+    'body': 'GetDoorMoveRot(${1:doorid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
+
+  'SetDoorMoveRot':
+    'prefix': 'SetDoorMoveRot'
+    'body': 'SetDoorMoveRot(${1:doorid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
+
+  'GetDoorState':
+    'prefix': 'GetDoorState'
+    'body': 'GetDoorState(${1:doorid})'
+
+  'OnPlayerActivateDoor':
+    'prefix': 'OnPlayerActivateDoor'
+    'body': 'OnPlayerActivateDoor(${1:playerid}, ${2:doorid}, ${3:newstate})'
+
+  'OnDoorStateChange':
+    'prefix': 'OnDoorStateChange'
+    'body': 'OnDoorStateChange(${1:doorid}, ${2:doorstate})'

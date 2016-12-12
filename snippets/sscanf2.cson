@@ -1,0 +1,11 @@
+# sscanf2 snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'sscanf':
+    'prefix': 'sscanf'
+    'body': 'sscanf(${1:const data[]}, ${2:const format[]}, ${3:...})'
+
+  'unformat':
+    'prefix': 'unformat'
+    'body': 'unformat(${1:const data[]}, ${2:const format[]}, ${3:...})'

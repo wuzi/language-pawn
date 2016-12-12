@@ -1,0 +1,55 @@
+# SIF.Core.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'IsPlayerInPlayerArea':
+    'prefix': 'IsPlayerInPlayerArea'
+    'body': 'IsPlayerInPlayerArea(${1:playerid}, ${2:targetid})'
+
+  'ShowActionText':
+    'prefix': 'ShowActionText'
+    'body': 'ShowActionText(${1:playerid}, ${2:message[]}, ${3:time=0}, ${4:width=200})'
+
+  'HideActionText':
+    'prefix': 'HideActionText'
+    'body': 'HideActionText(${1:playerid})'
+
+  'IsPlayerViewingActionText':
+    'prefix': 'IsPlayerViewingActionText'
+    'body': 'IsPlayerViewingActionText(${1:playerid})'
+
+  'sif_absoluteangle':
+    'prefix': 'sif_absoluteangle'
+    'body': 'sif_absoluteangle(${1:Float:angle})'
+
+  'sif_GetAngleToPoint':
+    'prefix': 'sif_GetAngleToPoint'
+    'body': 'sif_GetAngleToPoint(${1:Float:fPointX}, ${2:Float:fPointY}, ${3:Float:fDestX}, ${4:Float:fDestY})'
+
+  'sif_Distance':
+    'prefix': 'sif_Distance'
+    'body': 'sif_Distance(${1:Float:x1}, ${2:Float:y1}, ${3:Float:z1}, ${4:Float:x2}, ${5:Float:y2}, ${6:Float:z2})'
+
+  'sif_IsIdleAnim':
+    'prefix': 'sif_IsIdleAnim'
+    'body': 'sif_IsIdleAnim(${1:animidx})'
+
+  'sif_abs':
+    'prefix': 'sif_abs'
+    'body': 'sif_abs(${1:int})'
+
+  'sif_intdiffabs':
+    'prefix': 'sif_intdiffabs'
+    'body': 'sif_intdiffabs(${1:tick1}, ${2:tick2})'
+
+  'sif_GetTickCountDiff':
+    'prefix': 'sif_GetTickCountDiff'
+    'body': 'sif_GetTickCountDiff(${1:a}, ${2:b})'
+
+  'OnPlayerEnterPlayerArea':
+    'prefix': 'OnPlayerEnterPlayerArea'
+    'body': 'OnPlayerEnterPlayerArea(${1:playerid}, ${2:targetid})'
+
+  'OnPlayerLeavePlayerArea':
+    'prefix': 'OnPlayerLeavePlayerArea'
+    'body': 'OnPlayerLeavePlayerArea(${1:playerid}, ${2:targetid})'
