@@ -1,0 +1,659 @@
+# Incognito's Streamer snippets for Atom converted from Sublime Completions
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'Streamer_GetTickRate':
+    'prefix': 'Streamer_GetTickRate'
+    'body': 'Streamer_GetTickRate()'
+
+  'Streamer_SetTickRate':
+    'prefix': 'Streamer_SetTickRate'
+    'body': 'Streamer_SetTickRate(${1:rate})'
+
+  'Streamer_GetMaxItems':
+    'prefix': 'Streamer_GetMaxItems'
+    'body': 'Streamer_GetMaxItems(${1:type})'
+
+  'Streamer_SetMaxItems':
+    'prefix': 'Streamer_SetMaxItems'
+    'body': 'Streamer_SetMaxItems(${1:type}, ${2:items})'
+
+  'Streamer_GetVisibleItems':
+    'prefix': 'Streamer_GetVisibleItems'
+    'body': 'Streamer_GetVisibleItems(${1:type}, ${2:playerid = -1})'
+
+  'Streamer_SetVisibleItems':
+    'prefix': 'Streamer_SetVisibleItems'
+    'body': 'Streamer_SetVisibleItems(${1:type}, ${2:items}, ${3:playerid = -1})'
+
+  'Streamer_GetRadiusMultiplier':
+    'prefix': 'Streamer_GetRadiusMultiplier'
+    'body': 'Streamer_GetRadiusMultiplier(${1:type}, ${2:Float:multiplier}, ${3:playerid = -1})'
+
+  'Streamer_SetRadiusMultiplier':
+    'prefix': 'Streamer_SetRadiusMultiplier'
+    'body': 'Streamer_SetRadiusMultiplier(${1:type}, ${2:Float:multiplier}, ${3:playerid = -1})'
+
+  'Streamer_GetTypePriority':
+    'prefix': 'Streamer_GetTypePriority'
+    'body': 'Streamer_GetTypePriority(${1:types[]}, ${2:maxtypes = sizeof types})'
+
+  'Streamer_SetTypePriority':
+    'prefix': 'Streamer_SetTypePriority'
+    'body': 'Streamer_SetTypePriority(${1:const types[]}, ${2:maxtypes = sizeof types})'
+
+  'Streamer_GetCellDistance':
+    'prefix': 'Streamer_GetCellDistance'
+    'body': 'Streamer_GetCellDistance(${1:Float:distance})'
+
+  'Streamer_SetCellDistance':
+    'prefix': 'Streamer_SetCellDistance'
+    'body': 'Streamer_SetCellDistance(${1:Float:distance})'
+
+  'Streamer_GetCellSize':
+    'prefix': 'Streamer_GetCellSize'
+    'body': 'Streamer_GetCellSize(${1:Float:size})'
+
+  'Streamer_SetCellSize':
+    'prefix': 'Streamer_SetCellSize'
+    'body': 'Streamer_SetCellSize(${1:Float:size})'
+
+  'Streamer_ToggleErrorCallback':
+    'prefix': 'Streamer_ToggleErrorCallback'
+    'body': 'Streamer_ToggleErrorCallback(${1:toggle})'
+
+  'Streamer_IsToggleErrorCallback':
+    'prefix': 'Streamer_IsToggleErrorCallback'
+    'body': 'Streamer_IsToggleErrorCallback()'
+
+  'Streamer_ProcessActiveItems':
+    'prefix': 'Streamer_ProcessActiveItems'
+    'body': 'Streamer_ProcessActiveItems()'
+
+  'Streamer_ToggleIdleUpdate':
+    'prefix': 'Streamer_ToggleIdleUpdate'
+    'body': 'Streamer_ToggleIdleUpdate(${1:playerid}, ${2:toggle})'
+
+  'Streamer_IsToggleIdleUpdate':
+    'prefix': 'Streamer_IsToggleIdleUpdate'
+    'body': 'Streamer_IsToggleIdleUpdate(${1:playerid})'
+
+  'Streamer_ToggleCameraUpdate':
+    'prefix': 'Streamer_ToggleCameraUpdate'
+    'body': 'Streamer_ToggleCameraUpdate(${1:playerid}, ${2:toggle})'
+
+  'Streamer_IsToggleCameraUpdate':
+    'prefix': 'Streamer_IsToggleCameraUpdate'
+    'body': 'Streamer_IsToggleCameraUpdate(${1:playerid})'
+
+  'Streamer_ToggleItemUpdate':
+    'prefix': 'Streamer_ToggleItemUpdate'
+    'body': 'Streamer_ToggleItemUpdate(${1:playerid}, ${2:type}, ${3:toggle})'
+
+  'Streamer_IsToggleItemUpdate':
+    'prefix': 'Streamer_IsToggleItemUpdate'
+    'body': 'Streamer_IsToggleItemUpdate(${1:playerid}, ${2:type})'
+
+  'Streamer_Update':
+    'prefix': 'Streamer_Update'
+    'body': 'Streamer_Update(${1:playerid}, ${2:type = -1})'
+
+  'Streamer_UpdateEx':
+    'prefix': 'Streamer_UpdateEx'
+    'body': 'Streamer_UpdateEx(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:type = -1})'
+
+  'Streamer_GetFloatData':
+    'prefix': 'Streamer_GetFloatData'
+    'body': 'Streamer_GetFloatData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:Float:result})'
+
+  'Streamer_SetFloatData':
+    'prefix': 'Streamer_SetFloatData'
+    'body': 'Streamer_SetFloatData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:Float:value})'
+
+  'Streamer_GetIntData':
+    'prefix': 'Streamer_GetIntData'
+    'body': 'Streamer_GetIntData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data})'
+
+  'Streamer_SetIntData':
+    'prefix': 'Streamer_SetIntData'
+    'body': 'Streamer_SetIntData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:value})'
+
+  'Streamer_GetArrayData':
+    'prefix': 'Streamer_GetArrayData'
+    'body': 'Streamer_GetArrayData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:dest[]}, ${5:maxdest = sizeof dest})'
+
+  'Streamer_SetArrayData':
+    'prefix': 'Streamer_SetArrayData'
+    'body': 'Streamer_SetArrayData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:const src[]}, ${5:maxsrc = sizeof src})'
+
+  'Streamer_IsInArrayData':
+    'prefix': 'Streamer_IsInArrayData'
+    'body': 'Streamer_IsInArrayData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:value})'
+
+  'Streamer_AppendArrayData':
+    'prefix': 'Streamer_AppendArrayData'
+    'body': 'Streamer_AppendArrayData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:value})'
+
+  'Streamer_RemoveArrayData':
+    'prefix': 'Streamer_RemoveArrayData'
+    'body': 'Streamer_RemoveArrayData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:value})'
+
+  'Streamer_GetUpperBound':
+    'prefix': 'Streamer_GetUpperBound'
+    'body': 'Streamer_GetUpperBound(${1:type})'
+
+  'Streamer_GetDistanceToItem':
+    'prefix': 'Streamer_GetDistanceToItem'
+    'body': 'Streamer_GetDistanceToItem(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:STREAMER_ALL_TAGS id}, ${6:Float:distance}, ${7:dimensions = 3})'
+
+  'Streamer_ToggleStaticItem':
+    'prefix': 'Streamer_ToggleStaticItem'
+    'body': 'Streamer_ToggleStaticItem(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:toggle})'
+
+  'Streamer_IsToggleStaticItem':
+    'prefix': 'Streamer_IsToggleStaticItem'
+    'body': 'Streamer_IsToggleStaticItem(${1:type}, ${2:STREAMER_ALL_TAGS id})'
+
+  'Streamer_GetItemInternalID':
+    'prefix': 'Streamer_GetItemInternalID'
+    'body': 'Streamer_GetItemInternalID(${1:playerid}, ${2:type}, ${3:STREAMER_ALL_TAGS streamerid})'
+
+  'Streamer_GetItemStreamerID':
+    'prefix': 'Streamer_GetItemStreamerID'
+    'body': 'Streamer_GetItemStreamerID(${1:playerid}, ${2:type}, ${3:internalid})'
+
+  'Streamer_IsItemVisible':
+    'prefix': 'Streamer_IsItemVisible'
+    'body': 'Streamer_IsItemVisible(${1:playerid}, ${2:type}, ${3:STREAMER_ALL_TAGS id})'
+
+  'Streamer_DestroyAllVisibleItems':
+    'prefix': 'Streamer_DestroyAllVisibleItems'
+    'body': 'Streamer_DestroyAllVisibleItems(${1:playerid}, ${2:type}, ${3:serverwide = 1})'
+
+  'Streamer_CountVisibleItems':
+    'prefix': 'Streamer_CountVisibleItems'
+    'body': 'Streamer_CountVisibleItems(${1:playerid}, ${2:type}, ${3:serverwide = 1})'
+
+  'Streamer_DestroyAllItems':
+    'prefix': 'Streamer_DestroyAllItems'
+    'body': 'Streamer_DestroyAllItems(${1:type}, ${2:serverwide = 1})'
+
+  'Streamer_CountItems':
+    'prefix': 'Streamer_CountItems'
+    'body': 'Streamer_CountItems(${1:type}, ${2:serverwide = 1})'
+
+  'CreateDynamicObject':
+    'prefix': 'CreateDynamicObject'
+    'body': 'CreateDynamicObject(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:worldid = -1}, ${9:interiorid = -1}, ${10:playerid = -1}, ${11:Float:streamdistance = STREAMER_OBJECT_SD}, ${12:Float:drawdistance = STREAMER_OBJECT_DD}, ${13:STREAMER_TAG_AREA areaid = STREAMER_TAG_AREA -1})'
+
+  'DestroyDynamicObject':
+    'prefix': 'DestroyDynamicObject'
+    'body': 'DestroyDynamicObject(${1:STREAMER_TAG_OBJECT objectid})'
+
+  'IsValidDynamicObject':
+    'prefix': 'IsValidDynamicObject'
+    'body': 'IsValidDynamicObject(${1:STREAMER_TAG_OBJECT objectid})'
+
+  'SetDynamicObjectPos':
+    'prefix': 'SetDynamicObjectPos'
+    'body': 'SetDynamicObjectPos(${1:STREAMER_TAG_OBJECT objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'GetDynamicObjectPos':
+    'prefix': 'GetDynamicObjectPos'
+    'body': 'GetDynamicObjectPos(${1:STREAMER_TAG_OBJECT objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'SetDynamicObjectRot':
+    'prefix': 'SetDynamicObjectRot'
+    'body': 'SetDynamicObjectRot(${1:STREAMER_TAG_OBJECT objectid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
+
+  'GetDynamicObjectRot':
+    'prefix': 'GetDynamicObjectRot'
+    'body': 'GetDynamicObjectRot(${1:STREAMER_TAG_OBJECT objectid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
+
+  'SetDynamicObjectNoCameraCol':
+    'prefix': 'SetDynamicObjectNoCameraCol'
+    'body': 'SetDynamicObjectNoCameraCol(${1:STREAMER_TAG_OBJECT objectid})'
+
+  'GetDynamicObjectNoCameraCol':
+    'prefix': 'GetDynamicObjectNoCameraCol'
+    'body': 'GetDynamicObjectNoCameraCol(${1:STREAMER_TAG_OBJECT objectid})'
+
+  'MoveDynamicObject':
+    'prefix': 'MoveDynamicObject'
+    'body': 'MoveDynamicObject(${1:STREAMER_TAG_OBJECT objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:speed}, ${6:Float:rx = -1000.0}, ${7:Float:ry = -1000.0}, ${8:Float:rz = -1000.0})'
+
+  'StopDynamicObject':
+    'prefix': 'StopDynamicObject'
+    'body': 'StopDynamicObject(${1:STREAMER_TAG_OBJECT objectid})'
+
+  'IsDynamicObjectMoving':
+    'prefix': 'IsDynamicObjectMoving'
+    'body': 'IsDynamicObjectMoving(${1:STREAMER_TAG_OBJECT objectid})'
+
+  'AttachCameraToDynamicObject':
+    'prefix': 'AttachCameraToDynamicObject'
+    'body': 'AttachCameraToDynamicObject(${1:playerid}, ${2:STREAMER_TAG_OBJECT objectid})'
+
+  'AttachDynamicObjectToObject':
+    'prefix': 'AttachDynamicObjectToObject'
+    'body': 'AttachDynamicObjectToObject(${1:STREAMER_TAG_OBJECT objectid}, ${2:attachtoid}, ${3:Float:offsetx}, ${4:Float:offsety}, ${5:Float:offsetz}, ${6:Float:rx}, ${7:Float:ry}, ${8:Float:rz}, ${9:syncrotation = 1})'
+
+  'AttachDynamicObjectToPlayer':
+    'prefix': 'AttachDynamicObjectToPlayer'
+    'body': 'AttachDynamicObjectToPlayer(${1:STREAMER_TAG_OBJECT objectid}, ${2:playerid}, ${3:Float:offsetx}, ${4:Float:offsety}, ${5:Float:offsetz}, ${6:Float:rx}, ${7:Float:ry}, ${8:Float:rz})'
+
+  'AttachDynamicObjectToVehicle':
+    'prefix': 'AttachDynamicObjectToVehicle'
+    'body': 'AttachDynamicObjectToVehicle(${1:STREAMER_TAG_OBJECT objectid}, ${2:vehicleid}, ${3:Float:offsetx}, ${4:Float:offsety}, ${5:Float:offsetz}, ${6:Float:rx}, ${7:Float:ry}, ${8:Float:rz})'
+
+  'EditDynamicObject':
+    'prefix': 'EditDynamicObject'
+    'body': 'EditDynamicObject(${1:playerid}, ${2:STREAMER_TAG_OBJECT objectid})'
+
+  'IsDynamicObjectMaterialUsed':
+    'prefix': 'IsDynamicObjectMaterialUsed'
+    'body': 'IsDynamicObjectMaterialUsed(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex})'
+
+  'GetDynamicObjectMaterial':
+    'prefix': 'GetDynamicObjectMaterial'
+    'body': 'GetDynamicObjectMaterial(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex}, ${3:modelid}, ${4:txdname[]}, ${5:texturename[]}, ${6:materialcolor}, ${7:maxtxdname = sizeof txdname}, ${8:maxtexturename = sizeof texturename})'
+
+  'SetDynamicObjectMaterial':
+    'prefix': 'SetDynamicObjectMaterial'
+    'body': 'SetDynamicObjectMaterial(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex}, ${3:modelid}, ${4:const txdname[]}, ${5:const texturename[]}, ${6:materialcolor = 0})'
+
+  'IsDynamicObjectMaterialTextUsed':
+    'prefix': 'IsDynamicObjectMaterialTextUsed'
+    'body': 'IsDynamicObjectMaterialTextUsed(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex})'
+
+  'GetDynamicObjectMaterialText':
+    'prefix': 'GetDynamicObjectMaterialText'
+    'body': 'GetDynamicObjectMaterialText(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex}, ${3:text[]}, ${4:materialsize}, ${5:fontface[]}, ${6:fontsize}, ${7:bold}, ${8:fontcolor}, ${9:backcolor}, ${10:textalignment}, ${11:maxtext = sizeof text}, ${12:maxfontface = sizeof fontface})'
+
+  'SetDynamicObjectMaterialText':
+    'prefix': 'SetDynamicObjectMaterialText'
+    'body': 'SetDynamicObjectMaterialText(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex}, ${3:const text[]}, ${4:materialsize = OBJECT_MATERIAL_SIZE_256x128}, ${5:const fontface[] = \"Arial\"}, ${6:fontsize = 24}, ${7:bold = 1}, ${8:fontcolor = 0xFFFFFFFF}, ${9:backcolor = 0}, ${10:textalignment = 0})'
+
+  'CreateDynamicPickup':
+    'prefix': 'CreateDynamicPickup'
+    'body': 'CreateDynamicPickup(${1:modelid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1}, ${9:Float:streamdistance = STREAMER_PICKUP_SD}, ${10:STREAMER_TAG_AREA areaid = STREAMER_TAG_AREA -1})'
+
+  'DestroyDynamicPickup':
+    'prefix': 'DestroyDynamicPickup'
+    'body': 'DestroyDynamicPickup(${1:STREAMER_TAG_PICKUP pickupid})'
+
+  'IsValidDynamicPickup':
+    'prefix': 'IsValidDynamicPickup'
+    'body': 'IsValidDynamicPickup(${1:STREAMER_TAG_PICKUP pickupid})'
+
+  'CreateDynamicCP':
+    'prefix': 'CreateDynamicCP'
+    'body': 'CreateDynamicCP(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1}, ${8:Float:streamdistance = STREAMER_CP_SD}, ${9:STREAMER_TAG_AREA areaid = STREAMER_TAG_AREA -1})'
+
+  'DestroyDynamicCP':
+    'prefix': 'DestroyDynamicCP'
+    'body': 'DestroyDynamicCP(${1:STREAMER_TAG_CP checkpointid})'
+
+  'IsValidDynamicCP':
+    'prefix': 'IsValidDynamicCP'
+    'body': 'IsValidDynamicCP(${1:STREAMER_TAG_CP checkpointid})'
+
+  'TogglePlayerDynamicCP':
+    'prefix': 'TogglePlayerDynamicCP'
+    'body': 'TogglePlayerDynamicCP(${1:playerid}, ${2:STREAMER_TAG_CP checkpointid}, ${3:toggle})'
+
+  'TogglePlayerAllDynamicCPs':
+    'prefix': 'TogglePlayerAllDynamicCPs'
+    'body': 'TogglePlayerAllDynamicCPs(${1:playerid}, ${2:toggle})'
+
+  'IsPlayerInDynamicCP':
+    'prefix': 'IsPlayerInDynamicCP'
+    'body': 'IsPlayerInDynamicCP(${1:playerid}, ${2:STREAMER_TAG_CP checkpointid})'
+
+  'GetPlayerVisibleDynamicCP':
+    'prefix': 'GetPlayerVisibleDynamicCP'
+    'body': 'GetPlayerVisibleDynamicCP(${1:playerid})'
+
+  'CreateDynamicRaceCP':
+    'prefix': 'CreateDynamicRaceCP'
+    'body': 'CreateDynamicRaceCP(${1:type}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:nextx}, ${6:Float:nexty}, ${7:Float:nextz}, ${8:Float:size}, ${9:worldid = -1}, ${10:interiorid = -1}, ${11:playerid = -1}, ${12:Float:streamdistance = STREAMER_RACE_CP_SD}, ${13:STREAMER_TAG_AREA areaid = STREAMER_TAG_AREA -1})'
+
+  'DestroyDynamicRaceCP':
+    'prefix': 'DestroyDynamicRaceCP'
+    'body': 'DestroyDynamicRaceCP(${1:STREAMER_TAG_RACE_CP checkpointid})'
+
+  'IsValidDynamicRaceCP':
+    'prefix': 'IsValidDynamicRaceCP'
+    'body': 'IsValidDynamicRaceCP(${1:STREAMER_TAG_RACE_CP checkpointid})'
+
+  'TogglePlayerDynamicRaceCP':
+    'prefix': 'TogglePlayerDynamicRaceCP'
+    'body': 'TogglePlayerDynamicRaceCP(${1:playerid}, ${2:STREAMER_TAG_RACE_CP checkpointid}, ${3:toggle})'
+
+  'TogglePlayerAllDynamicRaceCPs':
+    'prefix': 'TogglePlayerAllDynamicRaceCPs'
+    'body': 'TogglePlayerAllDynamicRaceCPs(${1:playerid}, ${2:toggle})'
+
+  'IsPlayerInDynamicRaceCP':
+    'prefix': 'IsPlayerInDynamicRaceCP'
+    'body': 'IsPlayerInDynamicRaceCP(${1:playerid}, ${2:STREAMER_TAG_RACE_CP checkpointid})'
+
+  'GetPlayerVisibleDynamicRaceCP':
+    'prefix': 'GetPlayerVisibleDynamicRaceCP'
+    'body': 'GetPlayerVisibleDynamicRaceCP(${1:playerid})'
+
+  'CreateDynamicMapIcon':
+    'prefix': 'CreateDynamicMapIcon'
+    'body': 'CreateDynamicMapIcon(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:color}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1}, ${9:Float:streamdistance = STREAMER_MAP_ICON_SD}, ${10:style = MAPICON_LOCAL}, ${11:STREAMER_TAG_AREA areaid = STREAMER_TAG_AREA -1})'
+
+  'DestroyDynamicMapIcon':
+    'prefix': 'DestroyDynamicMapIcon'
+    'body': 'DestroyDynamicMapIcon(${1:STREAMER_TAG_MAP_ICON iconid})'
+
+  'IsValidDynamicMapIcon':
+    'prefix': 'IsValidDynamicMapIcon'
+    'body': 'IsValidDynamicMapIcon(${1:STREAMER_TAG_MAP_ICON iconid})'
+
+  'CreateDynamic3DTextLabel':
+    'prefix': 'CreateDynamic3DTextLabel'
+    'body': 'CreateDynamic3DTextLabel(${1:const text[]}, ${2:color}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:drawdistance}, ${7:attachedplayer = INVALID_PLAYER_ID}, ${8:attachedvehicle = INVALID_VEHICLE_ID}, ${9:testlos = 0}, ${10:worldid = -1}, ${11:interiorid = -1}, ${12:playerid = -1}, ${13:Float:streamdistance = STREAMER_3D_TEXT_LABEL_SD}, ${14:STREAMER_TAG_AREA areaid = STREAMER_TAG_AREA -1})'
+
+  'DestroyDynamic3DTextLabel':
+    'prefix': 'DestroyDynamic3DTextLabel'
+    'body': 'DestroyDynamic3DTextLabel(${1:STREAMER_TAG_3D_TEXT_LABEL id})'
+
+  'IsValidDynamic3DTextLabel':
+    'prefix': 'IsValidDynamic3DTextLabel'
+    'body': 'IsValidDynamic3DTextLabel(${1:STREAMER_TAG_3D_TEXT_LABEL id})'
+
+  'GetDynamic3DTextLabelText':
+    'prefix': 'GetDynamic3DTextLabelText'
+    'body': 'GetDynamic3DTextLabelText(${1:STREAMER_TAG_3D_TEXT_LABEL id}, ${2:text[]}, ${3:maxtext = sizeof text})'
+
+  'UpdateDynamic3DTextLabelText':
+    'prefix': 'UpdateDynamic3DTextLabelText'
+    'body': 'UpdateDynamic3DTextLabelText(${1:STREAMER_TAG_3D_TEXT_LABEL id}, ${2:color}, ${3:const text[]})'
+
+  'CreateDynamicCircle':
+    'prefix': 'CreateDynamicCircle'
+    'body': 'CreateDynamicCircle(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:worldid = -1}, ${5:interiorid = -1}, ${6:playerid = -1})'
+
+  'CreateDynamicCylinder':
+    'prefix': 'CreateDynamicCylinder'
+    'body': 'CreateDynamicCylinder(${1:Float:x}, ${2:Float:y}, ${3:Float:minz}, ${4:Float:maxz}, ${5:Float:size}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1})'
+
+  'CreateDynamicSphere':
+    'prefix': 'CreateDynamicSphere'
+    'body': 'CreateDynamicSphere(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1})'
+
+  'CreateDynamicRectangle':
+    'prefix': 'CreateDynamicRectangle'
+    'body': 'CreateDynamicRectangle(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1})'
+
+  'CreateDynamicCuboid':
+    'prefix': 'CreateDynamicCuboid'
+    'body': 'CreateDynamicCuboid(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worldid = -1}, ${8:interiorid = -1}, ${9:playerid = -1})'
+
+  'CreateDynamicCube':
+    'prefix': 'CreateDynamicCube'
+    'body': 'CreateDynamicCube(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worldid = -1}, ${8:interiorid = -1}, ${9:playerid = -1})'
+
+  'CreateDynamicPolygon':
+    'prefix': 'CreateDynamicPolygon'
+    'body': 'CreateDynamicPolygon(${1:Float:points[]}, ${2:Float:minz = -FLOAT_INFINITY}, ${3:Float:maxz = FLOAT_INFINITY}, ${4:maxpoints = sizeof points}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1})'
+
+  'DestroyDynamicArea':
+    'prefix': 'DestroyDynamicArea'
+    'body': 'DestroyDynamicArea(${1:STREAMER_TAG_AREA areaid})'
+
+  'IsValidDynamicArea':
+    'prefix': 'IsValidDynamicArea'
+    'body': 'IsValidDynamicArea(${1:STREAMER_TAG_AREA areaid})'
+
+  'GetDynamicPolygonPoints':
+    'prefix': 'GetDynamicPolygonPoints'
+    'body': 'GetDynamicPolygonPoints(${1:STREAMER_TAG_AREA areaid}, ${2:Float:points[]}, ${3:maxpoints = sizeof points})'
+
+  'GetDynamicPolygonNumberPoints':
+    'prefix': 'GetDynamicPolygonNumberPoints'
+    'body': 'GetDynamicPolygonNumberPoints(${1:STREAMER_TAG_AREA areaid})'
+
+  'TogglePlayerDynamicArea':
+    'prefix': 'TogglePlayerDynamicArea'
+    'body': 'TogglePlayerDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA areaid}, ${3:toggle})'
+
+  'TogglePlayerAllDynamicAreas':
+    'prefix': 'TogglePlayerAllDynamicAreas'
+    'body': 'TogglePlayerAllDynamicAreas(${1:playerid}, ${2:toggle})'
+
+  'IsPlayerInDynamicArea':
+    'prefix': 'IsPlayerInDynamicArea'
+    'body': 'IsPlayerInDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA areaid}, ${3:recheck = 0})'
+
+  'IsPlayerInAnyDynamicArea':
+    'prefix': 'IsPlayerInAnyDynamicArea'
+    'body': 'IsPlayerInAnyDynamicArea(${1:playerid}, ${2:recheck = 0})'
+
+  'IsAnyPlayerInDynamicArea':
+    'prefix': 'IsAnyPlayerInDynamicArea'
+    'body': 'IsAnyPlayerInDynamicArea(${1:STREAMER_TAG_AREA areaid}, ${2:recheck = 0})'
+
+  'IsAnyPlayerInAnyDynamicArea':
+    'prefix': 'IsAnyPlayerInAnyDynamicArea'
+    'body': 'IsAnyPlayerInAnyDynamicArea(${1:recheck = 0})'
+
+  'GetPlayerDynamicAreas':
+    'prefix': 'GetPlayerDynamicAreas'
+    'body': 'GetPlayerDynamicAreas(${1:playerid}, ${2:STREAMER_TAG_AREA areas[]}, ${3:maxareas = sizeof areas})'
+
+  'GetPlayerNumberDynamicAreas':
+    'prefix': 'GetPlayerNumberDynamicAreas'
+    'body': 'GetPlayerNumberDynamicAreas(${1:playerid})'
+
+  'IsPointInDynamicArea':
+    'prefix': 'IsPointInDynamicArea'
+    'body': 'IsPointInDynamicArea(${1:STREAMER_TAG_AREA areaid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'IsPointInAnyDynamicArea':
+    'prefix': 'IsPointInAnyDynamicArea'
+    'body': 'IsPointInAnyDynamicArea(${1:Float:x}, ${2:Float:y}, ${3:Float:z})'
+
+  'GetDynamicAreasForPoint':
+    'prefix': 'GetDynamicAreasForPoint'
+    'body': 'GetDynamicAreasForPoint(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:STREAMER_TAG_AREA areas[]}, ${5:maxareas = sizeof areas})'
+
+  'GetNumberDynamicAreasForPoint':
+    'prefix': 'GetNumberDynamicAreasForPoint'
+    'body': 'GetNumberDynamicAreasForPoint(${1:Float:x}, ${2:Float:y}, ${3:Float:z})'
+
+  'AttachDynamicAreaToObject':
+    'prefix': 'AttachDynamicAreaToObject'
+    'body': 'AttachDynamicAreaToObject(${1:STREAMER_TAG_AREA areaid}, ${2:STREAMER_TAG_OBJECT_ALT objectid}, ${3:type = STREAMER_OBJECT_TYPE_DYNAMIC}, ${4:playerid = INVALID_PLAYER_ID}, ${5:Float:offsetx = 0.0}, ${6:Float:offsety = 0.0}, ${7:Float:offsetz = 0.0})'
+
+  'AttachDynamicAreaToPlayer':
+    'prefix': 'AttachDynamicAreaToPlayer'
+    'body': 'AttachDynamicAreaToPlayer(${1:STREAMER_TAG_AREA areaid}, ${2:playerid}, ${3:Float:offsetx = 0.0}, ${4:Float:offsety = 0.0}, ${5:Float:offsetz = 0.0})'
+
+  'AttachDynamicAreaToVehicle':
+    'prefix': 'AttachDynamicAreaToVehicle'
+    'body': 'AttachDynamicAreaToVehicle(${1:STREAMER_TAG_AREA areaid}, ${2:vehicleid}, ${3:Float:offsetx = 0.0}, ${4:Float:offsety = 0.0}, ${5:Float:offsetz = 0.0})'
+
+  'CreateDynamicObjectEx':
+    'prefix': 'CreateDynamicObjectEx'
+    'body': 'CreateDynamicObjectEx(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:Float:streamdistance = STREAMER_OBJECT_SD}, ${9:Float:drawdistance = STREAMER_OBJECT_DD}, ${10:worlds[] = { -1 }}, ${11:interiors[] = { -1 }}, ${12:players[] = { -1 }}, ${13:STREAMER_TAG_AREA areas[] = { STREAMER_TAG_AREA -1 }}, ${14:maxworlds = sizeof worlds}, ${15:maxinteriors = sizeof interiors}, ${16:maxplayers = sizeof players}, ${17:maxareas = sizeof areas})'
+
+  'CreateDynamicPickupEx':
+    'prefix': 'CreateDynamicPickupEx'
+    'body': 'CreateDynamicPickupEx(${1:modelid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:streamdistance = STREAMER_PICKUP_SD}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:STREAMER_TAG_AREA areas[] = { STREAMER_TAG_AREA -1 }}, ${11:maxworlds = sizeof worlds}, ${12:maxinteriors = sizeof interiors}, ${13:maxplayers = sizeof players}, ${14:maxareas = sizeof areas})'
+
+  'CreateDynamicCPEx':
+    'prefix': 'CreateDynamicCPEx'
+    'body': 'CreateDynamicCPEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:Float:streamdistance = STREAMER_CP_SD}, ${6:worlds[] = { -1 }}, ${7:interiors[] = { -1 }}, ${8:players[] = { -1 }}, ${9:STREAMER_TAG_AREA areas[] = { STREAMER_TAG_AREA -1 }}, ${10:maxworlds = sizeof worlds}, ${11:maxinteriors = sizeof interiors}, ${12:maxplayers = sizeof players}, ${13:maxareas = sizeof areas})'
+
+  'CreateDynamicRaceCPEx':
+    'prefix': 'CreateDynamicRaceCPEx'
+    'body': 'CreateDynamicRaceCPEx(${1:type}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:nextx}, ${6:Float:nexty}, ${7:Float:nextz}, ${8:Float:size}, ${9:Float:streamdistance = STREAMER_RACE_CP_SD}, ${10:worlds[] = { -1 }}, ${11:interiors[] = { -1 }}, ${12:players[] = { -1 }}, ${13:STREAMER_TAG_AREA areas[] = { STREAMER_TAG_AREA -1 }}, ${14:maxworlds = sizeof worlds}, ${15:maxinteriors = sizeof interiors}, ${16:maxplayers = sizeof players}, ${17:maxareas = sizeof areas})'
+
+  'CreateDynamicMapIconEx':
+    'prefix': 'CreateDynamicMapIconEx'
+    'body': 'CreateDynamicMapIconEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:color}, ${6:style = MAPICON_LOCAL}, ${7:Float:streamdistance = STREAMER_MAP_ICON_SD}, ${8:worlds[] = { -1 }}, ${9:interiors[] = { -1 }}, ${10:players[] = { -1 }}, ${11:STREAMER_TAG_AREA areas[] = { STREAMER_TAG_AREA -1 }}, ${12:maxworlds = sizeof worlds}, ${13:maxinteriors = sizeof interiors}, ${14:maxplayers = sizeof players}, ${15:maxareas = sizeof areas})'
+
+  'CreateDynamic3DTextLabelEx':
+    'prefix': 'CreateDynamic3DTextLabelEx'
+    'body': 'CreateDynamic3DTextLabelEx(${1:const text[]}, ${2:color}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:drawdistance}, ${7:attachedplayer = INVALID_PLAYER_ID}, ${8:attachedvehicle = INVALID_VEHICLE_ID}, ${9:testlos = 0}, ${10:Float:streamdistance = STREAMER_3D_TEXT_LABEL_SD}, ${11:worlds[] = { -1 }}, ${12:interiors[] = { -1 }}, ${13:players[] = { -1 }}, ${14:STREAMER_TAG_AREA areas[] = { STREAMER_TAG_AREA -1 }}, ${15:maxworlds = sizeof worlds}, ${16:maxinteriors = sizeof interiors}, ${17:maxplayers = sizeof players}, ${18:maxareas = sizeof areas})'
+
+  'CreateDynamicCircleEx':
+    'prefix': 'CreateDynamicCircleEx'
+    'body': 'CreateDynamicCircleEx(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:worlds[] = { -1 }}, ${5:interiors[] = { -1 }}, ${6:players[] = { -1 }}, ${7:maxworlds = sizeof worlds}, ${8:maxinteriors = sizeof interiors}, ${9:maxplayers = sizeof players})'
+
+  'CreateDynamicCylinderEx':
+    'prefix': 'CreateDynamicCylinderEx'
+    'body': 'CreateDynamicCylinderEx(${1:Float:x}, ${2:Float:y}, ${3:Float:minz}, ${4:Float:maxz}, ${5:Float:size}, ${6:worlds[] = { -1 }}, ${7:interiors[] = { -1 }}, ${8:players[] = { -1 }}, ${9:maxworlds = sizeof worlds}, ${10:maxinteriors = sizeof interiors}, ${11:maxplayers = sizeof players})'
+
+  'CreateDynamicSphereEx':
+    'prefix': 'CreateDynamicSphereEx'
+    'body': 'CreateDynamicSphereEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:maxworlds = sizeof worlds}, ${9:maxinteriors = sizeof interiors}, ${10:maxplayers = sizeof players})'
+
+  'CreateDynamicRectangleEx':
+    'prefix': 'CreateDynamicRectangleEx'
+    'body': 'CreateDynamicRectangleEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:maxworlds = sizeof worlds}, ${9:maxinteriors = sizeof interiors}, ${10:maxplayers = sizeof players})'
+
+  'CreateDynamicCuboidEx':
+    'prefix': 'CreateDynamicCuboidEx'
+    'body': 'CreateDynamicCuboidEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:maxworlds = sizeof worlds}, ${11:maxinteriors = sizeof interiors}, ${12:maxplayers = sizeof players})'
+
+  'CreateDynamicCubeEx':
+    'prefix': 'CreateDynamicCubeEx'
+    'body': 'CreateDynamicCubeEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:maxworlds = sizeof worlds}, ${11:maxinteriors = sizeof interiors}, ${12:maxplayers = sizeof players})'
+
+  'CreateDynamicPolygonEx':
+    'prefix': 'CreateDynamicPolygonEx'
+    'body': 'CreateDynamicPolygonEx(${1:Float:points[]}, ${2:Float:minz = -FLOAT_INFINITY}, ${3:Float:maxz = FLOAT_INFINITY}, ${4:maxpoints = sizeof points}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:maxworlds = sizeof worlds}, ${9:maxinteriors = sizeof interiors}, ${10:maxplayers = sizeof players})'
+
+  'Streamer_TickRate':
+    'prefix': 'Streamer_TickRate'
+    'body': 'Streamer_TickRate(${1:rate})'
+
+  'Streamer_MaxItems':
+    'prefix': 'Streamer_MaxItems'
+    'body': 'Streamer_MaxItems(${1:type}, ${2:items})'
+
+  'Streamer_VisibleItems':
+    'prefix': 'Streamer_VisibleItems'
+    'body': 'Streamer_VisibleItems(${1:type}, ${2:items}, ${3:playerid = -1})'
+
+  'Streamer_CellDistance':
+    'prefix': 'Streamer_CellDistance'
+    'body': 'Streamer_CellDistance(${1:Float:distance})'
+
+  'Streamer_CellSize':
+    'prefix': 'Streamer_CellSize'
+    'body': 'Streamer_CellSize(${1:Float:size})'
+
+  'Streamer_CallbackHook':
+    'prefix': 'Streamer_CallbackHook'
+    'body': 'Streamer_CallbackHook(${1:callback}, ${2:...})'
+
+  'DestroyAllDynamicObjects':
+    'prefix': 'DestroyAllDynamicObjects'
+    'body': 'DestroyAllDynamicObjects()'
+
+  'CountDynamicObjects':
+    'prefix': 'CountDynamicObjects'
+    'body': 'CountDynamicObjects()'
+
+  'DestroyAllDynamicPickups':
+    'prefix': 'DestroyAllDynamicPickups'
+    'body': 'DestroyAllDynamicPickups()'
+
+  'CountDynamicPickups':
+    'prefix': 'CountDynamicPickups'
+    'body': 'CountDynamicPickups()'
+
+  'DestroyAllDynamicCPs':
+    'prefix': 'DestroyAllDynamicCPs'
+    'body': 'DestroyAllDynamicCPs()'
+
+  'CountDynamicCPs':
+    'prefix': 'CountDynamicCPs'
+    'body': 'CountDynamicCPs()'
+
+  'DestroyAllDynamicRaceCPs':
+    'prefix': 'DestroyAllDynamicRaceCPs'
+    'body': 'DestroyAllDynamicRaceCPs()'
+
+  'CountDynamicRaceCPs':
+    'prefix': 'CountDynamicRaceCPs'
+    'body': 'CountDynamicRaceCPs()'
+
+  'DestroyAllDynamicMapIcons':
+    'prefix': 'DestroyAllDynamicMapIcons'
+    'body': 'DestroyAllDynamicMapIcons()'
+
+  'CountDynamicMapIcons':
+    'prefix': 'CountDynamicMapIcons'
+    'body': 'CountDynamicMapIcons()'
+
+  'DestroyAllDynamic3DTextLabels':
+    'prefix': 'DestroyAllDynamic3DTextLabels'
+    'body': 'DestroyAllDynamic3DTextLabels()'
+
+  'CountDynamic3DTextLabels':
+    'prefix': 'CountDynamic3DTextLabels'
+    'body': 'CountDynamic3DTextLabels()'
+
+  'DestroyAllDynamicAreas':
+    'prefix': 'DestroyAllDynamicAreas'
+    'body': 'DestroyAllDynamicAreas()'
+
+  'CountDynamicAreas':
+    'prefix': 'CountDynamicAreas'
+    'body': 'CountDynamicAreas()'
+
+  'OnDynamicObjectMoved':
+    'prefix': 'OnDynamicObjectMoved'
+    'body': 'OnDynamicObjectMoved(${1:STREAMER_TAG_OBJECT objectid})'
+
+  'OnPlayerEditDynamicObject':
+    'prefix': 'OnPlayerEditDynamicObject'
+    'body': 'OnPlayerEditDynamicObject(${1:playerid}, ${2:STREAMER_TAG_OBJECT objectid}, ${3:response}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:Float:rx}, ${8:Float:ry}, ${9:Float:rz})'
+
+  'OnPlayerSelectDynamicObject':
+    'prefix': 'OnPlayerSelectDynamicObject'
+    'body': 'OnPlayerSelectDynamicObject(${1:playerid}, ${2:STREAMER_TAG_OBJECT objectid}, ${3:modelid}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z})'
+
+  'OnPlayerShootDynamicObject':
+    'prefix': 'OnPlayerShootDynamicObject'
+    'body': 'OnPlayerShootDynamicObject(${1:playerid}, ${2:weaponid}, ${3:STREAMER_TAG_OBJECT objectid}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z})'
+
+  'OnPlayerPickUpDynamicPickup':
+    'prefix': 'OnPlayerPickUpDynamicPickup'
+    'body': 'OnPlayerPickUpDynamicPickup(${1:playerid}, ${2:STREAMER_TAG_PICKUP pickupid})'
+
+  'OnPlayerEnterDynamicCP':
+    'prefix': 'OnPlayerEnterDynamicCP'
+    'body': 'OnPlayerEnterDynamicCP(${1:playerid}, ${2:STREAMER_TAG_CP checkpointid})'
+
+  'OnPlayerLeaveDynamicCP':
+    'prefix': 'OnPlayerLeaveDynamicCP'
+    'body': 'OnPlayerLeaveDynamicCP(${1:playerid}, ${2:STREAMER_TAG_CP checkpointid})'
+
+  'OnPlayerEnterDynamicRaceCP':
+    'prefix': 'OnPlayerEnterDynamicRaceCP'
+    'body': 'OnPlayerEnterDynamicRaceCP(${1:playerid}, ${2:STREAMER_TAG_RACE_CP checkpointid})'
+
+  'OnPlayerLeaveDynamicRaceCP':
+    'prefix': 'OnPlayerLeaveDynamicRaceCP'
+    'body': 'OnPlayerLeaveDynamicRaceCP(${1:playerid}, ${2:STREAMER_TAG_RACE_CP checkpointid})'
+
+  'OnPlayerEnterDynamicArea':
+    'prefix': 'OnPlayerEnterDynamicArea'
+    'body': 'OnPlayerEnterDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA areaid})'
+
+  'OnPlayerLeaveDynamicArea':
+    'prefix': 'OnPlayerLeaveDynamicArea'
+    'body': 'OnPlayerLeaveDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA areaid})'
+
+  'Streamer_OnPluginError':
+    'prefix': 'Streamer_OnPluginError'
+    'body': 'Streamer_OnPluginError(${1:error[]})'

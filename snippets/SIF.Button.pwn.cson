@@ -1,0 +1,127 @@
+# SIF.Button.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'CreateButton':
+    'prefix': 'CreateButton'
+    'body': 'CreateButton(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:text[]}, ${5:world = 0}, ${6:interior = 0}, ${7:Float:areasize = 1.0}, ${8:label = 0}, ${9:labeltext[] = \"\"}, ${10:labelcolour = 0xFFFF00FF}, ${11:Float:streamdist = BTN_DEFAULT_STREAMDIST}, ${12:testlos = true})'
+
+  'DestroyButton':
+    'prefix': 'DestroyButton'
+    'body': 'DestroyButton(${1:buttonid})'
+
+  'LinkTP':
+    'prefix': 'LinkTP'
+    'body': 'LinkTP(${1:buttonid1}, ${2:buttonid2})'
+
+  'UnLinkTP':
+    'prefix': 'UnLinkTP'
+    'body': 'UnLinkTP(${1:buttonid1}, ${2:buttonid2})'
+
+  'IsValidButton':
+    'prefix': 'IsValidButton'
+    'body': 'IsValidButton(${1:buttonid})'
+
+  'GetButtonArea':
+    'prefix': 'GetButtonArea'
+    'body': 'GetButtonArea(${1:buttonid})'
+
+  'SetButtonArea':
+    'prefix': 'SetButtonArea'
+    'body': 'SetButtonArea(${1:buttonid}, ${2:areaid})'
+
+  'SetButtonLabel':
+    'prefix': 'SetButtonLabel'
+    'body': 'SetButtonLabel(${1:buttonid}, ${2:text[]}, ${3:colour = 0xFFFF00FF}, ${4:Float:range = BTN_DEFAULT_STREAMDIST}, ${5:testlos = true})'
+
+  'DestroyButtonLabel':
+    'prefix': 'DestroyButtonLabel'
+    'body': 'DestroyButtonLabel(${1:buttonid})'
+
+  'GetButtonPos':
+    'prefix': 'GetButtonPos'
+    'body': 'GetButtonPos(${1:buttonid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'SetButtonPos':
+    'prefix': 'SetButtonPos'
+    'body': 'SetButtonPos(${1:buttonid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'GetButtonSize':
+    'prefix': 'GetButtonSize'
+    'body': 'GetButtonSize(${1:buttonid})'
+
+  'SetButtonSize':
+    'prefix': 'SetButtonSize'
+    'body': 'SetButtonSize(${1:buttonid}, ${2:Float:size})'
+
+  'GetButtonWorld':
+    'prefix': 'GetButtonWorld'
+    'body': 'GetButtonWorld(${1:buttonid})'
+
+  'SetButtonWorld':
+    'prefix': 'SetButtonWorld'
+    'body': 'SetButtonWorld(${1:buttonid}, ${2:world})'
+
+  'GetButtonInterior':
+    'prefix': 'GetButtonInterior'
+    'body': 'GetButtonInterior(${1:buttonid})'
+
+  'SetButtonInterior':
+    'prefix': 'SetButtonInterior'
+    'body': 'SetButtonInterior(${1:buttonid}, ${2:interior})'
+
+  'GetButtonLinkedID':
+    'prefix': 'GetButtonLinkedID'
+    'body': 'GetButtonLinkedID(${1:buttonid})'
+
+  'GetButtonText':
+    'prefix': 'GetButtonText'
+    'body': 'GetButtonText(${1:buttonid}, ${2:text[]})'
+
+  'SetButtonText':
+    'prefix': 'SetButtonText'
+    'body': 'SetButtonText(${1:buttonid}, ${2:text[]})'
+
+  'SetButtonExtraData':
+    'prefix': 'SetButtonExtraData'
+    'body': 'SetButtonExtraData(${1:buttonid}, ${2:data})'
+
+  'GetButtonExtraData':
+    'prefix': 'GetButtonExtraData'
+    'body': 'GetButtonExtraData(${1:buttonid})'
+
+  'GetPlayerPressingButton':
+    'prefix': 'GetPlayerPressingButton'
+    'body': 'GetPlayerPressingButton(${1:playerid})'
+
+  'GetPlayerButtonID':
+    'prefix': 'GetPlayerButtonID'
+    'body': 'GetPlayerButtonID(${1:playerid})'
+
+  'GetPlayerButtonList':
+    'prefix': 'GetPlayerButtonList'
+    'body': 'GetPlayerButtonList(${1:playerid}, ${2:list[]}, ${3:size}, ${4:bool:validate = false})'
+
+  'GetPlayerAngleToButton':
+    'prefix': 'GetPlayerAngleToButton'
+    'body': 'GetPlayerAngleToButton(${1:playerid}, ${2:buttonid})'
+
+  'GetButtonAngleToPlayer':
+    'prefix': 'GetButtonAngleToPlayer'
+    'body': 'GetButtonAngleToPlayer(${1:playerid}, ${2:buttonid})'
+
+  'OnButtonPress':
+    'prefix': 'OnButtonPress'
+    'body': 'OnButtonPress(${1:playerid}, ${2:buttonid})'
+
+  'OnButtonRelease':
+    'prefix': 'OnButtonRelease'
+    'body': 'OnButtonRelease(${1:playerid}, ${2:buttonid})'
+
+  'OnPlayerEnterButtonArea':
+    'prefix': 'OnPlayerEnterButtonArea'
+    'body': 'OnPlayerEnterButtonArea(${1:playerid}, ${2:buttonid})'
+
+  'OnPlayerLeaveButtonArea':
+    'prefix': 'OnPlayerLeaveButtonArea'
+    'body': 'OnPlayerLeaveButtonArea(${1:playerid}, ${2:buttonid})'

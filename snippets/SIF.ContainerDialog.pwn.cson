@@ -1,0 +1,47 @@
+# SIF.ContainerDialog.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'DisplayContainerInventory':
+    'prefix': 'DisplayContainerInventory'
+    'body': 'DisplayContainerInventory(${1:playerid}, ${2:containerid})'
+
+  'ClosePlayerContainer':
+    'prefix': 'ClosePlayerContainer'
+    'body': 'ClosePlayerContainer(${1:playerid}, ${2:call = false})'
+
+  'GetPlayerCurrentContainer':
+    'prefix': 'GetPlayerCurrentContainer'
+    'body': 'GetPlayerCurrentContainer(${1:playerid})'
+
+  'GetPlayerContainerSlot':
+    'prefix': 'GetPlayerContainerSlot'
+    'body': 'GetPlayerContainerSlot(${1:playerid})'
+
+  'AddContainerOption':
+    'prefix': 'AddContainerOption'
+    'body': 'AddContainerOption(${1:playerid}, ${2:option[]})'
+
+  'OnPlayerOpenContainer':
+    'prefix': 'OnPlayerOpenContainer'
+    'body': 'OnPlayerOpenContainer(${1:playerid}, ${2:containerid})'
+
+  'OnPlayerCloseContainer':
+    'prefix': 'OnPlayerCloseContainer'
+    'body': 'OnPlayerCloseContainer(${1:playerid}, ${2:containerid})'
+
+  'OnPlayerViewContainerOpt':
+    'prefix': 'OnPlayerViewContainerOpt'
+    'body': 'OnPlayerViewContainerOpt(${1:playerid}, ${2:containerid})'
+
+  'OnPlayerSelectContainerOpt':
+    'prefix': 'OnPlayerSelectContainerOpt'
+    'body': 'OnPlayerSelectContainerOpt(${1:playerid}, ${2:containerid}, ${3:option})'
+
+  'OnMoveItemToContainer':
+    'prefix': 'OnMoveItemToContainer'
+    'body': 'OnMoveItemToContainer(${1:playerid}, ${2:itemid}, ${3:containerid})'
+
+  'OnMoveItemToInventory':
+    'prefix': 'OnMoveItemToInventory'
+    'body': 'OnMoveItemToInventory(${1:playerid}, ${2:itemid}, ${3:containerid})'

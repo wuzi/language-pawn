@@ -1,0 +1,11 @@
+# SIF.InventoryKeys.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'OnPlayerAddToInventory':
+    'prefix': 'OnPlayerAddToInventory'
+    'body': 'OnPlayerAddToInventory(${1:playerid}, ${2:itemid})'
+
+  'OnPlayerAddedToInventory':
+    'prefix': 'OnPlayerAddedToInventory'
+    'body': 'OnPlayerAddedToInventory(${1:playerid}, ${2:itemid})'

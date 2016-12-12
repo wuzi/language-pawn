@@ -1,0 +1,51 @@
+# SIF.DebugLabels.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'DefineDebugLabelType':
+    'prefix': 'DefineDebugLabelType'
+    'body': 'DefineDebugLabelType(${1:name[]}, ${2:colour = 0xFFFFFFFF})'
+
+  'CreateDebugLabel':
+    'prefix': 'CreateDebugLabel'
+    'body': 'CreateDebugLabel(${1:type}, ${2:entityid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:string[] = \"\"}, ${7:worldid = -1}, ${8:interiorid = -1})'
+
+  'DestroyDebugLabel':
+    'prefix': 'DestroyDebugLabel'
+    'body': 'DestroyDebugLabel(${1:labelid})'
+
+  'ShowDebugLabelsForPlayer':
+    'prefix': 'ShowDebugLabelsForPlayer'
+    'body': 'ShowDebugLabelsForPlayer(${1:playerid}, ${2:type})'
+
+  'ShowAllDebugLabelsForPlayer':
+    'prefix': 'ShowAllDebugLabelsForPlayer'
+    'body': 'ShowAllDebugLabelsForPlayer(${1:playerid})'
+
+  'HideDebugLabelsForPlayer':
+    'prefix': 'HideDebugLabelsForPlayer'
+    'body': 'HideDebugLabelsForPlayer(${1:playerid}, ${2:type})'
+
+  'HideAllDebugLabelsForPlayer':
+    'prefix': 'HideAllDebugLabelsForPlayer'
+    'body': 'HideAllDebugLabelsForPlayer(${1:playerid})'
+
+  'UpdateDebugLabelString':
+    'prefix': 'UpdateDebugLabelString'
+    'body': 'UpdateDebugLabelString(${1:labelid}, ${2:string[]})'
+
+  'IsValidDebugLabel':
+    'prefix': 'IsValidDebugLabel'
+    'body': 'IsValidDebugLabel(${1:labelid})'
+
+  'SetDebugLabelPos':
+    'prefix': 'SetDebugLabelPos'
+    'body': 'SetDebugLabelPos(${1:labelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'IsPlayerToggledDebugLabels':
+    'prefix': 'IsPlayerToggledDebugLabels'
+    'body': 'IsPlayerToggledDebugLabels(${1:playerid}, ${2:type})'
+
+  'IsPlayerToggledAllDebugLabels':
+    'prefix': 'IsPlayerToggledAllDebugLabels'
+    'body': 'IsPlayerToggledAllDebugLabels(${1:playerid})'

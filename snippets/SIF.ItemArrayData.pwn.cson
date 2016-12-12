@@ -1,0 +1,71 @@
+# SIF.ItemArrayData.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'SetItemExtraData(%0,%1)':
+    'prefix': 'SetItemExtraData(%0,%1)'
+    'body': 'SetItemExtraData(${1:0},${2:1})'
+
+  'GetItemExtraData(%0)':
+    'prefix': 'GetItemExtraData(%0)'
+    'body': 'GetItemExtraData(${1:0})'
+
+  'SetItemTypeMaxArrayData':
+    'prefix': 'SetItemTypeMaxArrayData'
+    'body': 'SetItemTypeMaxArrayData(${1:ItemType:itemtype}, ${2:size}, ${3:bool:protect = false})'
+
+  'GetItemTypeArrayDataSize':
+    'prefix': 'GetItemTypeArrayDataSize'
+    'body': 'GetItemTypeArrayDataSize(${1:ItemType:itemtype})'
+
+  'SetItemArrayData':
+    'prefix': 'SetItemArrayData'
+    'body': 'SetItemArrayData(${1:itemid}, ${2:data[]}, ${3:length}, ${4:call = 1}, ${5:bool:force = false})'
+
+  'GetItemArrayData':
+    'prefix': 'GetItemArrayData'
+    'body': 'GetItemArrayData(${1:itemid}, ${2:data[]})'
+
+  'SetItemArrayDataAtCell':
+    'prefix': 'SetItemArrayDataAtCell'
+    'body': 'SetItemArrayDataAtCell(${1:itemid}, ${2:data}, ${3:cell}, ${4:autoadjustsize = 0}, ${5:call = 1}, ${6:bool:force = false})'
+
+  'GetItemArrayDataAtCell':
+    'prefix': 'GetItemArrayDataAtCell'
+    'body': 'GetItemArrayDataAtCell(${1:itemid}, ${2:cell})'
+
+  'SetItemArrayDataSize':
+    'prefix': 'SetItemArrayDataSize'
+    'body': 'SetItemArrayDataSize(${1:itemid}, ${2:size}, ${3:bool:force = false})'
+
+  'GetItemArrayDataSize':
+    'prefix': 'GetItemArrayDataSize'
+    'body': 'GetItemArrayDataSize(${1:itemid})'
+
+  'GetItemTypeArrayDataMax':
+    'prefix': 'GetItemTypeArrayDataMax'
+    'body': 'GetItemTypeArrayDataMax(${1:ItemType:itemtype})'
+
+  'AppendItemArray':
+    'prefix': 'AppendItemArray'
+    'body': 'AppendItemArray(${1:itemid}, ${2:data[]}, ${3:length})'
+
+  'AppendItemArrayCell':
+    'prefix': 'AppendItemArrayCell'
+    'body': 'AppendItemArrayCell(${1:itemid}, ${2:data})'
+
+  'SetItemArrayDataLength':
+    'prefix': 'SetItemArrayDataLength'
+    'body': 'SetItemArrayDataLength(${1:itemid}, ${2:length}, ${3:bool:force = false})'
+
+  'RemoveItemArrayData':
+    'prefix': 'RemoveItemArrayData'
+    'body': 'RemoveItemArrayData(${1:itemid})'
+
+  'SetItemNoResetArrayData':
+    'prefix': 'SetItemNoResetArrayData'
+    'body': 'SetItemNoResetArrayData(${1:itemid}, ${2:bool:toggle})'
+
+  'OnItemArrayDataChanged':
+    'prefix': 'OnItemArrayDataChanged'
+    'body': 'OnItemArrayDataChanged(${1:itemid})'

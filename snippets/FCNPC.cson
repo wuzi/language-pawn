@@ -1,0 +1,655 @@
+# Atom Snippets from Sublime Text Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia.
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'FCNPC_OnCreate':
+    'prefix': 'FCNPC_OnCreate'
+    'body': 'FCNPC_OnCreate(${1:npcid})'
+
+  'FCNPC_OnDestroy':
+    'prefix': 'FCNPC_OnDestroy'
+    'body': 'FCNPC_OnDestroy(${1:npcid})'
+
+  'FCNPC_OnSpawn':
+    'prefix': 'FCNPC_OnSpawn'
+    'body': 'FCNPC_OnSpawn(${1:npcid})'
+
+  'FCNPC_OnRespawn':
+    'prefix': 'FCNPC_OnRespawn'
+    'body': 'FCNPC_OnRespawn(${1:npcid})'
+
+  'FCNPC_OnDeath':
+    'prefix': 'FCNPC_OnDeath'
+    'body': 'FCNPC_OnDeath(${1:npcid}, ${2:killerid}, ${3:weaponid})'
+
+  'FCNPC_OnVehicleEntryComplete':
+    'prefix': 'FCNPC_OnVehicleEntryComplete'
+    'body': 'FCNPC_OnVehicleEntryComplete(${1:npcid}, ${2:vehicleid}, ${3:seat})'
+
+  'FCNPC_OnVehicleExitComplete':
+    'prefix': 'FCNPC_OnVehicleExitComplete'
+    'body': 'FCNPC_OnVehicleExitComplete(${1:npcid})'
+
+  'FCNPC_OnReachDestination':
+    'prefix': 'FCNPC_OnReachDestination'
+    'body': 'FCNPC_OnReachDestination(${1:npcid})'
+
+  'FCNPC_OnFinishPlayback':
+    'prefix': 'FCNPC_OnFinishPlayback'
+    'body': 'FCNPC_OnFinishPlayback(${1:npcid})'
+
+  'FCNPC_OnTakeDamage':
+    'prefix': 'FCNPC_OnTakeDamage'
+    'body': 'FCNPC_OnTakeDamage(${1:npcid}, ${2:damagerid}, ${3:weaponid}, ${4:bodypart}, ${5:Float:health_loss})'
+
+  'FCNPC_OnGiveDamage':
+    'prefix': 'FCNPC_OnGiveDamage'
+    'body': 'FCNPC_OnGiveDamage(${1:npcid}, ${2:issuerid}, ${3:weaponid}, ${4:bodypart}, ${5:Float:health_loss})'
+
+  'FCNPC_OnVehicleTakeDamage':
+    'prefix': 'FCNPC_OnVehicleTakeDamage'
+    'body': 'FCNPC_OnVehicleTakeDamage(${1:npcid}, ${2:damagerid}, ${3:vehicleid}, ${4:weaponid}, ${5:Float:x}, ${6:Float:y}, ${7:Float:z})'
+
+  'FCNPC_OnFinishNodePoint':
+    'prefix': 'FCNPC_OnFinishNodePoint'
+    'body': 'FCNPC_OnFinishNodePoint(${1:npcid}, ${2:point})'
+
+  'FCNPC_OnChangeNode':
+    'prefix': 'FCNPC_OnChangeNode'
+    'body': 'FCNPC_OnChangeNode(${1:npcid}, ${2:nodeid})'
+
+  'FCNPC_OnFinishNode':
+    'prefix': 'FCNPC_OnFinishNode'
+    'body': 'FCNPC_OnFinishNode(${1:npcid})'
+
+  'FCNPC_OnStreamIn':
+    'prefix': 'FCNPC_OnStreamIn'
+    'body': 'FCNPC_OnStreamIn(${1:npcid}, ${2:forplayerid})'
+
+  'FCNPC_OnStreamOut':
+    'prefix': 'FCNPC_OnStreamOut'
+    'body': 'FCNPC_OnStreamOut(${1:npcid}, ${2:forplayerid})'
+
+  'FCNPC_OnUpdate':
+    'prefix': 'FCNPC_OnUpdate'
+    'body': 'FCNPC_OnUpdate(${1:npcid})'
+
+  'FCNPC_OnFinishMovePath':
+    'prefix': 'FCNPC_OnFinishMovePath'
+    'body': 'FCNPC_OnFinishMovePath(${1:npcid}, ${2:pathid})'
+
+  'FCNPC_OnFinishMovePathPoint':
+    'prefix': 'FCNPC_OnFinishMovePathPoint'
+    'body': 'FCNPC_OnFinishMovePathPoint(${1:npcid}, ${2:pathid}, ${3:pointid})'
+
+  'FCNPC_SetUpdateRate':
+    'prefix': 'FCNPC_SetUpdateRate'
+    'body': 'FCNPC_SetUpdateRate(${1:rate})'
+
+  'FCNPC_InitMapAndreas':
+    'prefix': 'FCNPC_InitMapAndreas'
+    'body': 'FCNPC_InitMapAndreas(${1:address})'
+
+  'FCNPC_Create':
+    'prefix': 'FCNPC_Create'
+    'body': 'FCNPC_Create(${1:name[]})'
+
+  'FCNPC_Destroy':
+    'prefix': 'FCNPC_Destroy'
+    'body': 'FCNPC_Destroy(${1:npcid})'
+
+  'FCNPC_Spawn':
+    'prefix': 'FCNPC_Spawn'
+    'body': 'FCNPC_Spawn(${1:npcid}, ${2:skinid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+
+  'FCNPC_Respawn':
+    'prefix': 'FCNPC_Respawn'
+    'body': 'FCNPC_Respawn(${1:npcid})'
+
+  'FCNPC_IsSpawned':
+    'prefix': 'FCNPC_IsSpawned'
+    'body': 'FCNPC_IsSpawned(${1:npcid})'
+
+  'FCNPC_Kill':
+    'prefix': 'FCNPC_Kill'
+    'body': 'FCNPC_Kill(${1:npcid})'
+
+  'FCNPC_IsDead':
+    'prefix': 'FCNPC_IsDead'
+    'body': 'FCNPC_IsDead(${1:npcid})'
+
+  'FCNPC_IsValid':
+    'prefix': 'FCNPC_IsValid'
+    'body': 'FCNPC_IsValid(${1:npcid})'
+
+  'FCNPC_IsStreamedIn':
+    'prefix': 'FCNPC_IsStreamedIn'
+    'body': 'FCNPC_IsStreamedIn(${1:npcid}, ${2:forplayerid})'
+
+  'FCNPC_IsStreamedForAnyone':
+    'prefix': 'FCNPC_IsStreamedForAnyone'
+    'body': 'FCNPC_IsStreamedForAnyone(${1:npcid})'
+
+  'FCNPC_SetPosition':
+    'prefix': 'FCNPC_SetPosition'
+    'body': 'FCNPC_SetPosition(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'FCNPC_GivePosition':
+    'prefix': 'FCNPC_GivePosition'
+    'body': 'FCNPC_GivePosition(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'FCNPC_GetPosition':
+    'prefix': 'FCNPC_GetPosition'
+    'body': 'FCNPC_GetPosition(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'FCNPC_SetAngle':
+    'prefix': 'FCNPC_SetAngle'
+    'body': 'FCNPC_SetAngle(${1:npcid}, ${2:Float:angle})'
+
+  'FCNPC_GiveAngle':
+    'prefix': 'FCNPC_GiveAngle'
+    'body': 'FCNPC_GiveAngle(${1:npcid}, ${2:Float:angle})'
+
+  'FCNPC_SetAngleToPos':
+    'prefix': 'FCNPC_SetAngleToPos'
+    'body': 'FCNPC_SetAngleToPos(${1:npcid}, ${2:Float:x}, ${3:Float:y})'
+
+  'FCNPC_SetAngleToPlayer':
+    'prefix': 'FCNPC_SetAngleToPlayer'
+    'body': 'FCNPC_SetAngleToPlayer(${1:npcid}, ${2:playerid})'
+
+  'FCNPC_GetAngle':
+    'prefix': 'FCNPC_GetAngle'
+    'body': 'FCNPC_GetAngle(${1:npcid})'
+
+  'FCNPC_SetQuaternion':
+    'prefix': 'FCNPC_SetQuaternion'
+    'body': 'FCNPC_SetQuaternion(${1:npcid}, ${2:Float:w}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+
+  'FCNPC_GiveQuaternion':
+    'prefix': 'FCNPC_GiveQuaternion'
+    'body': 'FCNPC_GiveQuaternion(${1:npcid}, ${2:Float:w}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+
+  'FCNPC_GetQuaternion':
+    'prefix': 'FCNPC_GetQuaternion'
+    'body': 'FCNPC_GetQuaternion(${1:npcid}, ${2:Float:w}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+
+  'FCNPC_SetVelocity':
+    'prefix': 'FCNPC_SetVelocity'
+    'body': 'FCNPC_SetVelocity(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:bool:update_pos = false})'
+
+  'FCNPC_GiveVelocity':
+    'prefix': 'FCNPC_GiveVelocity'
+    'body': 'FCNPC_GiveVelocity(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:bool:update_pos = false})'
+
+  'FCNPC_GetVelocity':
+    'prefix': 'FCNPC_GetVelocity'
+    'body': 'FCNPC_GetVelocity(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'FCNPC_SetInterior':
+    'prefix': 'FCNPC_SetInterior'
+    'body': 'FCNPC_SetInterior(${1:npcid}, ${2:interiorid})'
+
+  'FCNPC_GetInterior':
+    'prefix': 'FCNPC_GetInterior'
+    'body': 'FCNPC_GetInterior(${1:npcid})'
+
+  'FCNPC_SetVirtualWorld':
+    'prefix': 'FCNPC_SetVirtualWorld'
+    'body': 'FCNPC_SetVirtualWorld(${1:npcid}, ${2:worldid})'
+
+  'FCNPC_GetVirtualWorld':
+    'prefix': 'FCNPC_GetVirtualWorld'
+    'body': 'FCNPC_GetVirtualWorld(${1:npcid})'
+
+  'FCNPC_SetHealth':
+    'prefix': 'FCNPC_SetHealth'
+    'body': 'FCNPC_SetHealth(${1:npcid}, ${2:Float:health})'
+
+  'FCNPC_GiveHealth':
+    'prefix': 'FCNPC_GiveHealth'
+    'body': 'FCNPC_GiveHealth(${1:npcid}, ${2:Float:health})'
+
+  'FCNPC_GetHealth':
+    'prefix': 'FCNPC_GetHealth'
+    'body': 'FCNPC_GetHealth(${1:npcid})'
+
+  'FCNPC_SetArmour':
+    'prefix': 'FCNPC_SetArmour'
+    'body': 'FCNPC_SetArmour(${1:npcid}, ${2:Float:armour})'
+
+  'FCNPC_GiveArmour':
+    'prefix': 'FCNPC_GiveArmour'
+    'body': 'FCNPC_GiveArmour(${1:npcid}, ${2:Float:armour})'
+
+  'FCNPC_GetArmour':
+    'prefix': 'FCNPC_GetArmour'
+    'body': 'FCNPC_GetArmour(${1:npcid})'
+
+  'FCNPC_SetInvulnerable':
+    'prefix': 'FCNPC_SetInvulnerable'
+    'body': 'FCNPC_SetInvulnerable(${1:npcid}, ${2:bool:invulnerable = true})'
+
+  'FCNPC_IsInvulnerable':
+    'prefix': 'FCNPC_IsInvulnerable'
+    'body': 'FCNPC_IsInvulnerable(${1:npcid})'
+
+  'FCNPC_SetSkin':
+    'prefix': 'FCNPC_SetSkin'
+    'body': 'FCNPC_SetSkin(${1:npcid}, ${2:skinid})'
+
+  'FCNPC_GetSkin':
+    'prefix': 'FCNPC_GetSkin'
+    'body': 'FCNPC_GetSkin(${1:npcid})'
+
+  'FCNPC_SetWeapon':
+    'prefix': 'FCNPC_SetWeapon'
+    'body': 'FCNPC_SetWeapon(${1:npcid}, ${2:weaponid})'
+
+  'FCNPC_GetWeapon':
+    'prefix': 'FCNPC_GetWeapon'
+    'body': 'FCNPC_GetWeapon(${1:npcid})'
+
+  'FCNPC_SetAmmo':
+    'prefix': 'FCNPC_SetAmmo'
+    'body': 'FCNPC_SetAmmo(${1:npcid}, ${2:ammo})'
+
+  'FCNPC_GiveAmmo':
+    'prefix': 'FCNPC_GiveAmmo'
+    'body': 'FCNPC_GiveAmmo(${1:npcid}, ${2:ammo})'
+
+  'FCNPC_GetAmmo':
+    'prefix': 'FCNPC_GetAmmo'
+    'body': 'FCNPC_GetAmmo(${1:npcid})'
+
+  'FCNPC_SetWeaponSkillLevel':
+    'prefix': 'FCNPC_SetWeaponSkillLevel'
+    'body': 'FCNPC_SetWeaponSkillLevel(${1:npcid}, ${2:skill}, ${3:level})'
+
+  'FCNPC_GiveWeaponSkillLevel':
+    'prefix': 'FCNPC_GiveWeaponSkillLevel'
+    'body': 'FCNPC_GiveWeaponSkillLevel(${1:npcid}, ${2:skill}, ${3:level})'
+
+  'FCNPC_GetWeaponSkillLevel':
+    'prefix': 'FCNPC_GetWeaponSkillLevel'
+    'body': 'FCNPC_GetWeaponSkillLevel(${1:npcid}, ${2:skill})'
+
+  'FCNPC_SetWeaponState':
+    'prefix': 'FCNPC_SetWeaponState'
+    'body': 'FCNPC_SetWeaponState(${1:npcid}, ${2:weaponstate})'
+
+  'FCNPC_GetWeaponState':
+    'prefix': 'FCNPC_GetWeaponState'
+    'body': 'FCNPC_GetWeaponState(${1:npcid})'
+
+  'FCNPC_SetWeaponReloadTime':
+    'prefix': 'FCNPC_SetWeaponReloadTime'
+    'body': 'FCNPC_SetWeaponReloadTime(${1:npcid}, ${2:weaponid}, ${3:time})'
+
+  'FCNPC_GetWeaponReloadTime':
+    'prefix': 'FCNPC_GetWeaponReloadTime'
+    'body': 'FCNPC_GetWeaponReloadTime(${1:npcid}, ${2:weaponid})'
+
+  'FCNPC_SetWeaponShootTime':
+    'prefix': 'FCNPC_SetWeaponShootTime'
+    'body': 'FCNPC_SetWeaponShootTime(${1:npcid}, ${2:weaponid}, ${3:time})'
+
+  'FCNPC_GetWeaponShootTime':
+    'prefix': 'FCNPC_GetWeaponShootTime'
+    'body': 'FCNPC_GetWeaponShootTime(${1:npcid}, ${2:weaponid})'
+
+  'FCNPC_SetWeaponClipSize':
+    'prefix': 'FCNPC_SetWeaponClipSize'
+    'body': 'FCNPC_SetWeaponClipSize(${1:npcid}, ${2:weaponid}, ${3:size})'
+
+  'FCNPC_GetWeaponClipSize':
+    'prefix': 'FCNPC_GetWeaponClipSize'
+    'body': 'FCNPC_GetWeaponClipSize(${1:npcid}, ${2:weaponid})'
+
+  'FCNPC_SetWeaponAccuracy':
+    'prefix': 'FCNPC_SetWeaponAccuracy'
+    'body': 'FCNPC_SetWeaponAccuracy(${1:npcid}, ${2:weaponid}, ${3:Float:accuracy})'
+
+  'FCNPC_GetWeaponAccuracy':
+    'prefix': 'FCNPC_GetWeaponAccuracy'
+    'body': 'FCNPC_GetWeaponAccuracy(${1:npcid}, ${2:weaponid})'
+
+  'FCNPC_SetWeaponInfo':
+    'prefix': 'FCNPC_SetWeaponInfo'
+    'body': 'FCNPC_SetWeaponInfo(${1:npcid}, ${2:weaponid}, ${3:reload_time = -1}, ${4:shoot_time = -1}, ${5:clip_size = -1}, ${6:Float:accuracy = 1.0})'
+
+  'FCNPC_GetWeaponInfo':
+    'prefix': 'FCNPC_GetWeaponInfo'
+    'body': 'FCNPC_GetWeaponInfo(${1:npcid}, ${2:weaponid}, ${3:reload_time = -1}, ${4:shoot_time = -1}, ${5:clip_size = -1}, ${6:Float:accuracy = 1.0})'
+
+  'FCNPC_SetWeaponDefaultInfo':
+    'prefix': 'FCNPC_SetWeaponDefaultInfo'
+    'body': 'FCNPC_SetWeaponDefaultInfo(${1:weaponid}, ${2:reload_time = -1}, ${3:shoot_time = -1}, ${4:clip_size = -1}, ${5:Float:accuracy = 1.0})'
+
+  'FCNPC_GetWeaponDefaultInfo':
+    'prefix': 'FCNPC_GetWeaponDefaultInfo'
+    'body': 'FCNPC_GetWeaponDefaultInfo(${1:weaponid}, ${2:reload_time = -1}, ${3:shoot_time = -1}, ${4:clip_size = -1}, ${5:Float:accuracy = 1.0})'
+
+  'FCNPC_SetKeys':
+    'prefix': 'FCNPC_SetKeys'
+    'body': 'FCNPC_SetKeys(${1:npcid}, ${2:ud_analog}, ${3:lr_analog}, ${4:keys})'
+
+  'FCNPC_GetKeys':
+    'prefix': 'FCNPC_GetKeys'
+    'body': 'FCNPC_GetKeys(${1:npcid}, ${2:ud_analog}, ${3:lr_analog}, ${4:keys})'
+
+  'FCNPC_SetSpecialAction':
+    'prefix': 'FCNPC_SetSpecialAction'
+    'body': 'FCNPC_SetSpecialAction(${1:npcid}, ${2:actionid})'
+
+  'FCNPC_GetSpecialAction':
+    'prefix': 'FCNPC_GetSpecialAction'
+    'body': 'FCNPC_GetSpecialAction(${1:npcid})'
+
+  'FCNPC_SetAnimation':
+    'prefix': 'FCNPC_SetAnimation'
+    'body': 'FCNPC_SetAnimation(${1:npcid}, ${2:animationid}, ${3:Float:fDelta = 4.1}, ${4:loop = 0}, ${5:lockx = 1}, ${6:locky = 1}, ${7:freeze = 0}, ${8:time = 1})'
+
+  'FCNPC_SetAnimationByName':
+    'prefix': 'FCNPC_SetAnimationByName'
+    'body': 'FCNPC_SetAnimationByName(${1:npcid}, ${2:name[]}, ${3:Float:fDelta = 4.1}, ${4:loop = 0}, ${5:lockx = 1}, ${6:locky = 1}, ${7:freeze = 0}, ${8:time = 1})'
+
+  'FCNPC_ResetAnimation':
+    'prefix': 'FCNPC_ResetAnimation'
+    'body': 'FCNPC_ResetAnimation(${1:npcid})'
+
+  'FCNPC_GetAnimation':
+    'prefix': 'FCNPC_GetAnimation'
+    'body': 'FCNPC_GetAnimation(${1:npcid}, ${2:animationid = 0}, ${3:Float:fDelta = 4.1}, ${4:loop = 0}, ${5:lockx = 1}, ${6:locky = 1}, ${7:freeze = 0}, ${8:time = 1})'
+
+  'FCNPC_ApplyAnimation':
+    'prefix': 'FCNPC_ApplyAnimation'
+    'body': 'FCNPC_ApplyAnimation(${1:npcid}, ${2:animlib[]}, ${3:animname[]}, ${4:Float:fDelta = 4.1}, ${5:loop = 0}, ${6:lockx = 1}, ${7:locky = 1}, ${8:freeze = 0}, ${9:time = 1})'
+
+  'FCNPC_ClearAnimations':
+    'prefix': 'FCNPC_ClearAnimations'
+    'body': 'FCNPC_ClearAnimations(${1:npcid})'
+
+  'FCNPC_SetFightingStyle':
+    'prefix': 'FCNPC_SetFightingStyle'
+    'body': 'FCNPC_SetFightingStyle(${1:npcid}, ${2:style})'
+
+  'FCNPC_GetFightingStyle':
+    'prefix': 'FCNPC_GetFightingStyle'
+    'body': 'FCNPC_GetFightingStyle(${1:npcid})'
+
+  'FCNPC_ToggleReloading':
+    'prefix': 'FCNPC_ToggleReloading'
+    'body': 'FCNPC_ToggleReloading(${1:npcid}, ${2:bool:toggle})'
+
+  'FCNPC_ToggleInfiniteAmmo':
+    'prefix': 'FCNPC_ToggleInfiniteAmmo'
+    'body': 'FCNPC_ToggleInfiniteAmmo(${1:npcid}, ${2:bool:toggle})'
+
+  'FCNPC_GoTo':
+    'prefix': 'FCNPC_GoTo'
+    'body': 'FCNPC_GoTo(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:type = MOVE_TYPE_AUTO}, ${6:Float:speed = MOVE_SPEED_AUTO}, ${7:bool:UseMapAndreas = false}, ${8:Float:radius = 0.0}, ${9:bool:setangle = true})'
+
+  'FCNPC_GoToPlayer':
+    'prefix': 'FCNPC_GoToPlayer'
+    'body': 'FCNPC_GoToPlayer(${1:npcid}, ${2:playerid}, ${3:type = MOVE_TYPE_AUTO}, ${4:Float:speed = MOVE_SPEED_AUTO}, ${5:bool:UseMapAndreas = false}, ${6:Float:radius = 0.0}, ${7:bool:setangle = true})'
+
+  'FCNPC_Stop':
+    'prefix': 'FCNPC_Stop'
+    'body': 'FCNPC_Stop(${1:npcid})'
+
+  'FCNPC_IsMoving':
+    'prefix': 'FCNPC_IsMoving'
+    'body': 'FCNPC_IsMoving(${1:npcid})'
+
+  'FCNPC_IsMovingAtPlayer':
+    'prefix': 'FCNPC_IsMovingAtPlayer'
+    'body': 'FCNPC_IsMovingAtPlayer(${1:npcid}, ${2:playerid})'
+
+  'FCNPC_AimAt':
+    'prefix': 'FCNPC_AimAt'
+    'body': 'FCNPC_AimAt(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:bool:shoot = false}, ${6:shoot_delay = -1}, ${7:bool:setangle = true})'
+
+  'FCNPC_AimAtPlayer':
+    'prefix': 'FCNPC_AimAtPlayer'
+    'body': 'FCNPC_AimAtPlayer(${1:npcid}, ${2:playerid}, ${3:bool:shoot = false}, ${4:shoot_delay = -1}, ${5:bool:setangle = true})'
+
+  'FCNPC_StopAim':
+    'prefix': 'FCNPC_StopAim'
+    'body': 'FCNPC_StopAim(${1:npcid})'
+
+  'FCNPC_MeleeAttack':
+    'prefix': 'FCNPC_MeleeAttack'
+    'body': 'FCNPC_MeleeAttack(${1:npcid}, ${2:delay = -1}, ${3:bool:fightstyle = false})'
+
+  'FCNPC_StopAttack':
+    'prefix': 'FCNPC_StopAttack'
+    'body': 'FCNPC_StopAttack(${1:npcid})'
+
+  'FCNPC_IsAttacking':
+    'prefix': 'FCNPC_IsAttacking'
+    'body': 'FCNPC_IsAttacking(${1:npcid})'
+
+  'FCNPC_IsAiming':
+    'prefix': 'FCNPC_IsAiming'
+    'body': 'FCNPC_IsAiming(${1:npcid})'
+
+  'FCNPC_IsAimingAtPlayer':
+    'prefix': 'FCNPC_IsAimingAtPlayer'
+    'body': 'FCNPC_IsAimingAtPlayer(${1:npcid}, ${2:playerid})'
+
+  'FCNPC_IsShooting':
+    'prefix': 'FCNPC_IsShooting'
+    'body': 'FCNPC_IsShooting(${1:npcid})'
+
+  'FCNPC_IsReloading':
+    'prefix': 'FCNPC_IsReloading'
+    'body': 'FCNPC_IsReloading(${1:npcid})'
+
+  'FCNPC_EnterVehicle':
+    'prefix': 'FCNPC_EnterVehicle'
+    'body': 'FCNPC_EnterVehicle(${1:npcid}, ${2:vehicleid}, ${3:seatid}, ${4:type = MOVE_TYPE_WALK})'
+
+  'FCNPC_ExitVehicle':
+    'prefix': 'FCNPC_ExitVehicle'
+    'body': 'FCNPC_ExitVehicle(${1:npcid})'
+
+  'FCNPC_PutInVehicle':
+    'prefix': 'FCNPC_PutInVehicle'
+    'body': 'FCNPC_PutInVehicle(${1:npcid}, ${2:vehicleid}, ${3:seatid})'
+
+  'FCNPC_RemoveFromVehicle':
+    'prefix': 'FCNPC_RemoveFromVehicle'
+    'body': 'FCNPC_RemoveFromVehicle(${1:npcid})'
+
+  'FCNPC_GetVehicleID':
+    'prefix': 'FCNPC_GetVehicleID'
+    'body': 'FCNPC_GetVehicleID(${1:npcid})'
+
+  'FCNPC_GetVehicleSeat':
+    'prefix': 'FCNPC_GetVehicleSeat'
+    'body': 'FCNPC_GetVehicleSeat(${1:npcid})'
+
+  'FCNPC_SetVehicleSiren':
+    'prefix': 'FCNPC_SetVehicleSiren'
+    'body': 'FCNPC_SetVehicleSiren(${1:npcid}, ${2:bool:status})'
+
+  'FCNPC_IsVehicleSiren':
+    'prefix': 'FCNPC_IsVehicleSiren'
+    'body': 'FCNPC_IsVehicleSiren(${1:npcid})'
+
+  'FCNPC_SetVehicleHealth':
+    'prefix': 'FCNPC_SetVehicleHealth'
+    'body': 'FCNPC_SetVehicleHealth(${1:npcid}, ${2:Float:health})'
+
+  'FCNPC_GetVehicleHealth':
+    'prefix': 'FCNPC_GetVehicleHealth'
+    'body': 'FCNPC_GetVehicleHealth(${1:npcid})'
+
+  'FCNPC_SetVehicleHydraThrusters':
+    'prefix': 'FCNPC_SetVehicleHydraThrusters'
+    'body': 'FCNPC_SetVehicleHydraThrusters(${1:npcid}, ${2:direction})'
+
+  'FCNPC_GetVehicleHydraThrusters':
+    'prefix': 'FCNPC_GetVehicleHydraThrusters'
+    'body': 'FCNPC_GetVehicleHydraThrusters(${1:npcid})'
+
+  'FCNPC_SetVehicleGearState':
+    'prefix': 'FCNPC_SetVehicleGearState'
+    'body': 'FCNPC_SetVehicleGearState(${1:npcid}, ${2:gear_state})'
+
+  'FCNPC_GetVehicleGearState':
+    'prefix': 'FCNPC_GetVehicleGearState'
+    'body': 'FCNPC_GetVehicleGearState(${1:npcid})'
+
+  'FCNPC_SetSurfingOffsets':
+    'prefix': 'FCNPC_SetSurfingOffsets'
+    'body': 'FCNPC_SetSurfingOffsets(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'FCNPC_GiveSurfingOffsets':
+    'prefix': 'FCNPC_GiveSurfingOffsets'
+    'body': 'FCNPC_GiveSurfingOffsets(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'FCNPC_GetSurfingOffsets':
+    'prefix': 'FCNPC_GetSurfingOffsets'
+    'body': 'FCNPC_GetSurfingOffsets(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'FCNPC_SetSurfingVehicle':
+    'prefix': 'FCNPC_SetSurfingVehicle'
+    'body': 'FCNPC_SetSurfingVehicle(${1:npcid}, ${2:vehicleid})'
+
+  'FCNPC_GetSurfingVehicle':
+    'prefix': 'FCNPC_GetSurfingVehicle'
+    'body': 'FCNPC_GetSurfingVehicle(${1:npcid})'
+
+  'FCNPC_SetSurfingObject':
+    'prefix': 'FCNPC_SetSurfingObject'
+    'body': 'FCNPC_SetSurfingObject(${1:npcid}, ${2:objectid})'
+
+  'FCNPC_GetSurfingObject':
+    'prefix': 'FCNPC_GetSurfingObject'
+    'body': 'FCNPC_GetSurfingObject(${1:npcid})'
+
+  'FCNPC_SetSurfingPlayerObject':
+    'prefix': 'FCNPC_SetSurfingPlayerObject'
+    'body': 'FCNPC_SetSurfingPlayerObject(${1:npcid}, ${2:objectid})'
+
+  'FCNPC_GetSurfingPlayerObject':
+    'prefix': 'FCNPC_GetSurfingPlayerObject'
+    'body': 'FCNPC_GetSurfingPlayerObject(${1:npcid})'
+
+  'FCNPC_StopSurfing':
+    'prefix': 'FCNPC_StopSurfing'
+    'body': 'FCNPC_StopSurfing(${1:npcid})'
+
+  'FCNPC_StartPlayingPlayback':
+    'prefix': 'FCNPC_StartPlayingPlayback'
+    'body': 'FCNPC_StartPlayingPlayback(${1:npcid}, ${2:file[] = \"\"}, ${3:recordid = INVALID_RECORD_ID}, ${4:bool:auto_unload = false})'
+
+  'FCNPC_StopPlayingPlayback':
+    'prefix': 'FCNPC_StopPlayingPlayback'
+    'body': 'FCNPC_StopPlayingPlayback(${1:npcid})'
+
+  'FCNPC_PausePlayingPlayback':
+    'prefix': 'FCNPC_PausePlayingPlayback'
+    'body': 'FCNPC_PausePlayingPlayback(${1:npcid})'
+
+  'FCNPC_ResumePlayingPlayback':
+    'prefix': 'FCNPC_ResumePlayingPlayback'
+    'body': 'FCNPC_ResumePlayingPlayback(${1:npcid})'
+
+  'FCNPC_LoadPlayingPlayback':
+    'prefix': 'FCNPC_LoadPlayingPlayback'
+    'body': 'FCNPC_LoadPlayingPlayback(${1:file[]})'
+
+  'FCNPC_UnloadPlayingPlayback':
+    'prefix': 'FCNPC_UnloadPlayingPlayback'
+    'body': 'FCNPC_UnloadPlayingPlayback(${1:recordid})'
+
+  'FCNPC_SetPlayingPlaybackPath':
+    'prefix': 'FCNPC_SetPlayingPlaybackPath'
+    'body': 'FCNPC_SetPlayingPlaybackPath(${1:npcid}, ${2:path[]})'
+
+  'FCNPC_GetPlayingPlaybackPath':
+    'prefix': 'FCNPC_GetPlayingPlaybackPath'
+    'body': 'FCNPC_GetPlayingPlaybackPath(${1:npcid}, ${2:path[]}, ${3:const size = sizeof(path})'
+
+  'FCNPC_OpenNode':
+    'prefix': 'FCNPC_OpenNode'
+    'body': 'FCNPC_OpenNode(${1:nodeid})'
+
+  'FCNPC_CloseNode':
+    'prefix': 'FCNPC_CloseNode'
+    'body': 'FCNPC_CloseNode(${1:nodeid})'
+
+  'FCNPC_IsNodeOpen':
+    'prefix': 'FCNPC_IsNodeOpen'
+    'body': 'FCNPC_IsNodeOpen(${1:nodeid})'
+
+  'FCNPC_GetNodeType':
+    'prefix': 'FCNPC_GetNodeType'
+    'body': 'FCNPC_GetNodeType(${1:nodeid})'
+
+  'FCNPC_SetNodePoint':
+    'prefix': 'FCNPC_SetNodePoint'
+    'body': 'FCNPC_SetNodePoint(${1:nodeid}, ${2:point})'
+
+  'FCNPC_GetNodePointPosition':
+    'prefix': 'FCNPC_GetNodePointPosition'
+    'body': 'FCNPC_GetNodePointPosition(${1:nodeid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'FCNPC_GetNodePointCount':
+    'prefix': 'FCNPC_GetNodePointCount'
+    'body': 'FCNPC_GetNodePointCount(${1:nodeid})'
+
+  'FCNPC_GetNodeInfo':
+    'prefix': 'FCNPC_GetNodeInfo'
+    'body': 'FCNPC_GetNodeInfo(${1:nodeid}, ${2:vehnodes}, ${3:pednodes}, ${4:navinode})'
+
+  'FCNPC_PlayNode':
+    'prefix': 'FCNPC_PlayNode'
+    'body': 'FCNPC_PlayNode(${1:npcid}, ${2:nodeid}, ${3:type})'
+
+  'FCNPC_StopPlayingNode':
+    'prefix': 'FCNPC_StopPlayingNode'
+    'body': 'FCNPC_StopPlayingNode(${1:npcid})'
+
+  'FCNPC_CreateMovePath':
+    'prefix': 'FCNPC_CreateMovePath'
+    'body': 'FCNPC_CreateMovePath()'
+
+  'FCNPC_DestroyMovePath':
+    'prefix': 'FCNPC_DestroyMovePath'
+    'body': 'FCNPC_DestroyMovePath(${1:pathid})'
+
+  'FCNPC_IsValidMovePath':
+    'prefix': 'FCNPC_IsValidMovePath'
+    'body': 'FCNPC_IsValidMovePath(${1:pathid})'
+
+  'FCNPC_AddPointToPath':
+    'prefix': 'FCNPC_AddPointToPath'
+    'body': 'FCNPC_AddPointToPath(${1:pathid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'FCNPC_AddPointsToPath':
+    'prefix': 'FCNPC_AddPointsToPath'
+    'body': 'FCNPC_AddPointsToPath(${1:pathid}, ${2:Float:points[][3]}, ${3:const size = sizeof(points})'
+
+  'FCNPC_RemovePointFromPath':
+    'prefix': 'FCNPC_RemovePointFromPath'
+    'body': 'FCNPC_RemovePointFromPath(${1:pathid}, ${2:pointid})'
+
+  'FCNPC_IsValidMovePoint':
+    'prefix': 'FCNPC_IsValidMovePoint'
+    'body': 'FCNPC_IsValidMovePoint(${1:pathid}, ${2:pointid})'
+
+  'FCNPC_GetMovePoint':
+    'prefix': 'FCNPC_GetMovePoint'
+    'body': 'FCNPC_GetMovePoint(${1:pathid}, ${2:pointid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+
+  'FCNPC_GetNumberMovePoint':
+    'prefix': 'FCNPC_GetNumberMovePoint'
+    'body': 'FCNPC_GetNumberMovePoint(${1:pathid})'
+
+  'FCNPC_GoByMovePath':
+    'prefix': 'FCNPC_GoByMovePath'
+    'body': 'FCNPC_GoByMovePath(${1:npcid}, ${2:pathid}, ${3:type = MOVE_TYPE_AUTO}, ${4:Float:speed = MOVE_SPEED_AUTO}, ${5:bool:UseMapAndreas = false}, ${6:Float:radius = 0.0}, ${7:bool:setangle = true})'

@@ -1,0 +1,59 @@
+# SIF.ItemSerializer.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'SerialiseItems':
+    'prefix': 'SerialiseItems'
+    'body': 'SerialiseItems(${1:items[]}, ${2:maxitems = sizeof(items})'
+
+  'DeserialiseItems':
+    'prefix': 'DeserialiseItems'
+    'body': 'DeserialiseItems(${1:list[]}, ${2:length = sizeof(list})'
+
+  'ClearSerializer':
+    'prefix': 'ClearSerializer'
+    'body': 'ClearSerializer()'
+
+  'GetSerialisedSize':
+    'prefix': 'GetSerialisedSize'
+    'body': 'GetSerialisedSize()'
+
+  'GetStoredItemCount':
+    'prefix': 'GetStoredItemCount'
+    'body': 'GetStoredItemCount()'
+
+  'GetStoredItemType':
+    'prefix': 'GetStoredItemType'
+    'body': 'GetStoredItemType(${1:index})'
+
+  'GetStoredItemPos':
+    'prefix': 'GetStoredItemPos'
+    'body': 'GetStoredItemPos(${1:index}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'GetStoredItemRot':
+    'prefix': 'GetStoredItemRot'
+    'body': 'GetStoredItemRot(${1:index}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+
+  'GetStoredItemWorld':
+    'prefix': 'GetStoredItemWorld'
+    'body': 'GetStoredItemWorld(${1:index})'
+
+  'GetStoredItemInterior':
+    'prefix': 'GetStoredItemInterior'
+    'body': 'GetStoredItemInterior(${1:index})'
+
+  'GetStoredItemArrayData':
+    'prefix': 'GetStoredItemArrayData'
+    'body': 'GetStoredItemArrayData(${1:index}, ${2:output[]})'
+
+  'GetStoredItemArrayDataSize':
+    'prefix': 'GetStoredItemArrayDataSize'
+    'body': 'GetStoredItemArrayDataSize(${1:index})'
+
+  'CreateItemFromStored':
+    'prefix': 'CreateItemFromStored'
+    'body': 'CreateItemFromStored(${1:index})'
+
+  'SetItemArrayDataFromStored':
+    'prefix': 'SetItemArrayDataFromStored'
+    'body': 'SetItemArrayDataFromStored(${1:itemid}, ${2:index})'

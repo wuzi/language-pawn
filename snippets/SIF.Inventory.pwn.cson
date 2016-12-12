@@ -1,0 +1,63 @@
+# SIF.Inventory.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'AddItemToInventory':
+    'prefix': 'AddItemToInventory'
+    'body': 'AddItemToInventory(${1:playerid}, ${2:itemid}, ${3:call = 1})'
+
+  'RemoveItemFromInventory':
+    'prefix': 'RemoveItemFromInventory'
+    'body': 'RemoveItemFromInventory(${1:playerid}, ${2:slotid}, ${3:call = 1})'
+
+  'GetInventorySlotItem':
+    'prefix': 'GetInventorySlotItem'
+    'body': 'GetInventorySlotItem(${1:playerid}, ${2:slotid})'
+
+  'IsInventorySlotUsed':
+    'prefix': 'IsInventorySlotUsed'
+    'body': 'IsInventorySlotUsed(${1:playerid}, ${2:slotid})'
+
+  'IsPlayerInventoryFull':
+    'prefix': 'IsPlayerInventoryFull'
+    'body': 'IsPlayerInventoryFull(${1:playerid})'
+
+  'WillItemTypeFitInInventory':
+    'prefix': 'WillItemTypeFitInInventory'
+    'body': 'WillItemTypeFitInInventory(${1:playerid}, ${2:ItemType:itemtype})'
+
+  'GetInventoryFreeSlots':
+    'prefix': 'GetInventoryFreeSlots'
+    'body': 'GetInventoryFreeSlots(${1:playerid})'
+
+  'GetItemPlayerInventory':
+    'prefix': 'GetItemPlayerInventory'
+    'body': 'GetItemPlayerInventory(${1:itemid})'
+
+  'GetItemPlayerInventorySlot':
+    'prefix': 'GetItemPlayerInventorySlot'
+    'body': 'GetItemPlayerInventorySlot(${1:itemid})'
+
+  'SetPlayerInventorySize':
+    'prefix': 'SetPlayerInventorySize'
+    'body': 'SetPlayerInventorySize(${1:playerid}, ${2:slots})'
+
+  'GetPlayerInventorySize':
+    'prefix': 'GetPlayerInventorySize'
+    'body': 'GetPlayerInventorySize(${1:playerid})'
+
+  'OnItemAddToInventory':
+    'prefix': 'OnItemAddToInventory'
+    'body': 'OnItemAddToInventory(${1:playerid}, ${2:itemid}, ${3:slot})'
+
+  'OnItemAddedToInventory':
+    'prefix': 'OnItemAddedToInventory'
+    'body': 'OnItemAddedToInventory(${1:playerid}, ${2:itemid}, ${3:slot})'
+
+  'OnItemRemoveFromInventory':
+    'prefix': 'OnItemRemoveFromInventory'
+    'body': 'OnItemRemoveFromInventory(${1:playerid}, ${2:itemid}, ${3:slot})'
+
+  'OnItemRemovedFromInventory':
+    'prefix': 'OnItemRemovedFromInventory'
+    'body': 'OnItemRemovedFromInventory(${1:playerid}, ${2:itemid}, ${3:slot})'

@@ -1,0 +1,11 @@
+# SIF.GEID.pwn snippets for Atom converted from Sublime Completions converted from https://github.com/Southclaw/pawn-sublime-language
+# Converter created by Renato "Hii" Garcia
+# Repo: https://github.com/Renato-Garcia/sublime-completions-to-atom-snippets
+'.source.pwn, .source.inc':
+  'mkgeid':
+    'prefix': 'mkgeid'
+    'body': 'mkgeid(${1:id}, ${2:result[]})'
+
+  'b64_encode':
+    'prefix': 'b64_encode'
+    'body': 'b64_encode(${1:data[]}, ${2:data_len}, ${3:result[]}, ${4:result_len})'

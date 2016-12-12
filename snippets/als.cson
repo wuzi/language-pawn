@@ -1,0 +1,18 @@
+# ALS snippets (completions) for Atom
+# Originally created by Renato "Hii" Garcia
+'.source.pwn, .source.inc':
+  'ALS Callback':
+    'prefix': 'ALS'
+    'body': 'public ${1:Callback}($3)\n{\n\t#if defined ${2:prefix}_${1:Callback}\n\t\treturn ${2:prefix}_${1:Callback}($3);\n\t#else\n\t\treturn 1;\n\t#endif\n}\n#if defined _ALS_${1:Callback}\n\t#undef ${1:Callback}\n#else\n\t#define _ALS_${1:Callback}\n#endif\n#define ${1:Callback} ${2:prefix}_${1:Callback}\n#if defined ${2:prefix}_${1:Callback}\n\tforward ${2:prefix}_${1:Callback}($3);\n#endif'
+
+  'ALS Function':
+    'prefix': 'ALS '
+    'body': 'stock ${1:Prefix}_${2:Function}(${3:args})\n{\n\t${4}\n\treturn ${2}(${3});\n}\n#if defined _ALS_${2}\n\t#undef ${2}\n#else\n\t#define _ALS_${2}\n#endif\n#define ${2} ${1}_${2}'
+
+  'ALS Script Init':
+    'prefix': 'ALS  '
+    'body': '#if defined FILTERSCRIPT\n\tpublic OnFilterScriptInit()\n#else\n\tpublic OnGameModeInit()\n#endif\n{\n\t${2:// CODE HERE}\n\n\t#if defined FILTERSCRIPT\n\t\t#if defined ${1:Prefix}_OnFilterScriptInit\n\t\t\treturn ${1:Prefix}_OnFilterScriptInit();\n\t\t#else\n\t\t\treturn 1;\n\t\t#endif\n\t#else\n\t\t#if defined ${1:Prefix}_OnGameModeInit\n\t\t\treturn ${1:Prefix}_OnGameModeInit();\n\t\t#else\n\t\t\treturn 1;\n\t\t#endif\n\t#endif\n}\n\n#if defined FILTERSCRIPT\n\t#if defined _ALS_OnFilterScriptInit\n\t\t#undef OnFilterScriptInit\n\t#else\n\t\t#define _ALS_OnFilterScriptInit\n\t#endif\n\n\t#define OnFilterScriptInit ${1:Prefix}_OnFilterScriptInit\n\t#if defined ${1:Prefix}_OnFilterScriptInit\n\t\tforward ${1:Prefix}_OnFilterScriptInit();\n\t#endif\n#else\n\t#if defined _ALS_OnGameModeInit\n\t\t#undef OnGameModeInit\n\t#else\n\t\t#define _ALS_OnGameModeInit\n\t#endif\n\n\t#define OnGameModeInit ${1:Prefix}_OnGameModeInit\n\t#if defined ${1:Prefix}_OnGameModeInit\n\t\tforward ${1:Prefix}_OnGameModeInit();\n\t#endif\n#endif'
+
+  'ALS Script Exit':
+    'prefix': 'ALS   '
+    'body': '#if defined FILTERSCRIPT\n\tpublic OnFilterScriptExit()\n#else\n\tpublic OnGameModeExit()\n#endif\n{\n\t${2:// CODE HERE}\n\n\t#if defined FILTERSCRIPT\n\t\t#if defined ${1:Prefix}_OnFilterScriptExit\n\t\t\treturn ${1:Prefix}_OnFilterScriptExit();\n\t\t#else\n\t\t\treturn 1;\n\t\t#endif\n\t#else\n\t\t#if defined ${1:Prefix}_OnGameModeExit\n\t\t\treturn ${1:Prefix}_OnGameModeExit();\n\t\t#else\n\t\t\treturn 1;\n\t\t#endif\n\t#endif\n}\n\n#if defined FILTERSCRIPT\n\t#if defined _ALS_OnFilterScriptExit\n\t\t#undef OnFilterScriptExit\n\t#else\n\t\t#define _ALS_OnFilterScriptExit\n\t#endif\n\n\t#define OnFilterScriptExit ${1:Prefix}_OnFilterScriptExit\n\t#if defined ${1:Prefix}_OnFilterScriptExit\n\t\tforward ${1:Prefix}_OnFilterScriptExit();\n\t#endif\n#else\n\t#if defined _ALS_OnGameModeExit\n\t\t#undef OnGameModeExit\n\t#else\n\t\t#define _ALS_OnGameModeExit\n\t#endif\n\n\t#define OnGameModeExit ${1:Prefix}_OnGameModeExit\n\t#if defined ${1:Prefix}_OnGameModeExit\n\t\tforward ${1:Prefix}_OnGameModeExit();\n\t#endif\n#endif'
