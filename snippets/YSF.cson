@@ -1,0 +1,1599 @@
+# YSF Snippets for Atom, automatically generated
+# Generator created by Renato "Hii" Garcia
+'.source.pwn, .source.inc':
+  'execute':
+    'prefix': 'execute'
+    'body': 'execute(${1:const command[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'ffind':
+    'prefix': 'ffind'
+    'body': 'ffind(${1:const pattern[]}, ${2:filename[]}, ${3:len}, ${4:&idx})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'frename':
+    'prefix': 'frename'
+    'body': 'frename(${1:const oldname[]}, ${2:const newname[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'dfind':
+    'prefix': 'dfind'
+    'body': 'dfind(${1:const pattern[]}, ${2:filename[]}, ${3:len}, ${4:&idx})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'dcreate':
+    'prefix': 'dcreate'
+    'body': 'dcreate(${1:const name[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'drename':
+    'prefix': 'drename'
+    'body': 'drename(${1:const oldname[]}, ${2:const newname[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetModeRestartTime':
+    'prefix': 'SetModeRestartTime'
+    'body': 'SetModeRestartTime(${1:Float:time})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetModeRestartTime':
+    'prefix': 'GetModeRestartTime'
+    'body': 'GetModeRestartTime()'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetMaxPlayers':
+    'prefix': 'SetMaxPlayers'
+    'body': 'SetMaxPlayers(${1:maxplayers})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetMaxNPCs':
+    'prefix': 'SetMaxNPCs'
+    'body': 'SetMaxNPCs(${1:maxnpcs})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'LoadFilterScript':
+    'prefix': 'LoadFilterScript'
+    'body': 'LoadFilterScript(${1:const scriptname[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'UnLoadFilterScript':
+    'prefix': 'UnLoadFilterScript'
+    'body': 'UnLoadFilterScript(${1:const scriptname[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetFilterScriptCount':
+    'prefix': 'GetFilterScriptCount'
+    'body': 'GetFilterScriptCount()'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetFilterScriptName':
+    'prefix': 'GetFilterScriptName'
+    'body': 'GetFilterScriptName(${1:id}, ${2:name[]}, ${3:len = sizeof(name})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'AddServerRule':
+    'prefix': 'AddServerRule'
+    'body': 'AddServerRule(${1:const name[]}, ${2:const value[]}, ${3:E_SERVER_RULE_FLAGS:flags = CON_VARFLAG_RULE})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetServerRule':
+    'prefix': 'SetServerRule'
+    'body': 'SetServerRule(${1:const name[]}, ${2:const value[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsValidServerRule':
+    'prefix': 'IsValidServerRule'
+    'body': 'IsValidServerRule(${1:const name[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetServerRuleFlags':
+    'prefix': 'SetServerRuleFlags'
+    'body': 'SetServerRuleFlags(${1:const name[]}, ${2:E_SERVER_RULE_FLAGS:flags})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'E_SERVER_RULE_FLAGS:GetServerRuleFlags':
+    'prefix': 'E_SERVER_RULE_FLAGS:GetServerRuleFlags'
+    'body': 'E_SERVER_RULE_FLAGS:GetServerRuleFlags(${1:const name[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetServerSettings':
+    'prefix': 'GetServerSettings'
+    'body': 'GetServerSettings(${1:&showplayermarkes}, ${2:&shownametags}, ${3:&stuntbonus}, ${4:&useplayerpedanims}, ${5:&bLimitchatradius}, ${6:&disableinteriorenterexits}, ${7:&nametaglos}, ${8:&manualvehicleengine}, ${9:&limitplayermarkers}, ${10:&vehiclefriendlyfire}, ${11:&defaultcameracollision}, ${12:&Float:fGlobalchatradius}, ${13:&Float:fNameTagDrawDistance}, ${14:&Float:fPlayermarkerslimit})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'EnableConsoleMSGsForPlayer':
+    'prefix': 'EnableConsoleMSGsForPlayer'
+    'body': 'EnableConsoleMSGsForPlayer(${1:playerid}, ${2:color})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'DisableConsoleMSGsForPlayer':
+    'prefix': 'DisableConsoleMSGsForPlayer'
+    'body': 'DisableConsoleMSGsForPlayer(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'HasPlayerConsoleMessages':
+    'prefix': 'HasPlayerConsoleMessages'
+    'body': 'HasPlayerConsoleMessages(${1:playerid}, ${2:&color = 0})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'YSF_SetTickRate':
+    'prefix': 'YSF_SetTickRate'
+    'body': 'YSF_SetTickRate(${1:ticks})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'YSF_GetTickRate':
+    'prefix': 'YSF_GetTickRate'
+    'body': 'YSF_GetTickRate()'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'YSF_EnableNightVisionFix':
+    'prefix': 'YSF_EnableNightVisionFix'
+    'body': 'YSF_EnableNightVisionFix(${1:enable})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'YSF_IsNightVisionFixEnabled':
+    'prefix': 'YSF_IsNightVisionFixEnabled'
+    'body': 'YSF_IsNightVisionFixEnabled()'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'YSF_SetExtendedNetStatsEnabled':
+    'prefix': 'YSF_SetExtendedNetStatsEnabled'
+    'body': 'YSF_SetExtendedNetStatsEnabled(${1:enable})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'YSF_IsExtendedNetStatsEnabled':
+    'prefix': 'YSF_IsExtendedNetStatsEnabled'
+    'body': 'YSF_IsExtendedNetStatsEnabled()'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'YSF_SetAFKAccuracy':
+    'prefix': 'YSF_SetAFKAccuracy'
+    'body': 'YSF_SetAFKAccuracy(${1:time_ms})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'YSF_GetAFKAccuracy':
+    'prefix': 'YSF_GetAFKAccuracy'
+    'body': 'YSF_GetAFKAccuracy()'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetRecordingDirectory':
+    'prefix': 'SetRecordingDirectory'
+    'body': 'SetRecordingDirectory(${1:const dir[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetRecordingDirectory':
+    'prefix': 'GetRecordingDirectory'
+    'body': 'GetRecordingDirectory(${1:dir[]}, ${2:len = sizeof(dir})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsValidNickName':
+    'prefix': 'IsValidNickName'
+    'body': 'IsValidNickName(${1:const name[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'AllowNickNameCharacter':
+    'prefix': 'AllowNickNameCharacter'
+    'body': 'AllowNickNameCharacter(${1:character}, ${2:bool:allow})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsNickNameCharacterAllowed':
+    'prefix': 'IsNickNameCharacterAllowed'
+    'body': 'IsNickNameCharacterAllowed(${1:character})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetAvailableClasses':
+    'prefix': 'GetAvailableClasses'
+    'body': 'GetAvailableClasses()'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerClass':
+    'prefix': 'GetPlayerClass'
+    'body': 'GetPlayerClass(${1:classid}, ${2:&teamid}, ${3:&modelid}, ${4:&Float:spawn_x}, ${5:&Float:spawn_y}, ${6:&Float:spawn_z}, ${7:&Float:z_angle}, ${8:&weapon1}, ${9:&weapon1_ammo}, ${10:&weapon2}, ${11:&weapon2_ammo}, ${12:& weapon3}, ${13:&weapon3_ammo})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'EditPlayerClass':
+    'prefix': 'EditPlayerClass'
+    'body': 'EditPlayerClass(${1:classid}, ${2:teamid}, ${3:modelid}, ${4:Float:spawn_x}, ${5:Float:spawn_y}, ${6:Float:spawn_z}, ${7:Float:z_angle}, ${8:weapon1}, ${9:weapon1_ammo}, ${10:weapon2}, ${11:weapon2_ammo}, ${12:weapon3}, ${13:weapon3_ammo})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetRunningTimers':
+    'prefix': 'GetRunningTimers'
+    'body': 'GetRunningTimers()'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerGravity':
+    'prefix': 'SetPlayerGravity'
+    'body': 'SetPlayerGravity(${1:playerid}, ${2:Float:gravity})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerGravity':
+    'prefix': 'GetPlayerGravity'
+    'body': 'GetPlayerGravity(${1:playerid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerAdmin':
+    'prefix': 'SetPlayerAdmin'
+    'body': 'SetPlayerAdmin(${1:playerid}, ${2:bool:admin})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerTeamForPlayer':
+    'prefix': 'SetPlayerTeamForPlayer'
+    'body': 'SetPlayerTeamForPlayer(${1:playerid}, ${2:teamplayerid}, ${3:teamid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerTeamForPlayer':
+    'prefix': 'GetPlayerTeamForPlayer'
+    'body': 'GetPlayerTeamForPlayer(${1:playerid}, ${2:teamplayerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerSkinForPlayer':
+    'prefix': 'SetPlayerSkinForPlayer'
+    'body': 'SetPlayerSkinForPlayer(${1:playerid}, ${2:skinplayerid}, ${3:skin})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerSkinForPlayer':
+    'prefix': 'GetPlayerSkinForPlayer'
+    'body': 'GetPlayerSkinForPlayer(${1:playerid}, ${2:skinplayerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerNameForPlayer':
+    'prefix': 'SetPlayerNameForPlayer'
+    'body': 'SetPlayerNameForPlayer(${1:playerid}, ${2:nameplayerid}, ${3:const playername[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerNameForPlayer':
+    'prefix': 'GetPlayerNameForPlayer'
+    'body': 'GetPlayerNameForPlayer(${1:playerid}, ${2:nameplayerid}, ${3:playername[]}, ${4:size = sizeof(playername})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerFightStyleForPlayer':
+    'prefix': 'SetPlayerFightStyleForPlayer'
+    'body': 'SetPlayerFightStyleForPlayer(${1:playerid}, ${2:styleplayerid}, ${3:style})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerFightStyleForPlayer':
+    'prefix': 'GetPlayerFightStyleForPlayer'
+    'body': 'GetPlayerFightStyleForPlayer(${1:playerid}, ${2:skinplayerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerPosForPlayer':
+    'prefix': 'SetPlayerPosForPlayer'
+    'body': 'SetPlayerPosForPlayer(${1:playerid}, ${2:posplayerid}, ${3:Float:fX}, ${4:Float:fY}, ${5:Float:fZ}, ${6:bool:forcesync = true})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerRotationQuatForPlayer':
+    'prefix': 'SetPlayerRotationQuatForPlayer'
+    'body': 'SetPlayerRotationQuatForPlayer(${1:playerid}, ${2:quatplayerid}, ${3:Float:w}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:bool:forcesync = true})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'ApplyAnimationForPlayer':
+    'prefix': 'ApplyAnimationForPlayer'
+    'body': 'ApplyAnimationForPlayer(${1:playerid}, ${2:animplayerid}, ${3:const animlib[]}, ${4:const animname[]}, ${5:Float:fDelta}, ${6:loop}, ${7:lockx}, ${8:locky}, ${9:freeze}, ${10:time})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerWeather':
+    'prefix': 'GetPlayerWeather'
+    'body': 'GetPlayerWeather(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TogglePlayerWidescreen':
+    'prefix': 'TogglePlayerWidescreen'
+    'body': 'TogglePlayerWidescreen(${1:playerid}, ${2:bool:set})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerWidescreenToggled':
+    'prefix': 'IsPlayerWidescreenToggled'
+    'body': 'IsPlayerWidescreenToggled(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetSpawnInfo':
+    'prefix': 'GetSpawnInfo'
+    'body': 'GetSpawnInfo(${1:playerid}, ${2:&teamid}, ${3:&modelid}, ${4:&Float:spawn_x}, ${5:&Float:spawn_y}, ${6:&Float:spawn_z}, ${7:&Float:z_angle}, ${8:&weapon1}, ${9:&weapon1_ammo}, ${10:&weapon2}, ${11:&weapon2_ammo}, ${12:& weapon3}, ${13:&weapon3_ammo})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerSkillLevel':
+    'prefix': 'GetPlayerSkillLevel'
+    'body': 'GetPlayerSkillLevel(${1:playerid}, ${2:skill})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerCheckpointActive':
+    'prefix': 'IsPlayerCheckpointActive'
+    'body': 'IsPlayerCheckpointActive(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerCheckpoint':
+    'prefix': 'GetPlayerCheckpoint'
+    'body': 'GetPlayerCheckpoint(${1:playerid}, ${2:&Float:fX}, ${3:&Float:fY}, ${4:&Float:fZ}, ${5:&Float:fSize})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerRaceCheckpointActive':
+    'prefix': 'IsPlayerRaceCheckpointActive'
+    'body': 'IsPlayerRaceCheckpointActive(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerRaceCheckpoint':
+    'prefix': 'GetPlayerRaceCheckpoint'
+    'body': 'GetPlayerRaceCheckpoint(${1:playerid}, ${2:&Float:fX}, ${3:&Float:fY}, ${4:&Float:fZ}, ${5:&Float:fNextX}, ${6:&Float:fNextY}, ${7:&Float:fNextZ}, ${8:&Float:fSize})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerWorldBounds':
+    'prefix': 'GetPlayerWorldBounds'
+    'body': 'GetPlayerWorldBounds(${1:playerid}, ${2:&Float:x_max}, ${3:&Float:x_min}, ${4:&Float:y_max}, ${5:&Float:y_min})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerInModShop':
+    'prefix': 'IsPlayerInModShop'
+    'body': 'IsPlayerInModShop(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerSirenState':
+    'prefix': 'GetPlayerSirenState'
+    'body': 'GetPlayerSirenState(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerLandingGearState':
+    'prefix': 'GetPlayerLandingGearState'
+    'body': 'GetPlayerLandingGearState(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerHydraReactorAngle':
+    'prefix': 'GetPlayerHydraReactorAngle'
+    'body': 'GetPlayerHydraReactorAngle(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerTrainSpeed':
+    'prefix': 'GetPlayerTrainSpeed'
+    'body': 'GetPlayerTrainSpeed(${1:playerid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerZAim':
+    'prefix': 'GetPlayerZAim'
+    'body': 'GetPlayerZAim(${1:playerid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerSurfingOffsets':
+    'prefix': 'GetPlayerSurfingOffsets'
+    'body': 'GetPlayerSurfingOffsets(${1:playerid}, ${2:&Float:fOffsetX}, ${3:&Float:fOffsetY}, ${4:&Float:fOffsetZ})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerRotationQuat':
+    'prefix': 'GetPlayerRotationQuat'
+    'body': 'GetPlayerRotationQuat(${1:playerid}, ${2:&Float:w}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerDialogID':
+    'prefix': 'GetPlayerDialogID'
+    'body': 'GetPlayerDialogID(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerSpectateID':
+    'prefix': 'GetPlayerSpectateID'
+    'body': 'GetPlayerSpectateID(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerSpectateType':
+    'prefix': 'GetPlayerSpectateType'
+    'body': 'GetPlayerSpectateType(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerLastSyncedVehicleID':
+    'prefix': 'GetPlayerLastSyncedVehicleID'
+    'body': 'GetPlayerLastSyncedVehicleID(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerLastSyncedTrailerID':
+    'prefix': 'GetPlayerLastSyncedTrailerID'
+    'body': 'GetPlayerLastSyncedTrailerID(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SendBulletData':
+    'prefix': 'SendBulletData'
+    'body': 'SendBulletData(${1:senderid}, ${2:forplayerid = -1}, ${3:weaponid}, ${4:hittype}, ${5:hitid}, ${6:Float:fHitOriginX}, ${7:Float:fHitOriginY}, ${8:Float:fHitOriginZ}, ${9:Float:fHitTargetX}, ${10:Float:fHitTargetY}, ${11:Float:fHitTargetZ}, ${12:Float:fCenterOfHitX}, ${13:Float:fCenterOfHitY}, ${14:Float:fCenterOfHitZ})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'ShowPlayerForPlayer':
+    'prefix': 'ShowPlayerForPlayer'
+    'body': 'ShowPlayerForPlayer(${1:forplayerid}, ${2:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'HidePlayerForPlayer':
+    'prefix': 'HidePlayerForPlayer'
+    'body': 'HidePlayerForPlayer(${1:forplayerid}, ${2:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'AddPlayerForPlayer':
+    'prefix': 'AddPlayerForPlayer'
+    'body': 'AddPlayerForPlayer(${1:forplayerid}, ${2:playerid}, ${3:isnpc = 0})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'RemovePlayerForPlayer':
+    'prefix': 'RemovePlayerForPlayer'
+    'body': 'RemovePlayerForPlayer(${1:forplayerid}, ${2:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerChatBubbleForPlayer':
+    'prefix': 'SetPlayerChatBubbleForPlayer'
+    'body': 'SetPlayerChatBubbleForPlayer(${1:forplayerid}, ${2:playerid}, ${3:const text[]}, ${4:color}, ${5:Float:drawdistance}, ${6:expiretime})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'ResetPlayerMarkerForPlayer':
+    'prefix': 'ResetPlayerMarkerForPlayer'
+    'body': 'ResetPlayerMarkerForPlayer(${1:playerid}, ${2:resetplayerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerVersion':
+    'prefix': 'SetPlayerVersion'
+    'body': 'SetPlayerVersion(${1:playerid}, ${2:const version[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerSpawned':
+    'prefix': 'IsPlayerSpawned'
+    'body': 'IsPlayerSpawned(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerControllable':
+    'prefix': 'IsPlayerControllable'
+    'body': 'IsPlayerControllable(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SpawnForWorld':
+    'prefix': 'SpawnForWorld'
+    'body': 'SpawnForWorld(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'BroadcastDeath':
+    'prefix': 'BroadcastDeath'
+    'body': 'BroadcastDeath(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerCameraTargetEnabled':
+    'prefix': 'IsPlayerCameraTargetEnabled'
+    'body': 'IsPlayerCameraTargetEnabled(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerDisabledKeysSync':
+    'prefix': 'SetPlayerDisabledKeysSync'
+    'body': 'SetPlayerDisabledKeysSync(${1:playerid}, ${2:keys}, ${3:updown = 0}, ${4:leftright = 0})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerDisabledKeysSync':
+    'prefix': 'GetPlayerDisabledKeysSync'
+    'body': 'GetPlayerDisabledKeysSync(${1:playerid}, ${2:&keys}, ${3:&updown = 0}, ${4:&leftright = 0})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetActorSpawnInfo':
+    'prefix': 'GetActorSpawnInfo'
+    'body': 'GetActorSpawnInfo(${1:actorid}, ${2:&skinid}, ${3:&Float:fX}, ${4:&Float:fY}, ${5:&Float:fZ}, ${6:&Float:fAngle})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetActorSkin':
+    'prefix': 'GetActorSkin'
+    'body': 'GetActorSkin(${1:actorid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetActorAnimation':
+    'prefix': 'GetActorAnimation'
+    'body': 'GetActorAnimation(${1:actorid}, ${2:animlib[]}, ${3:animlibsize = sizeof(animlib})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TogglePlayerScoresPingsUpdate':
+    'prefix': 'TogglePlayerScoresPingsUpdate'
+    'body': 'TogglePlayerScoresPingsUpdate(${1:playerid}, ${2:bool:toggle})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TogglePlayerFakePing':
+    'prefix': 'TogglePlayerFakePing'
+    'body': 'TogglePlayerFakePing(${1:playerid}, ${2:bool:toggle})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerFakePing':
+    'prefix': 'SetPlayerFakePing'
+    'body': 'SetPlayerFakePing(${1:playerid}, ${2:ping})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TogglePlayerInServerQuery':
+    'prefix': 'TogglePlayerInServerQuery'
+    'body': 'TogglePlayerInServerQuery(${1:playerid}, ${2:bool:toggle})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerToggledInServerQuery':
+    'prefix': 'IsPlayerToggledInServerQuery'
+    'body': 'IsPlayerToggledInServerQuery(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerPaused':
+    'prefix': 'IsPlayerPaused'
+    'body': 'IsPlayerPaused(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerPausedTime':
+    'prefix': 'GetPlayerPausedTime'
+    'body': 'GetPlayerPausedTime(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetObjectDrawDistance':
+    'prefix': 'GetObjectDrawDistance'
+    'body': 'GetObjectDrawDistance(${1:objectid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetObjectMoveSpeed':
+    'prefix': 'SetObjectMoveSpeed'
+    'body': 'SetObjectMoveSpeed(${1:objectid}, ${2:Float:fSpeed})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetObjectMoveSpeed':
+    'prefix': 'GetObjectMoveSpeed'
+    'body': 'GetObjectMoveSpeed(${1:objectid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetObjectTarget':
+    'prefix': 'GetObjectTarget'
+    'body': 'GetObjectTarget(${1:objectid}, ${2:&Float:fX}, ${3:&Float:fY}, ${4:&Float:fZ})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetObjectAttachedData':
+    'prefix': 'GetObjectAttachedData'
+    'body': 'GetObjectAttachedData(${1:objectid}, ${2:&attached_vehicleid}, ${3:&attached_objectid}, ${4:&attached_playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetObjectAttachedOffset':
+    'prefix': 'GetObjectAttachedOffset'
+    'body': 'GetObjectAttachedOffset(${1:objectid}, ${2:&Float:fX}, ${3:&Float:fY}, ${4:&Float:fZ}, ${5:&Float:fRotX}, ${6:&Float:fRotY}, ${7:&Float:fRotZ})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsObjectMaterialSlotUsed':
+    'prefix': 'IsObjectMaterialSlotUsed'
+    'body': 'IsObjectMaterialSlotUsed(${1:objectid}, ${2:materialindex})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetObjectMaterial':
+    'prefix': 'GetObjectMaterial'
+    'body': 'GetObjectMaterial(${1:objectid}, ${2:materialindex}, ${3:&modelid}, ${4:txdname[]}, ${5:txdnamelen = sizeof(txdname})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetObjectMaterialText':
+    'prefix': 'GetObjectMaterialText'
+    'body': 'GetObjectMaterialText(${1:objectid}, ${2:materialindex}, ${3:text[]}, ${4:textlen = sizeof(text})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsObjectNoCameraCol':
+    'prefix': 'IsObjectNoCameraCol'
+    'body': 'IsObjectNoCameraCol(${1:objectid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerObjectDrawDistance':
+    'prefix': 'GetPlayerObjectDrawDistance'
+    'body': 'GetPlayerObjectDrawDistance(${1:playerid}, ${2:objectid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetPlayerObjectMoveSpeed':
+    'prefix': 'SetPlayerObjectMoveSpeed'
+    'body': 'SetPlayerObjectMoveSpeed(${1:playerid}, ${2:objectid}, ${3:Float:fSpeed})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerObjectMoveSpeed':
+    'prefix': 'GetPlayerObjectMoveSpeed'
+    'body': 'GetPlayerObjectMoveSpeed(${1:playerid}, ${2:objectid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerObjectTarget':
+    'prefix': 'GetPlayerObjectTarget'
+    'body': 'GetPlayerObjectTarget(${1:playerid}, ${2:objectid}, ${3:&Float:fX}, ${4:&Float:fY}, ${5:&Float:fZ})'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerObjectAttachedData':
+    'prefix': 'GetPlayerObjectAttachedData'
+    'body': 'GetPlayerObjectAttachedData(${1:playerid}, ${2:objectid}, ${3:&attached_vehicleid}, ${4:&attached_objectid}, ${5:&attached_playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerObjectAttachedOffset':
+    'prefix': 'GetPlayerObjectAttachedOffset'
+    'body': 'GetPlayerObjectAttachedOffset(${1:playerid}, ${2:objectid}, ${3:&Float:fX}, ${4:&Float:fY}, ${5:&Float:fZ}, ${6:&Float:fRotX}, ${7:&Float:fRotY}, ${8:&Float:fRotZ})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerObjectMaterialSlotUsed':
+    'prefix': 'IsPlayerObjectMaterialSlotUsed'
+    'body': 'IsPlayerObjectMaterialSlotUsed(${1:playerid}, ${2:objectid}, ${3:materialindex})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerObjectMaterial':
+    'prefix': 'GetPlayerObjectMaterial'
+    'body': 'GetPlayerObjectMaterial(${1:playerid}, ${2:objectid}, ${3:materialindex}, ${4:&modelid}, ${5:txdname[]}, ${6:txdnamelen = sizeof(txdname})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerObjectMaterialText':
+    'prefix': 'GetPlayerObjectMaterialText'
+    'body': 'GetPlayerObjectMaterialText(${1:playerid}, ${2:objectid}, ${3:materialindex}, ${4:text[]}, ${5:textlen = sizeof(text})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerObjectNoCameraCol':
+    'prefix': 'IsPlayerObjectNoCameraCol'
+    'body': 'IsPlayerObjectNoCameraCol(${1:playerid}, ${2:objectid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerSurfingPlayerObjectID':
+    'prefix': 'GetPlayerSurfingPlayerObjectID'
+    'body': 'GetPlayerSurfingPlayerObjectID(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerCameraTargetPlayerObj':
+    'prefix': 'GetPlayerCameraTargetPlayerObj'
+    'body': 'GetPlayerCameraTargetPlayerObj(${1:playerid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetObjectType':
+    'prefix': 'GetObjectType'
+    'body': 'GetObjectType(${1:playerid}, ${2:objectid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerAttachedObject':
+    'prefix': 'GetPlayerAttachedObject'
+    'body': 'GetPlayerAttachedObject(${1:playerid}, ${2:index}, ${3:&modelid}, ${4:&bone}, ${5:&Float:fX}, ${6:&Float:fY}, ${7:&Float:fZ}, ${8:&Float:fRotX}, ${9:&Float:fRotY}, ${10:&Float:fRotZ}, ${11:&Float:fSacleX}, ${12:&Float:fScaleY}, ${13:&Float:fScaleZ}, ${14:&materialcolor1}, ${15:&materialcolor2})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'AttachPlayerObjectToObject':
+    'prefix': 'AttachPlayerObjectToObject'
+    'body': 'AttachPlayerObjectToObject(${1:playerid}, ${2:objectid}, ${3:attachtoid}, ${4:Float:OffsetX}, ${5:Float:OffsetY}, ${6:Float:OffsetZ}, ${7:Float:RotX}, ${8:Float:RotY}, ${9:Float:RotZ}, ${10:SyncRotation = 1})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'ClearBanList':
+    'prefix': 'ClearBanList'
+    'body': 'ClearBanList()'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsBanned':
+    'prefix': 'IsBanned'
+    'body': 'IsBanned(${1:const ipaddress[]})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetTimeoutTime':
+    'prefix': 'SetTimeoutTime'
+    'body': 'SetTimeoutTime(${1:playerid}, ${2:time_ms})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetLocalIP':
+    'prefix': 'GetLocalIP'
+    'body': 'GetLocalIP(${1:index}, ${2:localip[]}, ${3:len = sizeof(localip})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetVehicleSpawnInfo':
+    'prefix': 'GetVehicleSpawnInfo'
+    'body': 'GetVehicleSpawnInfo(${1:vehicleid}, ${2:&Float:fX}, ${3:&Float:fY}, ${4:&Float:fZ}, ${5:&Float:fRot}, ${6:&color1}, ${7:&color2})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetVehicleSpawnInfo':
+    'prefix': 'SetVehicleSpawnInfo'
+    'body': 'SetVehicleSpawnInfo(${1:vehicleid}, ${2:modelid}, ${3:Float:fX}, ${4:Float:fY}, ${5:Float:fZ}, ${6:Float:fAngle}, ${7:color1}, ${8:color2}, ${9:respawntime = -2}, ${10:interior = -2})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetVehicleColor':
+    'prefix': 'GetVehicleColor'
+    'body': 'GetVehicleColor(${1:vehicleid}, ${2:&color1}, ${3:&color2})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetVehiclePaintjob':
+    'prefix': 'GetVehiclePaintjob'
+    'body': 'GetVehiclePaintjob(${1:vehicleid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetVehicleInterior':
+    'prefix': 'GetVehicleInterior'
+    'body': 'GetVehicleInterior(${1:vehicleid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetVehicleNumberPlate':
+    'prefix': 'GetVehicleNumberPlate'
+    'body': 'GetVehicleNumberPlate(${1:vehicleid}, ${2:plate[]}, ${3:len = sizeof(plate})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetVehicleRespawnDelay':
+    'prefix': 'SetVehicleRespawnDelay'
+    'body': 'SetVehicleRespawnDelay(${1:vehicleid}, ${2:delay})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetVehicleRespawnDelay':
+    'prefix': 'GetVehicleRespawnDelay'
+    'body': 'GetVehicleRespawnDelay(${1:vehicleid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetVehicleOccupiedTick':
+    'prefix': 'SetVehicleOccupiedTick'
+    'body': 'SetVehicleOccupiedTick(${1:vehicleid}, ${2:ticks})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetVehicleOccupiedTick':
+    'prefix': 'GetVehicleOccupiedTick'
+    'body': 'GetVehicleOccupiedTick(${1:vehicleid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetVehicleRespawnTick':
+    'prefix': 'SetVehicleRespawnTick'
+    'body': 'SetVehicleRespawnTick(${1:vehicleid}, ${2:ticks})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetVehicleRespawnTick':
+    'prefix': 'GetVehicleRespawnTick'
+    'body': 'GetVehicleRespawnTick(${1:vehicleid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetVehicleLastDriver':
+    'prefix': 'GetVehicleLastDriver'
+    'body': 'GetVehicleLastDriver(${1:vehicleid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetVehicleCab':
+    'prefix': 'GetVehicleCab'
+    'body': 'GetVehicleCab(${1:vehicleid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'HasVehicleBeenOccupied':
+    'prefix': 'HasVehicleBeenOccupied'
+    'body': 'HasVehicleBeenOccupied(${1:vehicleid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SetVehicleBeenOccupied':
+    'prefix': 'SetVehicleBeenOccupied'
+    'body': 'SetVehicleBeenOccupied(${1:vehicleid}, ${2:occupied})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsVehicleOccupied':
+    'prefix': 'IsVehicleOccupied'
+    'body': 'IsVehicleOccupied(${1:vehicleid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsVehicleDead':
+    'prefix': 'IsVehicleDead'
+    'body': 'IsVehicleDead(${1:vehicleid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetVehicleModelCount':
+    'prefix': 'GetVehicleModelCount'
+    'body': 'GetVehicleModelCount(${1:modelid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetVehicleModelsUsed':
+    'prefix': 'GetVehicleModelsUsed'
+    'body': 'GetVehicleModelsUsed()'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsValidGangZone':
+    'prefix': 'IsValidGangZone'
+    'body': 'IsValidGangZone(${1:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerInGangZone':
+    'prefix': 'IsPlayerInGangZone'
+    'body': 'IsPlayerInGangZone(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsGangZoneVisibleForPlayer':
+    'prefix': 'IsGangZoneVisibleForPlayer'
+    'body': 'IsGangZoneVisibleForPlayer(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GangZoneGetColorForPlayer':
+    'prefix': 'GangZoneGetColorForPlayer'
+    'body': 'GangZoneGetColorForPlayer(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GangZoneGetFlashColorForPlayer':
+    'prefix': 'GangZoneGetFlashColorForPlayer'
+    'body': 'GangZoneGetFlashColorForPlayer(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsGangZoneFlashingForPlayer':
+    'prefix': 'IsGangZoneFlashingForPlayer'
+    'body': 'IsGangZoneFlashingForPlayer(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GangZoneGetPos':
+    'prefix': 'GangZoneGetPos'
+    'body': 'GangZoneGetPos(${1:zoneid}, ${2:&Float:fMinX}, ${3:&Float:fMinY}, ${4:&Float:fMaxX}, ${5:&Float:fMaxY})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'CreatePlayerGangZone':
+    'prefix': 'CreatePlayerGangZone'
+    'body': 'CreatePlayerGangZone(${1:playerid}, ${2:Float:minx}, ${3:Float:miny}, ${4:Float:maxx}, ${5:Float:maxy})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerGangZoneDestroy':
+    'prefix': 'PlayerGangZoneDestroy'
+    'body': 'PlayerGangZoneDestroy(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerGangZoneShow':
+    'prefix': 'PlayerGangZoneShow'
+    'body': 'PlayerGangZoneShow(${1:playerid}, ${2:zoneid}, ${3:color})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerGangZoneHide':
+    'prefix': 'PlayerGangZoneHide'
+    'body': 'PlayerGangZoneHide(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerGangZoneFlash':
+    'prefix': 'PlayerGangZoneFlash'
+    'body': 'PlayerGangZoneFlash(${1:playerid}, ${2:zoneid}, ${3:color})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerGangZoneStopFlash':
+    'prefix': 'PlayerGangZoneStopFlash'
+    'body': 'PlayerGangZoneStopFlash(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsValidPlayerGangZone':
+    'prefix': 'IsValidPlayerGangZone'
+    'body': 'IsValidPlayerGangZone(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerInPlayerGangZone':
+    'prefix': 'IsPlayerInPlayerGangZone'
+    'body': 'IsPlayerInPlayerGangZone(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerGangZoneVisible':
+    'prefix': 'IsPlayerGangZoneVisible'
+    'body': 'IsPlayerGangZoneVisible(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerGangZoneGetColor':
+    'prefix': 'PlayerGangZoneGetColor'
+    'body': 'PlayerGangZoneGetColor(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerGangZoneGetFlashColor':
+    'prefix': 'PlayerGangZoneGetFlashColor'
+    'body': 'PlayerGangZoneGetFlashColor(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerGangZoneFlashing':
+    'prefix': 'IsPlayerGangZoneFlashing'
+    'body': 'IsPlayerGangZoneFlashing(${1:playerid}, ${2:zoneid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerGangZoneGetPos':
+    'prefix': 'PlayerGangZoneGetPos'
+    'body': 'PlayerGangZoneGetPos(${1:playerid}, ${2:zoneid}, ${3:&Float:fMinX}, ${4:&Float:fMinY}, ${5:&Float:fMaxX}, ${6:&Float:fMaxY})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsValidTextDraw':
+    'prefix': 'IsValidTextDraw'
+    'body': 'IsValidTextDraw(${1:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsTextDrawVisibleForPlayer':
+    'prefix': 'IsTextDrawVisibleForPlayer'
+    'body': 'IsTextDrawVisibleForPlayer(${1:playerid}, ${2:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetString':
+    'prefix': 'TextDrawGetString'
+    'body': 'TextDrawGetString(${1:Text:textdrawid}, ${2:text[]}, ${3:len = sizeof(text})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawSetPos':
+    'prefix': 'TextDrawSetPos'
+    'body': 'TextDrawSetPos(${1:Text:textdrawid}, ${2:Float:fX}, ${3:Float:fY})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetLetterSize':
+    'prefix': 'TextDrawGetLetterSize'
+    'body': 'TextDrawGetLetterSize(${1:Text:textdrawid}, ${2:&Float:fX}, ${3:&Float:fY})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetTextSize':
+    'prefix': 'TextDrawGetTextSize'
+    'body': 'TextDrawGetTextSize(${1:Text:textdrawid}, ${2:&Float:fX}, ${3:&Float:fY})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetPos':
+    'prefix': 'TextDrawGetPos'
+    'body': 'TextDrawGetPos(${1:Text:textdrawid}, ${2:&Float:fX}, ${3:&Float:fY})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetColor':
+    'prefix': 'TextDrawGetColor'
+    'body': 'TextDrawGetColor(${1:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetBoxColor':
+    'prefix': 'TextDrawGetBoxColor'
+    'body': 'TextDrawGetBoxColor(${1:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetBackgroundColor':
+    'prefix': 'TextDrawGetBackgroundColor'
+    'body': 'TextDrawGetBackgroundColor(${1:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetShadow':
+    'prefix': 'TextDrawGetShadow'
+    'body': 'TextDrawGetShadow(${1:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetOutline':
+    'prefix': 'TextDrawGetOutline'
+    'body': 'TextDrawGetOutline(${1:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetFont':
+    'prefix': 'TextDrawGetFont'
+    'body': 'TextDrawGetFont(${1:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawIsBox':
+    'prefix': 'TextDrawIsBox'
+    'body': 'TextDrawIsBox(${1:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawIsProportional':
+    'prefix': 'TextDrawIsProportional'
+    'body': 'TextDrawIsProportional(${1:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawIsSelectable':
+    'prefix': 'TextDrawIsSelectable'
+    'body': 'TextDrawIsSelectable(${1:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetAlignment':
+    'prefix': 'TextDrawGetAlignment'
+    'body': 'TextDrawGetAlignment(${1:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetPreviewModel':
+    'prefix': 'TextDrawGetPreviewModel'
+    'body': 'TextDrawGetPreviewModel(${1:Text:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetPreviewRot':
+    'prefix': 'TextDrawGetPreviewRot'
+    'body': 'TextDrawGetPreviewRot(${1:Text:textdrawid}, ${2:&Float:fRotX}, ${3:&Float:fRotY}, ${4:&Float:fRotZ}, ${5:&Float:fZoom})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'TextDrawGetPreviewVehCol':
+    'prefix': 'TextDrawGetPreviewVehCol'
+    'body': 'TextDrawGetPreviewVehCol(${1:Text:textdrawid}, ${2:&color1}, ${3:&color2})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsValidPlayerTextDraw':
+    'prefix': 'IsValidPlayerTextDraw'
+    'body': 'IsValidPlayerTextDraw(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerTextDrawVisible':
+    'prefix': 'IsPlayerTextDrawVisible'
+    'body': 'IsPlayerTextDrawVisible(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetString':
+    'prefix': 'PlayerTextDrawGetString'
+    'body': 'PlayerTextDrawGetString(${1:playerid}, ${2:PlayerText:textdrawid}, ${3:text[]}, ${4:len = sizeof(text})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawSetPos':
+    'prefix': 'PlayerTextDrawSetPos'
+    'body': 'PlayerTextDrawSetPos(${1:playerid}, ${2:PlayerText:textdrawid}, ${3:Float:fX}, ${4:Float:fY})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetLetterSize':
+    'prefix': 'PlayerTextDrawGetLetterSize'
+    'body': 'PlayerTextDrawGetLetterSize(${1:playerid}, ${2:PlayerText:textdrawid}, ${3:&Float:fX}, ${4:&Float:fY})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetTextSize':
+    'prefix': 'PlayerTextDrawGetTextSize'
+    'body': 'PlayerTextDrawGetTextSize(${1:playerid}, ${2:PlayerText:textdrawid}, ${3:&Float:fX}, ${4:&Float:fY})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetPos':
+    'prefix': 'PlayerTextDrawGetPos'
+    'body': 'PlayerTextDrawGetPos(${1:playerid}, ${2:PlayerText:textdrawid}, ${3:&Float:fX}, ${4:&Float:fY})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetColor':
+    'prefix': 'PlayerTextDrawGetColor'
+    'body': 'PlayerTextDrawGetColor(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetBoxColor':
+    'prefix': 'PlayerTextDrawGetBoxColor'
+    'body': 'PlayerTextDrawGetBoxColor(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetBackgroundCol':
+    'prefix': 'PlayerTextDrawGetBackgroundCol'
+    'body': 'PlayerTextDrawGetBackgroundCol(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetShadow':
+    'prefix': 'PlayerTextDrawGetShadow'
+    'body': 'PlayerTextDrawGetShadow(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetOutline':
+    'prefix': 'PlayerTextDrawGetOutline'
+    'body': 'PlayerTextDrawGetOutline(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetFont':
+    'prefix': 'PlayerTextDrawGetFont'
+    'body': 'PlayerTextDrawGetFont(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawIsBox':
+    'prefix': 'PlayerTextDrawIsBox'
+    'body': 'PlayerTextDrawIsBox(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawIsProportional':
+    'prefix': 'PlayerTextDrawIsProportional'
+    'body': 'PlayerTextDrawIsProportional(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawIsSelectable':
+    'prefix': 'PlayerTextDrawIsSelectable'
+    'body': 'PlayerTextDrawIsSelectable(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetAlignment':
+    'prefix': 'PlayerTextDrawGetAlignment'
+    'body': 'PlayerTextDrawGetAlignment(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetPreviewModel':
+    'prefix': 'PlayerTextDrawGetPreviewModel'
+    'body': 'PlayerTextDrawGetPreviewModel(${1:playerid}, ${2:PlayerText:textdrawid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetPreviewRot':
+    'prefix': 'PlayerTextDrawGetPreviewRot'
+    'body': 'PlayerTextDrawGetPreviewRot(${1:playerid}, ${2:PlayerText:textdrawid}, ${3:&Float:fRotX}, ${4:&Float:fRotY}, ${5:&Float:fRotZ}, ${6:&Float:fZoom})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'PlayerTextDrawGetPreviewVehCol':
+    'prefix': 'PlayerTextDrawGetPreviewVehCol'
+    'body': 'PlayerTextDrawGetPreviewVehCol(${1:playerid}, ${2:PlayerText:textdrawid}, ${3:&color1}, ${4:&color2})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsValid3DTextLabel':
+    'prefix': 'IsValid3DTextLabel'
+    'body': 'IsValid3DTextLabel(${1:Text3D:id})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'Is3DTextLabelStreamedIn':
+    'prefix': 'Is3DTextLabelStreamedIn'
+    'body': 'Is3DTextLabelStreamedIn(${1:playerid}, ${2:Text3D:id})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'Get3DTextLabelText':
+    'prefix': 'Get3DTextLabelText'
+    'body': 'Get3DTextLabelText(${1:Text3D:id}, ${2:text[]}, ${3:len = sizeof(text})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'Get3DTextLabelColor':
+    'prefix': 'Get3DTextLabelColor'
+    'body': 'Get3DTextLabelColor(${1:Text3D:id})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'Get3DTextLabelPos':
+    'prefix': 'Get3DTextLabelPos'
+    'body': 'Get3DTextLabelPos(${1:Text3D:id}, ${2:&Float:fX}, ${3:&Float:fY}, ${4:&Float:fZ})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'Get3DTextLabelDrawDistance':
+    'prefix': 'Get3DTextLabelDrawDistance'
+    'body': 'Get3DTextLabelDrawDistance(${1:Text3D:id})'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'Get3DTextLabelLOS':
+    'prefix': 'Get3DTextLabelLOS'
+    'body': 'Get3DTextLabelLOS(${1:Text3D:id})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'Get3DTextLabelVirtualWorld':
+    'prefix': 'Get3DTextLabelVirtualWorld'
+    'body': 'Get3DTextLabelVirtualWorld(${1:Text3D:id})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'Get3DTextLabelAttachedData':
+    'prefix': 'Get3DTextLabelAttachedData'
+    'body': 'Get3DTextLabelAttachedData(${1:Text3D:id}, ${2:&attached_playerid}, ${3:&attached_vehicleid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsValidPlayer3DTextLabel':
+    'prefix': 'IsValidPlayer3DTextLabel'
+    'body': 'IsValidPlayer3DTextLabel(${1:playerid}, ${2:PlayerText3D:id})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayer3DTextLabelText':
+    'prefix': 'GetPlayer3DTextLabelText'
+    'body': 'GetPlayer3DTextLabelText(${1:playerid}, ${2:PlayerText3D:id}, ${3:text[]}, ${4:len = sizeof(text})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayer3DTextLabelColor':
+    'prefix': 'GetPlayer3DTextLabelColor'
+    'body': 'GetPlayer3DTextLabelColor(${1:playerid}, ${2:PlayerText3D:id})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayer3DTextLabelPos':
+    'prefix': 'GetPlayer3DTextLabelPos'
+    'body': 'GetPlayer3DTextLabelPos(${1:playerid}, ${2:PlayerText3D:id}, ${3:&Float:fX}, ${4:&Float:fY}, ${5:&Float:fZ})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayer3DTextLabelDrawDist':
+    'prefix': 'GetPlayer3DTextLabelDrawDist'
+    'body': 'GetPlayer3DTextLabelDrawDist(${1:playerid}, ${2:PlayerText3D:id})'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayer3DTextLabelLOS':
+    'prefix': 'GetPlayer3DTextLabelLOS'
+    'body': 'GetPlayer3DTextLabelLOS(${1:playerid}, ${2:PlayerText3D:id})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayer3DTextLabelVirtualW':
+    'prefix': 'GetPlayer3DTextLabelVirtualW'
+    'body': 'GetPlayer3DTextLabelVirtualW(${1:playerid}, ${2:PlayerText3D:id})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayer3DTextLabelAttached':
+    'prefix': 'GetPlayer3DTextLabelAttached'
+    'body': 'GetPlayer3DTextLabelAttached(${1:playerid}, ${2:PlayerText3D:id}, ${3:&attached_playerid}, ${4:&attached_vehicleid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsMenuDisabled':
+    'prefix': 'IsMenuDisabled'
+    'body': 'IsMenuDisabled(${1:Menu:menuid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsMenuRowDisabled':
+    'prefix': 'IsMenuRowDisabled'
+    'body': 'IsMenuRowDisabled(${1:Menu:menuid}, ${2:row})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetMenuColumns':
+    'prefix': 'GetMenuColumns'
+    'body': 'GetMenuColumns(${1:Menu:menuid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetMenuItems':
+    'prefix': 'GetMenuItems'
+    'body': 'GetMenuItems(${1:Menu:menuid}, ${2:column})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetMenuPos':
+    'prefix': 'GetMenuPos'
+    'body': 'GetMenuPos(${1:Menu:menuid}, ${2:&Float:fX}, ${3:&Float:fY})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetMenuColumnWidth':
+    'prefix': 'GetMenuColumnWidth'
+    'body': 'GetMenuColumnWidth(${1:Menu:menuid}, ${2:&Float:fColumn1}, ${3:&Float:fColumn2})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetMenuColumnHeader':
+    'prefix': 'GetMenuColumnHeader'
+    'body': 'GetMenuColumnHeader(${1:Menu:menuid}, ${2:column}, ${3:header[]}, ${4:len = sizeof(header})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetMenuItem':
+    'prefix': 'GetMenuItem'
+    'body': 'GetMenuItem(${1:Menu:menuid}, ${2:column}, ${3:itemid}, ${4:item[]}, ${5:len = sizeof(item})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsValidPickup':
+    'prefix': 'IsValidPickup'
+    'body': 'IsValidPickup(${1:pickupid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPickupStreamedIn':
+    'prefix': 'IsPickupStreamedIn'
+    'body': 'IsPickupStreamedIn(${1:playerid}, ${2:pickupid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPickupPos':
+    'prefix': 'GetPickupPos'
+    'body': 'GetPickupPos(${1:pickupid}, ${2:&Float:fX}, ${3:&Float:fY}, ${4:&Float:fZ})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPickupModel':
+    'prefix': 'GetPickupModel'
+    'body': 'GetPickupModel(${1:pickupid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPickupType':
+    'prefix': 'GetPickupType'
+    'body': 'GetPickupType(${1:pickupid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPickupVirtualWorld':
+    'prefix': 'GetPickupVirtualWorld'
+    'body': 'GetPickupVirtualWorld(${1:pickupid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'CreatePlayerPickup':
+    'prefix': 'CreatePlayerPickup'
+    'body': 'CreatePlayerPickup(${1:playerid}, ${2:model}, ${3:type}, ${4:Float:X}, ${5:Float:Y}, ${6:Float:Z}, ${7:virtualworld = 0})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'DestroyPlayerPickup':
+    'prefix': 'DestroyPlayerPickup'
+    'body': 'DestroyPlayerPickup(${1:playerid}, ${2:pickupid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsValidPlayerPickup':
+    'prefix': 'IsValidPlayerPickup'
+    'body': 'IsValidPlayerPickup(${1:playerid}, ${2:pickupid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'IsPlayerPickupStreamedIn':
+    'prefix': 'IsPlayerPickupStreamedIn'
+    'body': 'IsPlayerPickupStreamedIn(${1:playerid}, ${2:pickupid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerPickupPos':
+    'prefix': 'GetPlayerPickupPos'
+    'body': 'GetPlayerPickupPos(${1:playerid}, ${2:pickupid}, ${3:&Float:fX}, ${4:&Float:fY}, ${5:&Float:fZ})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerPickupModel':
+    'prefix': 'GetPlayerPickupModel'
+    'body': 'GetPlayerPickupModel(${1:playerid}, ${2:pickupid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerPickupType':
+    'prefix': 'GetPlayerPickupType'
+    'body': 'GetPlayerPickupType(${1:playerid}, ${2:pickupid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetPlayerPickupVirtualWorld':
+    'prefix': 'GetPlayerPickupVirtualWorld'
+    'body': 'GetPlayerPickupVirtualWorld(${1:playerid}, ${2:pickupid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetColCount':
+    'prefix': 'GetColCount'
+    'body': 'GetColCount()'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetColSphereRadius':
+    'prefix': 'GetColSphereRadius'
+    'body': 'GetColSphereRadius(${1:modelid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetColSphereOffset':
+    'prefix': 'GetColSphereOffset'
+    'body': 'GetColSphereOffset(${1:modelid}, ${2:&Float:fX}, ${3:&Float:fY}, ${4:&Float:fZ})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SendClientMessagef':
+    'prefix': 'SendClientMessagef'
+    'body': 'SendClientMessagef(${1:playerid}, ${2:color}, ${3:const message[]}, ${4:{Float}, ${5:_}:...})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SendClientMessageToAllf':
+    'prefix': 'SendClientMessageToAllf'
+    'body': 'SendClientMessageToAllf(${1:color}, ${2:const message[]}, ${3:{Float}, ${4:_}:...})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GameTextForPlayerf':
+    'prefix': 'GameTextForPlayerf'
+    'body': 'GameTextForPlayerf(${1:playerid}, ${2:displaytime}, ${3:style}, ${4:const message[]}, ${5:{Float}, ${6:_}:...})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GameTextForAllf':
+    'prefix': 'GameTextForAllf'
+    'body': 'GameTextForAllf(${1:displaytime}, ${2:style}, ${3:const message[]}, ${4:{Float}, ${5:_}:...})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SendPlayerMessageToPlayerf':
+    'prefix': 'SendPlayerMessageToPlayerf'
+    'body': 'SendPlayerMessageToPlayerf(${1:playerid}, ${2:senderid}, ${3:const message[]}, ${4:{Float}, ${5:_}:...})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SendPlayerMessageToAllf':
+    'prefix': 'SendPlayerMessageToAllf'
+    'body': 'SendPlayerMessageToAllf(${1:senderid}, ${2:const message[]}, ${3:{Float}, ${4:_}:...})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SendRconCommandf':
+    'prefix': 'SendRconCommandf'
+    'body': 'SendRconCommandf(${1:const command[]}, ${2:{Float}, ${3:_}:...})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetWeaponSlot':
+    'prefix': 'GetWeaponSlot'
+    'body': 'GetWeaponSlot(${1:weaponid})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SendRPC':
+    'prefix': 'SendRPC'
+    'body': 'SendRPC(${1:playerid}, ${2:RPC}, ${3:{Float}, ${4:_}:...})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'SendData':
+    'prefix': 'SendData'
+    'body': 'SendData(${1:playerid}, ${2:{Float}, ${3:_}:...})'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'
+
+  'GetGravity':
+    'prefix': 'GetGravity'
+    'body': 'GetGravity()'
+    'leftLabel': 'Float'
+    'description': 'Function from: YSF'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=513499'

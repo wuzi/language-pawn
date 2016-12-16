@@ -1,0 +1,2320 @@
+# Snippets for Atom, automatically generated
+# Generator created by Renato "Hii" Garcia
+'.source.pwn, .source.inc':
+  'sqrtN':
+    'prefix': 'sqrtN'
+    'body': 'sqrtN(${1:Float:value}, ${2:Float:exponent})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'abs':
+    'prefix': 'abs'
+    'body': 'abs(${1:value})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'fabs':
+    'prefix': 'fabs'
+    'body': 'fabs(${1:Float:value})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'power':
+    'prefix': 'power'
+    'body': 'power(${1:value}, ${2:Float:exponent})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ctg':
+    'prefix': 'ctg'
+    'body': 'ctg(${1:Float:value}, ${2:anglemode:mode=radian})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'secans':
+    'prefix': 'secans'
+    'body': 'secans(${1:Float:value}, ${2:anglemode:mode=radian})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'cosecans':
+    'prefix': 'cosecans'
+    'body': 'cosecans(${1:Float:value}, ${2:anglemode:mode=radian})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsEven':
+    'prefix': 'IsEven'
+    'body': 'IsEven(${1:value})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'RandomFloat':
+    'prefix': 'RandomFloat'
+    'body': 'RandomFloat(${1:Float:min}, ${2:Float:max}, ${3:accuracy = 4})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'single_clock':
+    'prefix': 'single_clock'
+    'body': 'single_clock(${1:max}, ${2:id})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'even_clock':
+    'prefix': 'even_clock'
+    'body': 'even_clock(${1:max}, ${2:id})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'uneven_clock':
+    'prefix': 'uneven_clock'
+    'body': 'uneven_clock(${1:max}, ${2:id})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'NLTZ':
+    'prefix': 'NLTZ'
+    'body': 'NLTZ(${1:value})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'NMTZ':
+    'prefix': 'NMTZ'
+    'body': 'NMTZ(${1:value})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'NLTZF':
+    'prefix': 'NLTZF'
+    'body': 'NLTZF(${1:Float:value})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'NMTZF':
+    'prefix': 'NMTZF'
+    'body': 'NMTZF(${1:Float:value})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'NLTV':
+    'prefix': 'NLTV'
+    'body': 'NLTV(${1:value}, ${2:min})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'NMTV':
+    'prefix': 'NMTV'
+    'body': 'NMTV(${1:value}, ${2:max})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'NLTVF':
+    'prefix': 'NLTVF'
+    'body': 'NLTVF(${1:Float:value}, ${2:Float:min})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'NMTVF':
+    'prefix': 'NMTVF'
+    'body': 'NMTVF(${1:Float:value}, ${2:Float:max})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CompRotation':
+    'prefix': 'CompRotation'
+    'body': 'CompRotation(${1:rotation}, ${2:&crotation=0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'DeCompRotation':
+    'prefix': 'DeCompRotation'
+    'body': 'DeCompRotation(${1:rotation}, ${2:&crotation=0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CompRotationFloat':
+    'prefix': 'CompRotationFloat'
+    'body': 'CompRotationFloat(${1:Float:rotation}, ${2:&Float:crotation=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'DeCompRotationFloat':
+    'prefix': 'DeCompRotationFloat'
+    'body': 'DeCompRotationFloat(${1:Float:rotation}, ${2:&Float:crotation=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsRotationTest':
+    'prefix': 'IsRotationTest'
+    'body': 'IsRotationTest(${1:Float:rotation}, ${2:Float:r_min}, ${3:Float:r_max})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_GetRotationMatrixEuler':
+    'prefix': 'Tryg3D_GetRotationMatrixEuler'
+    'body': 'Tryg3D_GetRotationMatrixEuler(${1:Float:matrix[][]}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz}, ${5:T3D:eulermode:mode=T3D:euler_default})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_MatrixRotate':
+    'prefix': 'Tryg3D_MatrixRotate'
+    'body': 'Tryg3D_MatrixRotate(${1:Float:matrix[][]}, ${2:Float:oX}, ${3:Float:oY}, ${4:Float:oZ}, ${5:&Float:x}, ${6:&Float:y}, ${7:&Float:z})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_GivePlayerDamage':
+    'prefix': 'Tryg3D_GivePlayerDamage'
+    'body': 'Tryg3D_GivePlayerDamage(${1:targetid}, ${2:Float:damage}, ${3:playerid}, ${4:weaponid}, ${5:bool:force_spawn=true}, ${6:bool:deathmsg=true})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_GetWeaponDamage':
+    'prefix': 'Tryg3D_GetWeaponDamage'
+    'body': 'Tryg3D_GetWeaponDamage(${1:weaponid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_SwapInt':
+    'prefix': 'Tryg3D_SwapInt'
+    'body': 'Tryg3D_SwapInt(${1:variable1}, ${2:variable2})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CountPlayers':
+    'prefix': 'CountPlayers'
+    'body': 'CountPlayers(${1:bool:isplayer=true}, ${2:bool:isnpc=true})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CountActors':
+    'prefix': 'CountActors'
+    'body': 'CountActors()'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'RecoilFloat':
+    'prefix': 'RecoilFloat'
+    'body': 'RecoilFloat(${1:Float:value}, ${2:Float:recoil})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'RecoilVector':
+    'prefix': 'RecoilVector'
+    'body': 'RecoilVector(${1:&Float:vx}, ${2:&Float:vy}, ${3:&Float:vz}, ${4:Float:sx}, ${5:Float:sy}, ${6:Float:sz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftDegreeToRadian':
+    'prefix': 'ShiftDegreeToRadian'
+    'body': 'ShiftDegreeToRadian(${1:Float:deg})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftDegreeToRadianEx':
+    'prefix': 'ShiftDegreeToRadianEx'
+    'body': 'ShiftDegreeToRadianEx(${1:Float:deg})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftDegreeToGrades':
+    'prefix': 'ShiftDegreeToGrades'
+    'body': 'ShiftDegreeToGrades(${1:Float:deg})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftRadianToDegree':
+    'prefix': 'ShiftRadianToDegree'
+    'body': 'ShiftRadianToDegree(${1:Float:rad})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftRadianToDegreeEx':
+    'prefix': 'ShiftRadianToDegreeEx'
+    'body': 'ShiftRadianToDegreeEx(${1:Float:rad})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftRadianToGrades':
+    'prefix': 'ShiftRadianToGrades'
+    'body': 'ShiftRadianToGrades(${1:Float:rad})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftGradesToDegree':
+    'prefix': 'ShiftGradesToDegree'
+    'body': 'ShiftGradesToDegree(${1:Float:grad})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftGradesToRadian':
+    'prefix': 'ShiftGradesToRadian'
+    'body': 'ShiftGradesToRadian(${1:Float:grad})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRandomHit':
+    'prefix': 'GetRandomHit'
+    'body': 'GetRandomHit(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:range}, ${5:&Float:tx}, ${6:&Float:ty}, ${7:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDistanceBetweenPoints1D':
+    'prefix': 'GetDistanceBetweenPoints1D'
+    'body': 'GetDistanceBetweenPoints1D(${1:Float:x1}, ${2:Float:x2})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDistanceBetweenPoints2D':
+    'prefix': 'GetDistanceBetweenPoints2D'
+    'body': 'GetDistanceBetweenPoints2D(${1:Float:x1}, ${2:Float:y1}, ${3:Float:x2}, ${4:Float:y2})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDistanceBetweenPoints3D':
+    'prefix': 'GetDistanceBetweenPoints3D'
+    'body': 'GetDistanceBetweenPoints3D(${1:Float:x1}, ${2:Float:y1}, ${3:Float:z1}, ${4:Float:x2}, ${5:Float:y2}, ${6:Float:z2})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFront2D':
+    'prefix': 'GetPointInFront2D'
+    'body': 'GetPointInFront2D(${1:Float:x}, ${2:Float:y}, ${3:Float:rz}, ${4:Float:radius}, ${5:&Float:tx}, ${6:&Float:ty})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFront3D':
+    'prefix': 'GetPointInFront3D'
+    'body': 'GetPointInFront3D(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:rx}, ${5:Float:rz}, ${6:Float:radius}, ${7:&Float:tx}, ${8:&Float:ty}, ${9:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOfPlayer':
+    'prefix': 'GetPointInFrontOfPlayer'
+    'body': 'GetPointInFrontOfPlayer(${1:playerid}, ${2:&Float:tx}, ${3:&Float:ty}, ${4:Float:radius})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOfCamera2D':
+    'prefix': 'GetPointInFrontOfCamera2D'
+    'body': 'GetPointInFrontOfCamera2D(${1:playerid}, ${2:&Float:tx}, ${3:&Float:ty}, ${4:Float:radius})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOfCamera3D':
+    'prefix': 'GetPointInFrontOfCamera3D'
+    'body': 'GetPointInFrontOfCamera3D(${1:playerid}, ${2:&Float:tx}, ${3:&Float:ty}, ${4:&Float:tz}, ${5:Float:radius}, ${6:&Float:rx=0.0}, ${7:&Float:rz=0.0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRotationFor2Point2D':
+    'prefix': 'GetRotationFor2Point2D'
+    'body': 'GetRotationFor2Point2D(${1:Float:x}, ${2:Float:y}, ${3:Float:tx}, ${4:Float:ty}, ${5:&Float:rz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRotationFor2Point3D':
+    'prefix': 'GetRotationFor2Point3D'
+    'body': 'GetRotationFor2Point3D(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:tx}, ${5:Float:ty}, ${6:Float:tz}, ${7:&Float:rx}, ${8:&Float:rz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ConvertMTARaceRotation':
+    'prefix': 'ConvertMTARaceRotation'
+    'body': 'ConvertMTARaceRotation(${1:Float:rotation1}, ${2:Float:rotation2}, ${3:Float:rotation3}, ${4:&Float:rx}, ${5:&Float:ry}, ${6:&Float:rz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ConvertToMTARaceRotation':
+    'prefix': 'ConvertToMTARaceRotation'
+    'body': 'ConvertToMTARaceRotation(${1:Float:rx}, ${2:Float:ry}, ${3:Float:rz}, ${4:&Float:rotation1}, ${5:&Float:rotation2}, ${6:&Float:rotation3})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetMoveTime':
+    'prefix': 'GetMoveTime'
+    'body': 'GetMoveTime(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:tx}, ${5:Float:ty}, ${6:Float:tz}, ${7:Float:speed}, ${8:&rtime=0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetSpeedForMoveTime':
+    'prefix': 'GetSpeedForMoveTime'
+    'body': 'GetSpeedForMoveTime(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:tx}, ${5:Float:ty}, ${6:Float:tz}, ${7:&Float:speed}, ${8:rtime})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetVehicleRotation':
+    'prefix': 'GetVehicleRotation'
+    'body': 'GetVehicleRotation(${1:vehicleid}, ${2:&Float:rx}, ${3:&Float:ry}, ${4:&Float:rz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOfVehicle2D':
+    'prefix': 'GetPointInFrontOfVehicle2D'
+    'body': 'GetPointInFrontOfVehicle2D(${1:vehicleid}, ${2:&Float:tx}, ${3:&Float:ty}, ${4:Float:radius})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOfVehicle3D':
+    'prefix': 'GetPointInFrontOfVehicle3D'
+    'body': 'GetPointInFrontOfVehicle3D(${1:vehicleid}, ${2:&Float:tx}, ${3:&Float:ty}, ${4:&Float:tz}, ${5:Float:radius}, ${6:&Float:rx=0.0}, ${7:&Float:rz=0.0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerCameraRotation':
+    'prefix': 'GetPlayerCameraRotation'
+    'body': 'GetPlayerCameraRotation(${1:playerid}, ${2:&Float:rx}, ${3:&Float:rz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetPlayerCameraRotation':
+    'prefix': 'SetPlayerCameraRotation'
+    'body': 'SetPlayerCameraRotation(${1:playerid}, ${2:Float:rx}, ${3:Float:rz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerCameraZAngle':
+    'prefix': 'GetPlayerCameraZAngle'
+    'body': 'GetPlayerCameraZAngle(${1:playerid}, ${2:&Float:rz=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetPlayerCameraZAngle':
+    'prefix': 'SetPlayerCameraZAngle'
+    'body': 'SetPlayerCameraZAngle(${1:playerid}, ${2:Float:rz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointFor2Point2D':
+    'prefix': 'GetPointFor2Point2D'
+    'body': 'GetPointFor2Point2D(${1:Float:x1}, ${2:Float:y1}, ${3:Float:x2}, ${4:Float:y2}, ${5:Float:percent_size}, ${6:&Float:tx}, ${7:&Float:ty})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointFor2Point3D':
+    'prefix': 'GetPointFor2Point3D'
+    'body': 'GetPointFor2Point3D(${1:Float:x1}, ${2:Float:y1}, ${3:Float:z1}, ${4:Float:x2}, ${5:Float:y2}, ${6:Float:z2}, ${7:Float:percent_size}, ${8:&Float:tx}, ${9:&Float:ty}, ${10:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointFor2Point2DEx':
+    'prefix': 'GetPointFor2Point2DEx'
+    'body': 'GetPointFor2Point2DEx(${1:Float:x1}, ${2:Float:y1}, ${3:Float:x2}, ${4:Float:y2}, ${5:Float:distance}, ${6:&Float:tx}, ${7:&Float:ty})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointFor2Point3DEx':
+    'prefix': 'GetPointFor2Point3DEx'
+    'body': 'GetPointFor2Point3DEx(${1:Float:x1}, ${2:Float:y1}, ${3:Float:z1}, ${4:Float:x2}, ${5:Float:y2}, ${6:Float:z2}, ${7:Float:distance}, ${8:&Float:tx}, ${9:&Float:ty}, ${10:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftVectorToRotation':
+    'prefix': 'ShiftVectorToRotation'
+    'body': 'ShiftVectorToRotation(${1:Float:vx}, ${2:Float:vy}, ${3:Float:vz}, ${4:&Float:rx}, ${5:&Float:rz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftRotationToVector':
+    'prefix': 'ShiftRotationToVector'
+    'body': 'ShiftRotationToVector(${1:Float:rx}, ${2:Float:rz}, ${3:&Float:vx}, ${4:&Float:vy}, ${5:&Float:vz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRandomPointOnClock':
+    'prefix': 'GetRandomPointOnClock'
+    'body': 'GetRandomPointOnClock(${1:Float:x}, ${2:Float:y}, ${3:Float:radius}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:trz}, ${7:Float:rz = INVALID_ROTATION})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRandomPointInCircle':
+    'prefix': 'GetRandomPointInCircle'
+    'body': 'GetRandomPointInCircle(${1:Float:x}, ${2:Float:y}, ${3:Float:radius}, ${4:&Float:tx}, ${5:&Float:ty})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRandomPointInCylinderEx':
+    'prefix': 'GetRandomPointInCylinderEx'
+    'body': 'GetRandomPointInCylinderEx(${1:Float:x}, ${2:Float:y}, ${3:Float:minz}, ${4:Float:maxz}, ${5:Float:radius}, ${6:&Float:tx}, ${7:&Float:ty}, ${8:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRandomPointInSphere':
+    'prefix': 'GetRandomPointInSphere'
+    'body': 'GetRandomPointInSphere(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:radius}, ${5:&Float:tx}, ${6:&Float:ty}, ${7:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRandomPointInRectangle':
+    'prefix': 'GetRandomPointInRectangle'
+    'body': 'GetRandomPointInRectangle(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy}, ${5:&Float:tx}, ${6:&Float:ty})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRandomPointInCube':
+    'prefix': 'GetRandomPointInCube'
+    'body': 'GetRandomPointInCube(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:&Float:tx}, ${8:&Float:ty}, ${9:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRandomPointInCircularSector':
+    'prefix': 'GetRandomPointInCircularSector'
+    'body': 'GetRandomPointInCircularSector(${1:Float:x}, ${2:Float:y}, ${3:Float:rz}, ${4:Float:radius}, ${5:Float:view_angle}, ${6:&Float:tx}, ${7:&Float:ty})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRandomPointOnCircle':
+    'prefix': 'GetRandomPointOnCircle'
+    'body': 'GetRandomPointOnCircle(${1:Float:x}, ${2:Float:y}, ${3:Float:radius}, ${4:&Float:tx}, ${5:&Float:ty})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRandomPointOnSphere':
+    'prefix': 'GetRandomPointOnSphere'
+    'body': 'GetRandomPointOnSphere(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:radius}, ${5:&Float:tx}, ${6:&Float:ty}, ${7:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRandomPointOnCircularSector':
+    'prefix': 'GetRandomPointOnCircularSector'
+    'body': 'GetRandomPointOnCircularSector(${1:Float:x}, ${2:Float:y}, ${3:Float:rz}, ${4:Float:radius}, ${5:Float:view_angle}, ${6:&Float:tx}, ${7:&Float:ty})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointBetween2Points2D':
+    'prefix': 'IsPointBetween2Points2D'
+    'body': 'IsPointBetween2Points2D(${1:Float:px}, ${2:Float:py}, ${3:Float:xA}, ${4:Float:yA}, ${5:Float:xB}, ${6:Float:yB})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointBetween2Points3D':
+    'prefix': 'IsPointBetween2Points3D'
+    'body': 'IsPointBetween2Points3D(${1:Float:px}, ${2:Float:py}, ${3:Float:pz}, ${4:Float:xA}, ${5:Float:yA}, ${6:Float:zA}, ${7:Float:xB}, ${8:Float:yB}, ${9:Float:zB})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointNearly2Points2D':
+    'prefix': 'IsPointNearly2Points2D'
+    'body': 'IsPointNearly2Points2D(${1:Float:px}, ${2:Float:py}, ${3:Float:xA}, ${4:Float:yA}, ${5:Float:xB}, ${6:Float:yB}, ${7:Float:maxdist})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointNearly2Points3D':
+    'prefix': 'IsPointNearly2Points3D'
+    'body': 'IsPointNearly2Points3D(${1:Float:px}, ${2:Float:py}, ${3:Float:pz}, ${4:Float:xA}, ${5:Float:yA}, ${6:Float:zA}, ${7:Float:xB}, ${8:Float:yB}, ${9:Float:zB}, ${10:Float:maxdist})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInCircle':
+    'prefix': 'IsPointInCircle'
+    'body': 'IsPointInCircle(${1:Float:px}, ${2:Float:py}, ${3:Float:x}, ${4:Float:y}, ${5:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInCylinder':
+    'prefix': 'IsPointInCylinder'
+    'body': 'IsPointInCylinder(${1:Float:px}, ${2:Float:py}, ${3:Float:pz}, ${4:Float:xA}, ${5:Float:yA}, ${6:Float:zA}, ${7:Float:xB}, ${8:Float:yB}, ${9:Float:zB}, ${10:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInCylinderEx':
+    'prefix': 'IsPointInCylinderEx'
+    'body': 'IsPointInCylinderEx(${1:Float:px}, ${2:Float:py}, ${3:Float:pz}, ${4:Float:x}, ${5:Float:y}, ${6:Float:minz}, ${7:Float:maxz}, ${8:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInSphere':
+    'prefix': 'IsPointInSphere'
+    'body': 'IsPointInSphere(${1:Float:px}, ${2:Float:py}, ${3:Float:pz}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInRectangle':
+    'prefix': 'IsPointInRectangle'
+    'body': 'IsPointInRectangle(${1:Float:x}, ${2:Float:y}, ${3:Float:minx}, ${4:Float:miny}, ${5:Float:maxx}, ${6:Float:maxy})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInCube':
+    'prefix': 'IsPointInCube'
+    'body': 'IsPointInCube(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:minx}, ${5:Float:miny}, ${6:Float:minz}, ${7:Float:maxx}, ${8:Float:maxy}, ${9:Float:maxz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInPolygon':
+    'prefix': 'IsPointInPolygon'
+    'body': 'IsPointInPolygon(${1:Float:x}, ${2:Float:y}, ${3:Float:points[]}, ${4:maxpoints = sizeof(points})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInCircularSector':
+    'prefix': 'IsPointInCircularSector'
+    'body': 'IsPointInCircularSector(${1:Float:px}, ${2:Float:py}, ${3:Float:x}, ${4:Float:y}, ${5:Float:rz}, ${6:Float:radius}, ${7:Float:view_angle})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInSphericalSector':
+    'prefix': 'IsPointInSphericalSector'
+    'body': 'IsPointInSphericalSector(${1:Float:px}, ${2:Float:py}, ${3:Float:pz}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:Float:rx}, ${8:Float:rz}, ${9:Float:radius}, ${10:Float:vrx}, ${11:Float:vrz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerInCircle':
+    'prefix': 'IsPlayerInCircle'
+    'body': 'IsPlayerInCircle(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerInCylinder':
+    'prefix': 'IsPlayerInCylinder'
+    'body': 'IsPlayerInCylinder(${1:playerid}, ${2:Float:xA}, ${3:Float:yA}, ${4:Float:zA}, ${5:Float:xB}, ${6:Float:yB}, ${7:Float:zB}, ${8:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerInCylinderEx':
+    'prefix': 'IsPlayerInCylinderEx'
+    'body': 'IsPlayerInCylinderEx(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:minz}, ${5:Float:maxz}, ${6:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerInSphere':
+    'prefix': 'IsPlayerInSphere'
+    'body': 'IsPlayerInSphere(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerInRectangle':
+    'prefix': 'IsPlayerInRectangle'
+    'body': 'IsPlayerInRectangle(${1:playerid}, ${2:Float:minx}, ${3:Float:miny}, ${4:Float:maxx}, ${5:Float:maxy})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerInCube':
+    'prefix': 'IsPlayerInCube'
+    'body': 'IsPlayerInCube(${1:playerid}, ${2:Float:minx}, ${3:Float:miny}, ${4:Float:minz}, ${5:Float:maxx}, ${6:Float:maxy}, ${7:Float:maxz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerInPolygon':
+    'prefix': 'IsPlayerInPolygon'
+    'body': 'IsPlayerInPolygon(${1:playerid}, ${2:Float:points[]}, ${3:maxpoints = sizeof(points})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerInCircularSector':
+    'prefix': 'IsPlayerInCircularSector'
+    'body': 'IsPlayerInCircularSector(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:rz}, ${5:Float:radius}, ${6:Float:view_angle})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerInSphericalSector':
+    'prefix': 'IsPlayerInSphericalSector'
+    'body': 'IsPlayerInSphericalSector(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:rz}, ${7:Float:radius}, ${8:Float:vrx}, ${9:Float:vrz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsProbable':
+    'prefix': 'IsProbable'
+    'body': 'IsProbable(${1:chance})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CalculatePercent':
+    'prefix': 'CalculatePercent'
+    'body': 'CalculatePercent(${1:Float:value}, ${2:Float:maxvalue})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerTargetAngle':
+    'prefix': 'GetPlayerTargetAngle'
+    'body': 'GetPlayerTargetAngle(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:&Float:rz=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetPlayerTargetAngle':
+    'prefix': 'SetPlayerTargetAngle'
+    'body': 'SetPlayerTargetAngle(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:&Float:rz=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerTargetPlayerAngle':
+    'prefix': 'GetPlayerTargetPlayerAngle'
+    'body': 'GetPlayerTargetPlayerAngle(${1:playerid}, ${2:targetid}, ${3:&Float:rz=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetPlayerTargetPlayerAngle':
+    'prefix': 'SetPlayerTargetPlayerAngle'
+    'body': 'SetPlayerTargetPlayerAngle(${1:playerid}, ${2:targetid}, ${3:&Float:rz=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetVehicleSpeed':
+    'prefix': 'GetVehicleSpeed'
+    'body': 'GetVehicleSpeed(${1:vehicleid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerSpeed':
+    'prefix': 'GetPlayerSpeed'
+    'body': 'GetPlayerSpeed(${1:playerid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CreateDynamicExplosion':
+    'prefix': 'CreateDynamicExplosion'
+    'body': 'CreateDynamicExplosion(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:Float:radius}, ${6:worldid=-1}, ${7:interiorid=-1}, ${8:playerid=-1}, ${9:Float:distance=200.0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetVehicleFlags':
+    'prefix': 'GetVehicleFlags'
+    'body': 'GetVehicleFlags(${1:vehicleid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetVehicleFlagsByModel':
+    'prefix': 'GetVehicleFlagsByModel'
+    'body': 'GetVehicleFlagsByModel(${1:modelid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsVehicleFlag':
+    'prefix': 'IsVehicleFlag'
+    'body': 'IsVehicleFlag(${1:value}, ${2:flag})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerOrientationPos':
+    'prefix': 'GetPlayerOrientationPos'
+    'body': 'GetPlayerOrientationPos(${1:playerid}, ${2:element_orientation:orientation}, ${3:Float:distance}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:tz}, ${7:isactor=false})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetVehicleOrientationPos':
+    'prefix': 'GetVehicleOrientationPos'
+    'body': 'GetVehicleOrientationPos(${1:vehicleid}, ${2:element_orientation:orientation}, ${3:Float:distance}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetObjectOrientationPos':
+    'prefix': 'GetObjectOrientationPos'
+    'body': 'GetObjectOrientationPos(${1:objectid}, ${2:element_orientation:orientation}, ${3:Float:distance}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetWeaponShotPos':
+    'prefix': 'GetWeaponShotPos'
+    'body': 'GetWeaponShotPos(${1:playerid}, ${2:hittype}, ${3:&Float:fx}, ${4:&Float:fy}, ${5:&Float:fz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetActorDistanceFromPoint':
+    'prefix': 'GetActorDistanceFromPoint'
+    'body': 'GetActorDistanceFromPoint(${1:actorid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetObjectDistanceFromPoint':
+    'prefix': 'GetObjectDistanceFromPoint'
+    'body': 'GetObjectDistanceFromPoint(${1:objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDistanceBetweenPlayers':
+    'prefix': 'GetDistanceBetweenPlayers'
+    'body': 'GetDistanceBetweenPlayers(${1:playerid_a}, ${2:playerid_b})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDistanceBetweenVehicles':
+    'prefix': 'GetDistanceBetweenVehicles'
+    'body': 'GetDistanceBetweenVehicles(${1:vehicleid_a}, ${2:vehicleid_b})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDistanceBetweenObjects':
+    'prefix': 'GetDistanceBetweenObjects'
+    'body': 'GetDistanceBetweenObjects(${1:objectid_a}, ${2:objectid_b})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerActorDistance':
+    'prefix': 'GetPlayerActorDistance'
+    'body': 'GetPlayerActorDistance(${1:playerid}, ${2:actorid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerVehicleDistance':
+    'prefix': 'GetPlayerVehicleDistance'
+    'body': 'GetPlayerVehicleDistance(${1:playerid}, ${2:vehicleid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerObjectDistance':
+    'prefix': 'GetPlayerObjectDistance'
+    'body': 'GetPlayerObjectDistance(${1:playerid}, ${2:objectid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetPlayerLookAtPlayer':
+    'prefix': 'SetPlayerLookAtPlayer'
+    'body': 'SetPlayerLookAtPlayer(${1:playerid}, ${2:targetid}, ${3:cut = CAMERA_CUT})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerCameraLookAt':
+    'prefix': 'GetPlayerCameraLookAt'
+    'body': 'GetPlayerCameraLookAt(${1:playerid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerLookAtSky':
+    'prefix': 'IsPlayerLookAtSky'
+    'body': 'IsPlayerLookAtSky(${1:playerid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetVehicleUpVector':
+    'prefix': 'GetVehicleUpVector'
+    'body': 'GetVehicleUpVector(${1:vehicleid}, ${2:&Float:vx}, ${3:&Float:vy}, ${4:&Float:vz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetVehicleUpPos':
+    'prefix': 'GetVehicleUpPos'
+    'body': 'GetVehicleUpPos(${1:vehicleid}, ${2:Float:radius}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetVehicleDownPos':
+    'prefix': 'GetVehicleDownPos'
+    'body': 'GetVehicleDownPos(${1:vehicleid}, ${2:Float:radius}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetObjectRotationQuat':
+    'prefix': 'GetObjectRotationQuat'
+    'body': 'GetObjectRotationQuat(${1:objectid}, ${2:&Float:qw}, ${3:&Float:qx}, ${4:&Float:qy}, ${5:&Float:qz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetObjectUpVector':
+    'prefix': 'GetObjectUpVector'
+    'body': 'GetObjectUpVector(${1:objectid}, ${2:&Float:vx}, ${3:&Float:vy}, ${4:&Float:vz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetObjectUpPos':
+    'prefix': 'GetObjectUpPos'
+    'body': 'GetObjectUpPos(${1:objectid}, ${2:Float:radius}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetObjectDownPos':
+    'prefix': 'GetObjectDownPos'
+    'body': 'GetObjectDownPos(${1:objectid}, ${2:Float:radius}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetQuatUpVector':
+    'prefix': 'GetQuatUpVector'
+    'body': 'GetQuatUpVector(${1:Float:qw}, ${2:Float:qx}, ${3:Float:qy}, ${4:Float:qz}, ${5:&Float:vx}, ${6:&Float:vy}, ${7:&Float:vz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetQuatFromRot':
+    'prefix': 'GetQuatFromRot'
+    'body': 'GetQuatFromRot(${1:Float:rx}, ${2:Float:ry}, ${3:Float:rz}, ${4:&Float:qw}, ${5:&Float:qx}, ${6:&Float:qy}, ${7:&Float:qz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetLineSize2D':
+    'prefix': 'GetLineSize2D'
+    'body': 'GetLineSize2D(${1:Float:points[][]}, ${2:maxpoints=sizeof(points})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetLineSize3D':
+    'prefix': 'GetLineSize3D'
+    'body': 'GetLineSize3D(${1:Float:points[][]}, ${2:maxpoints=sizeof(points})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointToPointVector':
+    'prefix': 'GetPointToPointVector'
+    'body': 'GetPointToPointVector(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:tx}, ${5:Float:ty}, ${6:Float:tz}, ${7:&Float:vx}, ${8:&Float:vy}, ${9:&Float:vz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerToPointVector':
+    'prefix': 'GetPlayerToPointVector'
+    'body': 'GetPlayerToPointVector(${1:playerid}, ${2:Float:tx}, ${3:Float:ty}, ${4:Float:tz}, ${5:&Float:vx}, ${6:&Float:vy}, ${7:&Float:vz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetObjectToPointVector':
+    'prefix': 'GetObjectToPointVector'
+    'body': 'GetObjectToPointVector(${1:objectid}, ${2:Float:tx}, ${3:Float:ty}, ${4:Float:tz}, ${5:&Float:vx}, ${6:&Float:vy}, ${7:&Float:vz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetVehicleToPointVector':
+    'prefix': 'GetVehicleToPointVector'
+    'body': 'GetVehicleToPointVector(${1:vehicleid}, ${2:Float:tx}, ${3:Float:ty}, ${4:Float:tz}, ${5:&Float:vx}, ${6:&Float:vy}, ${7:&Float:vz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsVehicleInRangeOfPoint':
+    'prefix': 'IsVehicleInRangeOfPoint'
+    'body': 'IsVehicleInRangeOfPoint(${1:vehicleid}, ${2:Float:range}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsActorInRangeOfPoint':
+    'prefix': 'IsActorInRangeOfPoint'
+    'body': 'IsActorInRangeOfPoint(${1:actorid}, ${2:Float:range}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsObjectInRangeOfPoint':
+    'prefix': 'IsObjectInRangeOfPoint'
+    'body': 'IsObjectInRangeOfPoint(${1:objectid}, ${2:Float:range}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftLineRotation':
+    'prefix': 'ShiftLineRotation'
+    'body': 'ShiftLineRotation(${1:Float:sX}, ${2:Float:sY}, ${3:Float:sZ}, ${4:Float:eX}, ${5:Float:eY}, ${6:Float:eZ}, ${7:Float:rx}, ${8:Float:ry}, ${9:Float:rz}, ${10:&Float:nX}, ${11:&Float:nY}, ${12:&Float:nZ})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftLineRotationVector':
+    'prefix': 'ShiftLineRotationVector'
+    'body': 'ShiftLineRotationVector(${1:Float:sX}, ${2:Float:sY}, ${3:Float:sZ}, ${4:Float:eX}, ${5:Float:eY}, ${6:Float:eZ}, ${7:Float:rx}, ${8:Float:ry}, ${9:Float:rz}, ${10:&Float:nX}, ${11:&Float:nY}, ${12:&Float:nZ})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerRotatedVector':
+    'prefix': 'GetPlayerRotatedVector'
+    'body': 'GetPlayerRotatedVector(${1:playerid}, ${2:Float:tx}, ${3:Float:ty}, ${4:Float:tz}, ${5:&Float:vx}, ${6:&Float:vy}, ${7:&Float:vz}, ${8:bool:return_vector=true}, ${9:Float:rx=0.0}, ${10:Float:ry=0.0}, ${11:Float:rz=0.0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetObjectRotatedVector':
+    'prefix': 'GetObjectRotatedVector'
+    'body': 'GetObjectRotatedVector(${1:objectid}, ${2:Float:tx}, ${3:Float:ty}, ${4:Float:tz}, ${5:&Float:vx}, ${6:&Float:vy}, ${7:&Float:vz}, ${8:bool:return_vector=true}, ${9:Float:rx=0.0}, ${10:Float:ry=0.0}, ${11:Float:rz=0.0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetVehicleRotatedVector':
+    'prefix': 'GetVehicleRotatedVector'
+    'body': 'GetVehicleRotatedVector(${1:vehicleid}, ${2:Float:tx}, ${3:Float:ty}, ${4:Float:tz}, ${5:&Float:vx}, ${6:&Float:vy}, ${7:&Float:vz}, ${8:bool:return_vector=true}, ${9:Float:rx=0.0}, ${10:Float:ry=0.0}, ${11:Float:rz=0.0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetArcPointsFloor2D':
+    'prefix': 'GetArcPointsFloor2D'
+    'body': 'GetArcPointsFloor2D(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:tx}, ${5:Float:ty}, ${6:Float:spread}, ${7:Float:points[][]}, ${8:max_points=sizeof(points})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetArcPointsCellar2D':
+    'prefix': 'GetArcPointsCellar2D'
+    'body': 'GetArcPointsCellar2D(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:tx}, ${5:Float:ty}, ${6:Float:spread}, ${7:Float:points[][]}, ${8:max_points=sizeof(points})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetArcPointsStarboard2D':
+    'prefix': 'GetArcPointsStarboard2D'
+    'body': 'GetArcPointsStarboard2D(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:tx}, ${5:Float:ty}, ${6:Float:spread}, ${7:Float:points[][]}, ${8:max_points=sizeof(points})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetArcPointsLarboard2D':
+    'prefix': 'GetArcPointsLarboard2D'
+    'body': 'GetArcPointsLarboard2D(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:tx}, ${5:Float:ty}, ${6:Float:spread}, ${7:Float:points[][]}, ${8:max_points=sizeof(points})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInSphericalSectorEx':
+    'prefix': 'IsPointInSphericalSectorEx'
+    'body': 'IsPointInSphericalSectorEx(${1:Float:px}, ${2:Float:py}, ${3:Float:pz}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:Float:rx}, ${8:Float:rz}, ${9:Float:radius}, ${10:Float:vrx}, ${11:Float:vrz}, ${12:bool:testLOS=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerOnPlayerScreen':
+    'prefix': 'IsPlayerOnPlayerScreen'
+    'body': 'IsPlayerOnPlayerScreen(${1:playerid}, ${2:targetid}, ${3:Float:rx=INVALID_ROTATION}, ${4:Float:rz=INVALID_ROTATION}, ${5:Float:vrx=VERTICAL_CAMERA_RADIUS}, ${6:Float:vrz=HORIZONTAL_CAMERA_RADIUS}, ${7:bool:testLOS=true}, ${8:bool:testVW=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsVehicleOnPlayerScreen':
+    'prefix': 'IsVehicleOnPlayerScreen'
+    'body': 'IsVehicleOnPlayerScreen(${1:playerid}, ${2:vehicleid}, ${3:Float:rx=INVALID_ROTATION}, ${4:Float:rz=INVALID_ROTATION}, ${5:Float:vrx=VERTICAL_CAMERA_RADIUS}, ${6:Float:vrz=HORIZONTAL_CAMERA_RADIUS}, ${7:bool:testLOS=true}, ${8:bool:testVW=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsObjectOnPlayerScreen':
+    'prefix': 'IsObjectOnPlayerScreen'
+    'body': 'IsObjectOnPlayerScreen(${1:playerid}, ${2:objectid}, ${3:Float:rx=INVALID_ROTATION}, ${4:Float:rz=INVALID_ROTATION}, ${5:Float:vrx=VERTICAL_CAMERA_RADIUS}, ${6:Float:vrz=HORIZONTAL_CAMERA_RADIUS}, ${7:bool:testLOS=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsActorOnPlayerScreen':
+    'prefix': 'IsActorOnPlayerScreen'
+    'body': 'IsActorOnPlayerScreen(${1:playerid}, ${2:actorid}, ${3:Float:rx=INVALID_ROTATION}, ${4:Float:rz=INVALID_ROTATION}, ${5:Float:vrx=VERTICAL_CAMERA_RADIUS}, ${6:Float:vrz=HORIZONTAL_CAMERA_RADIUS}, ${7:bool:testLOS=true}, ${8:bool:testVW=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerOnFakeScreen':
+    'prefix': 'IsPlayerOnFakeScreen'
+    'body': 'IsPlayerOnFakeScreen(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:targetid}, ${5:Float:rx}, ${6:Float:rz}, ${7:Float:vrx=VERTICAL_CAMERA_RADIUS}, ${8:Float:vrz=HORIZONTAL_CAMERA_RADIUS}, ${9:bool:testLOS=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsVehicleOnFakeScreen':
+    'prefix': 'IsVehicleOnFakeScreen'
+    'body': 'IsVehicleOnFakeScreen(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:vehicleid}, ${5:Float:rx}, ${6:Float:rz}, ${7:Float:vrx=VERTICAL_CAMERA_RADIUS}, ${8:Float:vrz=HORIZONTAL_CAMERA_RADIUS}, ${9:bool:testLOS=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsObjectOnFakeScreen':
+    'prefix': 'IsObjectOnFakeScreen'
+    'body': 'IsObjectOnFakeScreen(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:objectid}, ${5:Float:rx}, ${6:Float:rz}, ${7:Float:vrx=VERTICAL_CAMERA_RADIUS}, ${8:Float:vrz=HORIZONTAL_CAMERA_RADIUS}, ${9:bool:testLOS=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsActorOnFakeScreen':
+    'prefix': 'IsActorOnFakeScreen'
+    'body': 'IsActorOnFakeScreen(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:actorid}, ${5:Float:rx}, ${6:Float:rz}, ${7:Float:vrx=VERTICAL_CAMERA_RADIUS}, ${8:Float:vrz=HORIZONTAL_CAMERA_RADIUS}, ${9:bool:testLOS=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerSkydiving':
+    'prefix': 'IsPlayerSkydiving'
+    'body': 'IsPlayerSkydiving(${1:playerid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerUsingParachute':
+    'prefix': 'IsPlayerUsingParachute'
+    'body': 'IsPlayerUsingParachute(${1:playerid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerAiming':
+    'prefix': 'IsPlayerAiming'
+    'body': 'IsPlayerAiming(${1:playerid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerStay':
+    'prefix': 'IsPlayerStay'
+    'body': 'IsPlayerStay(${1:playerid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerRunning':
+    'prefix': 'IsPlayerRunning'
+    'body': 'IsPlayerRunning(${1:playerid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerSwim':
+    'prefix': 'IsPlayerSwim'
+    'body': 'IsPlayerSwim(${1:playerid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerJump':
+    'prefix': 'IsPlayerJump'
+    'body': 'IsPlayerJump(${1:playerid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerParaFall':
+    'prefix': 'IsPlayerParaFall'
+    'body': 'IsPlayerParaFall(${1:playerid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerParaGlide':
+    'prefix': 'IsPlayerParaGlide'
+    'body': 'IsPlayerParaGlide(${1:playerid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerFall':
+    'prefix': 'IsPlayerFall'
+    'body': 'IsPlayerFall(${1:playerid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Get3DTrygModules':
+    'prefix': 'Get3DTrygModules'
+    'body': 'Get3DTrygModules(${1:&modules_count=0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsTryg3DModuleLoaded':
+    'prefix': 'IsTryg3DModuleLoaded'
+    'body': 'IsTryg3DModuleLoaded(${1:Tryg3DModule:moduleid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Get3DTrygEfficiency':
+    'prefix': 'Get3DTrygEfficiency'
+    'body': 'Get3DTrygEfficiency(${1:bool:use_colandreas=false})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Get3DTrygErrorCount':
+    'prefix': 'Get3DTrygErrorCount'
+    'body': 'Get3DTrygErrorCount()'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Reset3DTrygErrorCount':
+    'prefix': 'Reset3DTrygErrorCount'
+    'body': 'Reset3DTrygErrorCount()'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_SetStreamDistance':
+    'prefix': 'Tryg3D_SetStreamDistance'
+    'body': 'Tryg3D_SetStreamDistance(${1:Float:streamdistance})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_GetStreamDistance':
+    'prefix': 'Tryg3D_GetStreamDistance'
+    'body': 'Tryg3D_GetStreamDistance()'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetTryg3DActiveCount':
+    'prefix': 'GetTryg3DActiveCount'
+    'body': 'GetTryg3DActiveCount()'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftPositionToOrion':
+    'prefix': 'ShiftPositionToOrion'
+    'body': 'ShiftPositionToOrion(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:&Float:orion}, ${5:&Float:lon}, ${6:&Float:lat})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ShiftOrionToPosition':
+    'prefix': 'ShiftOrionToPosition'
+    'body': 'ShiftOrionToPosition(${1:Float:orion}, ${2:Float:lon}, ${3:Float:lat}, ${4:&Float:x}, ${5:&Float:y}, ${6:&Float:z})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'randomex':
+    'prefix': 'randomex'
+    'body': 'randomex(${1:min}, ${2:max})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_KeyPressed':
+    'prefix': 'Tryg3D_KeyPressed'
+    'body': 'Tryg3D_KeyPressed(${1:key})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_KeyReleased':
+    'prefix': 'Tryg3D_KeyReleased'
+    'body': 'Tryg3D_KeyReleased(${1:key})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_KeyHolding':
+    'prefix': 'Tryg3D_KeyHolding'
+    'body': 'Tryg3D_KeyHolding(${1:key})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetSAMIncludeVersion':
+    'prefix': 'GetSAMIncludeVersion'
+    'body': 'GetSAMIncludeVersion(${1:value}, ${2:name[]}, ${3:maxdest = sizeof(name})'
+    'leftLabel': 'T3D'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'DisableADMLogging':
+    'prefix': 'DisableADMLogging'
+    'body': 'DisableADMLogging(${1:bool:disable})'
+    'leftLabel': 'T3D'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SecToTimeDay':
+    'prefix': 'SecToTimeDay'
+    'body': 'SecToTimeDay(${1:second})'
+    'leftLabel': 'T3D'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'MSToTimeDay':
+    'prefix': 'MSToTimeDay'
+    'body': 'MSToTimeDay(${1:millisecond})'
+    'leftLabel': 'T3D'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SecToTime':
+    'prefix': 'SecToTime'
+    'body': 'SecToTime(${1:second})'
+    'leftLabel': 'T3D'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'MSToTime':
+    'prefix': 'MSToTime'
+    'body': 'MSToTime(${1:millisecond})'
+    'leftLabel': 'T3D'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SecToTimeMini':
+    'prefix': 'SecToTimeMini'
+    'body': 'SecToTimeMini(${1:second})'
+    'leftLabel': 'T3D'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'MSToTimeMini':
+    'prefix': 'MSToTimeMini'
+    'body': 'MSToTimeMini(${1:millisecond})'
+    'leftLabel': 'T3D'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicObjectOrientationPos':
+    'prefix': 'GetDynamicObjectOrientationPos'
+    'body': 'GetDynamicObjectOrientationPos(${1:objectid}, ${2:element_orientation:orientation}, ${3:Float:distance}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDistanceBetweenDynamicObject':
+    'prefix': 'GetDistanceBetweenDynamicObject'
+    'body': 'GetDistanceBetweenDynamicObject(${1:objectid_a}, ${2:objectid_b})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerDynamicObjectDistance':
+    'prefix': 'GetPlayerDynamicObjectDistance'
+    'body': 'GetPlayerDynamicObjectDistance(${1:playerid}, ${2:objectid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicObjectRotationQuat':
+    'prefix': 'GetDynamicObjectRotationQuat'
+    'body': 'GetDynamicObjectRotationQuat(${1:objectid}, ${2:&Float:qw}, ${3:&Float:qx}, ${4:&Float:qy}, ${5:&Float:qz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicObjectUpVector':
+    'prefix': 'GetDynamicObjectUpVector'
+    'body': 'GetDynamicObjectUpVector(${1:objectid}, ${2:&Float:vx}, ${3:&Float:vy}, ${4:&Float:vz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicObjectUpPos':
+    'prefix': 'GetDynamicObjectUpPos'
+    'body': 'GetDynamicObjectUpPos(${1:objectid}, ${2:Float:radius}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicObjectDownPos':
+    'prefix': 'GetDynamicObjectDownPos'
+    'body': 'GetDynamicObjectDownPos(${1:objectid}, ${2:Float:radius}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicObjectToPointVector':
+    'prefix': 'GetDynamicObjectToPointVector'
+    'body': 'GetDynamicObjectToPointVector(${1:objectid}, ${2:Float:tx}, ${3:Float:ty}, ${4:Float:tz}, ${5:&Float:vx}, ${6:&Float:vy}, ${7:&Float:vz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicObjectDistFromPoint':
+    'prefix': 'GetDynamicObjectDistFromPoint'
+    'body': 'GetDynamicObjectDistFromPoint(${1:objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsDynamicObjectInRangeOfPoint':
+    'prefix': 'IsDynamicObjectInRangeOfPoint'
+    'body': 'IsDynamicObjectInRangeOfPoint(${1:objectid}, ${2:Float:range}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetPlayerAbsolutePosition':
+    'prefix': 'SetPlayerAbsolutePosition'
+    'body': 'SetPlayerAbsolutePosition(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:angle}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:compensatedtime = -1})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetPlayerAbsolutePositionVeh':
+    'prefix': 'SetPlayerAbsolutePositionVeh'
+    'body': 'SetPlayerAbsolutePositionVeh(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:angle}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:compensatedtime = -1})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicObjectRotatedVector':
+    'prefix': 'GetDynamicObjectRotatedVector'
+    'body': 'GetDynamicObjectRotatedVector(${1:objectid}, ${2:Float:tx}, ${3:Float:ty}, ${4:Float:tz}, ${5:&Float:vx}, ${6:&Float:vy}, ${7:&Float:vz}, ${8:bool:return_vector=true}, ${9:Float:rx=0.0}, ${10:Float:ry=0.0}, ${11:Float:rz=0.0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsDynamicObjectOnPlayerScreen':
+    'prefix': 'IsDynamicObjectOnPlayerScreen'
+    'body': 'IsDynamicObjectOnPlayerScreen(${1:playerid}, ${2:objectid}, ${3:Float:rx=INVALID_ROTATION}, ${4:Float:rz=INVALID_ROTATION}, ${5:Float:vrx=VERTICAL_CAMERA_RADIUS}, ${6:Float:vrz=HORIZONTAL_CAMERA_RADIUS}, ${7:bool:testLOS=true}, ${8:bool:testVW=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsDynamicObjectOnFakeScreen':
+    'prefix': 'IsDynamicObjectOnFakeScreen'
+    'body': 'IsDynamicObjectOnFakeScreen(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:objectid}, ${5:Float:rx}, ${6:Float:rz}, ${7:Float:vrx=VERTICAL_CAMERA_RADIUS}, ${8:Float:vrz=HORIZONTAL_CAMERA_RADIUS}, ${9:bool:testLOS=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicActorDistFromPoint':
+    'prefix': 'GetDynamicActorDistFromPoint'
+    'body': 'GetDynamicActorDistFromPoint(${1:actorid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerDynamicActorDistance':
+    'prefix': 'GetPlayerDynamicActorDistance'
+    'body': 'GetPlayerDynamicActorDistance(${1:playerid}, ${2:actorid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsDynamicActorInRangeOfPoint':
+    'prefix': 'IsDynamicActorInRangeOfPoint'
+    'body': 'IsDynamicActorInRangeOfPoint(${1:actorid}, ${2:Float:range}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicActorOrientationPos':
+    'prefix': 'GetDynamicActorOrientationPos'
+    'body': 'GetDynamicActorOrientationPos(${1:actorid}, ${2:element_orientation:orientation}, ${3:Float:distance}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsDynamicActorOnPlayerScreen':
+    'prefix': 'IsDynamicActorOnPlayerScreen'
+    'body': 'IsDynamicActorOnPlayerScreen(${1:playerid}, ${2:actorid}, ${3:Float:rx=INVALID_ROTATION}, ${4:Float:rz=INVALID_ROTATION}, ${5:Float:vrx=VERTICAL_CAMERA_RADIUS}, ${6:Float:vrz=HORIZONTAL_CAMERA_RADIUS}, ${7:bool:testLOS=true}, ${8:bool:testVW=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsDynamicActorOnFakeScreen':
+    'prefix': 'IsDynamicActorOnFakeScreen'
+    'body': 'IsDynamicActorOnFakeScreen(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:actorid}, ${5:Float:rx}, ${6:Float:rz}, ${7:Float:vrx=VERTICAL_CAMERA_RADIUS}, ${8:Float:vrz=HORIZONTAL_CAMERA_RADIUS}, ${9:bool:testLOS=true})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_IsValidStreamer':
+    'prefix': 'Tryg3D_IsValidStreamer'
+    'body': 'Tryg3D_IsValidStreamer(${1:version})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_GetStreamerVersionName':
+    'prefix': 'Tryg3D_GetStreamerVersionName'
+    'body': 'Tryg3D_GetStreamerVersionName(${1:name[]}, ${2:value = TRYG3D_GET_STREAMER_VERSION}, ${3:maxdest = sizeof(name})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Tryg3D_CheckStreamerVersion':
+    'prefix': 'Tryg3D_CheckStreamerVersion'
+    'body': 'Tryg3D_CheckStreamerVersion()'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicObjectOrientPosCol':
+    'prefix': 'GetDynamicObjectOrientPosCol'
+    'body': 'GetDynamicObjectOrientPosCol(${1:objectid}, ${2:element_orientation:orientation}, ${3:Float:distance}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicObjectCollisionFlags':
+    'prefix': 'GetDynamicObjectCollisionFlags'
+    'body': 'GetDynamicObjectCollisionFlags(${1:objectid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDynamicActorOrientPosCol':
+    'prefix': 'GetDynamicActorOrientPosCol'
+    'body': 'GetDynamicActorOrientPosCol(${1:actorid}, ${2:element_orientation:orientation}, ${3:Float:distance}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetNPCAbsolutePosition':
+    'prefix': 'SetNPCAbsolutePosition'
+    'body': 'SetNPCAbsolutePosition(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:angle}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:compensatedtime = -1})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCDynamicActorDistance':
+    'prefix': 'GetNPCDynamicActorDistance'
+    'body': 'GetNPCDynamicActorDistance(${1:npcid}, ${2:actorid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'MapAndreasFindZ':
+    'prefix': 'MapAndreasFindZ'
+    'body': 'MapAndreasFindZ(${1:Float:x}, ${2:Float:y}, ${3:&Float:z=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetGroundRotation':
+    'prefix': 'GetGroundRotation'
+    'body': 'GetGroundRotation(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:&Float:rx}, ${5:&Float:ry})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOnGround':
+    'prefix': 'GetPointInFrontOnGround'
+    'body': 'GetPointInFrontOnGround(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:rx}, ${5:Float:rz}, ${6:&Float:tx}, ${7:&Float:ty}, ${8:&Float:tz}, ${9:Float:max_distance})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInWaterFrontOfPlayer':
+    'prefix': 'IsPointInWaterFrontOfPlayer'
+    'body': 'IsPointInWaterFrontOfPlayer(${1:playerid}, ${2:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInWater':
+    'prefix': 'IsPointInWater'
+    'body': 'IsPointInWater(${1:Float:x}, ${2:Float:y}, ${3:Float:z=0.0})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsMapAndreasInit':
+    'prefix': 'IsMapAndreasInit'
+    'body': 'IsMapAndreasInit()'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SafeMapAndreasInit':
+    'prefix': 'SafeMapAndreasInit'
+    'body': 'SafeMapAndreasInit(${1:mode = MAP_ANDREAS_MODE_FULL}, ${2:name[]=\"\"}, ${3:len=sizeof(name})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'MovePointCol':
+    'prefix': 'MovePointCol'
+    'body': 'MovePointCol(${1:Float:StartX}, ${2:Float:StartY}, ${3:Float:StartZ}, ${4:Float:EndX}, ${5:Float:EndY}, ${6:Float:EndZ}, ${7:&Float:x}, ${8:&Float:y}, ${9:&Float:z})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'MovePointColCutLine':
+    'prefix': 'MovePointColCutLine'
+    'body': 'MovePointColCutLine(${1:Float:sX}, ${2:Float:sY}, ${3:Float:sZ}, ${4:Float:eX}, ${5:Float:eY}, ${6:Float:eZ}, ${7:&Float:x}, ${8:&Float:y}, ${9:&Float:z}, ${10:Float:cut_size=0.0})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'MovePointColCutLineEx':
+    'prefix': 'MovePointColCutLineEx'
+    'body': 'MovePointColCutLineEx(${1:Float:sX}, ${2:Float:sY}, ${3:Float:sZ}, ${4:Float:eX}, ${5:Float:eY}, ${6:Float:eZ}, ${7:&Float:x}, ${8:&Float:y}, ${9:&Float:z}, ${10:Float:cut_size=0.0})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFront3DCol':
+    'prefix': 'GetPointInFront3DCol'
+    'body': 'GetPointInFront3DCol(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:rx}, ${5:Float:rz}, ${6:Float:radius}, ${7:&Float:tx}, ${8:&Float:ty}, ${9:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOfPlayerCol':
+    'prefix': 'GetPointInFrontOfPlayerCol'
+    'body': 'GetPointInFrontOfPlayerCol(${1:playerid}, ${2:&Float:tx}, ${3:&Float:ty}, ${4:Float:radius})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOfCamera2DCol':
+    'prefix': 'GetPointInFrontOfCamera2DCol'
+    'body': 'GetPointInFrontOfCamera2DCol(${1:playerid}, ${2:&Float:tx}, ${3:&Float:ty}, ${4:Float:radius})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOfCamera3DCol':
+    'prefix': 'GetPointInFrontOfCamera3DCol'
+    'body': 'GetPointInFrontOfCamera3DCol(${1:playerid}, ${2:&Float:tx}, ${3:&Float:ty}, ${4:&Float:tz}, ${5:Float:radius}, ${6:&Float:rx=0.0}, ${7:&Float:rz=0.0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOfVehicle2DCol':
+    'prefix': 'GetPointInFrontOfVehicle2DCol'
+    'body': 'GetPointInFrontOfVehicle2DCol(${1:vehicleid}, ${2:&Float:tx}, ${3:&Float:ty}, ${4:Float:radius})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOfVehicle3DCol':
+    'prefix': 'GetPointInFrontOfVehicle3DCol'
+    'body': 'GetPointInFrontOfVehicle3DCol(${1:vehicleid}, ${2:&Float:tx}, ${3:&Float:ty}, ${4:&Float:tz}, ${5:Float:radius}, ${6:&Float:rx=0.0}, ${7:&Float:rz=0.0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetGroundRotation':
+    'prefix': 'GetGroundRotation'
+    'body': 'GetGroundRotation(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:&Float:rx}, ${5:&Float:ry})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOnGround':
+    'prefix': 'GetPointInFrontOnGround'
+    'body': 'GetPointInFrontOnGround(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:rx}, ${5:Float:rz}, ${6:&Float:tx}, ${7:&Float:ty}, ${8:&Float:tz}, ${9:Float:max_distance})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointCollisionFlags':
+    'prefix': 'GetPointCollisionFlags'
+    'body': 'GetPointCollisionFlags(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:interiorid=0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerCollisionFlags':
+    'prefix': 'GetPlayerCollisionFlags'
+    'body': 'GetPlayerCollisionFlags(${1:playerid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetVehicleCollisionFlags':
+    'prefix': 'GetVehicleCollisionFlags'
+    'body': 'GetVehicleCollisionFlags(${1:vehicleid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetObjectCollisionFlags':
+    'prefix': 'GetObjectCollisionFlags'
+    'body': 'GetObjectCollisionFlags(${1:objectid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsCollisionFlag':
+    'prefix': 'IsCollisionFlag'
+    'body': 'IsCollisionFlag(${1:value}, ${2:flag})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'UndergroundFindZ':
+    'prefix': 'UndergroundFindZ'
+    'body': 'UndergroundFindZ(${1:Float:x}, ${2:Float:y}, ${3:&Float:z=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'InteriorFindZ':
+    'prefix': 'InteriorFindZ'
+    'body': 'InteriorFindZ(${1:Float:px}, ${2:Float:py}, ${3:Float:pz=1000.0}, ${4:Float:size=2.0}, ${5:&Float:z=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInWater':
+    'prefix': 'IsPointInWater'
+    'body': 'IsPointInWater(${1:Float:x}, ${2:Float:y}, ${3:Float:z=0.0})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInUnderwater':
+    'prefix': 'IsPointInUnderwater'
+    'body': 'IsPointInUnderwater(${1:Float:x}, ${2:Float:y}, ${3:Float:z})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInUnderground':
+    'prefix': 'IsPointInUnderground'
+    'body': 'IsPointInUnderground(${1:Float:x}, ${2:Float:y}, ${3:Float:z})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInAir':
+    'prefix': 'IsPointInAir'
+    'body': 'IsPointInAir(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:bool:interior=false}, ${5:Float:max_distance=2.2})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInGround':
+    'prefix': 'IsPointInGround'
+    'body': 'IsPointInGround(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:bool:interior=false}, ${5:Float:max_distance=2.2})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInWaterFrontOfPlayer':
+    'prefix': 'IsPointInWaterFrontOfPlayer'
+    'body': 'IsPointInWaterFrontOfPlayer(${1:playerid}, ${2:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ColAndreasFindZ':
+    'prefix': 'ColAndreasFindZ'
+    'body': 'ColAndreasFindZ(${1:Float:x}, ${2:Float:y}, ${3:&Float:z=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerOrientationPosCol':
+    'prefix': 'GetPlayerOrientationPosCol'
+    'body': 'GetPlayerOrientationPosCol(${1:playerid}, ${2:element_orientation:orientation}, ${3:Float:distance}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:tz}, ${7:isactor=false})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetVehicleOrientationPosCol':
+    'prefix': 'GetVehicleOrientationPosCol'
+    'body': 'GetVehicleOrientationPosCol(${1:vehicleid}, ${2:element_orientation:orientation}, ${3:Float:distance}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetObjectOrientationPosCol':
+    'prefix': 'GetObjectOrientationPosCol'
+    'body': 'GetObjectOrientationPosCol(${1:objectid}, ${2:element_orientation:orientation}, ${3:Float:distance}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsBetweenPlayersIsWall':
+    'prefix': 'IsBetweenPlayersIsWall'
+    'body': 'IsBetweenPlayersIsWall(${1:playerid}, ${2:targetid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsBetweenPlayerToPointIsWall':
+    'prefix': 'IsBetweenPlayerToPointIsWall'
+    'body': 'IsBetweenPlayerToPointIsWall(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInWallForPoint':
+    'prefix': 'GetPointInWallForPoint'
+    'body': 'GetPointInWallForPoint(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:radius}, ${5:&Float:tx}, ${6:&Float:ty}, ${7:&Float:tz}, ${8:Float:sector=90.0})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsColAndreasInit':
+    'prefix': 'IsColAndreasInit'
+    'body': 'IsColAndreasInit()'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SafeColAndreasInit':
+    'prefix': 'SafeColAndreasInit'
+    'body': 'SafeColAndreasInit()'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetColAndreasVersion':
+    'prefix': 'GetColAndreasVersion'
+    'body': 'GetColAndreasVersion()'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetValidColAndreasVersion':
+    'prefix': 'GetValidColAndreasVersion'
+    'body': 'GetValidColAndreasVersion()'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsValidColAndreas':
+    'prefix': 'IsValidColAndreas'
+    'body': 'IsValidColAndreas(${1:version})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetColAndreasVersionName':
+    'prefix': 'GetColAndreasVersionName'
+    'body': 'GetColAndreasVersionName(${1:name[]}, ${2:value = GET_COLANDREAS_VERSION}, ${3:maxdest = sizeof(name})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CheckColAndreasVersion':
+    'prefix': 'CheckColAndreasVersion'
+    'body': 'CheckColAndreasVersion()'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'OnColAndreasRemoveBuilding':
+    'prefix': 'OnColAndreasRemoveBuilding'
+    'body': 'OnColAndreasRemoveBuilding()'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerHydraReactorRX':
+    'prefix': 'GetPlayerHydraReactorRX'
+    'body': 'GetPlayerHydraReactorRX(${1:playerid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerHydraReactorBoost':
+    'prefix': 'IsPlayerHydraReactorBoost'
+    'body': 'IsPlayerHydraReactorBoost(${1:playerid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerRotation':
+    'prefix': 'GetPlayerRotation'
+    'body': 'GetPlayerRotation(${1:playerid}, ${2:&Float:rx}, ${3:&Float:ry}, ${4:&Float:rz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CountTextDraw':
+    'prefix': 'CountTextDraw'
+    'body': 'CountTextDraw()'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CountPlayerTextDraw':
+    'prefix': 'CountPlayerTextDraw'
+    'body': 'CountPlayerTextDraw(${1:playerid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CountVisibleTextDraw':
+    'prefix': 'CountVisibleTextDraw'
+    'body': 'CountVisibleTextDraw(${1:playerid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CountVisiblePlayerTextDraw':
+    'prefix': 'CountVisiblePlayerTextDraw'
+    'body': 'CountVisiblePlayerTextDraw(${1:playerid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'UpdatePlayerTimeline':
+    'prefix': 'UpdatePlayerTimeline'
+    'body': 'UpdatePlayerTimeline(${1:playerid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerTimeline':
+    'prefix': 'GetPlayerTimeline'
+    'body': 'GetPlayerTimeline(${1:playerid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetPlayerTimeline':
+    'prefix': 'SetPlayerTimeline'
+    'body': 'SetPlayerTimeline(${1:playerid}, ${2:timeline})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPlayerPos4D':
+    'prefix': 'GetPlayerPos4D'
+    'body': 'GetPlayerPos4D(${1:playerid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z}, ${5:&timeline})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetPlayerPos4D':
+    'prefix': 'SetPlayerPos4D'
+    'body': 'SetPlayerPos4D(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:timeline=0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CreateDynamicExplosion4D':
+    'prefix': 'CreateDynamicExplosion4D'
+    'body': 'CreateDynamicExplosion4D(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:Float:radius}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:timeline = -1}, ${9:playerid = -1}, ${10:Float:distance = 200.0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsNPCInCircle':
+    'prefix': 'IsNPCInCircle'
+    'body': 'IsNPCInCircle(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsNPCInCylinder':
+    'prefix': 'IsNPCInCylinder'
+    'body': 'IsNPCInCylinder(${1:npcid}, ${2:Float:xA}, ${3:Float:yA}, ${4:Float:zA}, ${5:Float:xB}, ${6:Float:yB}, ${7:Float:zB}, ${8:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsNPCInCylinderEx':
+    'prefix': 'IsNPCInCylinderEx'
+    'body': 'IsNPCInCylinderEx(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:minz}, ${5:Float:maxz}, ${6:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsNPCInSphere':
+    'prefix': 'IsNPCInSphere'
+    'body': 'IsNPCInSphere(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsNPCInRectangle':
+    'prefix': 'IsNPCInRectangle'
+    'body': 'IsNPCInRectangle(${1:npcid}, ${2:Float:minx}, ${3:Float:miny}, ${4:Float:maxx}, ${5:Float:maxy})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsNPCInCube':
+    'prefix': 'IsNPCInCube'
+    'body': 'IsNPCInCube(${1:npcid}, ${2:Float:minx}, ${3:Float:miny}, ${4:Float:minz}, ${5:Float:maxx}, ${6:Float:maxy}, ${7:Float:maxz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsNPCInPolygon':
+    'prefix': 'IsNPCInPolygon'
+    'body': 'IsNPCInPolygon(${1:npcid}, ${2:Float:points[]}, ${3:maxpoints = sizeof(points})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsNPCInCircularSector':
+    'prefix': 'IsNPCInCircularSector'
+    'body': 'IsNPCInCircularSector(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:rz}, ${5:Float:radius}, ${6:Float:view_angle})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsNPCInSphericalSector':
+    'prefix': 'IsNPCInSphericalSector'
+    'body': 'IsNPCInSphericalSector(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:rz}, ${7:Float:radius}, ${8:Float:vrx}, ${9:Float:vrz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOfNPC':
+    'prefix': 'GetPointInFrontOfNPC'
+    'body': 'GetPointInFrontOfNPC(${1:npcid}, ${2:&Float:tx}, ${3:&Float:ty}, ${4:Float:radius})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCOrientationPos':
+    'prefix': 'GetNPCOrientationPos'
+    'body': 'GetNPCOrientationPos(${1:npcid}, ${2:element_orientation:orientation}, ${3:Float:distance}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCDistanceFromPoint':
+    'prefix': 'GetNPCDistanceFromPoint'
+    'body': 'GetNPCDistanceFromPoint(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsNPCInRangeOfPoint':
+    'prefix': 'IsNPCInRangeOfPoint'
+    'body': 'IsNPCInRangeOfPoint(${1:npcid}, ${2:Float:range}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetDistanceBetweenNPCs':
+    'prefix': 'GetDistanceBetweenNPCs'
+    'body': 'GetDistanceBetweenNPCs(${1:npcid_a}, ${2:npcid_b})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCSpeed':
+    'prefix': 'GetNPCSpeed'
+    'body': 'GetNPCSpeed(${1:npcid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCTargetAngle':
+    'prefix': 'GetNPCTargetAngle'
+    'body': 'GetNPCTargetAngle(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:&Float:rz=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetNPCTargetAngle':
+    'prefix': 'SetNPCTargetAngle'
+    'body': 'SetNPCTargetAngle(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:&Float:rz=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCTargetNPCAngle':
+    'prefix': 'GetNPCTargetNPCAngle'
+    'body': 'GetNPCTargetNPCAngle(${1:npcid}, ${2:targetid}, ${3:&Float:rz=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetNPCTargetNPCAngle':
+    'prefix': 'SetNPCTargetNPCAngle'
+    'body': 'SetNPCTargetNPCAngle(${1:npcid}, ${2:targetid}, ${3:&Float:rz=0.0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCActorDistance':
+    'prefix': 'GetNPCActorDistance'
+    'body': 'GetNPCActorDistance(${1:npcid}, ${2:actorid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCVehicleDistance':
+    'prefix': 'GetNPCVehicleDistance'
+    'body': 'GetNPCVehicleDistance(${1:npcid}, ${2:vehicleid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCObjectDistance':
+    'prefix': 'GetNPCObjectDistance'
+    'body': 'GetNPCObjectDistance(${1:npcid}, ${2:objectid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCToPointVector':
+    'prefix': 'GetNPCToPointVector'
+    'body': 'GetNPCToPointVector(${1:npcid}, ${2:Float:tx}, ${3:Float:ty}, ${4:Float:tz}, ${5:&Float:vx}, ${6:&Float:vy}, ${7:&Float:vz})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'FCNPC_SetVehicleRotation':
+    'prefix': 'FCNPC_SetVehicleRotation'
+    'body': 'FCNPC_SetVehicleRotation(${1:npcid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'FCNPC_SetVehicleTargetRotation':
+    'prefix': 'FCNPC_SetVehicleTargetRotation'
+    'body': 'FCNPC_SetVehicleTargetRotation(${1:npcid}, ${2:Float:tx}, ${3:Float:ty}, ${4:Float:tz}, ${5:Float:ry=0.0})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCRotatedVector':
+    'prefix': 'GetNPCRotatedVector'
+    'body': 'GetNPCRotatedVector(${1:npcid}, ${2:Float:tx}, ${3:Float:ty}, ${4:Float:tz}, ${5:&Float:vx}, ${6:&Float:vy}, ${7:&Float:vz}, ${8:bool:return_vector=true}, ${9:Float:rx=0.0}, ${10:Float:ry=0.0}, ${11:Float:rz=0.0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'FCNPC_GoToAir':
+    'prefix': 'FCNPC_GoToAir'
+    'body': 'FCNPC_GoToAir(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:type = MOVE_TYPE_AUTO}, ${6:Float:speed = MOVE_SPEED_AUTO})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetPointInFrontOfNPCCol':
+    'prefix': 'GetPointInFrontOfNPCCol'
+    'body': 'GetPointInFrontOfNPCCol(${1:npcid}, ${2:&Float:tx}, ${3:&Float:ty}, ${4:Float:radius})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCCollisionFlags':
+    'prefix': 'GetNPCCollisionFlags'
+    'body': 'GetNPCCollisionFlags(${1:npcid})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsBetweenNPCsIsWall':
+    'prefix': 'IsBetweenNPCsIsWall'
+    'body': 'IsBetweenNPCsIsWall(${1:npcid}, ${2:targetid})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsBetweenNPCToPointIsWall':
+    'prefix': 'IsBetweenNPCToPointIsWall'
+    'body': 'IsBetweenNPCToPointIsWall(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCOrientationPosCol':
+    'prefix': 'GetNPCOrientationPosCol'
+    'body': 'GetNPCOrientationPosCol(${1:npcid}, ${2:element_orientation:orientation}, ${3:Float:distance}, ${4:&Float:tx}, ${5:&Float:ty}, ${6:&Float:tz})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'FCNPC_GoToCol':
+    'prefix': 'FCNPC_GoToCol'
+    'body': 'FCNPC_GoToCol(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:type = MOVE_TYPE_AUTO}, ${6:Float:speed = MOVE_SPEED_AUTO}, ${7:bool:UseMapAndreas = false}, ${8:Float:cut_size = 0.0}, ${9:bool:setangle = true})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'FCNPC_GoToPlayerCol':
+    'prefix': 'FCNPC_GoToPlayerCol'
+    'body': 'FCNPC_GoToPlayerCol(${1:npcid}, ${2:playerid}, ${3:type = MOVE_TYPE_AUTO}, ${4:Float:speed = MOVE_SPEED_AUTO}, ${5:bool:UseMapAndreas = false}, ${6:Float:cut_size = 0.0}, ${7:bool:setangle = true})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'FCNPC_GoToPlayerOnGroundCol':
+    'prefix': 'FCNPC_GoToPlayerOnGroundCol'
+    'body': 'FCNPC_GoToPlayerOnGroundCol(${1:npcid}, ${2:playerid}, ${3:type = MOVE_TYPE_AUTO}, ${4:Float:speed = MOVE_SPEED_AUTO}, ${5:bool:UseMapAndreas = false}, ${6:Float:cut_size = 1.0}, ${7:Float:climbing = 2.0}, ${8:bool:setangle = true})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'FCNPC_GoToAirCol':
+    'prefix': 'FCNPC_GoToAirCol'
+    'body': 'FCNPC_GoToAirCol(${1:npcid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:type = MOVE_TYPE_AUTO}, ${6:Float:speed = MOVE_SPEED_AUTO}, ${7:Float:cut_size = 0.0})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInWaterFrontOfNPC':
+    'prefix': 'IsPointInWaterFrontOfNPC'
+    'body': 'IsPointInWaterFrontOfNPC(${1:npcid}, ${2:Float:radius})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetNPCDynamicObjectDistance':
+    'prefix': 'GetNPCDynamicObjectDistance'
+    'body': 'GetNPCDynamicObjectDistance(${1:npcid}, ${2:objectid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'StreamCreate':
+    'prefix': 'StreamCreate'
+    'body': 'StreamCreate(${1:variable})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetStreamType':
+    'prefix': 'GetStreamType'
+    'body': 'GetStreamType(${1:Stream:StreamData[Stream3D]})'
+    'leftLabel': 'StreamType'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'ConvertAreaToStream':
+    'prefix': 'ConvertAreaToStream'
+    'body': 'ConvertAreaToStream(${1:areaid})'
+    'leftLabel': 'Stream'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'StreamCircle':
+    'prefix': 'StreamCircle'
+    'body': 'StreamCircle(${1:Float:x}, ${2:Float:y}, ${3:Float:radius})'
+    'leftLabel': 'Stream'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'StreamCylinder':
+    'prefix': 'StreamCylinder'
+    'body': 'StreamCylinder(${1:Float:xA}, ${2:Float:yA}, ${3:Float:zA}, ${4:Float:xB}, ${5:Float:yB}, ${6:Float:zB}, ${7:Float:radius})'
+    'leftLabel': 'Stream'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'StreamCylinderEx':
+    'prefix': 'StreamCylinderEx'
+    'body': 'StreamCylinderEx(${1:Float:x}, ${2:Float:y}, ${3:Float:minz}, ${4:Float:maxz}, ${5:Float:radius})'
+    'leftLabel': 'Stream'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'StreamSphere':
+    'prefix': 'StreamSphere'
+    'body': 'StreamSphere(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:radius})'
+    'leftLabel': 'Stream'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'StreamRectangle':
+    'prefix': 'StreamRectangle'
+    'body': 'StreamRectangle(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy})'
+    'leftLabel': 'Stream'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'StreamCube':
+    'prefix': 'StreamCube'
+    'body': 'StreamCube(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz})'
+    'leftLabel': 'Stream'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'StreamCircularSector':
+    'prefix': 'StreamCircularSector'
+    'body': 'StreamCircularSector(${1:Float:x}, ${2:Float:y}, ${3:Float:rz}, ${4:Float:radius}, ${5:Float:view_angle})'
+    'leftLabel': 'Stream'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'StreamSphericalSector':
+    'prefix': 'StreamSphericalSector'
+    'body': 'StreamSphericalSector(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:rx}, ${5:Float:rz}, ${6:Float:radius}, ${7:Float:vrx}, ${8:Float:vrz})'
+    'leftLabel': 'Stream'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsValidStream':
+    'prefix': 'IsValidStream'
+    'body': 'IsValidStream(${1:Stream:StreamData[Stream3D]})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPointInStream':
+    'prefix': 'IsPointInStream'
+    'body': 'IsPointInStream(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Stream:StreamData[Stream3D]})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsPlayerInStream':
+    'prefix': 'IsPlayerInStream'
+    'body': 'IsPlayerInStream(${1:playerid}, ${2:Stream:StreamData[Stream3D]})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsObjectInStream':
+    'prefix': 'IsObjectInStream'
+    'body': 'IsObjectInStream(${1:objectid}, ${2:Stream:StreamData[Stream3D]})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsActorInStream':
+    'prefix': 'IsActorInStream'
+    'body': 'IsActorInStream(${1:actorid}, ${2:Stream:StreamData[Stream3D]})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsNPCInStream':
+    'prefix': 'IsNPCInStream'
+    'body': 'IsNPCInStream(${1:npcid}, ${2:Stream:StreamData[Stream3D]})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsDynamicObjectInStream':
+    'prefix': 'IsDynamicObjectInStream'
+    'body': 'IsDynamicObjectInStream(${1:objectid}, ${2:Stream:StreamData[Stream3D]})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'IsDynamicActorInStream':
+    'prefix': 'IsDynamicActorInStream'
+    'body': 'IsDynamicActorInStream(${1:actorid}, ${2:Stream:StreamData[Stream3D]})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'Line3DCreate':
+    'prefix': 'Line3DCreate'
+    'body': 'Line3DCreate(${1:variable}, ${2:max_points})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetLine3DValue':
+    'prefix': 'GetLine3DValue'
+    'body': 'GetLine3DValue(${1:variable}, ${2:pointid}, ${3:name})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetLine3DValue':
+    'prefix': 'SetLine3DValue'
+    'body': 'SetLine3DValue(${1:variable}, ${2:pointid}, ${3:name}, ${4:value})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetLine3DPointPos':
+    'prefix': 'GetLine3DPointPos'
+    'body': 'GetLine3DPointPos(${1:Line3D:LineData[][LinePoint3D]}, ${2:pointid}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z}, ${6:max_points = sizeof(LineData})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetLine3DPointPos':
+    'prefix': 'SetLine3DPointPos'
+    'body': 'SetLine3DPointPos(${1:Line3D:LineData[][LinePoint3D]}, ${2:pointid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:max_points = sizeof(LineData})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetLine3DPointRot':
+    'prefix': 'GetLine3DPointRot'
+    'body': 'GetLine3DPointRot(${1:Line3D:LineData[][LinePoint3D]}, ${2:pointid}, ${3:&Float:rx}, ${4:&Float:ry}, ${5:&Float:rz}, ${6:max_points = sizeof(LineData})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'SetLine3DPointRot':
+    'prefix': 'SetLine3DPointRot'
+    'body': 'SetLine3DPointRot(${1:Line3D:LineData[][LinePoint3D]}, ${2:pointid}, ${3:Float:rx}, ${4:Float:ry}, ${5:Float:rz}, ${6:max_points = sizeof(LineData})'
+    'leftLabel': 'bool'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'CountLine3DPoints':
+    'prefix': 'CountLine3DPoints'
+    'body': 'CountLine3DPoints(${1:Line3D:LineData[][LinePoint3D]}, ${2:max_points = sizeof(LineData})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'AddPointToLine3D':
+    'prefix': 'AddPointToLine3D'
+    'body': 'AddPointToLine3D(${1:Line3D:LineData[][LinePoint3D]}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx=INVALID_ROTATION}, ${6:Float:ry=INVALID_ROTATION}, ${7:Float:rz=INVALID_ROTATION}, ${8:max_points = sizeof(LineData})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetXYZInFrontOfVehicle':
+    'prefix': 'GetXYZInFrontOfVehicle'
+    'body': 'GetXYZInFrontOfVehicle(${1:vehicleid}, ${2:Float:distance}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
+
+  'GetRandomClockPos':
+    'prefix': 'GetRandomClockPos'
+    'body': 'GetRandomClockPos(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:radius}, ${5:&Float:tx}, ${6:&Float:ty}, ${7:&Float:tz}, ${8:&Float:trz}, ${9:Float:rz = INVALID_ROTATION})'
+    'description': 'Function from: 3DTryg'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'

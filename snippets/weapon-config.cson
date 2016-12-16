@@ -1,0 +1,211 @@
+# Snippets for Atom, automatically generated
+# Generator created by Renato "Hii" Garcia
+'.source.pwn, .source.inc':
+  'IsBulletWeapon':
+    'prefix': 'IsBulletWeapon'
+    'body': 'IsBulletWeapon(${1:weaponid})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'IsHighRateWeapon':
+    'prefix': 'IsHighRateWeapon'
+    'body': 'IsHighRateWeapon(${1:weaponid})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'IsMeleeWeapon':
+    'prefix': 'IsMeleeWeapon'
+    'body': 'IsMeleeWeapon(${1:weaponid})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'IsPlayerSpawned':
+    'prefix': 'IsPlayerSpawned'
+    'body': 'IsPlayerSpawned(${1:playerid})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'AverageShootRate':
+    'prefix': 'AverageShootRate'
+    'body': 'AverageShootRate(${1:playerid}, ${2:shots}, ${3:&multiple_weapons = 0})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'AverageHitRate':
+    'prefix': 'AverageHitRate'
+    'body': 'AverageHitRate(${1:playerid}, ${2:hits}, ${3:&multiple_weapons = 0})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetRespawnTime':
+    'prefix': 'SetRespawnTime'
+    'body': 'SetRespawnTime(${1:ms})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'GetRespawnTime':
+    'prefix': 'GetRespawnTime'
+    'body': 'GetRespawnTime()'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'ReturnWeaponName':
+    'prefix': 'ReturnWeaponName'
+    'body': 'ReturnWeaponName(${1:weaponid})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetWeaponDamage':
+    'prefix': 'SetWeaponDamage'
+    'body': 'SetWeaponDamage(${1:weaponid}, ${2:damage_type}, ${3:Float:amount}, ${4:Float:...})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetCustomArmourRules':
+    'prefix': 'SetCustomArmourRules'
+    'body': 'SetCustomArmourRules(${1:bool:armour_rules}, ${2:bool:torso_rules = false})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetWeaponArmourRule':
+    'prefix': 'SetWeaponArmourRule'
+    'body': 'SetWeaponArmourRule(${1:weaponid}, ${2:bool:affects_armour}, ${3:bool:torso_only = false})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetDamageSounds':
+    'prefix': 'SetDamageSounds'
+    'body': 'SetDamageSounds(${1:taken}, ${2:given})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetCbugAllowed':
+    'prefix': 'SetCbugAllowed'
+    'body': 'SetCbugAllowed(${1:bool:enabled})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'GetCbugAllowed':
+    'prefix': 'GetCbugAllowed'
+    'body': 'GetCbugAllowed()'
+    'leftLabel': 'bool'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetCustomFallDamage':
+    'prefix': 'SetCustomFallDamage'
+    'body': 'SetCustomFallDamage(${1:bool:toggle}, ${2:Float:damage_multiplier = 25.0}, ${3:Float:death_velocity = -0.6})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetVehiclePassengerDamage':
+    'prefix': 'SetVehiclePassengerDamage'
+    'body': 'SetVehiclePassengerDamage(${1:bool:toggle})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetVehicleUnoccupiedDamage':
+    'prefix': 'SetVehicleUnoccupiedDamage'
+    'body': 'SetVehicleUnoccupiedDamage(${1:bool:toggle})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetDamageFeedForPlayer':
+    'prefix': 'SetDamageFeedForPlayer'
+    'body': 'SetDamageFeedForPlayer(${1:playerid}, ${2:toggle = -1})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'IsDamageFeedActive':
+    'prefix': 'IsDamageFeedActive'
+    'body': 'IsDamageFeedActive(${1:playerid = -1})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetDamageFeed':
+    'prefix': 'SetDamageFeed'
+    'body': 'SetDamageFeed(${1:bool:toggle})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetWeaponShootRate':
+    'prefix': 'SetWeaponShootRate'
+    'body': 'SetWeaponShootRate(${1:weaponid}, ${2:max_rate})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'IsPlayerDying':
+    'prefix': 'IsPlayerDying'
+    'body': 'IsPlayerDying(${1:playerid})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetWeaponMaxRange':
+    'prefix': 'SetWeaponMaxRange'
+    'body': 'SetWeaponMaxRange(${1:weaponid}, ${2:Float:range})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetPlayerMaxHealth':
+    'prefix': 'SetPlayerMaxHealth'
+    'body': 'SetPlayerMaxHealth(${1:playerid}, ${2:Float:value})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetPlayerMaxArmour':
+    'prefix': 'SetPlayerMaxArmour'
+    'body': 'SetPlayerMaxArmour(${1:playerid}, ${2:Float:value})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'GetPlayerMaxHealth':
+    'prefix': 'GetPlayerMaxHealth'
+    'body': 'GetPlayerMaxHealth(${1:playerid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'GetPlayerMaxArmour':
+    'prefix': 'GetPlayerMaxArmour'
+    'body': 'GetPlayerMaxArmour(${1:playerid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'GetLastDamageHealth':
+    'prefix': 'GetLastDamageHealth'
+    'body': 'GetLastDamageHealth(${1:playerid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'GetLastDamageArmour':
+    'prefix': 'GetLastDamageArmour'
+    'body': 'GetLastDamageArmour(${1:playerid})'
+    'leftLabel': 'Float'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'DamagePlayer':
+    'prefix': 'DamagePlayer'
+    'body': 'DamagePlayer(${1:playerid}, ${2:Float:amount}, ${3:issuerid = INVALID_PLAYER_ID}, ${4:weaponid = WEAPON_UNKNOWN}, ${5:bodypart = BODY_PART_UNKNOWN}, ${6:bool:ignore_armour = false})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'GetRejectedHit':
+    'prefix': 'GetRejectedHit'
+    'body': 'GetRejectedHit(${1:playerid}, ${2:idx}, ${3:output[]}, ${4:maxlength = sizeof(output})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'ResyncPlayer':
+    'prefix': 'ResyncPlayer'
+    'body': 'ResyncPlayer(${1:playerid})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
+
+  'SetWeaponName':
+    'prefix': 'SetWeaponName'
+    'body': 'SetWeaponName(${1:weaponid}, ${2:const name[]})'
+    'description': 'Function from: weapon-config'
+    'descriptionMoreURL': 'https://github.com/oscar-broman/samp-weapon-config'
