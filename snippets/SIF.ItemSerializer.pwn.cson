@@ -5,55 +5,83 @@
   'SerialiseItems':
     'prefix': 'SerialiseItems'
     'body': 'SerialiseItems(${1:items[]}, ${2:maxitems = sizeof(items})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'DeserialiseItems':
     'prefix': 'DeserialiseItems'
     'body': 'DeserialiseItems(${1:list[]}, ${2:length = sizeof(list})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'ClearSerializer':
     'prefix': 'ClearSerializer'
     'body': 'ClearSerializer()'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetSerialisedSize':
     'prefix': 'GetSerialisedSize'
     'body': 'GetSerialisedSize()'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetStoredItemCount':
     'prefix': 'GetStoredItemCount'
     'body': 'GetStoredItemCount()'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetStoredItemType':
     'prefix': 'GetStoredItemType'
     'body': 'GetStoredItemType(${1:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetStoredItemPos':
     'prefix': 'GetStoredItemPos'
     'body': 'GetStoredItemPos(${1:index}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetStoredItemRot':
     'prefix': 'GetStoredItemRot'
     'body': 'GetStoredItemRot(${1:index}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetStoredItemWorld':
     'prefix': 'GetStoredItemWorld'
     'body': 'GetStoredItemWorld(${1:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetStoredItemInterior':
     'prefix': 'GetStoredItemInterior'
     'body': 'GetStoredItemInterior(${1:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetStoredItemArrayData':
     'prefix': 'GetStoredItemArrayData'
     'body': 'GetStoredItemArrayData(${1:index}, ${2:output[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetStoredItemArrayDataSize':
     'prefix': 'GetStoredItemArrayDataSize'
     'body': 'GetStoredItemArrayDataSize(${1:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'CreateItemFromStored':
     'prefix': 'CreateItemFromStored'
     'body': 'CreateItemFromStored(${1:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemArrayDataFromStored':
     'prefix': 'SetItemArrayDataFromStored'
     'body': 'SetItemArrayDataFromStored(${1:itemid}, ${2:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'

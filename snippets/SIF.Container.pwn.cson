@@ -5,99 +5,149 @@
   'CreateContainer':
     'prefix': 'CreateContainer'
     'body': 'CreateContainer(${1:name[]}, ${2:size}, ${3:buttonid = INVALID_BUTTON_ID})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'DestroyContainer':
     'prefix': 'DestroyContainer'
     'body': 'DestroyContainer(${1:containerid}, ${2:destroyitems = true}, ${3:destroybutton = true})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'AddItemToContainer':
     'prefix': 'AddItemToContainer'
     'body': 'AddItemToContainer(${1:containerid}, ${2:itemid}, ${3:playerid = INVALID_PLAYER_ID})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'RemoveItemFromContainer':
     'prefix': 'RemoveItemFromContainer'
     'body': 'RemoveItemFromContainer(${1:containerid}, ${2:slotid}, ${3:playerid = INVALID_PLAYER_ID}, ${4:call = 1})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsValidContainer':
     'prefix': 'IsValidContainer'
     'body': 'IsValidContainer(${1:containerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetContainerButton':
     'prefix': 'GetContainerButton'
     'body': 'GetContainerButton(${1:containerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetContainerName':
     'prefix': 'GetContainerName'
     'body': 'GetContainerName(${1:containerid}, ${2:name[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetContainerSize':
     'prefix': 'GetContainerSize'
     'body': 'GetContainerSize(${1:containerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetContainerSize':
     'prefix': 'SetContainerSize'
     'body': 'SetContainerSize(${1:containerid}, ${2:size})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetContainerItemCount':
     'prefix': 'GetContainerItemCount'
     'body': 'GetContainerItemCount(${1:containerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetContainerSlotItem':
     'prefix': 'GetContainerSlotItem'
     'body': 'GetContainerSlotItem(${1:containerid}, ${2:slotid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsContainerSlotUsed':
     'prefix': 'IsContainerSlotUsed'
     'body': 'IsContainerSlotUsed(${1:containerid}, ${2:slotid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsContainerFull':
     'prefix': 'IsContainerFull'
     'body': 'IsContainerFull(${1:containerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsContainerEmpty':
     'prefix': 'IsContainerEmpty'
     'body': 'IsContainerEmpty(${1:containerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'WillItemTypeFitInContainer':
     'prefix': 'WillItemTypeFitInContainer'
     'body': 'WillItemTypeFitInContainer(${1:containerid}, ${2:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetContainerFreeSlots':
     'prefix': 'GetContainerFreeSlots'
     'body': 'GetContainerFreeSlots(${1:containerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemContainer':
     'prefix': 'GetItemContainer'
     'body': 'GetItemContainer(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemContainerSlot':
     'prefix': 'GetItemContainerSlot'
     'body': 'GetItemContainerSlot(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetButtonContainer':
     'prefix': 'GetButtonContainer'
     'body': 'GetButtonContainer(${1:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnContainerCreate':
     'prefix': 'OnContainerCreate'
     'body': 'OnContainerCreate(${1:containerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnContainerDestroy':
     'prefix': 'OnContainerDestroy'
     'body': 'OnContainerDestroy(${1:containerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemAddToContainer':
     'prefix': 'OnItemAddToContainer'
     'body': 'OnItemAddToContainer(${1:containerid}, ${2:itemid}, ${3:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemAddedToContainer':
     'prefix': 'OnItemAddedToContainer'
     'body': 'OnItemAddedToContainer(${1:containerid}, ${2:itemid}, ${3:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemRemoveFromContainer':
     'prefix': 'OnItemRemoveFromContainer'
     'body': 'OnItemRemoveFromContainer(${1:containerid}, ${2:slotid}, ${3:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemRemovedFromContainer':
     'prefix': 'OnItemRemovedFromContainer'
     'body': 'OnItemRemovedFromContainer(${1:containerid}, ${2:slotid}, ${3:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'

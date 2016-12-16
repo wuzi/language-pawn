@@ -5,199 +5,299 @@
   'IRC_Connect':
     'prefix': 'IRC_Connect'
     'body': 'IRC_Connect(${1:const server[]}, ${2:port}, ${3:const nickname[]}, ${4:const realname[]}, ${5:const username[]}, ${6:bool:ssl = false}, ${7:const localip[] = \"\"}, ${8:const serverpassword[] = \"\"})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_Quit':
     'prefix': 'IRC_Quit'
     'body': 'IRC_Quit(${1:botid}, ${2:const message[] = \"\"})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_JoinChannel':
     'prefix': 'IRC_JoinChannel'
     'body': 'IRC_JoinChannel(${1:botid}, ${2:const channel[]}, ${3:const key[] = \"\"})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_PartChannel':
     'prefix': 'IRC_PartChannel'
     'body': 'IRC_PartChannel(${1:botid}, ${2:const channel[]}, ${3:const message[] = \"\"})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_ChangeNick':
     'prefix': 'IRC_ChangeNick'
     'body': 'IRC_ChangeNick(${1:botid}, ${2:const nick[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_SetMode':
     'prefix': 'IRC_SetMode'
     'body': 'IRC_SetMode(${1:botid}, ${2:const target[]}, ${3:const mode[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_Say':
     'prefix': 'IRC_Say'
     'body': 'IRC_Say(${1:botid}, ${2:const target[]}, ${3:const message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_Notice':
     'prefix': 'IRC_Notice'
     'body': 'IRC_Notice(${1:botid}, ${2:const target[]}, ${3:const message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_IsUserOnChannel':
     'prefix': 'IRC_IsUserOnChannel'
     'body': 'IRC_IsUserOnChannel(${1:botid}, ${2:const channel[]}, ${3:const user[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_InviteUser':
     'prefix': 'IRC_InviteUser'
     'body': 'IRC_InviteUser(${1:botid}, ${2:const channel[]}, ${3:const user[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_KickUser':
     'prefix': 'IRC_KickUser'
     'body': 'IRC_KickUser(${1:botid}, ${2:const channel[]}, ${3:const user[]}, ${4:const message[] = \"\"})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_GetUserChannelMode':
     'prefix': 'IRC_GetUserChannelMode'
     'body': 'IRC_GetUserChannelMode(${1:botid}, ${2:const channel[]}, ${3:const user[]}, ${4:dest[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_GetChannelUserList':
     'prefix': 'IRC_GetChannelUserList'
     'body': 'IRC_GetChannelUserList(${1:botid}, ${2:const channel[]}, ${3:dest[]}, ${4:maxlength = sizeof dest})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_SetChannelTopic':
     'prefix': 'IRC_SetChannelTopic'
     'body': 'IRC_SetChannelTopic(${1:botid}, ${2:const channel[]}, ${3:const topic[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_RequestCTCP':
     'prefix': 'IRC_RequestCTCP'
     'body': 'IRC_RequestCTCP(${1:botid}, ${2:const user[]}, ${3:const message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_ReplyCTCP':
     'prefix': 'IRC_ReplyCTCP'
     'body': 'IRC_ReplyCTCP(${1:botid}, ${2:const user[]}, ${3:const message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_SendRaw':
     'prefix': 'IRC_SendRaw'
     'body': 'IRC_SendRaw(${1:botid}, ${2:const message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_CreateGroup':
     'prefix': 'IRC_CreateGroup'
     'body': 'IRC_CreateGroup()'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_DestroyGroup':
     'prefix': 'IRC_DestroyGroup'
     'body': 'IRC_DestroyGroup(${1:groupid})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_AddToGroup':
     'prefix': 'IRC_AddToGroup'
     'body': 'IRC_AddToGroup(${1:groupid}, ${2:botid})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_RemoveFromGroup':
     'prefix': 'IRC_RemoveFromGroup'
     'body': 'IRC_RemoveFromGroup(${1:groupid}, ${2:botid})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_GroupSay':
     'prefix': 'IRC_GroupSay'
     'body': 'IRC_GroupSay(${1:groupid}, ${2:const target[]}, ${3:const message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_GroupNotice':
     'prefix': 'IRC_GroupNotice'
     'body': 'IRC_GroupNotice(${1:groupid}, ${2:const target[]}, ${3:const message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_SetIntData':
     'prefix': 'IRC_SetIntData'
     'body': 'IRC_SetIntData(${1:botid}, ${2:data}, ${3:value})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnConnect':
     'prefix': 'IRC_OnConnect'
     'body': 'IRC_OnConnect(${1:botid}, ${2:ip[]}, ${3:port})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnDisconnect':
     'prefix': 'IRC_OnDisconnect'
     'body': 'IRC_OnDisconnect(${1:botid}, ${2:ip[]}, ${3:port}, ${4:reason[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnConnectAttempt':
     'prefix': 'IRC_OnConnectAttempt'
     'body': 'IRC_OnConnectAttempt(${1:botid}, ${2:ip[]}, ${3:port})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnConnectAttemptFail':
     'prefix': 'IRC_OnConnectAttemptFail'
     'body': 'IRC_OnConnectAttemptFail(${1:botid}, ${2:ip[]}, ${3:port}, ${4:reason[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnJoinChannel':
     'prefix': 'IRC_OnJoinChannel'
     'body': 'IRC_OnJoinChannel(${1:botid}, ${2:channel[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnLeaveChannel':
     'prefix': 'IRC_OnLeaveChannel'
     'body': 'IRC_OnLeaveChannel(${1:botid}, ${2:channel[]}, ${3:message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnInvitedToChannel':
     'prefix': 'IRC_OnInvitedToChannel'
     'body': 'IRC_OnInvitedToChannel(${1:botid}, ${2:channel[]}, ${3:invitinguser[]}, ${4:invitinghost[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnKickedFromChannel':
     'prefix': 'IRC_OnKickedFromChannel'
     'body': 'IRC_OnKickedFromChannel(${1:botid}, ${2:channel[]}, ${3:oppeduser[]}, ${4:oppedhost[]}, ${5:message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnUserDisconnect':
     'prefix': 'IRC_OnUserDisconnect'
     'body': 'IRC_OnUserDisconnect(${1:botid}, ${2:user[]}, ${3:host[]}, ${4:message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnUserJoinChannel':
     'prefix': 'IRC_OnUserJoinChannel'
     'body': 'IRC_OnUserJoinChannel(${1:botid}, ${2:channel[]}, ${3:user[]}, ${4:host[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnUserLeaveChannel':
     'prefix': 'IRC_OnUserLeaveChannel'
     'body': 'IRC_OnUserLeaveChannel(${1:botid}, ${2:channel[]}, ${3:user[]}, ${4:host[]}, ${5:message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnUserKickedFromChannel':
     'prefix': 'IRC_OnUserKickedFromChannel'
     'body': 'IRC_OnUserKickedFromChannel(${1:botid}, ${2:channel[]}, ${3:kickeduser[]}, ${4:oppeduser[]}, ${5:oppedhost[]}, ${6:message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnUserNickChange':
     'prefix': 'IRC_OnUserNickChange'
     'body': 'IRC_OnUserNickChange(${1:botid}, ${2:oldnick[]}, ${3:newnick[]}, ${4:host[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnUserSetChannelMode':
     'prefix': 'IRC_OnUserSetChannelMode'
     'body': 'IRC_OnUserSetChannelMode(${1:botid}, ${2:channel[]}, ${3:user[]}, ${4:host[]}, ${5:mode[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnUserSetChannelTopic':
     'prefix': 'IRC_OnUserSetChannelTopic'
     'body': 'IRC_OnUserSetChannelTopic(${1:botid}, ${2:channel[]}, ${3:user[]}, ${4:host[]}, ${5:topic[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnUserSay':
     'prefix': 'IRC_OnUserSay'
     'body': 'IRC_OnUserSay(${1:botid}, ${2:recipient[]}, ${3:user[]}, ${4:host[]}, ${5:message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnUserNotice':
     'prefix': 'IRC_OnUserNotice'
     'body': 'IRC_OnUserNotice(${1:botid}, ${2:recipient[]}, ${3:user[]}, ${4:host[]}, ${5:message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnUserRequestCTCP':
     'prefix': 'IRC_OnUserRequestCTCP'
     'body': 'IRC_OnUserRequestCTCP(${1:botid}, ${2:user[]}, ${3:host[]}, ${4:message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnUserReplyCTCP':
     'prefix': 'IRC_OnUserReplyCTCP'
     'body': 'IRC_OnUserReplyCTCP(${1:botid}, ${2:user[]}, ${3:host[]}, ${4:message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnReceiveNumeric':
     'prefix': 'IRC_OnReceiveNumeric'
     'body': 'IRC_OnReceiveNumeric(${1:botid}, ${2:numeric}, ${3:message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_OnReceiveRaw':
     'prefix': 'IRC_OnReceiveRaw'
     'body': 'IRC_OnReceiveRaw(${1:botid}, ${2:message[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_IsVoice':
     'prefix': 'IRC_IsVoice'
     'body': 'IRC_IsVoice(${1:botid}, ${2:channel[]}, ${3:user[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_IsHalfop':
     'prefix': 'IRC_IsHalfop'
     'body': 'IRC_IsHalfop(${1:botid}, ${2:channel[]}, ${3:user[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_IsOp':
     'prefix': 'IRC_IsOp'
     'body': 'IRC_IsOp(${1:botid}, ${2:channel[]}, ${3:user[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_IsAdmin':
     'prefix': 'IRC_IsAdmin'
     'body': 'IRC_IsAdmin(${1:botid}, ${2:channel[]}, ${3:user[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'
 
   'IRC_IsOwner':
     'prefix': 'IRC_IsOwner'
     'body': 'IRC_IsOwner(${1:botid}, ${2:channel[]}, ${3:user[]})'
+    'description': 'Function from: IRC Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=98803'

@@ -5,39 +5,60 @@
   'SetGVarInt':
     'prefix': 'SetGVarInt'
     'body': 'SetGVarInt(${1:const name[]}, ${2:value}, ${3:id = 0})'
+    'description': 'Function from: GVar Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=151076'
 
   'GetGVarInt':
     'prefix': 'GetGVarInt'
     'body': 'GetGVarInt(${1:const name[]}, ${2:id = 0})'
+    'description': 'Function from: GVar Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=151076'
 
   'SetGVarString':
     'prefix': 'SetGVarString'
     'body': 'SetGVarString(${1:const name[]}, ${2:const value[]}, ${3:id = 0})'
+    'description': 'Function from: GVar Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=151076'
 
   'GetGVarString':
     'prefix': 'GetGVarString'
     'body': 'GetGVarString(${1:const name[]}, ${2:dest[]}, ${3:maxlength = sizeof dest}, ${4:id = 0})'
+    'description': 'Function from: GVar Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=151076'
 
   'SetGVarFloat':
     'prefix': 'SetGVarFloat'
     'body': 'SetGVarFloat(${1:const name[]}, ${2:Float:value}, ${3:id = 0})'
+    'description': 'Function from: GVar Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=151076'
 
   'GetGVarFloat':
     'prefix': 'GetGVarFloat'
     'body': 'GetGVarFloat(${1:const name[]}, ${2:id = 0})'
+    'leftLabel': 'Float'
+    'description': 'Function from: GVar Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=151076'
 
   'DeleteGVar':
     'prefix': 'DeleteGVar'
     'body': 'DeleteGVar(${1:const name[]}, ${2:id = 0})'
+    'description': 'Function from: GVar Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=151076'
 
   'GetGVarsUpperIndex':
     'prefix': 'GetGVarsUpperIndex'
     'body': 'GetGVarsUpperIndex(${1:id = 0})'
+    'description': 'Function from: GVar Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=151076'
 
   'GetGVarNameAtIndex':
     'prefix': 'GetGVarNameAtIndex'
     'body': 'GetGVarNameAtIndex(${1:index}, ${2:dest[]}, ${3:maxlength = sizeof dest}, ${4:id = 0})'
+    'description': 'Function from: GVar Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=151076'
 
   'GetGVarType':
     'prefix': 'GetGVarType'
     'body': 'GetGVarType(${1:const name[]}, ${2:id = 0})'
+    'description': 'Function from: GVar Plugin'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=151076'

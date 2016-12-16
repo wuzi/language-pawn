@@ -5,123 +5,185 @@
   'CreateButton':
     'prefix': 'CreateButton'
     'body': 'CreateButton(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:text[]}, ${5:world = 0}, ${6:interior = 0}, ${7:Float:areasize = 1.0}, ${8:label = 0}, ${9:labeltext[] = \"\"}, ${10:labelcolour = 0xFFFF00FF}, ${11:Float:streamdist = BTN_DEFAULT_STREAMDIST}, ${12:testlos = true})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'DestroyButton':
     'prefix': 'DestroyButton'
     'body': 'DestroyButton(${1:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'LinkTP':
     'prefix': 'LinkTP'
     'body': 'LinkTP(${1:buttonid1}, ${2:buttonid2})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'UnLinkTP':
     'prefix': 'UnLinkTP'
     'body': 'UnLinkTP(${1:buttonid1}, ${2:buttonid2})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsValidButton':
     'prefix': 'IsValidButton'
     'body': 'IsValidButton(${1:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetButtonArea':
     'prefix': 'GetButtonArea'
     'body': 'GetButtonArea(${1:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetButtonArea':
     'prefix': 'SetButtonArea'
     'body': 'SetButtonArea(${1:buttonid}, ${2:areaid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetButtonLabel':
     'prefix': 'SetButtonLabel'
     'body': 'SetButtonLabel(${1:buttonid}, ${2:text[]}, ${3:colour = 0xFFFF00FF}, ${4:Float:range = BTN_DEFAULT_STREAMDIST}, ${5:testlos = true})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'DestroyButtonLabel':
     'prefix': 'DestroyButtonLabel'
     'body': 'DestroyButtonLabel(${1:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetButtonPos':
     'prefix': 'GetButtonPos'
     'body': 'GetButtonPos(${1:buttonid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetButtonPos':
     'prefix': 'SetButtonPos'
     'body': 'SetButtonPos(${1:buttonid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetButtonSize':
     'prefix': 'GetButtonSize'
     'body': 'GetButtonSize(${1:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetButtonSize':
     'prefix': 'SetButtonSize'
     'body': 'SetButtonSize(${1:buttonid}, ${2:Float:size})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetButtonWorld':
     'prefix': 'GetButtonWorld'
     'body': 'GetButtonWorld(${1:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetButtonWorld':
     'prefix': 'SetButtonWorld'
     'body': 'SetButtonWorld(${1:buttonid}, ${2:world})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetButtonInterior':
     'prefix': 'GetButtonInterior'
     'body': 'GetButtonInterior(${1:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetButtonInterior':
     'prefix': 'SetButtonInterior'
     'body': 'SetButtonInterior(${1:buttonid}, ${2:interior})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetButtonLinkedID':
     'prefix': 'GetButtonLinkedID'
     'body': 'GetButtonLinkedID(${1:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetButtonText':
     'prefix': 'GetButtonText'
     'body': 'GetButtonText(${1:buttonid}, ${2:text[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetButtonText':
     'prefix': 'SetButtonText'
     'body': 'SetButtonText(${1:buttonid}, ${2:text[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetButtonExtraData':
     'prefix': 'SetButtonExtraData'
     'body': 'SetButtonExtraData(${1:buttonid}, ${2:data})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetButtonExtraData':
     'prefix': 'GetButtonExtraData'
     'body': 'GetButtonExtraData(${1:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerPressingButton':
     'prefix': 'GetPlayerPressingButton'
     'body': 'GetPlayerPressingButton(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerButtonID':
     'prefix': 'GetPlayerButtonID'
     'body': 'GetPlayerButtonID(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerButtonList':
     'prefix': 'GetPlayerButtonList'
     'body': 'GetPlayerButtonList(${1:playerid}, ${2:list[]}, ${3:size}, ${4:bool:validate = false})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerAngleToButton':
     'prefix': 'GetPlayerAngleToButton'
     'body': 'GetPlayerAngleToButton(${1:playerid}, ${2:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetButtonAngleToPlayer':
     'prefix': 'GetButtonAngleToPlayer'
     'body': 'GetButtonAngleToPlayer(${1:playerid}, ${2:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnButtonPress':
     'prefix': 'OnButtonPress'
     'body': 'OnButtonPress(${1:playerid}, ${2:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnButtonRelease':
     'prefix': 'OnButtonRelease'
     'body': 'OnButtonRelease(${1:playerid}, ${2:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerEnterButtonArea':
     'prefix': 'OnPlayerEnterButtonArea'
     'body': 'OnPlayerEnterButtonArea(${1:playerid}, ${2:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerLeaveButtonArea':
     'prefix': 'OnPlayerLeaveButtonArea'
     'body': 'OnPlayerLeaveButtonArea(${1:playerid}, ${2:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'

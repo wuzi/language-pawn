@@ -5,7 +5,11 @@
   'OnPlayerAddToInventory':
     'prefix': 'OnPlayerAddToInventory'
     'body': 'OnPlayerAddToInventory(${1:playerid}, ${2:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerAddedToInventory':
     'prefix': 'OnPlayerAddedToInventory'
     'body': 'OnPlayerAddedToInventory(${1:playerid}, ${2:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'

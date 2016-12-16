@@ -5,67 +5,101 @@
   'DefineItemCraftSet':
     'prefix': 'DefineItemCraftSet'
     'body': 'DefineItemCraftSet(${1:ItemType:result}, ${2:...})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetCraftSetUniqueID':
     'prefix': 'GetCraftSetUniqueID'
     'body': 'GetCraftSetUniqueID(${1:craftset}, ${2:id[]}, ${3:maxlength = sizeof(id})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsValidCraftSet':
     'prefix': 'IsValidCraftSet'
     'body': 'IsValidCraftSet(${1:craftset})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetCraftSetIngredients':
     'prefix': 'GetCraftSetIngredients'
     'body': 'GetCraftSetIngredients(${1:craftset}, ${2:output[CFT_MAX_CRAFT_SET_ITEMS][e_craft_item_data]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetCraftSetItemType':
     'prefix': 'GetCraftSetItemType'
     'body': 'GetCraftSetItemType(${1:craftset}, ${2:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetCraftSetItemKeep':
     'prefix': 'GetCraftSetItemKeep'
     'body': 'GetCraftSetItemKeep(${1:craftset}, ${2:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetCraftSetItemCount':
     'prefix': 'GetCraftSetItemCount'
     'body': 'GetCraftSetItemCount(${1:craftset})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetCraftSetResult':
     'prefix': 'GetCraftSetResult'
     'body': 'GetCraftSetResult(${1:craftset})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetCraftSetTotal':
     'prefix': 'GetCraftSetTotal'
     'body': 'GetCraftSetTotal()'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerSelectedCraftItems':
     'prefix': 'GetPlayerSelectedCraftItems'
     'body': 'GetPlayerSelectedCraftItems(${1:playerid}, ${2:output[CFT_MAX_CRAFT_SET_ITEMS][e_selected_item_data]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerSelectedCraftItemType':
     'prefix': 'GetPlayerSelectedCraftItemType'
     'body': 'GetPlayerSelectedCraftItemType(${1:playerid}, ${2:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerSelectedCraftItemID':
     'prefix': 'GetPlayerSelectedCraftItemID'
     'body': 'GetPlayerSelectedCraftItemID(${1:playerid}, ${2:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerSelectedCraftItemCount':
     'prefix': 'GetPlayerSelectedCraftItemCount'
     'body': 'GetPlayerSelectedCraftItemCount(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerCraftEnvironment':
     'prefix': 'GetPlayerCraftEnvironment'
     'body': 'GetPlayerCraftEnvironment(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'ItemTypeResultForCraftingSet':
     'prefix': 'ItemTypeResultForCraftingSet'
     'body': 'ItemTypeResultForCraftingSet(${1:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerCraft':
     'prefix': 'OnPlayerCraft'
     'body': 'OnPlayerCraft(${1:playerid}, ${2:craftset})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerCrafted':
     'prefix': 'OnPlayerCrafted'
     'body': 'OnPlayerCrafted(${1:playerid}, ${2:craftset}, ${3:result})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
