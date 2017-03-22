@@ -5,67 +5,101 @@
   'SetItemExtraData(%0,%1)':
     'prefix': 'SetItemExtraData(%0,%1)'
     'body': 'SetItemExtraData(${1:0},${2:1})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemExtraData(%0)':
     'prefix': 'GetItemExtraData(%0)'
     'body': 'GetItemExtraData(${1:0})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemTypeMaxArrayData':
     'prefix': 'SetItemTypeMaxArrayData'
     'body': 'SetItemTypeMaxArrayData(${1:ItemType:itemtype}, ${2:size}, ${3:bool:protect = false})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemTypeArrayDataSize':
     'prefix': 'GetItemTypeArrayDataSize'
     'body': 'GetItemTypeArrayDataSize(${1:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemArrayData':
     'prefix': 'SetItemArrayData'
     'body': 'SetItemArrayData(${1:itemid}, ${2:data[]}, ${3:length}, ${4:call = 1}, ${5:bool:force = false})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemArrayData':
     'prefix': 'GetItemArrayData'
     'body': 'GetItemArrayData(${1:itemid}, ${2:data[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemArrayDataAtCell':
     'prefix': 'SetItemArrayDataAtCell'
     'body': 'SetItemArrayDataAtCell(${1:itemid}, ${2:data}, ${3:cell}, ${4:autoadjustsize = 0}, ${5:call = 1}, ${6:bool:force = false})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemArrayDataAtCell':
     'prefix': 'GetItemArrayDataAtCell'
     'body': 'GetItemArrayDataAtCell(${1:itemid}, ${2:cell})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemArrayDataSize':
     'prefix': 'SetItemArrayDataSize'
     'body': 'SetItemArrayDataSize(${1:itemid}, ${2:size}, ${3:bool:force = false})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemArrayDataSize':
     'prefix': 'GetItemArrayDataSize'
     'body': 'GetItemArrayDataSize(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemTypeArrayDataMax':
     'prefix': 'GetItemTypeArrayDataMax'
     'body': 'GetItemTypeArrayDataMax(${1:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'AppendItemArray':
     'prefix': 'AppendItemArray'
     'body': 'AppendItemArray(${1:itemid}, ${2:data[]}, ${3:length})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'AppendItemArrayCell':
     'prefix': 'AppendItemArrayCell'
     'body': 'AppendItemArrayCell(${1:itemid}, ${2:data})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemArrayDataLength':
     'prefix': 'SetItemArrayDataLength'
     'body': 'SetItemArrayDataLength(${1:itemid}, ${2:length}, ${3:bool:force = false})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'RemoveItemArrayData':
     'prefix': 'RemoveItemArrayData'
     'body': 'RemoveItemArrayData(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemNoResetArrayData':
     'prefix': 'SetItemNoResetArrayData'
     'body': 'SetItemNoResetArrayData(${1:itemid}, ${2:bool:toggle})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemArrayDataChanged':
     'prefix': 'OnItemArrayDataChanged'
     'body': 'OnItemArrayDataChanged(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'

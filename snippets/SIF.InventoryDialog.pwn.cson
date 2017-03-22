@@ -5,67 +5,101 @@
   'DisplayPlayerInventory':
     'prefix': 'DisplayPlayerInventory'
     'body': 'DisplayPlayerInventory(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'ClosePlayerInventory':
     'prefix': 'ClosePlayerInventory'
     'body': 'ClosePlayerInventory(${1:playerid}, ${2:call = false})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerSelectedInventorySlot':
     'prefix': 'GetPlayerSelectedInventorySlot'
     'body': 'GetPlayerSelectedInventorySlot(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'AddInventoryListItem':
     'prefix': 'AddInventoryListItem'
     'body': 'AddInventoryListItem(${1:playerid}, ${2:itemname[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'AddInventoryOption':
     'prefix': 'AddInventoryOption'
     'body': 'AddInventoryOption(${1:playerid}, ${2:option[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetInventoryListItems':
     'prefix': 'GetInventoryListItems'
     'body': 'GetInventoryListItems(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetInventoryOptions':
     'prefix': 'GetInventoryOptions'
     'body': 'GetInventoryOptions(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetInventoryListItemCount':
     'prefix': 'GetInventoryListItemCount'
     'body': 'GetInventoryListItemCount(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetInventoryOptionCount':
     'prefix': 'GetInventoryOptionCount'
     'body': 'GetInventoryOptionCount(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsPlayerViewingInventory':
     'prefix': 'IsPlayerViewingInventory'
     'body': 'IsPlayerViewingInventory(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerOpenInventory':
     'prefix': 'OnPlayerOpenInventory'
     'body': 'OnPlayerOpenInventory(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerCloseInventory':
     'prefix': 'OnPlayerCloseInventory'
     'body': 'OnPlayerCloseInventory(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerSelectExtraItem':
     'prefix': 'OnPlayerSelectExtraItem'
     'body': 'OnPlayerSelectExtraItem(${1:playerid}, ${2:item})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerRemoveFromInventory':
     'prefix': 'OnPlayerRemoveFromInventory'
     'body': 'OnPlayerRemoveFromInventory(${1:playerid}, ${2:slotid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerRemovedFromInventory':
     'prefix': 'OnPlayerRemovedFromInventory'
     'body': 'OnPlayerRemovedFromInventory(${1:playerid}, ${2:slotid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerViewInventoryOpt':
     'prefix': 'OnPlayerViewInventoryOpt'
     'body': 'OnPlayerViewInventoryOpt(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerSelectInventoryOpt':
     'prefix': 'OnPlayerSelectInventoryOpt'
     'body': 'OnPlayerSelectInventoryOpt(${1:playerid}, ${2:option})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'

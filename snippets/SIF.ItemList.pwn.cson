@@ -5,67 +5,101 @@
   'ITM_LST_OF_ITEMS(%0)':
     'prefix': 'ITM_LST_OF_ITEMS(%0)'
     'body': 'ITM_LST_OF_ITEMS(${1:0})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'CreateItemList':
     'prefix': 'CreateItemList'
     'body': 'CreateItemList(${1:items[]}, ${2:maxitems = sizeof(items})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'ExtractItemList':
     'prefix': 'ExtractItemList'
     'body': 'ExtractItemList(${1:list[]}, ${2:length = sizeof(list})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'DestroyItemList':
     'prefix': 'DestroyItemList'
     'body': 'DestroyItemList(${1:itemlist})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemList':
     'prefix': 'GetItemList'
     'body': 'GetItemList(${1:itemlist}, ${2:output[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemListSize':
     'prefix': 'GetItemListSize'
     'body': 'GetItemListSize(${1:itemlist})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemListElement':
     'prefix': 'GetItemListElement'
     'body': 'GetItemListElement(${1:itemlist}, ${2:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemListItemCount':
     'prefix': 'GetItemListItemCount'
     'body': 'GetItemListItemCount(${1:itemlist})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemListItem':
     'prefix': 'GetItemListItem'
     'body': 'GetItemListItem(${1:itemlist}, ${2:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemListItemPos':
     'prefix': 'GetItemListItemPos'
     'body': 'GetItemListItemPos(${1:itemlist}, ${2:index}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemListItemRot':
     'prefix': 'GetItemListItemRot'
     'body': 'GetItemListItemRot(${1:itemlist}, ${2:index}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemListItemWorld':
     'prefix': 'GetItemListItemWorld'
     'body': 'GetItemListItemWorld(${1:itemlist}, ${2:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemListItemInterior':
     'prefix': 'GetItemListItemInterior'
     'body': 'GetItemListItemInterior(${1:itemlist}, ${2:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemListItemArrayData':
     'prefix': 'GetItemListItemArrayData'
     'body': 'GetItemListItemArrayData(${1:itemlist}, ${2:index}, ${3:output[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemListItemArrayDataSize':
     'prefix': 'GetItemListItemArrayDataSize'
     'body': 'GetItemListItemArrayDataSize(${1:itemlist}, ${2:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'CreateItemFromListItem':
     'prefix': 'CreateItemFromListItem'
     'body': 'CreateItemFromListItem(${1:itemlist}, ${2:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemArrayDataFromListItem':
     'prefix': 'SetItemArrayDataFromListItem'
     'body': 'SetItemArrayDataFromListItem(${1:itemid}, ${2:itemlist}, ${3:index})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'

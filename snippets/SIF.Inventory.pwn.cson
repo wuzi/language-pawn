@@ -5,59 +5,89 @@
   'AddItemToInventory':
     'prefix': 'AddItemToInventory'
     'body': 'AddItemToInventory(${1:playerid}, ${2:itemid}, ${3:call = 1})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'RemoveItemFromInventory':
     'prefix': 'RemoveItemFromInventory'
     'body': 'RemoveItemFromInventory(${1:playerid}, ${2:slotid}, ${3:call = 1})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetInventorySlotItem':
     'prefix': 'GetInventorySlotItem'
     'body': 'GetInventorySlotItem(${1:playerid}, ${2:slotid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsInventorySlotUsed':
     'prefix': 'IsInventorySlotUsed'
     'body': 'IsInventorySlotUsed(${1:playerid}, ${2:slotid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsPlayerInventoryFull':
     'prefix': 'IsPlayerInventoryFull'
     'body': 'IsPlayerInventoryFull(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'WillItemTypeFitInInventory':
     'prefix': 'WillItemTypeFitInInventory'
     'body': 'WillItemTypeFitInInventory(${1:playerid}, ${2:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetInventoryFreeSlots':
     'prefix': 'GetInventoryFreeSlots'
     'body': 'GetInventoryFreeSlots(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemPlayerInventory':
     'prefix': 'GetItemPlayerInventory'
     'body': 'GetItemPlayerInventory(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemPlayerInventorySlot':
     'prefix': 'GetItemPlayerInventorySlot'
     'body': 'GetItemPlayerInventorySlot(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetPlayerInventorySize':
     'prefix': 'SetPlayerInventorySize'
     'body': 'SetPlayerInventorySize(${1:playerid}, ${2:slots})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerInventorySize':
     'prefix': 'GetPlayerInventorySize'
     'body': 'GetPlayerInventorySize(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemAddToInventory':
     'prefix': 'OnItemAddToInventory'
     'body': 'OnItemAddToInventory(${1:playerid}, ${2:itemid}, ${3:slot})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemAddedToInventory':
     'prefix': 'OnItemAddedToInventory'
     'body': 'OnItemAddedToInventory(${1:playerid}, ${2:itemid}, ${3:slot})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemRemoveFromInventory':
     'prefix': 'OnItemRemoveFromInventory'
     'body': 'OnItemRemoveFromInventory(${1:playerid}, ${2:itemid}, ${3:slot})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemRemovedFromInventory':
     'prefix': 'OnItemRemovedFromInventory'
     'body': 'OnItemRemovedFromInventory(${1:playerid}, ${2:itemid}, ${3:slot})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'

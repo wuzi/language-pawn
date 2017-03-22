@@ -5,47 +5,71 @@
   'DefineDebugLabelType':
     'prefix': 'DefineDebugLabelType'
     'body': 'DefineDebugLabelType(${1:name[]}, ${2:colour = 0xFFFFFFFF})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'CreateDebugLabel':
     'prefix': 'CreateDebugLabel'
     'body': 'CreateDebugLabel(${1:type}, ${2:entityid}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:string[] = \"\"}, ${7:worldid = -1}, ${8:interiorid = -1})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'DestroyDebugLabel':
     'prefix': 'DestroyDebugLabel'
     'body': 'DestroyDebugLabel(${1:labelid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'ShowDebugLabelsForPlayer':
     'prefix': 'ShowDebugLabelsForPlayer'
     'body': 'ShowDebugLabelsForPlayer(${1:playerid}, ${2:type})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'ShowAllDebugLabelsForPlayer':
     'prefix': 'ShowAllDebugLabelsForPlayer'
     'body': 'ShowAllDebugLabelsForPlayer(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'HideDebugLabelsForPlayer':
     'prefix': 'HideDebugLabelsForPlayer'
     'body': 'HideDebugLabelsForPlayer(${1:playerid}, ${2:type})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'HideAllDebugLabelsForPlayer':
     'prefix': 'HideAllDebugLabelsForPlayer'
     'body': 'HideAllDebugLabelsForPlayer(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'UpdateDebugLabelString':
     'prefix': 'UpdateDebugLabelString'
     'body': 'UpdateDebugLabelString(${1:labelid}, ${2:string[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsValidDebugLabel':
     'prefix': 'IsValidDebugLabel'
     'body': 'IsValidDebugLabel(${1:labelid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetDebugLabelPos':
     'prefix': 'SetDebugLabelPos'
     'body': 'SetDebugLabelPos(${1:labelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsPlayerToggledDebugLabels':
     'prefix': 'IsPlayerToggledDebugLabels'
     'body': 'IsPlayerToggledDebugLabels(${1:playerid}, ${2:type})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsPlayerToggledAllDebugLabels':
     'prefix': 'IsPlayerToggledAllDebugLabels'
     'body': 'IsPlayerToggledAllDebugLabels(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'

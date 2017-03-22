@@ -5,283 +5,425 @@
   'CreateItem':
     'prefix': 'CreateItem'
     'body': 'CreateItem(${1:ItemType:type}, ${2:Float:x = 0.0}, ${3:Float:y = 0.0}, ${4:Float:z = 0.0}, ${5:Float:rx = 0.0}, ${6:Float:ry = 0.0}, ${7:Float:rz = 0.0}, ${8:world = 0}, ${9:interior = 0}, ${10:label = 1}, ${11:applyrotoffsets = 1}, ${12:virtual = 0}, ${13:geid[] = \"\"}, ${14:hitpoints = -1})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'DestroyItem':
     'prefix': 'DestroyItem'
     'body': 'DestroyItem(${1:itemid}, ${2:indexid = -1}, ${3:worldindexid = -1})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'DefineItemType':
     'prefix': 'DefineItemType'
     'body': 'DefineItemType(${1:name[]}, ${2:uname[]}, ${3:model}, ${4:size}, ${5:Float:rotx = 0.0}, ${6:Float:roty = 0.0}, ${7:Float:rotz = 0.0}, ${8:Float:modelz = 0.0}, ${9:Float:attx = 0.0}, ${10:Float:atty = 0.0}, ${11:Float:attz = 0.0}, ${12:Float:attrx = 0.0}, ${13:Float:attry = 0.0}, ${14:Float:attrz = 0.0}, ${15:bool:usecarryanim = false}, ${16:colour = -1}, ${17:boneid = 6}, ${18:longpickup = false}, ${19:Float:buttonz = FLOOR_OFFSET}, ${20:maxhitpoints = 5})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'PlayerPickUpItem':
     'prefix': 'PlayerPickUpItem'
     'body': 'PlayerPickUpItem(${1:playerid}, ${2:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'PlayerDropItem':
     'prefix': 'PlayerDropItem'
     'body': 'PlayerDropItem(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'PlayerGiveItem':
     'prefix': 'PlayerGiveItem'
     'body': 'PlayerGiveItem(${1:playerid}, ${2:targetid}, ${3:call = true})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'PlayerUseItem':
     'prefix': 'PlayerUseItem'
     'body': 'PlayerUseItem(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GiveWorldItemToPlayer':
     'prefix': 'GiveWorldItemToPlayer'
     'body': 'GiveWorldItemToPlayer(${1:playerid}, ${2:itemid}, ${3:call = 1})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'RemoveCurrentItem':
     'prefix': 'RemoveCurrentItem'
     'body': 'RemoveCurrentItem(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'RemoveItemFromWorld':
     'prefix': 'RemoveItemFromWorld'
     'body': 'RemoveItemFromWorld(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'AllocNextItemID':
     'prefix': 'AllocNextItemID'
     'body': 'AllocNextItemID(${1:ItemType:type}, ${2:geid[] = \"\"})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'CreateItem_ExplicitID':
     'prefix': 'CreateItem_ExplicitID'
     'body': 'CreateItem_ExplicitID(${1:itemid}, ${2:Float:x = 0.0}, ${3:Float:y = 0.0}, ${4:Float:z = 0.0}, ${5:Float:rx = 0.0}, ${6:Float:ry = 0.0}, ${7:Float:rz = 0.0}, ${8:world = 0}, ${9:interior = 0}, ${10:label = 1}, ${11:applyrotoffsets = 1}, ${12:virtual = 0}, ${13:hitpoints = -1})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsValidItem':
     'prefix': 'IsValidItem'
     'body': 'IsValidItem(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemObjectID':
     'prefix': 'GetItemObjectID'
     'body': 'GetItemObjectID(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemButtonID':
     'prefix': 'GetItemButtonID'
     'body': 'GetItemButtonID(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemLabel':
     'prefix': 'SetItemLabel'
     'body': 'SetItemLabel(${1:itemid}, ${2:text[]}, ${3:colour = 0xFFFF00FF}, ${4:Float:range = 10.0})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemTypeCount':
     'prefix': 'GetItemTypeCount'
     'body': 'GetItemTypeCount(${1:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemType':
     'prefix': 'GetItemType'
     'body': 'GetItemType(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemPos':
     'prefix': 'GetItemPos'
     'body': 'GetItemPos(${1:itemid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemPos':
     'prefix': 'SetItemPos'
     'body': 'SetItemPos(${1:itemid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemRot':
     'prefix': 'GetItemRot'
     'body': 'GetItemRot(${1:itemid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemRot':
     'prefix': 'SetItemRot'
     'body': 'SetItemRot(${1:itemid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz}, ${5:bool:offsetfromdefaults = false})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemWorld':
     'prefix': 'SetItemWorld'
     'body': 'SetItemWorld(${1:itemid}, ${2:world})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemWorld':
     'prefix': 'GetItemWorld'
     'body': 'GetItemWorld(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemInterior':
     'prefix': 'SetItemInterior'
     'body': 'SetItemInterior(${1:itemid}, ${2:interior})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemInterior':
     'prefix': 'GetItemInterior'
     'body': 'GetItemInterior(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemHitPoints':
     'prefix': 'SetItemHitPoints'
     'body': 'SetItemHitPoints(${1:itemid}, ${2:hitpoints})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemHitPoints':
     'prefix': 'GetItemHitPoints'
     'body': 'GetItemHitPoints(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemExtraData':
     'prefix': 'SetItemExtraData'
     'body': 'SetItemExtraData(${1:itemid}, ${2:data})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemExtraData':
     'prefix': 'GetItemExtraData'
     'body': 'GetItemExtraData(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'SetItemNameExtra':
     'prefix': 'SetItemNameExtra'
     'body': 'SetItemNameExtra(${1:itemid}, ${2:string[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemNameExtra':
     'prefix': 'GetItemNameExtra'
     'body': 'GetItemNameExtra(${1:itemid}, ${2:string[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsValidItemType':
     'prefix': 'IsValidItemType'
     'body': 'IsValidItemType(${1:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemTypeName':
     'prefix': 'GetItemTypeName'
     'body': 'GetItemTypeName(${1:ItemType:itemtype}, ${2:string[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemTypeUniqueName':
     'prefix': 'GetItemTypeUniqueName'
     'body': 'GetItemTypeUniqueName(${1:ItemType:itemtype}, ${2:string[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemTypeFromUniqueName':
     'prefix': 'GetItemTypeFromUniqueName'
     'body': 'GetItemTypeFromUniqueName(${1:string[]}, ${2:bool:ignorecase = false})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemTypeModel':
     'prefix': 'GetItemTypeModel'
     'body': 'GetItemTypeModel(${1:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemTypeSize':
     'prefix': 'GetItemTypeSize'
     'body': 'GetItemTypeSize(${1:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsItemTypeCarry':
     'prefix': 'IsItemTypeCarry'
     'body': 'IsItemTypeCarry(${1:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemTypeColour':
     'prefix': 'GetItemTypeColour'
     'body': 'GetItemTypeColour(${1:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemTypeBone':
     'prefix': 'GetItemTypeBone'
     'body': 'GetItemTypeBone(${1:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsItemDestroying':
     'prefix': 'IsItemDestroying'
     'body': 'IsItemDestroying(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemHolder':
     'prefix': 'GetItemHolder'
     'body': 'GetItemHolder(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerItem':
     'prefix': 'GetPlayerItem'
     'body': 'GetPlayerItem(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'IsItemInWorld':
     'prefix': 'IsItemInWorld'
     'body': 'IsItemInWorld(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemFromButtonID':
     'prefix': 'GetItemFromButtonID'
     'body': 'GetItemFromButtonID(${1:buttonid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemName':
     'prefix': 'GetItemName'
     'body': 'GetItemName(${1:itemid}, ${2:string[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerInteractingItem':
     'prefix': 'GetPlayerInteractingItem'
     'body': 'GetPlayerInteractingItem(${1:playerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetPlayerNearbyItems':
     'prefix': 'GetPlayerNearbyItems'
     'body': 'GetPlayerNearbyItems(${1:playerid}, ${2:list[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetNextItemID':
     'prefix': 'GetNextItemID'
     'body': 'GetNextItemID()'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'GetItemsInRange':
     'prefix': 'GetItemsInRange'
     'body': 'GetItemsInRange(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:range = 300.0}, ${5:items[]}, ${6:maxitems = sizeof(items})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemTypeDefined':
     'prefix': 'OnItemTypeDefined'
     'body': 'OnItemTypeDefined(${1:uname[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemCreate':
     'prefix': 'OnItemCreate'
     'body': 'OnItemCreate(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemCreated':
     'prefix': 'OnItemCreated'
     'body': 'OnItemCreated(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemDestroy':
     'prefix': 'OnItemDestroy'
     'body': 'OnItemDestroy(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemDestroyed':
     'prefix': 'OnItemDestroyed'
     'body': 'OnItemDestroyed(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemCreateInWorld':
     'prefix': 'OnItemCreateInWorld'
     'body': 'OnItemCreateInWorld(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemRemoveFromWorld':
     'prefix': 'OnItemRemoveFromWorld'
     'body': 'OnItemRemoveFromWorld(${1:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerUseItem':
     'prefix': 'OnPlayerUseItem'
     'body': 'OnPlayerUseItem(${1:playerid}, ${2:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerUseItemWithItem':
     'prefix': 'OnPlayerUseItemWithItem'
     'body': 'OnPlayerUseItemWithItem(${1:playerid}, ${2:itemid}, ${3:withitemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerUseItemWithButton':
     'prefix': 'OnPlayerUseItemWithButton'
     'body': 'OnPlayerUseItemWithButton(${1:playerid}, ${2:buttonid}, ${3:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerRelButtonWithItem':
     'prefix': 'OnPlayerRelButtonWithItem'
     'body': 'OnPlayerRelButtonWithItem(${1:playerid}, ${2:buttonid}, ${3:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerPickUpItem':
     'prefix': 'OnPlayerPickUpItem'
     'body': 'OnPlayerPickUpItem(${1:playerid}, ${2:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerPickedUpItem':
     'prefix': 'OnPlayerPickedUpItem'
     'body': 'OnPlayerPickedUpItem(${1:playerid}, ${2:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerGetItem':
     'prefix': 'OnPlayerGetItem'
     'body': 'OnPlayerGetItem(${1:playerid}, ${2:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerDropItem':
     'prefix': 'OnPlayerDropItem'
     'body': 'OnPlayerDropItem(${1:playerid}, ${2:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerDroppedItem':
     'prefix': 'OnPlayerDroppedItem'
     'body': 'OnPlayerDroppedItem(${1:playerid}, ${2:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerGiveItem':
     'prefix': 'OnPlayerGiveItem'
     'body': 'OnPlayerGiveItem(${1:playerid}, ${2:targetid}, ${3:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnPlayerGivenItem':
     'prefix': 'OnPlayerGivenItem'
     'body': 'OnPlayerGivenItem(${1:playerid}, ${2:targetid}, ${3:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemRemovedFromPlayer':
     'prefix': 'OnItemRemovedFromPlayer'
     'body': 'OnItemRemovedFromPlayer(${1:playerid}, ${2:itemid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnItemNameRender':
     'prefix': 'OnItemNameRender'
     'body': 'OnItemNameRender(${1:itemid}, ${2:ItemType:itemtype})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'

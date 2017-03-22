@@ -5,23 +5,35 @@
   'PrintAmxBacktrace':
     'prefix': 'PrintAmxBacktrace'
     'body': 'PrintAmxBacktrace()'
+    'description': 'Function from: crashdetect'
+    'descriptionMoreURL': 'https://github.com/Zeex/samp-plugin-crashdetect'
 
   'PrintNativeBacktrace':
     'prefix': 'PrintNativeBacktrace'
     'body': 'PrintNativeBacktrace()'
+    'description': 'Function from: crashdetect'
+    'descriptionMoreURL': 'https://github.com/Zeex/samp-plugin-crashdetect'
 
   'GetAmxBacktrace':
     'prefix': 'GetAmxBacktrace'
     'body': 'GetAmxBacktrace(${1:string[]}, ${2:size = sizeof(string})'
+    'description': 'Function from: crashdetect'
+    'descriptionMoreURL': 'https://github.com/Zeex/samp-plugin-crashdetect'
 
   'GetNativeBacktrace':
     'prefix': 'GetNativeBacktrace'
     'body': 'GetNativeBacktrace(${1:string[]}, ${2:size = sizeof(string})'
+    'description': 'Function from: crashdetect'
+    'descriptionMoreURL': 'https://github.com/Zeex/samp-plugin-crashdetect'
 
   'OnRuntimeError':
     'prefix': 'OnRuntimeError'
     'body': 'OnRuntimeError(${1:code}, ${2:bool:suppress})'
+    'description': 'Function from: crashdetect'
+    'descriptionMoreURL': 'https://github.com/Zeex/samp-plugin-crashdetect'
 
   'IsCrashDetectPresent':
     'prefix': 'IsCrashDetectPresent'
     'body': 'IsCrashDetectPresent()'
+    'description': 'Function from: crashdetect'
+    'descriptionMoreURL': 'https://github.com/Zeex/samp-plugin-crashdetect'

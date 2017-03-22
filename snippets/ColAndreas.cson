@@ -1,0 +1,262 @@
+# ColAndreas snippets (completions) for Atom
+# Originally created by Renato "Hii" Garcia
+'.source.pwn, .source.inc':
+  'CA_Init':
+    'prefix': 'CA_Init'
+    'body': 'CA_Init()'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RemoveBuilding':
+    'prefix': 'CA_RemoveBuilding'
+    'body': 'CA_RemoveBuilding(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:radius})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RayCastLine':
+    'prefix': 'CA_RayCastLine'
+    'body': 'CA_RayCastLine(${1:Float:StartX}, ${2:Float:StartY}, ${3:Float:StartZ}, ${4:Float:EndX}, ${5:Float:EndY}, ${6:Float:EndZ}, ${7:&Float:x}, ${8:&Float:y}, ${9:&Float:z})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RayCastLineID':
+    'prefix': 'CA_RayCastLineID'
+    'body': 'CA_RayCastLineID(${1:Float:StartX}, ${2:Float:StartY}, ${3:Float:StartZ}, ${4:Float:EndX}, ${5:Float:EndY}, ${6:Float:EndZ}, ${7:&Float:x}, ${8:&Float:y}, ${9:&Float:z})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RayCastLineExtraID':
+    'prefix': 'CA_RayCastLineExtraID'
+    'body': 'CA_RayCastLineExtraID(${1:type}, ${2:Float:StartX}, ${3:Float:StartY}, ${4:Float:StartZ}, ${5:Float:EndX}, ${6:Float:EndY}, ${7:Float:EndZ}, ${8:&Float:x}, ${9:&Float:y}, ${10:&Float:z})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RayCastMultiLine':
+    'prefix': 'CA_RayCastMultiLine'
+    'body': 'CA_RayCastMultiLine(${1:Float:StartX}, ${2:Float:StartY}, ${3:Float:StartZ}, ${4:Float:EndX}, ${5:Float:EndY}, ${6:Float:EndZ}, ${7:Float:retx[]}, ${8:Float:rety[]}, ${9:Float:retz[]}, ${10:Float:retdist[]}, ${11:ModelIDs[]}, ${12:size = sizeof(retx})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RayCastLineAngle':
+    'prefix': 'CA_RayCastLineAngle'
+    'body': 'CA_RayCastLineAngle(${1:Float:StartX}, ${2:Float:StartY}, ${3:Float:StartZ}, ${4:Float:EndX}, ${5:Float:EndY}, ${6:Float:EndZ}, ${7:&Float:x}, ${8:&Float:y}, ${9:&Float:z}, ${10:&Float:rx}, ${11:&Float:ry}, ${12:&Float:rz})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RayCastReflectionVector':
+    'prefix': 'CA_RayCastReflectionVector'
+    'body': 'CA_RayCastReflectionVector(${1:Float:startx}, ${2:Float:starty}, ${3:Float:startz}, ${4:Float:endx}, ${5:Float:endy}, ${6:Float:endz}, ${7:&Float:x}, ${8:&Float:y}, ${9:&Float:z}, ${10:&Float:nx}, ${11:&Float:ny}, ${12:&Float:nz})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RayCastLineNormal':
+    'prefix': 'CA_RayCastLineNormal'
+    'body': 'CA_RayCastLineNormal(${1:Float:startx}, ${2:Float:starty}, ${3:Float:startz}, ${4:Float:endx}, ${5:Float:endy}, ${6:Float:endz}, ${7:&Float:x}, ${8:&Float:y}, ${9:&Float:z}, ${10:&Float:nx}, ${11:&Float:ny}, ${12:&Float:nz})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_ContactTest':
+    'prefix': 'CA_ContactTest'
+    'body': 'CA_ContactTest(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_EulerToQuat':
+    'prefix': 'CA_EulerToQuat'
+    'body': 'CA_EulerToQuat(${1:Float:rx}, ${2:Float:ry}, ${3:Float:rz}, ${4:&Float:x}, ${5:&Float:y}, ${6:&Float:z}, ${7:&Float:w})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_QuatToEuler':
+    'prefix': 'CA_QuatToEuler'
+    'body': 'CA_QuatToEuler(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:w}, ${5:&Float:rx}, ${6:&Float:ry}, ${7:&Float:rz})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_GetModelBoundingSphere':
+    'prefix': 'CA_GetModelBoundingSphere'
+    'body': 'CA_GetModelBoundingSphere(${1:modelid}, ${2:&Float:offx}, ${3:&Float:offy}, ${4:&Float:offz}, ${5:&Float:radius})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_GetModelBoundingBox':
+    'prefix': 'CA_GetModelBoundingBox'
+    'body': 'CA_GetModelBoundingBox(${1:modelid}, ${2:&Float:minx}, ${3:&Float:miny}, ${4:&Float:minz}, ${5:&Float:maxx}, ${6:&Float:maxy}, ${7:&Float:maxz})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_SetObjectExtraID':
+    'prefix': 'CA_SetObjectExtraID'
+    'body': 'CA_SetObjectExtraID(${1:index}, ${2:type}, ${3:data})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_GetObjectExtraID':
+    'prefix': 'CA_GetObjectExtraID'
+    'body': 'CA_GetObjectExtraID(${1:index}, ${2:type})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RayCastLineEx':
+    'prefix': 'CA_RayCastLineEx'
+    'body': 'CA_RayCastLineEx(${1:Float:StartX}, ${2:Float:StartY}, ${3:Float:StartZ}, ${4:Float:EndX}, ${5:Float:EndY}, ${6:Float:EndZ}, ${7:&Float:x}, ${8:&Float:y}, ${9:&Float:z}, ${10:&Float:rx}, ${11:&Float:ry}, ${12:&Float:rz}, ${13:&Float:rw}, ${14:&Float:cx}, ${15:&Float:cy}, ${16:&Float:cz})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RayCastLineAngleEx':
+    'prefix': 'CA_RayCastLineAngleEx'
+    'body': 'CA_RayCastLineAngleEx(${1:Float:StartX}, ${2:Float:StartY}, ${3:Float:StartZ}, ${4:Float:EndX}, ${5:Float:EndY}, ${6:Float:EndZ}, ${7:&Float:x}, ${8:&Float:y}, ${9:&Float:z}, ${10:&Float:rx}, ${11:&Float:ry}, ${12:&Float:rz}, ${13:&Float:ocx}, ${14:&Float:ocy}, ${15:&Float:ocz}, ${16:&Float:orx}, ${17:&Float:ory}, ${18:&Float:orz})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_CreateObject':
+    'prefix': 'CA_CreateObject'
+    'body': 'CA_CreateObject(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:bool:add = false})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_DestroyObject':
+    'prefix': 'CA_DestroyObject'
+    'body': 'CA_DestroyObject(${1:index})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_SetObjectPos':
+    'prefix': 'CA_SetObjectPos'
+    'body': 'CA_SetObjectPos(${1:index}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_SetObjectRot':
+    'prefix': 'CA_SetObjectRot'
+    'body': 'CA_SetObjectRot(${1:index}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_CreateDynamicObjectEx_SC':
+    'prefix': 'CA_CreateDynamicObjectEx_SC'
+    'body': 'CA_CreateDynamicObjectEx_SC(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:Float:drawdistance = 0.0}, ${9:Float:streamdistance = 200.0}, ${10:worlds[] = { -1 }}, ${11:interiors[] = { -1 }}, ${12:players[] = { -1 }}, ${13:maxworlds = sizeof worlds}, ${14:maxinteriors = sizeof interiors}, ${15:maxplayers = sizeof players})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_CreateDynamicObject_SC':
+    'prefix': 'CA_CreateDynamicObject_SC'
+    'body': 'CA_CreateDynamicObject_SC(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:vw = -1}, ${9:interior = -1}, ${10:playerid = -1}, ${11:Float:streamdist = 300.0}, ${12:Float:drawdist = 300.0})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_CreateObject_SC':
+    'prefix': 'CA_CreateObject_SC'
+    'body': 'CA_CreateObject_SC(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:Float:drawdistance = 300.0})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_CreateDynamicObjectEx_DC':
+    'prefix': 'CA_CreateDynamicObjectEx_DC'
+    'body': 'CA_CreateDynamicObjectEx_DC(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:Float:drawdistance = 0.0}, ${9:Float:streamdistance = 200.0}, ${10:worlds[] = { -1 }}, ${11:interiors[] = { -1 }}, ${12:players[] = { -1 }}, ${13:maxworlds = sizeof worlds}, ${14:maxinteriors = sizeof interiors}, ${15:maxplayers = sizeof players})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_CreateDynamicObject_DC':
+    'prefix': 'CA_CreateDynamicObject_DC'
+    'body': 'CA_CreateDynamicObject_DC(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:vw = -1}, ${9:interior = -1}, ${10:playerid = -1}, ${11:Float:streamdist = 300.0}, ${12:Float:drawdist = 300.0})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_CreateObject_DC':
+    'prefix': 'CA_CreateObject_DC'
+    'body': 'CA_CreateObject_DC(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:Float:drawdistance = 300.0})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_DestroyObject_DC':
+    'prefix': 'CA_DestroyObject_DC'
+    'body': 'CA_DestroyObject_DC(${1:index})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_SetObjectPos_DC':
+    'prefix': 'CA_SetObjectPos_DC'
+    'body': 'CA_SetObjectPos_DC(${1:index}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_SetObjectRot_DC':
+    'prefix': 'CA_SetObjectRot_DC'
+    'body': 'CA_SetObjectRot_DC(${1:index}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_DestroyAllObjects_DC':
+    'prefix': 'CA_DestroyAllObjects_DC'
+    'body': 'CA_DestroyAllObjects_DC()'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_FindZ_For2DCoord':
+    'prefix': 'CA_FindZ_For2DCoord'
+    'body': 'CA_FindZ_For2DCoord(${1:Float:x}, ${2:Float:y}, ${3:&Float:z})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RayCastExplode':
+    'prefix': 'CA_RayCastExplode'
+    'body': 'CA_RayCastExplode(${1:Float:cX}, ${2:Float:cY}, ${3:Float:cZ}, ${4:Float:Radius}, ${5:Float:intensity = 20.0}, ${6:Float:collisions[][3]})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_IsPlayerOnSurface':
+    'prefix': 'CA_IsPlayerOnSurface'
+    'body': 'CA_IsPlayerOnSurface(${1:playerid}, ${2:Float:tolerance=1.5})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RemoveBarriers':
+    'prefix': 'CA_RemoveBarriers'
+    'body': 'CA_RemoveBarriers()'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_RemoveBreakableBuildings':
+    'prefix': 'CA_RemoveBreakableBuildings'
+    'body': 'CA_RemoveBreakableBuildings()'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_IsPlayerInWater':
+    'prefix': 'CA_IsPlayerInWater'
+    'body': 'CA_IsPlayerInWater(${1:playerid}, ${2:&Float:depth}, ${3:&Float:playerdepth})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_IsPlayerNearWater':
+    'prefix': 'CA_IsPlayerNearWater'
+    'body': 'CA_IsPlayerNearWater(${1:playerid}, ${2:Float:dist=3.0}, ${3:Float:height=3.0})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_IsPlayerFacingWater':
+    'prefix': 'CA_IsPlayerFacingWater'
+    'body': 'CA_IsPlayerFacingWater(${1:playerid}, ${2:Float:dist=3.0}, ${3:Float:height=3.0})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_IsPlayerBlocked':
+    'prefix': 'CA_IsPlayerBlocked'
+    'body': 'CA_IsPlayerBlocked(${1:playerid}, ${2:Float:dist=1.5}, ${3:Float:height=0.5})'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_GetRoomHeight':
+    'prefix': 'CA_GetRoomHeight'
+    'body': 'CA_GetRoomHeight(${1:Float:x}, ${2:Float:y}, ${3:Float:z})'
+    'leftLabel': 'Float'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'
+
+  'CA_GetRoomCenter':
+    'prefix': 'CA_GetRoomCenter'
+    'body': 'CA_GetRoomCenter(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:&Float:m_x}, ${5:&Float:m_y})'
+    'leftLabel': 'Float'
+    'description': 'Function from: ColAndreas'
+    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=586068'

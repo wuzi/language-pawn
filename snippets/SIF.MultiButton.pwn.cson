@@ -5,11 +5,17 @@
   'CreateMultiButtonTrigger':
     'prefix': 'CreateMultiButtonTrigger'
     'body': 'CreateMultiButtonTrigger(${1:type}, ${2:timewindow}, ${3:list[]}, ${4:count = sizeof(list})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'DestroyMultiButtonTrigger':
     'prefix': 'DestroyMultiButtonTrigger'
     'body': 'DestroyMultiButtonTrigger(${1:triggerid})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'OnMultiButtonTrigger':
     'prefix': 'OnMultiButtonTrigger'
     'body': 'OnMultiButtonTrigger(${1:triggerid}, ${2:success})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'

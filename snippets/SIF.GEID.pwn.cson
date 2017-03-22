@@ -5,7 +5,11 @@
   'mkgeid':
     'prefix': 'mkgeid'
     'body': 'mkgeid(${1:id}, ${2:result[]})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
 
   'b64_encode':
     'prefix': 'b64_encode'
     'body': 'b64_encode(${1:data[]}, ${2:data_len}, ${3:result[]}, ${4:result_len})'
+    'description': 'Function from: SIF'
+    'descriptionMoreURL': 'https://github.com/Southclaw/SIF'
