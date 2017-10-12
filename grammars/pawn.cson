@@ -127,6 +127,9 @@
       {
         'include': '$base'
       }
+      {
+        'include': '#macro_parameter'
+      }
     ]
   }
   {
@@ -623,3 +626,15 @@
         'name': 'invalid.illegal.placeholder.c'
       }
     ]
+  'macro_parameter':
+    'patterns': [
+      {
+        'match': '%[0123456789%]'
+        'name': 'constant.other.placeholder.c'
+      }
+      {
+        'match': '%'
+        'name': 'invalid.illegal.placeholder.c'
+      }
+    ]
+
