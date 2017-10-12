@@ -22,7 +22,7 @@
     'include': '#comments'
   }
   {
-    'match': '\\b(assert|break|case|continue|default|do|else|exit|for|foreach|goto|if|return|sleep|state|switch|while)\\b'
+    'match': '\\b(assert|break|case|continue|default|do|else|for|foreach|goto|if|return|sleep|state|switch|while|defer|repeat|stop|call|using|loadtext)\\b'
     'name': 'keyword.control.c'
   }
   {
@@ -34,7 +34,7 @@
     'name': 'storage.modifier.c'
   }
   {
-    'match': '\\b(public|forward|native|hook|const|static|stock|inline)\\b'
+    'match': '\\b(public|forward|native|hook|const|static|stock|inline|foreign|global|timer|remote|iterfunc|uvar|svar|__declspec)\\b'
     'name': 'storage.modifier.c'
   }
   {
@@ -110,7 +110,7 @@
       '2':
         'name': 'entity.name.function.preprocessor.c'
       '4':
-        'name': 'keyword.control.import.define.c'
+        'name': 'entity.name.function.preprocessor.c'
         'patterns': [
           {
             'include': '#macro_parameter'
@@ -574,7 +574,7 @@
       }
     ]
   'preprocessor-rule-other':
-    'begin': '^\\s*(#\\s*((if|elseif)\\s*(!?defined)?)\\b\\s*(.*)?(?:(?=(?://|/\\*))|$))'
+    'begin': '^\\s*(#\\s*((if|elseif|emit)\\s*(!?defined)?)\\b\\s*(.*)?(?:(?=(?://|/\\*))|$))'
     'captures':
       '1':
         'name': 'meta.preprocessor.c'
