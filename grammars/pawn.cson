@@ -22,7 +22,7 @@
     'include': '#comments'
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(assert|break|case|continue|default|do|else|for|foreach|goto|if|return|sleep|state|switch|while|defer|repeat|stop|call|using|loadtext)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(assert|break|case|continue|default|do|else|for|foreach|goto|if|return|sleep|state|switch|while|defer|repeat|stop|call|using|loadtext|yield)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
     'name': 'keyword.control.c'
   }
   {
@@ -34,7 +34,7 @@
     'name': 'storage.modifier.c'
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(public|forward|native|hook|const|static|stock|inline|foreign|global|timer|remote|iterfunc|uvar|svar|__declspec)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(public|forward|native|hook|const|static|stock|inline|foreign|global|timer|remote|iterfunc|uvar|svar|__declspec|master_hook|master_task|master_ptask|group_hook|master_func|task|ptask|@foreign|mhook)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
     'name': 'storage.modifier.c'
   }
   {
