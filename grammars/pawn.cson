@@ -30,11 +30,11 @@
     'name': 'storage.type.c'
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])([A-Za-z_@][A-Za-z0-9_@]*)\\:\\s*(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])([A-Za-z_@][A-Za-z0-9_@]*)\\:\\s*(?=[a-zA-Z0-9_@])'
     'name': 'storage.modifier.c'
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(public|forward|native|hook|const|static|stock|inline|foreign|global|timer|remote|iterfunc|uvar|svar|__declspec|master_hook|master_task|master_ptask|group_hook|master_func|task|ptask|@foreign|mhook)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(public|forward|native|hook|const|static|stock|inline|foreign|global|timer|remote|iterfunc|uvar|svar|__declspec|master_hook|master_task|master_ptask|group_hook|master_func|task|ptask|@foreign|@global|mhook)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
     'name': 'storage.modifier.c'
   }
   {
