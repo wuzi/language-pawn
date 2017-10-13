@@ -279,6 +279,9 @@
       }
     ]
   }
+  {
+    'include': '#operators'
+  }
 ]
 'repository':
   'access':
@@ -689,6 +692,13 @@
             'include': '#macro_parameter'
           }
         ]
+      }
+    ]
+  'operators':
+    'patterns': [
+      {
+        'match': '[\\(\\)\\+\\-\\%\\*\\!\\,\\;\\[\\]\\^\\|\\&\\<\\>\\=\\~\\?\\:\\/]'
+        'name': 'keyword.operator'
       }
     ]
 
