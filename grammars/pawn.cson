@@ -360,7 +360,7 @@
         'name': 'comment.block.c'
       }
       {
-        'begin': '/\\*\\*'
+        'begin': '/\\*[\\*\\+]'
         'beginCaptures':
           '0':
             'name': 'punctuation.definition.documentation.begin.c'
@@ -368,7 +368,7 @@
         'endCaptures':
           '0':
             'name': 'punctuation.definition.documentation.end.c'
-        'name': 'comment.block.c'
+        'name': 'comment.documentation.c'
       }
       {
         'begin': '/\\*'
