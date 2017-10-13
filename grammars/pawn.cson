@@ -150,6 +150,9 @@
       {
         'include': '#macro_parameter'
       }
+      {
+        'include': '#macro_string'
+      }
     ]
   }
   {
@@ -257,6 +260,22 @@
       }
       {
         'include': '#block'
+      }
+    ]
+  }
+  {
+    'begin': '#'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.c'
+    'end': '(?=[)";,])'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.c'
+    'name': 'string.quoted.double.c'
+    'patterns': [
+      {
+        'include': '#string_placeholder'
       }
     ]
   }
@@ -651,6 +670,25 @@
       {
         'match': '%[0123456789%]'
         'name': 'constant.numeric.preprocessor.c'
+      }
+    ]
+  'macro_string':
+    'patterns': [
+      {
+        'begin': '#'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.string.begin.c'
+        'end': '(?=[)";,])'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.string.end.c'
+        'name': 'string.quoted.double.c'
+        'patterns': [
+          {
+            'include': '#macro_parameter'
+          }
+        ]
       }
     ]
 
