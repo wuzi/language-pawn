@@ -674,7 +674,7 @@
     'patterns': [
       {
         'match': '%[0123456789%]'
-        'name': 'constant.numeric.preprocessor.c'
+        'name': 'constant.parameter.preprocessor.c'
       }
     ]
   'macro_string':
