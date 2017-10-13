@@ -30,8 +30,13 @@
     'name': 'storage.type.c'
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])([A-Za-z_@][A-Za-z0-9_@]*)\\:\\s*(?=[a-zA-Z0-9_@])'
+    'match': '((?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])[PC]\\:[0-7CEFWDI](?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@]))|((?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])([A-Za-z_@][A-Za-z0-9_@]*)\\:\\s*(?=[a-zA-Z0-9_@]))'
     'name': 'storage.modifier.c'
+    'captures':
+      '1':
+        'name': 'support.function.any-method.c'
+      '2':
+        'name': 'storage.modifier.c'
   }
   {
     'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(public|forward|native|hook|const|static|stock|inline|foreign|global|timer|remote|iterfunc|uvar|svar|__declspec|master_hook|master_task|master_ptask|group_hook|master_func|task|ptask|@foreign|@global|mhook)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
@@ -626,7 +631,7 @@
     'patterns': [
       {
         'match': '%[0123456789%]'
-        'name': 'constant.other.placeholder.c'
+        'name': 'constant.numeric.preprocessor.c'
       }
       {
         'match': '%'
