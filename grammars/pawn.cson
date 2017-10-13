@@ -633,9 +633,5 @@
         'match': '%[0123456789%]'
         'name': 'constant.numeric.preprocessor.c'
       }
-      {
-        'match': '%'
-        'name': 'invalid.illegal.placeholder.c'
-      }
     ]
 
