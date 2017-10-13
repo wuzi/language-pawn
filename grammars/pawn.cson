@@ -129,6 +129,25 @@
         'name': 'punctuation.separator.continuation.c'
       }
       {
+        'begin': '"'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.string.begin.c'
+        'end': '"'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.string.end.c'
+        'name': 'string.quoted.double.c'
+        'patterns': [
+          {
+            'include': '#string_escaped_char'
+          }
+          {
+            'include': '#string_placeholder'
+          }
+        ]
+      }
+      {
         'include': '#macro_parameter'
       }
     ]
@@ -623,7 +642,7 @@
         'name': 'constant.other.placeholder.c'
       }
       {
-        'match': '%'
+        'match': '%[0-9]?'
         'name': 'invalid.illegal.placeholder.c'
       }
     ]
