@@ -22,15 +22,15 @@
     'include': '#comments'
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(assert|break|case|continue|default|do|else|for|foreach|goto|if|return|sleep|state|switch|while|defer|repeat|stop|call|using|loadtext|yield)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])(assert|break|case|continue|default|do|else|for|foreach|goto|if|return|sleep|state|switch|while|defer|repeat|stop|call|using|loadtext|yield)(?![a-zA-Z0-9_@])'
     'name': 'keyword.control.c'
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(char|enum|new)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])(char|enum|new)(?![a-zA-Z0-9_@])'
     'name': 'storage.type.c'
   }
   {
-    'match': '((?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])[PC]\\:[0-7CEFWDI](?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@]))|((?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])([A-Za-z_@][A-Za-z0-9_@]*)\\:\\s*(?=[a-zA-Z0-9_@]))'
+    'match': '((?<![a-zA-Z0-9_@])[PC]\\:[0-7CEFWDI](?![a-zA-Z0-9_@]))|((?<![a-zA-Z0-9_@])([A-Za-z_@][A-Za-z0-9_@]*)\\:\\s*(?=[a-zA-Z0-9_@]))'
     'name': 'storage.modifier.c'
     'captures':
       '1':
@@ -39,28 +39,28 @@
         'name': 'storage.modifier.c'
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(public|forward|native|hook|const|static|stock|inline|foreign|global|timer|remote|iterfunc|uvar|svar|__declspec|master_hook|master_task|master_ptask|group_hook|master_func|task|ptask|@foreign|@global|mhook)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])(public|forward|native|hook|const|static|stock|inline|foreign|global|timer|remote|iterfunc|uvar|svar|__declspec|master_hook|master_task|master_ptask|group_hook|master_func|task|ptask|@foreign|@global|mhook)(?![a-zA-Z0-9_@])'
     'name': 'storage.modifier.c'
   }
   {
     'comment': 'common C constant naming idiom -- kConstantVariable'
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])k[A-Z]\\w*(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])k[A-Z]\\w*(?![a-zA-Z0-9_@])'
     'name': 'constant.other.variable.mac-classic.c'
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])g[A-Z]\\w*(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])g[A-Z]\\w*(?![a-zA-Z0-9_@])'
     'name': 'variable.other.readwrite.global.mac-classic.c'
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])g_[A-Z]\\w*(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])g_[A-Z]\\w*(?![a-zA-Z0-9_@])'
     'name': 'variable.other.readwrite.global.mac-classic.c'
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])s[A-Z]\\w*(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])s[A-Z]\\w*(?![a-zA-Z0-9_@])'
     'name': 'variable.other.readwrite.static.mac-classic.c'
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(true|false|cellmin|cellmax|cellbits|cellbytes|__Pawn|__line|__file|__date|__time|__compat|__PawnBuild|_inc_[a-zA-Z0-9_@]+|(e_)?([A-Z_@]|[0-9](x[0-9])?){3,})(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])(true|false|cellmin|cellmax|cellbits|cellbytes|__Pawn|__line|__file|__date|__time|__compat|__PawnBuild|_inc_[a-zA-Z0-9_@]+|(e_)?([A-Z_@]|[0-9](x[0-9])?){3,})(?![a-zA-Z0-9_@])'
     'name': 'constant.language.c'
   }
   {
@@ -208,7 +208,7 @@
     'include': '#pragma-mark'
   }
   {
-    'begin': '^\\s*#\\s*(assert|endinput|file|else|line|section)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'begin': '^\\s*#\\s*(assert|endinput|file|else|line|section)(?![a-zA-Z0-9_@])'
     'captures':
       '1':
         'name': 'keyword.control.import.c'
@@ -222,12 +222,12 @@
     ]
   }
   {
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(noErr|kNilOptions|kInvalidID|kVariableLengthArray)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])(noErr|kNilOptions|kInvalidID|kVariableLengthArray)(?![a-zA-Z0-9_@])'
     'name': 'support.constant.mac-classic.c'
   }
   {
     'comment': 'Reserved POSIX types'
-    'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])([a-z0-9_@]+_t)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'match': '(?<![a-zA-Z0-9_@])([a-z0-9_@]+_t)(?![a-zA-Z0-9_@])'
     'name': 'support.type.posix-reserved.c'
   }
   {
@@ -252,7 +252,7 @@
         'include': '#parens'
       }
       {
-        'match': '(?<![a-zA-Z0-9_@])(?=[a-zA-Z0-9_@])(const|override|final)(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+        'match': '(?<![a-zA-Z0-9_@])(const|override|final)(?![a-zA-Z0-9_@])'
         'name': 'storage.modifier.c'
       }
       {
@@ -408,7 +408,7 @@
   'disabled':
     'begin': '^\\s*#\\s*(if|elseif)\\s*(!?defined)?\\b.*$'
     'comment': 'eat nested preprocessor if(def)s'
-    'end': '^\\s*#\\s*endif(?<=[a-zA-Z0-9_@])(?![a-zA-Z0-9_@])'
+    'end': '^\\s*#\\s*endif(?![a-zA-Z0-9_@])'
     'patterns': [
       {
         'include': '#disabled'
