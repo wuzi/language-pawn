@@ -360,6 +360,17 @@
         'name': 'comment.block.c'
       }
       {
+        'begin': '/\\*\\*'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.documentation.begin.c'
+        'end': '\\*/'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.documentation.end.c'
+        'name': 'comment.block.c'
+      }
+      {
         'begin': '/\\*'
         'beginCaptures':
           '0':
@@ -395,12 +406,6 @@
                 'name': 'punctuation.definition.comment.c++'
             'end': '\\n'
             'name': 'comment.line.double-slash.c++'
-            'patterns': [
-              {
-                'match': '(?>\\\\\\s*\\n)'
-                'name': 'punctuation.separator.continuation.c++'
-              }
-            ]
           }
         ]
       }
