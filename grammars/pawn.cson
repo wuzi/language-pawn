@@ -22,50 +22,49 @@
     'include': '#comments'
   }
   {
-    'match': '\\b(assert|break|case|continue|default|do|else|exit|for|foreach|goto|if|return|sleep|state|switch|while)\\b'
+    'match': '(?<![a-zA-Z0-9_@])(assert|break|case|continue|default|do|else|for|foreach|goto|if|return|sleep|state|switch|while|defer|repeat|stop|call|using|loadtext|yield)(?![a-zA-Z0-9_@])'
     'name': 'keyword.control.c'
   }
   {
-    'match': '\\b(char|enum|new)\\b'
+    'match': '(?<![a-zA-Z0-9_@])(char|enum|new)(?![a-zA-Z0-9_@])'
     'name': 'storage.type.c'
   }
   {
-    'match': '\\b([A-Za-z_][A-Za-z0-9_]*)\\:\\s*\\b'
+    'match': '((?<![a-zA-Z0-9_@])[PC]\\:[0-7CEFWDI](?![a-zA-Z0-9_@]))|((?<![a-zA-Z0-9_@])([A-Za-z_@][A-Za-z0-9_@]*)\\:\\s*(?=[a-zA-Z0-9_@]))'
     'name': 'storage.modifier.c'
+    'captures':
+      '1':
+        'name': 'support.function.any-method.c'
+      '2':
+        'name': 'storage.modifier.c'
   }
   {
-    'match': '\\b(public|forward|native|hook|const|static|stock|inline)\\b'
+    'match': '(?<![a-zA-Z0-9_@])(public|forward|native|hook|const|static|stock|inline|foreign|global|timer|remote|iterfunc|uvar|svar|__declspec|master_hook|master_task|master_ptask|group_hook|master_func|task|ptask|@foreign|@global|mhook)(?![a-zA-Z0-9_@])'
     'name': 'storage.modifier.c'
   }
   {
     'comment': 'common C constant naming idiom -- kConstantVariable'
-    'match': '\\bk[A-Z]\\w*\\b'
+    'match': '(?<![a-zA-Z0-9_@])k[A-Z]\\w*(?![a-zA-Z0-9_@])'
     'name': 'constant.other.variable.mac-classic.c'
   }
   {
-    'match': '\\bg[A-Z]\\w*\\b'
+    'match': '(?<![a-zA-Z0-9_@])g[A-Z]\\w*(?![a-zA-Z0-9_@])'
     'name': 'variable.other.readwrite.global.mac-classic.c'
   }
   {
-    'match': '\\bg_[A-Z]\\w*\\b'
+    'match': '(?<![a-zA-Z0-9_@])g_[A-Z]\\w*(?![a-zA-Z0-9_@])'
     'name': 'variable.other.readwrite.global.mac-classic.c'
   }
   {
-    'match': '\\bs[A-Z]\\w*\\b'
+    'match': '(?<![a-zA-Z0-9_@])s[A-Z]\\w*(?![a-zA-Z0-9_@])'
     'name': 'variable.other.readwrite.static.mac-classic.c'
   }
   {
-    'match': '\\b(NULL|true|false|TRUE|FALSE|MAX_PLAYERS|MAX_PLAYER_NAME|MAX_VEHICLES|MAX_ACTORS|INVALID_PLAYER_ID|INVALID_VEHICLE_ID|INVALID_ACTOR_ID|NO_TEAM|MAX_OBJECTS|INVALID_OBJECT_ID|MAX_GANG_ZONES|MAX_TEXT_DRAWS|MAX_PLAYER_TEXT_DRAWS|MAX_MENUS|MAX_3DTEXT_GLOBAL|MAX_3DTEXT_PLAYER|MAX_PICKUPS|INVALID_MENU|INVALID_TEXT_DRAW|INVALID_GANG_ZONE|INVALID_3DTEXT_ID|TEXT_DRAW_FONT_SPRITE_DRAW|TEXT_DRAW_FONT_MODEL_PREVIEW|DIALOG_STYLE_MSGBOX|DIALOG_STYLE_INPUT|DIALOG_STYLE_LIST|DIALOG_STYLE_PASSWORD|DIALOG_STYLE_TABLIST|DIALOG_STYLE_TABLIST_HEADERS|PLAYER_STATE_NONE|PLAYER_STATE_ONFOOT|PLAYER_STATE_DRIVER|PLAYER_STATE_PASSENGER|PLAYER_STATE_EXIT_VEHICLE|PLAYER_STATE_ENTER_VEHICLE_DRIVER|PLAYER_STATE_ENTER_VEHICLE_PASSENGER|PLAYER_STATE_WASTED|PLAYER_STATE_SPAWNED|PLAYER_STATE_SPECTATING
-    |PLAYER_MARKERS_MODE_OFF|PLAYER_MARKERS_MODE_GLOBAL|PLAYER_MARKERS_MODE_STREAMED|WEAPON_BRASSKNUCKLE|WEAPON_GOLFCLUB|WEAPON_NITESTICK|WEAPON_KNIFE|WEAPON_BAT|WEAPON_SHOVEL|WEAPON_POOLSTICK|WEAPON_KATANA|WEAPON_CHAINSAW|WEAPON_DILDO|WEAPON_DILDO2|WEAPON_VIBRATOR|WEAPON_VIBRATOR2|WEAPON_FLOWER|WEAPON_CANE|WEAPON_GRENADE|WEAPON_TEARGAS|WEAPON_MOLTOV|WEAPON_COLT45|WEAPON_SILENCED|WEAPON_DEAGLE|WEAPON_SHOTGUN|WEAPON_SAWEDOFF|WEAPON_SHOTGSPA|WEAPON_UZI|WEAPON_MP5|WEAPON_AK47|WEAPON_M4|WEAPON_TEC9|WEAPON_RIFLE|WEAPON_SNIPER|WEAPON_ROCKETLAUNCHER|WEAPON_HEATSEEKER|WEAPON_FLAMETHROWER|WEAPON_MINIGUN|WEAPON_SATCHEL|WEAPON_BOMB|WEAPON_SPRAYCAN|WEAPON_FIREEXTINGUISHER|WEAPON_CAMERA|WEAPON_PARACHUTE|WEAPON_VEHICLE|WEAPON_DROWN|WEAPON_COLLISION|KEY_ACTION|KEY_CROUCH|KEY_FIRE|KEY_SPRINT
-    |KEY_SECONDARY_ATTACK|KEY_JUMP|KEY_LOOK_RIGHT|KEY_HANDBRAKE|KEY_LOOK_LEFT|KEY_SUBMISSION|KEY_LOOK_BEHIND|KEY_WALK|KEY_ANALOG_UP|KEY_ANALOG_DOWN|KEY_ANALOG_LEFT|KEY_ANALOG_RIGHT|KEY_YES|KEY_NO|KEY_CTRL_BACK|KEY_UP|KEY_DOWN|KEY_LEFT|KEY_RIGHT|CLICK_SOURCE_SCOREBOARD|EDIT_RESPONSE_CANCEL|EDIT_RESPONSE_FINAL|EDIT_RESPONSE_UPDATE|SELECT_OBJECT_GLOBAL_OBJECT|SELECT_OBJECT_PLAYER_OBJECT|BULLET_HIT_TYPE_NONE|BULLET_HIT_TYPE_PLAYER|BULLET_HIT_TYPE_VEHICLE|BULLET_HIT_TYPE_OBJECT|BULLET_HIT_TYPE_PLAYER_OBJECT|SPECIAL_ACTION_NONE|SPECIAL_ACTION_DUCK|SPECIAL_ACTION_USEJETPACK|SPECIAL_ACTION_ENTER_VEHICLE|SPECIAL_ACTION_EXIT_VEHICLE|SPECIAL_ACTION_DANCE1|SPECIAL_ACTION_DANCE2|SPECIAL_ACTION_DANCE3|SPECIAL_ACTION_DANCE4|SPECIAL_ACTION_HANDSUP|SPECIAL_ACTION_USECELLPHONE|SPECIAL_ACTION_SITTING
-    |SPECIAL_ACTION_STOPUSECELLPHONE|SPECIAL_ACTION_DRINK_BEER|SPECIAL_ACTION_SMOKE_CIGGY|SPECIAL_ACTION_DRINK_WINE|SPECIAL_ACTION_DRINK_SPRUNK|SPECIAL_ACTION_CUFFED|SPECIAL_ACTION_CARRY|FIGHT_STYLE_NORMAL|FIGHT_STYLE_BOXING|FIGHT_STYLE_KUNGFU|FIGHT_STYLE_KNEEHEAD|FIGHT_STYLE_GRABKICK|FIGHT_STYLE_ELBOW|WEAPONSKILL_PISTOL|WEAPONSKILL_PISTOL_SILENCED|WEAPONSKILL_DESERT_EAGLE|WEAPONSKILL_SHOTGUN|WEAPONSKILL_SAWNOFF_SHOTGUN|WEAPONSKILL_SPAS12_SHOTGUN|WEAPONSKILL_MICRO_UZI|WEAPONSKILL_MP5|WEAPONSKILL_AK47|WEAPONSKILL_M4|WEAPONSKILL_SNIPERRIFLE|WEAPONSTATE_UNKNOWN|WEAPONSTATE_NO_BULLETS|WEAPONSTATE_LAST_BULLET|WEAPONSTATE_MORE_BULLETS|WEAPONSTATE_RELOADING|MAX_PLAYER_ATTACHED_OBJECTS|PLAYER_VARTYPE_NONE
-    |PLAYER_VARTYPE_INT|PLAYER_VARTYPE_STRING|PLAYER_VARTYPE_FLOAT|MAX_CHATBUBBLE_LENGTH|MAPICON_LOCAL|MAPICON_GLOBAL|MAPICON_LOCAL_CHECKPOINT|MAPICON_GLOBAL_CHECKPOINT|CAMERA_CUT|CAMERA_MOVE|SPECTATE_MODE_NORMAL|SPECTATE_MODE_FIXED|SPECTATE_MODE_SIDE|PLAYER_RECORDING_TYPE_NONE|PLAYER_RECORDING_TYPE_DRIVER|PLAYER_RECORDING_TYPE_ONFOOT|VEHICLE_MODEL_INFO_SIZE|VEHICLE_MODEL_INFO_FRONTSEAT|VEHICLE_MODEL_INFO_REARSEAT|VEHICLE_MODEL_INFO_PETROLCAP|VEHICLE_MODEL_INFO_WHEELSFRONT|VEHICLE_MODEL_INFO_WHEELSREAR|VEHICLE_MODEL_INFO_WHEELSMID|VEHICLE_MODEL_INFO_FRONT_BUMPER_Z|VEHICLE_MODEL_INFO_REAR_BUMPER_Z|CARMODTYPE_SPOILER|CARMODTYPE_HOOD|CARMODTYPE_ROOF|CARMODTYPE_SIDESKIR|CARMODTYPE_LAMPS|CARMODTYPE_NITRO|CARMODTYPE_EXHAUST|CARMODTYPE_WHEELS|CARMODTYPE_STEREO|CARMODTYPE_HYDRAULIC
-    |CARMODTYPE_FRONT_BUMPER|CARMODTYPE_REAR_BUMPER|CARMODTYPE_VENT_RIGHT|CARMODTYPE_VENT_LEFT|VEHICLE_PARAMS_UNSET|VEHICLE_PARAMS_OFF|VEHICLE_PARAMS_ON|OBJECT_MATERIAL_SIZE_32x32|OBJECT_MATERIAL_SIZE_64x32|OBJECT_MATERIAL_SIZE_64x64|OBJECT_MATERIAL_SIZE_128x32|OBJECT_MATERIAL_SIZE_128x64|OBJECT_MATERIAL_SIZE_128x128|OBJECT_MATERIAL_SIZE_256x32|OBJECT_MATERIAL_SIZE_256x64|OBJECT_MATERIAL_SIZE_256x128|OBJECT_MATERIAL_SIZE_256x256|OBJECT_MATERIAL_SIZE_512x64|OBJECT_MATERIAL_SIZE_512x128|OBJECT_MATERIAL_SIZE_512x256|OBJECT_MATERIAL_SIZE_512x512|OBJECT_MATERIAL_TEXT_ALIGN_LEFT|OBJECT_MATERIAL_TEXT_ALIGN_CENTER|OBJECT_MATERIAL_TEXT_ALIGN_RIGHT)\\b'
+    'match': '(?<![a-zA-Z0-9_@])(true|false|cellmin|cellmax|cellbits|cellbytes|__Pawn|__line|__file|__date|__time|__compat|__PawnBuild|_inc_[a-zA-Z0-9_@]+|(e_)?([A-Z_@]|[0-9](x[0-9])?){3,})(?![a-zA-Z0-9_@])'
     'name': 'constant.language.c'
   }
   {
-    'match': '\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b'
-    'name': 'constant.numeric.c'
+    'include': '#numbers'
   }
   {
     'begin': '"'
@@ -103,20 +102,19 @@
     ]
   }
   {
-    'begin': '(?x)\n        \t\t^\\s*\\#\\s*(define)\\s+             # define\n        \t\t((?<id>[a-zA-Z_][a-zA-Z0-9_]*))  # macro name\n        \t\t(?:                              # and optionally:\n        \t\t    (\\()                         # an open parenthesis\n        \t\t        (\n        \t\t            \\s* \\g<id> \\s*       # first argument\n        \t\t            ((,) \\s* \\g<id> \\s*)*  # additional arguments\n        \t\t            (?:\\.\\.\\.)?          # varargs ellipsis?\n        \t\t        )\n        \t\t    (\\))                         # a close parenthesis\n        \t\t)?\n        \t'
+    'begin': '(?x)\n        \t\t^\\s*\\#\\s*(define)\\s+             # define\n        \t\t((?<id>[a-zA-Z_@][a-zA-Z0-9_@]*))  # macro name\n        \t\t(\\S*)                            # and optionally anything not whitespace\n        \t'
     'beginCaptures':
       '1':
         'name': 'keyword.control.import.define.c'
       '2':
         'name': 'entity.name.function.preprocessor.c'
       '4':
-        'name': 'punctuation.definition.parameters.begin.c'
-      '5':
-        'name': 'variable.parameter.preprocessor.c'
-      '7':
-        'name': 'punctuation.separator.parameters.c'
-      '8':
-        'name': 'punctuation.definition.parameters.end.c'
+        'name': 'entity.name.function.preprocessor.c'
+        'patterns': [
+          {
+            'include': '#macro_parameter'
+          }
+        ]
     'end': '(?=(?://|/\\*))|(?<!\\\\)(?=\\n)'
     'name': 'meta.preprocessor.macro.c'
     'patterns': [
@@ -125,7 +123,32 @@
         'name': 'punctuation.separator.continuation.c'
       }
       {
-        'include': '$base'
+        'include': '#numbers'
+      }
+      {
+        'begin': '"'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.string.begin.c'
+        'end': '"'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.string.end.c'
+        'name': 'string.quoted.double.c'
+        'patterns': [
+          {
+            'include': '#string_escaped_char'
+          }
+          {
+            'include': '#string_placeholder'
+          }
+        ]
+      }
+      {
+        'include': '#macro_string'
+      }
+      {
+        'include': '#macro_parameter'
       }
     ]
   }
@@ -185,7 +208,7 @@
     'include': '#pragma-mark'
   }
   {
-    'begin': '^\\s*#\\s*(assert|endinput|file|else|line|section)\\b'
+    'begin': '^\\s*#\\s*(assert|endinput|file|else|line|section)(?![a-zA-Z0-9_@])'
     'captures':
       '1':
         'name': 'keyword.control.import.c'
@@ -199,19 +222,19 @@
     ]
   }
   {
-    'match': '\\b(noErr|kNilOptions|kInvalidID|kVariableLengthArray)\\b'
+    'match': '(?<![a-zA-Z0-9_@])(noErr|kNilOptions|kInvalidID|kVariableLengthArray)(?![a-zA-Z0-9_@])'
     'name': 'support.constant.mac-classic.c'
   }
   {
     'comment': 'Reserved POSIX types'
-    'match': '\\b([a-z0-9_]+_t)\\b'
+    'match': '(?<![a-zA-Z0-9_@])([a-z0-9_@]+_t)(?![a-zA-Z0-9_@])'
     'name': 'support.type.posix-reserved.c'
   }
   {
     'include': '#block'
   }
   {
-    'begin': '(?x)\n    \t\t(?:  ^                                 # begin-of-line\n    \t\t  |  \n    \t\t     (?: (?= \\s )           (?<!else|new|return) (?<=\\w)      #  or word + space before name\n    \t\t       | (?= \\s*[A-Za-z_] ) (?<!&&)       (?<=[*&>])   #  or type modifier before name\n    \t\t     )\n    \t\t)\n    \t\t(\\s*) (?!(while|for|do|if|else|switch|catch|enumerate|return|sizeof|[cr]?iterate)\\s*\\()\n    \t\t(\n    \t\t\t(?: [A-Za-z_][A-Za-z0-9_]*+ | :: )++ |                  # actual name\n    \t\t\t(?: (?<=operator) (?: [-*&<>=+!]+ | \\(\\) | \\[\\] ) )  # if it is a C++ operator\n    \t\t)\n    \t\t \\s*(?=\\()'
+    'begin': '(?x)\n    \t\t(?:  ^                                 # begin-of-line\n    \t\t  |  \n    \t\t     (?: (?= \\s )           (?<!else|new|return) (?<=\\w)      #  or word + space before name\n    \t\t       | (?= \\s*[A-Za-z_@] ) (?<!&&)       (?<=[*&>])   #  or type modifier before name\n    \t\t     )\n    \t\t)\n    \t\t(\\s*) (?!(while|for|do|if|else|switch|catch|enumerate|return|sizeof|[cr]?iterate)\\s*\\()\n    \t\t(\n    \t\t\t(?: [A-Za-z_@][A-Za-z0-9_@]*+ | :: )++ |                  # actual name\n    \t\t\t(?: (?<=operator) (?: [-*&<>=+!]+ | \\(\\) | \\[\\] ) )  # if it is a C++ operator\n    \t\t)\n    \t\t \\s*(?=\\()'
     'beginCaptures':
       '1':
         'name': 'punctuation.whitespace.function.leading.c'
@@ -229,13 +252,32 @@
         'include': '#parens'
       }
       {
-        'match': '\\b(const|override|final)\\b'
+        'match': '(?<![a-zA-Z0-9_@])(const|override|final)(?![a-zA-Z0-9_@])'
         'name': 'storage.modifier.c'
       }
       {
         'include': '#block'
       }
     ]
+  }
+  {
+    'begin': '#'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.c'
+    'end': '(?=[)";,])'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.c'
+    'name': 'string.quoted.double.c'
+    'patterns': [
+      {
+        'include': '#string_placeholder'
+      }
+    ]
+  }
+  {
+    'include': '#operators'
   }
 ]
 'repository':
@@ -245,7 +287,7 @@
         'name': 'punctuation.separator.variable-access.c'
       '2':
         'name': 'variable.other.dot-access.c'
-    'match': '(\\.)([a-zA-Z_][a-zA-Z_0-9]*)\\b(?!\\s*\\()'
+    'match': '(\\.)([a-zA-Z_@][a-zA-Z_0-9@]*)\\b(?!\\s*\\()'
   'block':
     'patterns': [
       {
@@ -288,7 +330,7 @@
             'name': 'variable.other.c'
           '2':
             'name': 'punctuation.definition.parameters.c'
-        'match': '(?x)\n\t\t\t        (?x)\n\t\t\t(?:  \n\t\t\t     (?: (?= \\s )           (?<!else|new|return) (?<=\\w)\\s+      #  or word + space before name\n\t\t\t     )\n\t\t\t)\n\t\t\t(\n\t\t\t\t(?: [A-Za-z_][A-Za-z0-9_]*+ | :: )++    |              # actual name\n\t\t\t\t(?: (?<=operator) (?: [-*&<>=+!]+ | \\(\\) | \\[\\] ) )  # if it is a C++ operator\n\t\t\t)\n\t\t\t \\s*(\\()'
+        'match': '(?x)\n\t\t\t        (?x)\n\t\t\t(?:  \n\t\t\t     (?: (?= \\s )           (?<!else|new|return) (?<=\\w)\\s+      #  or word + space before name\n\t\t\t     )\n\t\t\t)\n\t\t\t(\n\t\t\t\t(?: [A-Za-z_@][A-Za-z0-9_@]*+ | :: )++    |              # actual name\n\t\t\t\t(?: (?<=operator) (?: [-*&<>=+!]+ | \\(\\) | \\[\\] ) )  # if it is a C++ operator\n\t\t\t)\n\t\t\t \\s*(\\()'
         'name': 'meta.initialization.c'
       }
       {
@@ -306,7 +348,7 @@
         'name': 'support.function.any-method.c'
       '4':
         'name': 'punctuation.definition.parameters.c'
-    'match': '(?x) (?: (?= \\s )  (?:(?<=else|new|return) | (?<!\\w)) (\\s+))?\n\t\t\t(\\b \n\t\t\t\t(?!(while|for|do|if|else|switch|return|sizeof|[cr]?iterate)\\s*\\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\\b | :: )++                  # actual name\n\t\t\t)\n\t\t\t \\s*(\\()'
+    'match': '(?x) (?: (?= \\s )  (?:(?<=else|new|return) | (?<!\\w)) (\\s+))?\n\t\t\t(\\b \n\t\t\t\t(?!(while|for|do|if|else|switch|return|sizeof|[cr]?iterate)\\s*\\()(?:(?!NS)[A-Za-z_@][A-Za-z0-9_@]*+\\b | :: )++                  # actual name\n\t\t\t)\n\t\t\t \\s*(\\()'
     'name': 'meta.function-call.c'
   'comments':
     'patterns': [
@@ -316,6 +358,17 @@
             'name': 'meta.toc-list.banner.block.c'
         'match': '^/\\* =(\\s*.*?)\\s*= \\*/$\\n?'
         'name': 'comment.block.c'
+      }
+      {
+        'begin': '/\\*[\\*\\+]'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.documentation.begin.c'
+        'end': '\\*/'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.documentation.end.c'
+        'name': 'comment.documentation.c'
       }
       {
         'begin': '/\\*'
@@ -353,12 +406,6 @@
                 'name': 'punctuation.definition.comment.c++'
             'end': '\\n'
             'name': 'comment.line.double-slash.c++'
-            'patterns': [
-              {
-                'match': '(?>\\\\\\s*\\n)'
-                'name': 'punctuation.separator.continuation.c++'
-              }
-            ]
           }
         ]
       }
@@ -366,7 +413,7 @@
   'disabled':
     'begin': '^\\s*#\\s*(if|elseif)\\s*(!?defined)?\\b.*$'
     'comment': 'eat nested preprocessor if(def)s'
-    'end': '^\\s*#\\s*endif\\b'
+    'end': '^\\s*#\\s*endif(?![a-zA-Z0-9_@])'
     'patterns': [
       {
         'include': '#disabled'
@@ -398,7 +445,7 @@
         'name': 'keyword.control.import.pragma.c'
       '3':
         'name': 'meta.toc-list.pragma-mark.c'
-    'match': '^\\s*(#\\s*(pragma\\s+[a-zA-Z0-9_]+)\\s+(.*))'
+    'match': '^\\s*(#\\s*(pragma\\s+[a-zA-Z0-9_@]+)\\s+(.*))'
     'name': 'meta.section'
   'preprocessor-rule-disabled':
     'begin': '^\\s*(#(if)\\s+(0)\\b).*'
@@ -557,7 +604,7 @@
       }
     ]
   'preprocessor-rule-inline':
-    'begin': '^\\s*(#\\s*(pragma|undef)\\b\\s*([a-zA-Z0-9_]*)?(?:(?=(?://|/\\*))|$))'
+    'begin': '^\\s*(#\\s*(pragma|undef)\\b\\s*([a-zA-Z0-9_@]*)?(?:(?=(?://|/\\*))|$))'
     'captures':
       '1':
         'name': 'meta.preprocessor.c'
@@ -572,7 +619,7 @@
       }
     ]
   'preprocessor-rule-other':
-    'begin': '^\\s*(#\\s*((if|elseif)\\s*(!?defined)?)\\b\\s*(.*)?(?:(?=(?://|/\\*))|$))'
+    'begin': '^\\s*(#\\s*((if|elseif|emit)\\s*(!?defined)?)\\b\\s*(.*)?(?:(?=(?://|/\\*))|$))'
     'captures':
       '1':
         'name': 'meta.preprocessor.c'
@@ -619,7 +666,48 @@
         'name': 'constant.other.placeholder.c'
       }
       {
-        'match': '%'
+        'match': '%[0-9]?'
         'name': 'invalid.illegal.placeholder.c'
       }
     ]
+  'macro_parameter':
+    'patterns': [
+      {
+        'match': '%[0123456789%]'
+        'name': 'constant.parameter.preprocessor.c'
+      }
+    ]
+  'macro_string':
+    'patterns': [
+      {
+        'begin': '#'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.string.begin.c'
+        'end': '(?=[)";,])'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.string.end.c'
+        'name': 'string.quoted.double.c'
+        'patterns': [
+          {
+            'include': '#macro_parameter'
+          }
+        ]
+      }
+    ]
+  'operators':
+    'patterns': [
+      {
+        'match': '[\\(\\)\\+\\-\\%\\*\\!\\,\\;\\[\\]\\^\\|\\&\\<\\>\\=\\~\\?\\:\\/]'
+        'name': 'keyword.operator'
+      }
+    ]
+  'numbers':
+    'patterns': [
+      {
+        'match': '(?<![a-zA-Z0-9_@])(\-?)((0x[0-9a-fA-F]+)|(0b[01]+)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(?![a-zA-Z0-9_@])'
+        'name': 'constant.numeric.c'
+      }
+    ]
+
