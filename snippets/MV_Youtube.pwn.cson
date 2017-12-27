@@ -1,0 +1,88 @@
+'.source.pwn, .source.inc':
+    'PlayYoutubeVideoFor':
+        'prefix': 'PlayYoutubeVideoFor'
+        'body': ' PlayYoutubeVideoFor(${1:url[]}, ${2:playfor = INVALID_PLAYER_ID}, ${3:playlist = INVALID_PLAYLIST_ID}, ${4:bool:usepos = false}, ${5:Float:distance = 50.0})'
+
+    'StopYoutubeVideo':
+        'prefix': 'StopYoutubeVideo'
+        'body': 'StopYoutubeVideo(${1:youtubeid})'
+
+    'IsYouTubeVideoPlaying':
+        'prefix': 'IsYouTubeVideoPlaying'
+        'body': 'IsYouTubeVideoPlaying(${1:youtubeid})'
+
+    'IsValidYoutubeURL':
+        'prefix': 'IsValidYoutubeURL'
+        'body': 'IsValidYoutubeURL(${1:string[]})'
+
+    'GetVideoDuration':
+        'prefix': 'GetVideoDuration'
+        'body': 'GetVideoDuration(${1:youtubeid})'
+
+    'GetVideoTitle':
+        'prefix': 'GetVideoTitle'
+        'body': 'GetVideoTitle(${1:youtubeid})'
+
+    'GetVideoLink':
+        'prefix': 'GetVideoLink'
+        'body': 'GetVideoLink(${1:youtubeid})'
+
+    'GetVideoStreamLink':
+        'prefix': 'GetVideoStreamLink'
+        'body': 'GetVideoStreamLink(${1:youtubeid})'
+
+    'GetVideoTarget':
+        'prefix': 'GetVideoTarget'
+        'body': 'GetVideoTarget(${1:youtubeid})'
+
+    'CreatePlaylist':
+        'prefix': 'CreatePlaylist'
+        'body': 'CreatePlaylist(${1:name[]})'
+
+    'RemovePlaylist':
+        'prefix': 'RemovePlaylist'
+        'body': 'RemovePlaylist(${1:playlistid})'
+
+    'GetPlaylistName':
+        'prefix': 'GetPlaylistName'
+        'body': 'GetPlaylistName(${1:playlistid})'
+
+    'GetPlaylistSongs':
+        'prefix': 'GetPlaylistSongs'
+        'body': 'GetPlaylistSongs(${1:playlistid})'
+
+    'GetPlaylistSongsCount':
+        'prefix': 'GetPlaylistSongsCount'
+        'body': 'GetPlaylistSongsCount(${1:playlistid})'
+
+    'GetPlaylistFromVideo':
+        'prefix': 'GetPlaylistFromVideo'
+        'body': 'GetPlaylistFromVideo(${1:youtubeid})'
+
+    'SearchYoutubeVideos':
+        'prefix': 'SearchYoutubeVideos'
+        'body': 'SearchYoutubeVideos(${1:playerid}, ${2:searchquery[]})'
+
+    'OnYoutubeSearch':
+        'prefix': 'OnYoutubeSearch'
+        'body': 'OnYoutubeSearch(${1:playerid})'
+
+    'OnYoutubeVideoStart':
+        'prefix': 'OnYoutubeVideoStart'
+        'body': 'OnYoutubeVideoStart(${1:youtubeid})'
+
+    'OnYoutubeVideoFinished':
+        'prefix': 'OnYoutubeVideoFinished'
+        'body': 'OnYoutubeVideoFinished(${1:youtubeid})'
+
+    'OnMVYoutubeError':
+        'prefix': 'OnMVYoutubeError'
+        'body': 'OnMVYoutubeError(${1:youtubeid}, ${2:message[]})'
+
+    'OnPlaylistAddEntry':
+        'prefix': 'OnPlaylistAddEntry'
+        'body': 'OnPlaylistAddEntry(${1:playlistid}, ${2:youtubeid})'
+
+    'OnPlaylistFinished':
+        'prefix': 'OnPlaylistFinished'
+        'body': 'OnPlaylistFinished(${1:playlistid})'
