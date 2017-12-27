@@ -65,24 +65,24 @@
 
     'OnYoutubeSearch':
         'prefix': 'OnYoutubeSearch'
-        'body': 'OnYoutubeSearch(${1:playerid})'
+        'body': 'public OnYoutubeSearch(${1:playerid})\n{\n\t${2:/* code */}\n\treturn true;\n}'
 
     'OnYoutubeVideoStart':
         'prefix': 'OnYoutubeVideoStart'
-        'body': 'OnYoutubeVideoStart(${1:youtubeid})'
+        'body': 'public OnYoutubeVideoStart(${1:youtubeid})\n{\n\t${2:/* code */}\n\treturn true;\n}'
 
     'OnYoutubeVideoFinished':
         'prefix': 'OnYoutubeVideoFinished'
-        'body': 'OnYoutubeVideoFinished(${1:youtubeid})'
+        'body': 'public OnYoutubeVideoFinished(${1:youtubeid})\n{\n\t${2:/* code */}\n\treturn true;\n}'
 
     'OnMVYoutubeError':
         'prefix': 'OnMVYoutubeError'
-        'body': 'OnMVYoutubeError(${1:youtubeid}, ${2:message[]})'
+        'body': 'public OnMVYoutubeError(${1:youtubeid}, ${2:message[]})\n{\n\t${2:/* code */}\n\treturn true;\n}'
 
     'OnPlaylistAddEntry':
         'prefix': 'OnPlaylistAddEntry'
-        'body': 'OnPlaylistAddEntry(${1:playlistid}, ${2:youtubeid})'
+        'body': 'public OnPlaylistAddEntry(${1:playlistid}, ${2:youtubeid})\n{\n\t${2:/* code */}\n\treturn true;\n}'
 
     'OnPlaylistFinished':
         'prefix': 'OnPlaylistFinished'
-        'body': 'OnPlaylistFinished(${1:playlistid})'
+        'body': 'public OnPlaylistFinished(${1:playlistid})\n{\n\t${2:/* code */}\n\treturn true;\n}'
