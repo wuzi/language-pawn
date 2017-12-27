@@ -1,88 +1,121 @@
 '.source.pwn, .source.inc':
     'PlayYoutubeVideoFor':
         'prefix': 'PlayYoutubeVideoFor'
+        'description': 'Play a youtube link for everyone/a player, if "playlist" is defined it\'ll add the song to the playlist'
         'body': ' PlayYoutubeVideoFor(${1:url[]}, ${2:playfor = INVALID_PLAYER_ID}, ${3:playlist = INVALID_PLAYLIST_ID}, ${4:bool:usepos = false}, ${5:Float:distance = 50.0})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'StopYoutubeVideo':
         'prefix': 'StopYoutubeVideo'
+        'description': 'Stop playing a youtube video'
         'body': 'StopYoutubeVideo(${1:youtubeid})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'IsYouTubeVideoPlaying':
         'prefix': 'IsYouTubeVideoPlaying'
         'body': 'IsYouTubeVideoPlaying(${1:youtubeid})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'IsValidYoutubeURL':
         'prefix': 'IsValidYoutubeURL'
+        'description': 'Check if a string is a valid youtube url'
         'body': 'IsValidYoutubeURL(${1:string[]})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'GetVideoDuration':
         'prefix': 'GetVideoDuration'
+        'description': 'Get the duration of a video (in seconds)'
         'body': 'GetVideoDuration(${1:youtubeid})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'GetVideoTitle':
         'prefix': 'GetVideoTitle'
         'body': 'GetVideoTitle(${1:youtubeid})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'GetVideoLink':
         'prefix': 'GetVideoLink'
+        'description': 'Get the link of the video from the youtube page'
         'body': 'GetVideoLink(${1:youtubeid})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'GetVideoStreamLink':
         'prefix': 'GetVideoStreamLink'
+        'description': 'Get the streamlink from the video (direct link to download)'
         'body': 'GetVideoStreamLink(${1:youtubeid})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'GetVideoTarget':
         'prefix': 'GetVideoTarget'
+        'description': 'Get whether if the youtube video is playing for a player (playerid) or for everyone (INVALID_PLAYER_ID)'
         'body': 'GetVideoTarget(${1:youtubeid})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'CreatePlaylist':
         'prefix': 'CreatePlaylist'
+        'description': 'Creates a playlist with the given name'
         'body': 'CreatePlaylist(${1:name[]})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'RemovePlaylist':
         'prefix': 'RemovePlaylist'
         'body': 'RemovePlaylist(${1:playlistid})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'GetPlaylistName':
         'prefix': 'GetPlaylistName'
         'body': 'GetPlaylistName(${1:playlistid})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'GetPlaylistSongs':
         'prefix': 'GetPlaylistSongs'
+        'description': 'Returns an array with MAX_YOUTUBE_SAVES elements containing the songs of a playlist'
         'body': 'GetPlaylistSongs(${1:playlistid})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'GetPlaylistSongsCount':
         'prefix': 'GetPlaylistSongsCount'
         'body': 'GetPlaylistSongsCount(${1:playlistid})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'GetPlaylistFromVideo':
         'prefix': 'GetPlaylistFromVideo'
         'body': 'GetPlaylistFromVideo(${1:youtubeid})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'SearchYoutubeVideos':
         'prefix': 'SearchYoutubeVideos'
+        'description': 'Search youtube videos, will call "OnYoutubeSearch" with the results'
         'body': 'SearchYoutubeVideos(${1:playerid}, ${2:searchquery[]})'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'OnYoutubeSearch':
         'prefix': 'OnYoutubeSearch'
+        'description': 'Gets called when "SearchYoutubeVideos" gives results'
         'body': 'public OnYoutubeSearch(${1:playerid})\n{\n\t${2:/* code */}\n\treturn true;\n}'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'OnYoutubeVideoStart':
         'prefix': 'OnYoutubeVideoStart'
-        'body': 'public OnYoutubeVideoStart(${1:youtubeid})\n{\n\t${2:/* code */}\n\treturn true;\n}'
+        'body': 'public OnYoutubeVideoStart(${1:youtubeid})\n{\n\t${2:/* code */}\n\treturn true;\n}',
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'OnYoutubeVideoFinished':
         'prefix': 'OnYoutubeVideoFinished'
         'body': 'public OnYoutubeVideoFinished(${1:youtubeid})\n{\n\t${2:/* code */}\n\treturn true;\n}'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'OnMVYoutubeError':
         'prefix': 'OnMVYoutubeError'
         'body': 'public OnMVYoutubeError(${1:youtubeid}, ${2:message[]})\n{\n\t${2:/* code */}\n\treturn true;\n}'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'OnPlaylistAddEntry':
         'prefix': 'OnPlaylistAddEntry'
         'body': 'public OnPlaylistAddEntry(${1:playlistid}, ${2:youtubeid})\n{\n\t${2:/* code */}\n\treturn true;\n}'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
 
     'OnPlaylistFinished':
         'prefix': 'OnPlaylistFinished'
         'body': 'public OnPlaylistFinished(${1:playlistid})\n{\n\t${2:/* code */}\n\treturn true;\n}'
+        'descriptionMoreURL': 'https://github.com/MichaelBelgium/MV_Youtube'
