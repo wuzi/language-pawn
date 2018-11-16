@@ -1659,13 +1659,6 @@
     'description': 'Function from: 3DTryg'
     'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
 
-  'IsPointInWaterFrontOfPlayer':
-    'prefix': 'IsPointInWaterFrontOfPlayer'
-    'body': 'IsPointInWaterFrontOfPlayer(${1:playerid}, ${2:Float:radius})'
-    'leftLabel': 'bool'
-    'description': 'Function from: 3DTryg'
-    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
-
   'ColAndreasFindZ':
     'prefix': 'ColAndreasFindZ'
     'body': 'ColAndreasFindZ(${1:Float:x}, ${2:Float:y}, ${3:&Float:z=0.0})'
