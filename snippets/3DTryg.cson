@@ -1587,12 +1587,6 @@
     'description': 'Function from: 3DTryg'
     'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
 
-  'GetGroundRotation':
-    'prefix': 'GetGroundRotation'
-    'body': 'GetGroundRotation(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:&Float:rx}, ${5:&Float:ry})'
-    'description': 'Function from: 3DTryg'
-    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
-
   'GetPointInFrontOnGround':
     'prefix': 'GetPointInFrontOnGround'
     'body': 'GetPointInFrontOnGround(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:rx}, ${5:Float:rz}, ${6:&Float:tx}, ${7:&Float:ty}, ${8:&Float:tz}, ${9:Float:max_distance})'
