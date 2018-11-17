@@ -1587,18 +1587,6 @@
     'description': 'Function from: 3DTryg'
     'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
 
-  'GetGroundRotation':
-    'prefix': 'GetGroundRotation'
-    'body': 'GetGroundRotation(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:&Float:rx}, ${5:&Float:ry})'
-    'description': 'Function from: 3DTryg'
-    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
-
-  'GetPointInFrontOnGround':
-    'prefix': 'GetPointInFrontOnGround'
-    'body': 'GetPointInFrontOnGround(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:rx}, ${5:Float:rz}, ${6:&Float:tx}, ${7:&Float:ty}, ${8:&Float:tz}, ${9:Float:max_distance})'
-    'description': 'Function from: 3DTryg'
-    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
-
   'GetPointCollisionFlags':
     'prefix': 'GetPointCollisionFlags'
     'body': 'GetPointCollisionFlags(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:interiorid=0})'
@@ -1643,13 +1631,6 @@
     'description': 'Function from: 3DTryg'
     'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
 
-  'IsPointInWater':
-    'prefix': 'IsPointInWater'
-    'body': 'IsPointInWater(${1:Float:x}, ${2:Float:y}, ${3:Float:z=0.0})'
-    'leftLabel': 'bool'
-    'description': 'Function from: 3DTryg'
-    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
-
   'IsPointInUnderwater':
     'prefix': 'IsPointInUnderwater'
     'body': 'IsPointInUnderwater(${1:Float:x}, ${2:Float:y}, ${3:Float:z})'
@@ -1674,13 +1655,6 @@
   'IsPointInGround':
     'prefix': 'IsPointInGround'
     'body': 'IsPointInGround(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:bool:interior=false}, ${5:Float:max_distance=2.2})'
-    'leftLabel': 'bool'
-    'description': 'Function from: 3DTryg'
-    'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
-
-  'IsPointInWaterFrontOfPlayer':
-    'prefix': 'IsPointInWaterFrontOfPlayer'
-    'body': 'IsPointInWaterFrontOfPlayer(${1:playerid}, ${2:Float:radius})'
     'leftLabel': 'bool'
     'description': 'Function from: 3DTryg'
     'descriptionMoreURL': 'http://forum.sa-mp.com/showthread.php?t=591010'
