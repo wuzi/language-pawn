@@ -2,14 +2,14 @@
   "version": "0.6.0",
   "name": "language-pawn",
   "description": "Atom language support for SA-MP pawn",
-  "homepage": "https://github.com/Larceny-/language-pawn",
+  "homepage": "https://github.com/Wuzi/language-pawn",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Larceny-/language-pawn.git"
+    "url": "https://github.com/Wuzi/language-pawn.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Larceny-/language-pawn/issues"
+    "url": "https://github.com/Wuzi/language-pawn/issues"
   },
   "engines": {
     "atom": "*",
