@@ -50,7 +50,46 @@
     'body': 'random(${1:max})$2'
   'minrandom':
     'prefix': 'minrandom'
-    'body': '(random(${1:min} - ${2:max}) + $2)'
+    'body': '(random(${1:max} - ${2:min}) + $2)'
+  'heapspace':
+    'prefix': 'heapspace'
+    'body': 'heapspace()'
+  'numargs':
+    'prefix': 'numargs'
+    'body': 'numargs()'
+  'funcidx':
+    'prefix': 'funcidx'
+    'body': 'funcidx(${1:const name[]})'
+  'swapchars':
+    'prefix': 'swapchars'
+    'body': 'swapchars(${1:c})'
+  'getarg':
+    'prefix': 'getarg'
+    'body': 'getarg(${1:arg}, ${2:index=0})'
+  'min':
+    'prefix': 'min'
+    'body': 'min(${1:value1}, ${2:value2})'
+  'max':
+    'prefix': 'max'
+    'body': 'max(${1:value1}, ${2:value2})'
+  'setarg':
+    'prefix': 'setarg'
+    'body': 'setarg(${1:arg}, ${2:index=0}, ${3:value})'
+  'clamp':
+    'prefix': 'clamp'
+    'body': 'clamp(${1:value}, ${2:min=cellmin}, ${3:max=cellmax})'
+  'deleteproperty':
+    'prefix': 'deleteproperty'
+    'body': 'deleteproperty(${1:id=0}, ${2:const name[]=""}, ${3:value=cellmin})'
+  'existproperty':
+    'prefix': 'existproperty'
+    'body': 'existproperty(${1:id=0}, ${2:const name[]=""}, ${3:value=cellmin})'
+  'getproperty':
+    'prefix': 'getproperty'
+    'body': 'getproperty(${1:id=0}, ${2:const name[]=""}, ${3:value=cellmin}, ${4:string[]=""})'
+  'setproperty':
+    'prefix': 'setproperty'
+    'body': 'setproperty(${1:id=0}, ${2:const name[]=""}, ${3:value=cellmin}, ${4:const string[]=""})'
   'getdate':
     'prefix': 'getdate'
     'body': 'getdate(${1:year}, ${2:month}, ${3:day})$4'
@@ -99,6 +138,15 @@
   'strmid':
     'prefix': 'strmid'
     'body': 'strmid(${1:dest[]}, ${2:const source[]}, ${3:start}, ${4:end});$5'
+  'uudecode':
+    'prefix': 'uudecode'
+    'body': 'uudecode(${1:dest[]}, ${2:const source[]}, ${3:maxlength=sizeof dest})'
+  'uuencode':
+    'prefix': 'uuencode'
+    'body': 'uuencode(${1:dest[]}, ${2:const source[]}, ${3:numbytes}, ${4:maxlength=sizeof dest})'
+  'memcpy':
+    'prefix': 'memcpy'
+    'body': 'memcpy(${1:dest[]}, ${2:const source[]}, ${3:index=0}, ${4:numbytes}, ${5:maxlength=sizeof dest})'
   'stock':
     'prefix': 'stock'
     'body': 'stock ${1:function}(${2:/* arguments */})\n{\n\t${4:/* code */}\n\treturn ${3:1};\n}'
@@ -108,9 +156,18 @@
   'forward':
      'prefix': 'forward'
      'body': 'forward ${1:function}(${2:/* arguments */});'
+  'asin':
+     'prefix': 'asin'
+     'body': 'asin(${1:Float:value})'
+  'acos':
+     'prefix': 'acos'
+     'body': 'acos(${1:Float:value})'
   'atan':
      'prefix': 'atan'
      'body': 'atan(${1:Float:value})'
+  'atan2':
+     'prefix': 'atan2'
+     'body': 'atan2(${1:Float:x}, ${2:Float:y})'
   'floatsin':
      'prefix': 'floatsin'
      'body': 'floatsin(${1:Float:value}, ${2:anglemode:mode=radian})'

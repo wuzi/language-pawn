@@ -1,0 +1,271 @@
+# MySQL Plugin
+# Version: R41+
+# Repository: https://github.com/pBlueG/SA-MP-MySQL
+
+'.source.pwn, .source.inc':
+  'mysql_init_options':
+    'prefix': 'mysql_init_options'
+    'body': 'mysql_init_options()'
+      
+  'cache_num_rows':
+    'prefix': 'cache_num_rows'
+    'body': 'cache_num_rows()'
+      
+  'cache_num_fields':
+    'prefix': 'cache_num_fields'
+    'body': 'cache_num_fields()'
+	  
+  'cache_num_results':
+    'prefix': 'cache_num_results'
+    'body': 'cache_num_results()'
+	  
+  'cache_save':
+    'prefix': 'cache_save'
+    'body': 'cache_save()'
+	  
+  'cache_unset_active':
+    'prefix': 'cache_unset_active'
+    'body': 'cache_unset_active()'
+	  
+  'cache_is_any_active':
+    'prefix': 'cache_is_any_active'
+    'body': 'cache_is_any_active()'
+	  
+  'cache_affected_rows':
+    'prefix': 'cache_affected_rows'
+    'body': 'cache_affected_rows()'
+	  
+  'cache_insert_id':
+    'prefix': 'cache_insert_id'
+    'body': 'cache_insert_id()'
+	  
+  'cache_warning_count':
+    'prefix': 'cache_warning_count'
+    'body': 'cache_warning_count()'
+
+  'orm_destroy':
+    'prefix': 'orm_destroy'
+    'body': 'orm_destroy(${1:ORM:id})'
+	  
+  'orm_errno':
+    'prefix': 'orm_errno'
+    'body': 'orm_errno(${1:ORM:id})'
+	  
+  'orm_clear_vars':
+    'prefix': 'orm_clear_vars'
+    'body': 'orm_clear_vars(${1:ORM:id})'
+	  
+  'mysql_log':
+    'prefix': 'mysql_log'
+    'body': 'mysql_log(${1:E_LOGLEVEL:loglevel = ERROR | WARNING})'
+	  
+  'mysql_connect_file':
+    'prefix': 'mysql_connect_file'
+    'body': 'mysql_connect_file(${1:const file_name[] = "mysql.ini"})'
+	  
+  'mysql_close':
+    'prefix': 'mysql_close'
+    'body': 'mysql_close(${1:MySQL:handle = MYSQL_DEFAULT_HANDLE})'
+	  
+  'mysql_unprocessed_queries':
+    'prefix': 'mysql_unprocessed_queries'
+    'body': 'mysql_unprocessed_queries(${1:MySQL:handle = MYSQL_DEFAULT_HANDLE})'
+	  
+  'mysql_errno':
+    'prefix': 'mysql_errno'
+    'body': 'mysql_errno(${1:MySQL:handle = MYSQL_DEFAULT_HANDLE})'
+	  
+  'cache_get_row_count':
+    'prefix': 'cache_get_row_count'
+    'body': 'cache_get_row_count(${1:&destination})'
+	  
+  'cache_get_field_count':
+    'prefix': 'cache_get_field_count'
+    'body': 'cache_get_field_count(${1:&destination})'
+	  
+  'cache_get_result_count':
+    'prefix': 'cache_get_result_count'
+    'body': 'cache_get_result_count(${1:&destination})'
+	  
+  'cache_get_field_type':
+    'prefix': 'cache_get_field_type'
+    'body': 'cache_get_field_type(${1:field_index})'
+	  
+  'cache_set_result':
+    'prefix': 'cache_set_result'
+    'body': 'cache_set_result(${1:result_index})'
+	  
+  'cache_delete':
+    'prefix': 'cache_delete'
+    'body': 'cache_delete(${1:Cache:cache_id})'
+	  
+  'cache_set_active':
+    'prefix': 'cache_set_active'
+    'body': 'cache_set_active(${1:Cache:cache_id})'
+	  
+  'cache_is_valid':
+    'prefix': 'cache_is_valid'
+    'body': 'cache_is_valid(${1:Cache:cache_id})'
+	  
+  'cache_get_query_exec_time':
+    'prefix': 'cache_get_query_exec_time'
+    'body': 'cache_get_query_exec_time(${1:E_MYSQL_EXECTIME_UNIT:unit = MICROSECONDS})'
+
+  'orm_create':
+    'prefix': 'orm_create'
+    'body': 'orm_create(${1:const table[]}, ${2:MySQL:handle = MYSQL_DEFAULT_HANDLE})'
+	  
+  'orm_delvar':
+    'prefix': 'orm_delvar'
+    'body': 'orm_delvar(${1:ORM:id}, ${2:const columnname[]})'
+	  
+  'orm_setkey':
+    'prefix': 'orm_setkey'
+    'body': 'orm_setkey(${1:ORM:id}, ${2:const columnname[]})'
+	  
+  'mysql_global_options':
+    'prefix': 'mysql_global_options'
+    'body': 'mysql_global_options(${1:E_MYSQL_GLOBAL_OPTION:type}, ${2:value})'
+	  
+  'cache_get_query_string':
+    'prefix': 'cache_get_query_string'
+    'body': 'cache_get_query_string(${1:destination[]}, ${2:max_len = sizeof(destination)})'
+
+  'mysql_set_charset':
+    'prefix': 'mysql_set_charset'
+    'body': 'mysql_set_charset(${1:const charset[]}, ${2:MySQL:handle = MYSQL_DEFAULT_HANDLE})'
+
+  'orm_apply_cache':
+    'prefix': 'orm_apply_cache'
+    'body': 'orm_apply_cache(${1:ORM:id}, ${2:row_idx}, ${3:result_idx = 0})'
+  'orm_addvar_int':
+    'prefix': 'orm_addvar_int'
+    'body': 'orm_addvar_int(${1:ORM:id}, ${2:&var}, ${3:const columnname[]})'
+	  
+  'orm_addvar_float':
+    'prefix': 'orm_addvar_float'
+    'body': 'orm_addvar_float(${1:ORM:id}, ${2:&Float:var}, ${3:const columnname[]})'
+	  
+  'mysql_set_option':
+    'prefix': 'mysql_set_option'
+    'body': 'mysql_set_option(${1:MySQLOpt:option_id}, ${2:E_MYSQL_OPTION:type}, ${3:...})'
+	  
+  'mysql_query':
+    'prefix': 'mysql_query'
+    'body': 'mysql_query(${1:MySQL:handle}, ${2:const query[]}, ${3:bool:use_cache = true})'
+	  
+  'mysql_query_file':
+    'prefix': 'mysql_query_file'
+    'body': 'mysql_query_file(${1:MySQL:handle}, ${2:const file_path[]}, ${3:bool:use_cache = false})'
+
+  'mysql_error':
+    'prefix': 'mysql_error'
+    'body': 'mysql_error(${1:destination[]}, ${2:max_len = sizeof(destination)}, ${3:MySQL:handle = MYSQL_DEFAULT_HANDLE})'
+
+  'mysql_get_charset':
+    'prefix': 'mysql_get_charset'
+    'body': 'mysql_get_charset(${1:destination[]}, ${2:max_len = sizeof(destination)}, ${3:MySQL:handle = MYSQL_DEFAULT_HANDLE})'
+
+  'mysql_stat':
+    'prefix': 'mysql_stat'
+    'body': 'mysql_stat(${1:destination[]}, ${2:max_len = sizeof(destination)}, ${3:MySQL:handle = MYSQL_DEFAULT_HANDLE})'
+
+  'cache_get_field_name':
+    'prefix': 'cache_get_field_name'
+    'body': 'cache_get_field_name(${1:field_index}, ${2:destination[]}, ${3:max_len = sizeof(destination)})'
+
+  'cache_get_value_index_int':
+    'prefix': 'cache_get_value_index_int'
+    'body': 'cache_get_value_index_int(${1:row_idx}, ${2:column_idx}, ${3:&destination})'
+
+  'cache_get_value_index_float':
+    'prefix': 'cache_get_value_index_float'
+    'body': 'cache_get_value_index_float(${1:row_idx}, ${2:column_idx}, ${3:&Float:destination})'
+
+  'cache_get_value_index_bool':
+    'prefix': 'cache_get_value_index_bool'
+    'body': 'cache_get_value_index_bool(${1:row_idx}, ${2:column_idx}, ${3:&bool:destination})'
+
+  'cache_is_value_index_null':
+    'prefix': 'cache_is_value_index_null'
+    'body': 'cache_is_value_index_null(${1:row_idx}, ${2:column_idx}, ${3:&bool:destination})'
+
+  'cache_get_value_name_int':
+    'prefix': 'cache_get_value_name_int'
+    'body': 'cache_get_value_name_int(${1:row_idx}, ${2:const column_name[]}, ${3:&destination})'
+
+  'cache_get_value_name_float':
+    'prefix': 'cache_get_value_name_float'
+    'body': 'cache_get_value_name_float(${1:row_idx}, ${2:const column_name[]}, ${3:&Float:destination})'
+
+  'cache_get_value_name_bool':
+    'prefix': 'cache_get_value_name_bool'
+    'body': 'cache_get_value_name_bool(${1:row_idx}, ${2:const column_name[]}, ${3:&bool:destination})'
+
+  'cache_is_value_name_null':
+    'prefix': 'cache_is_value_name_null'
+    'body': 'cache_is_value_name_null(${1:row_idx}, ${2:const column_name[]}, ${3:&bool:destination})'
+
+  'orm_select':
+    'prefix': 'orm_select'
+    'body': 'orm_select(${1:ORM:id}, ${2:const callback[] = ""}, ${3:const format[] = ""}, ${4:...})'
+
+  'orm_update':
+    'prefix': 'orm_update'
+    'body': 'orm_update(${1:ORM:id}, ${2:const callback[] = ""}, ${3:const format[] = ""}, ${4:...})'
+
+  'orm_insert':
+    'prefix': 'orm_insert'
+    'body': 'orm_insert(${1:ORM:id}, ${2:const callback[] = ""}, ${3:const format[] = ""}, ${4:...})'
+
+  'orm_delete':
+    'prefix': 'orm_delete'
+    'body': 'orm_delete(${1:ORM:id}, ${2:const callback[] = ""}, ${3:const format[] = ""}, ${4:...})'
+
+  'orm_load':
+    'prefix': 'orm_load'
+    'body': 'orm_load(${1:ORM:id}, ${2:const callback[] = ""}, ${3:const format[] = ""}, ${4:...})'
+
+  'orm_save':
+    'prefix': 'orm_save'
+    'body': 'orm_save(${1:ORM:id}, ${2:const callback[] = ""}, ${3:const format[] = ""}, ${4:...})'
+
+  'orm_addvar_string':
+    'prefix': 'orm_addvar_string'
+    'body': 'orm_addvar_string(${1:ORM:id}, ${2:var[]}, ${3:var_maxlen}, ${4:const columnname[]})'
+
+  'mysql_escape_string':
+    'prefix': 'mysql_escape_string'
+    'body': 'mysql_escape_string(${1:const source[]}, ${2:destination[]}, ${3:max_len = sizeof(destination)}, ${4:MySQL:handle = MYSQL_DEFAULT_HANDLE})'
+
+  'cache_get_value_index':
+    'prefix': 'cache_get_value_index'
+    'body': 'cache_get_value_index(${1:row_idx}, ${2:column_idx}, ${3:destination[]}, ${4:max_len = sizeof(destination)})'
+
+  'cache_get_value_name':
+    'prefix': 'cache_get_value_name'
+    'body': 'cache_get_value_name(${1:row_idx}, ${2:const column_name[]}, ${3:destination[]}, ${4:max_len = sizeof(destination)})'
+
+  'mysql_connect':
+    'prefix': 'mysql_connect'
+    'body': 'mysql_connect(${1:const host[]}, ${2:const user[]}, ${3:const password[]}, ${4:const database[]}, ${5:MySQLOpt:option_id = MySQLOpt:0})'
+
+  'mysql_pquery':
+    'prefix': 'mysql_pquery'
+    'body': 'mysql_pquery(${1:MySQL:handle}, ${2:const query[]}, ${3:const callback[] = ""}, ${4:const format[] = ""}, ${5:...})'
+
+  'mysql_tquery':
+    'prefix': 'mysql_tquery'
+    'body': 'mysql_tquery(${1:MySQL:handle}, ${2:const query[]}, ${3:const callback[] = ""}, ${4:const format[] = ""}, ${5:...})'
+
+  'mysql_tquery_file':
+    'prefix': 'mysql_tquery_file'
+    'body': 'mysql_tquery_file(${1:MySQL:handle}, ${2:const file_path[]}, ${3:const callback[] = ""}, ${4:const format[] = ""}, ${5:...})'
+
+  'mysql_format':
+    'prefix': 'mysql_format'
+    'body': 'mysql_format(${1:MySQL:handle}, ${2:output[]}, ${3:max_len}, ${4:const format[]}, ${5:...})'
+
+  'OnQueryError':
+    'prefix': 'OnQueryError'
+    'body': 'public OnQueryError(errorid, const error[], const callback[], const query[], MySQL:handle)\n{\n\t${1:/* code */}\n\treturn ${2:1};\n}'
