@@ -50,7 +50,7 @@
     'body': 'random(${1:max})$2'
   'minrandom':
     'prefix': 'minrandom'
-    'body': '(random(${1:min} - ${2:max}) + $2)'
+    'body': '(random(${1:max} - ${2:min}) + $2)'
   'getdate':
     'prefix': 'getdate'
     'body': 'getdate(${1:year}, ${2:month}, ${3:day})$4'
