@@ -138,6 +138,15 @@
   'strmid':
     'prefix': 'strmid'
     'body': 'strmid(${1:dest[]}, ${2:const source[]}, ${3:start}, ${4:end});$5'
+  'uudecode':
+    'prefix': 'uudecode'
+    'body': 'uudecode(${1:dest[]}, ${2:const source[]}, ${3:maxlength=sizeof dest})'
+  'uuencode':
+    'prefix': 'uuencode'
+    'body': 'uuencode(${1:dest[]}, ${2:const source[]}, ${3:numbytes}, ${4:maxlength=sizeof dest})'
+  'memcpy':
+    'prefix': 'memcpy'
+    'body': 'memcpy(${1:dest[]}, ${2:const source[]}, ${3:index=0}, ${4:numbytes}, ${5:maxlength=sizeof dest})'
   'stock':
     'prefix': 'stock'
     'body': 'stock ${1:function}(${2:/* arguments */})\n{\n\t${4:/* code */}\n\treturn ${3:1};\n}'
