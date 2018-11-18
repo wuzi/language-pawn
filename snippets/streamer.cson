@@ -148,7 +148,7 @@
 
   'Streamer_UpdateEx':
     'prefix': 'Streamer_UpdateEx'
-    'body': 'Streamer_UpdateEx(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:type = -1})'
+    'body': 'Streamer_UpdateEx(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:type = -1}, ${8:compensatedtime = -1}, ${9:freezeplayer = 1})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
