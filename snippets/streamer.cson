@@ -274,7 +274,7 @@
 
   'CreateDynamicObject':
     'prefix': 'CreateDynamicObject'
-    'body': 'CreateDynamicObject(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:worldid = -1}, ${9:interiorid = -1}, ${10:playerid = -1}, ${11:Float:streamdistance = STREAMER_OBJECT_SD}, ${12:Float:drawdistance = STREAMER_OBJECT_DD}, ${13:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1})'
+    'body': 'CreateDynamicObject(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:worldid = -1}, ${9:interiorid = -1}, ${10:playerid = -1}, ${11:Float:streamdistance = STREAMER_OBJECT_SD}, ${12:Float:drawdistance = STREAMER_OBJECT_DD}, ${13:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${14:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -412,7 +412,7 @@
 
   'CreateDynamicPickup':
     'prefix': 'CreateDynamicPickup'
-    'body': 'CreateDynamicPickup(${1:modelid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1}, ${9:Float:streamdistance = STREAMER_PICKUP_SD}, ${10:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1})'
+    'body': 'CreateDynamicPickup(${1:modelid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1}, ${9:Float:streamdistance = STREAMER_PICKUP_SD}, ${10:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${11:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -430,7 +430,7 @@
 
   'CreateDynamicCP':
     'prefix': 'CreateDynamicCP'
-    'body': 'CreateDynamicCP(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1}, ${8:Float:streamdistance = STREAMER_CP_SD}, ${9:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1})'
+    'body': 'CreateDynamicCP(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1}, ${8:Float:streamdistance = STREAMER_CP_SD}, ${9:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${10:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -472,7 +472,7 @@
 
   'CreateDynamicRaceCP':
     'prefix': 'CreateDynamicRaceCP'
-    'body': 'CreateDynamicRaceCP(${1:type}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:nextx}, ${6:Float:nexty}, ${7:Float:nextz}, ${8:Float:size}, ${9:worldid = -1}, ${10:interiorid = -1}, ${11:playerid = -1}, ${12:Float:streamdistance = STREAMER_RACE_CP_SD}, ${13:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1})'
+    'body': 'CreateDynamicRaceCP(${1:type}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:nextx}, ${6:Float:nexty}, ${7:Float:nextz}, ${8:Float:size}, ${9:worldid = -1}, ${10:interiorid = -1}, ${11:playerid = -1}, ${12:Float:streamdistance = STREAMER_RACE_CP_SD}, ${13:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${14:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -514,7 +514,7 @@
 
   'CreateDynamicMapIcon':
     'prefix': 'CreateDynamicMapIcon'
-    'body': 'CreateDynamicMapIcon(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:color}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1}, ${9:Float:streamdistance = STREAMER_MAP_ICON_SD}, ${10:style = MAPICON_LOCAL}, ${11:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1})'
+    'body': 'CreateDynamicMapIcon(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:color}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1}, ${9:Float:streamdistance = STREAMER_MAP_ICON_SD}, ${10:style = MAPICON_LOCAL}, ${11:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${12:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -532,7 +532,7 @@
 
   'CreateDynamic3DTextLabel':
     'prefix': 'CreateDynamic3DTextLabel'
-    'body': 'CreateDynamic3DTextLabel(${1:const text[]}, ${2:color}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:drawdistance}, ${7:attachedplayer = INVALID_PLAYER_ID}, ${8:attachedvehicle = INVALID_VEHICLE_ID}, ${9:testlos = 0}, ${10:worldid = -1}, ${11:interiorid = -1}, ${12:playerid = -1}, ${13:Float:streamdistance = STREAMER_3D_TEXT_LABEL_SD}, ${14:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1})'
+    'body': 'CreateDynamic3DTextLabel(${1:const text[]}, ${2:color}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:drawdistance}, ${7:attachedplayer = INVALID_PLAYER_ID}, ${8:attachedvehicle = INVALID_VEHICLE_ID}, ${9:testlos = 0}, ${10:worldid = -1}, ${11:interiorid = -1}, ${12:playerid = -1}, ${13:Float:streamdistance = STREAMER_3D_TEXT_LABEL_SD}, ${14:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${15:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -562,43 +562,43 @@
 
   'CreateDynamicCircle':
     'prefix': 'CreateDynamicCircle'
-    'body': 'CreateDynamicCircle(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:worldid = -1}, ${5:interiorid = -1}, ${6:playerid = -1})'
+    'body': 'CreateDynamicCircle(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:worldid = -1}, ${5:interiorid = -1}, ${6:playerid = -1}, ${7:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCylinder':
     'prefix': 'CreateDynamicCylinder'
-    'body': 'CreateDynamicCylinder(${1:Float:x}, ${2:Float:y}, ${3:Float:minz}, ${4:Float:maxz}, ${5:Float:size}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1})'
+    'body': 'CreateDynamicCylinder(${1:Float:x}, ${2:Float:y}, ${3:Float:minz}, ${4:Float:maxz}, ${5:Float:size}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1}, ${9:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicSphere':
     'prefix': 'CreateDynamicSphere'
-    'body': 'CreateDynamicSphere(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1})'
+    'body': 'CreateDynamicSphere(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1}, ${8:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicRectangle':
     'prefix': 'CreateDynamicRectangle'
-    'body': 'CreateDynamicRectangle(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1})'
+    'body': 'CreateDynamicRectangle(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1}, ${8:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCuboid':
     'prefix': 'CreateDynamicCuboid'
-    'body': 'CreateDynamicCuboid(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worldid = -1}, ${8:interiorid = -1}, ${9:playerid = -1})'
+    'body': 'CreateDynamicCuboid(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worldid = -1}, ${8:interiorid = -1}, ${9:playerid = -1}, ${10:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCube':
     'prefix': 'CreateDynamicCube'
-    'body': 'CreateDynamicCube(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worldid = -1}, ${8:interiorid = -1}, ${9:playerid = -1})'
+    'body': 'CreateDynamicCube(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worldid = -1}, ${8:interiorid = -1}, ${9:playerid = -1}, ${10:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicPolygon':
     'prefix': 'CreateDynamicPolygon'
-    'body': 'CreateDynamicPolygon(${1:Float:points[]}, ${2:Float:minz = -FLOAT_INFINITY}, ${3:Float:maxz = FLOAT_INFINITY}, ${4:maxpoints = sizeof points}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1})'
+    'body': 'CreateDynamicPolygon(${1:Float:points[]}, ${2:Float:minz = -FLOAT_INFINITY}, ${3:Float:maxz = FLOAT_INFINITY}, ${4:maxpoints = sizeof points}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1}, ${8:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -718,79 +718,79 @@
 
   'CreateDynamicObjectEx':
     'prefix': 'CreateDynamicObjectEx'
-    'body': 'CreateDynamicObjectEx(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:Float:streamdistance = STREAMER_OBJECT_SD}, ${9:Float:drawdistance = STREAMER_OBJECT_DD}, ${10:worlds[] = { -1 }}, ${11:interiors[] = { -1 }}, ${12:players[] = { -1 }}, ${13:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${14:maxworlds = sizeof worlds}, ${15:maxinteriors = sizeof interiors}, ${16:maxplayers = sizeof players}, ${17:maxareas = sizeof areas})'
+    'body': 'CreateDynamicObjectEx(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:Float:streamdistance = STREAMER_OBJECT_SD}, ${9:Float:drawdistance = STREAMER_OBJECT_DD}, ${10:worlds[] = { -1 }}, ${11:interiors[] = { -1 }}, ${12:players[] = { -1 }}, ${13:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${14:priority = 0}, ${15:maxworlds = sizeof worlds}, ${16:maxinteriors = sizeof interiors}, ${17:maxplayers = sizeof players}, ${18:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicPickupEx':
     'prefix': 'CreateDynamicPickupEx'
-    'body': 'CreateDynamicPickupEx(${1:modelid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:streamdistance = STREAMER_PICKUP_SD}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${11:maxworlds = sizeof worlds}, ${12:maxinteriors = sizeof interiors}, ${13:maxplayers = sizeof players}, ${14:maxareas = sizeof areas})'
+    'body': 'CreateDynamicPickupEx(${1:modelid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:streamdistance = STREAMER_PICKUP_SD}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${11:priority = 0}, ${12:maxworlds = sizeof worlds}, ${13:maxinteriors = sizeof interiors}, ${14:maxplayers = sizeof players}, ${15:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCPEx':
     'prefix': 'CreateDynamicCPEx'
-    'body': 'CreateDynamicCPEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:Float:streamdistance = STREAMER_CP_SD}, ${6:worlds[] = { -1 }}, ${7:interiors[] = { -1 }}, ${8:players[] = { -1 }}, ${9:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${10:maxworlds = sizeof worlds}, ${11:maxinteriors = sizeof interiors}, ${12:maxplayers = sizeof players}, ${13:maxareas = sizeof areas})'
+    'body': 'CreateDynamicCPEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:Float:streamdistance = STREAMER_CP_SD}, ${6:worlds[] = { -1 }}, ${7:interiors[] = { -1 }}, ${8:players[] = { -1 }}, ${9:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${10:priority = 0}, ${11:maxworlds = sizeof worlds}, ${12:maxinteriors = sizeof interiors}, ${13:maxplayers = sizeof players}, ${14:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicRaceCPEx':
     'prefix': 'CreateDynamicRaceCPEx'
-    'body': 'CreateDynamicRaceCPEx(${1:type}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:nextx}, ${6:Float:nexty}, ${7:Float:nextz}, ${8:Float:size}, ${9:Float:streamdistance = STREAMER_RACE_CP_SD}, ${10:worlds[] = { -1 }}, ${11:interiors[] = { -1 }}, ${12:players[] = { -1 }}, ${13:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${14:maxworlds = sizeof worlds}, ${15:maxinteriors = sizeof interiors}, ${16:maxplayers = sizeof players}, ${17:maxareas = sizeof areas})'
+    'body': 'CreateDynamicRaceCPEx(${1:type}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:nextx}, ${6:Float:nexty}, ${7:Float:nextz}, ${8:Float:size}, ${9:Float:streamdistance = STREAMER_RACE_CP_SD}, ${10:worlds[] = { -1 }}, ${11:interiors[] = { -1 }}, ${12:players[] = { -1 }}, ${13:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${14:priority = 0}, ${15:maxworlds = sizeof worlds}, ${16:maxinteriors = sizeof interiors}, ${17:maxplayers = sizeof players}, ${18:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicMapIconEx':
     'prefix': 'CreateDynamicMapIconEx'
-    'body': 'CreateDynamicMapIconEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:color}, ${6:style = MAPICON_LOCAL}, ${7:Float:streamdistance = STREAMER_MAP_ICON_SD}, ${8:worlds[] = { -1 }}, ${9:interiors[] = { -1 }}, ${10:players[] = { -1 }}, ${11:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${12:maxworlds = sizeof worlds}, ${13:maxinteriors = sizeof interiors}, ${14:maxplayers = sizeof players}, ${15:maxareas = sizeof areas})'
+    'body': 'CreateDynamicMapIconEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:color}, ${6:style = MAPICON_LOCAL}, ${7:Float:streamdistance = STREAMER_MAP_ICON_SD}, ${8:worlds[] = { -1 }}, ${9:interiors[] = { -1 }}, ${10:players[] = { -1 }}, ${11:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${12:priority = 0}, ${13:maxworlds = sizeof worlds}, ${14:maxinteriors = sizeof interiors}, ${15:maxplayers = sizeof players}, ${16:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamic3DTextLabelEx':
     'prefix': 'CreateDynamic3DTextLabelEx'
-    'body': 'CreateDynamic3DTextLabelEx(${1:const text[]}, ${2:color}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:drawdistance}, ${7:attachedplayer = INVALID_PLAYER_ID}, ${8:attachedvehicle = INVALID_VEHICLE_ID}, ${9:testlos = 0}, ${10:Float:streamdistance = STREAMER_3D_TEXT_LABEL_SD}, ${11:worlds[] = { -1 }}, ${12:interiors[] = { -1 }}, ${13:players[] = { -1 }}, ${14:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${15:maxworlds = sizeof worlds}, ${16:maxinteriors = sizeof interiors}, ${17:maxplayers = sizeof players}, ${18:maxareas = sizeof areas})'
+    'body': 'CreateDynamic3DTextLabelEx(${1:const text[]}, ${2:color}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:drawdistance}, ${7:attachedplayer = INVALID_PLAYER_ID}, ${8:attachedvehicle = INVALID_VEHICLE_ID}, ${9:testlos = 0}, ${10:Float:streamdistance = STREAMER_3D_TEXT_LABEL_SD}, ${11:worlds[] = { -1 }}, ${12:interiors[] = { -1 }}, ${13:players[] = { -1 }}, ${14:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${15:priority = 0}, ${16:maxworlds = sizeof worlds}, ${17:maxinteriors = sizeof interiors}, ${18:maxplayers = sizeof players}, ${19:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCircleEx':
     'prefix': 'CreateDynamicCircleEx'
-    'body': 'CreateDynamicCircleEx(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:worlds[] = { -1 }}, ${5:interiors[] = { -1 }}, ${6:players[] = { -1 }}, ${7:maxworlds = sizeof worlds}, ${8:maxinteriors = sizeof interiors}, ${9:maxplayers = sizeof players})'
+    'body': 'CreateDynamicCircleEx(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:worlds[] = { -1 }}, ${5:interiors[] = { -1 }}, ${6:players[] = { -1 }}, ${7:priority = 0}, ${8:maxworlds = sizeof worlds}, ${9:maxinteriors = sizeof interiors}, ${10:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCylinderEx':
     'prefix': 'CreateDynamicCylinderEx'
-    'body': 'CreateDynamicCylinderEx(${1:Float:x}, ${2:Float:y}, ${3:Float:minz}, ${4:Float:maxz}, ${5:Float:size}, ${6:worlds[] = { -1 }}, ${7:interiors[] = { -1 }}, ${8:players[] = { -1 }}, ${9:maxworlds = sizeof worlds}, ${10:maxinteriors = sizeof interiors}, ${11:maxplayers = sizeof players})'
+    'body': 'CreateDynamicCylinderEx(${1:Float:x}, ${2:Float:y}, ${3:Float:minz}, ${4:Float:maxz}, ${5:Float:size}, ${6:worlds[] = { -1 }}, ${7:interiors[] = { -1 }}, ${8:players[] = { -1 }}, ${9:priority = 0}, ${10:maxworlds = sizeof worlds}, ${11:maxinteriors = sizeof interiors}, ${12:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicSphereEx':
     'prefix': 'CreateDynamicSphereEx'
-    'body': 'CreateDynamicSphereEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:maxworlds = sizeof worlds}, ${9:maxinteriors = sizeof interiors}, ${10:maxplayers = sizeof players})'
+    'body': 'CreateDynamicSphereEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:priority = 0}, ${9:maxworlds = sizeof worlds}, ${10:maxinteriors = sizeof interiors}, ${11:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicRectangleEx':
     'prefix': 'CreateDynamicRectangleEx'
-    'body': 'CreateDynamicRectangleEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:maxworlds = sizeof worlds}, ${9:maxinteriors = sizeof interiors}, ${10:maxplayers = sizeof players})'
+    'body': 'CreateDynamicRectangleEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:priority = 0}, ${9:maxworlds = sizeof worlds}, ${10:maxinteriors = sizeof interiors}, ${11:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCuboidEx':
     'prefix': 'CreateDynamicCuboidEx'
-    'body': 'CreateDynamicCuboidEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:maxworlds = sizeof worlds}, ${11:maxinteriors = sizeof interiors}, ${12:maxplayers = sizeof players})'
+    'body': 'CreateDynamicCuboidEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:priority = 0}, ${11:maxworlds = sizeof worlds}, ${12:maxinteriors = sizeof interiors}, ${13:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCubeEx':
     'prefix': 'CreateDynamicCubeEx'
-    'body': 'CreateDynamicCubeEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:maxworlds = sizeof worlds}, ${11:maxinteriors = sizeof interiors}, ${12:maxplayers = sizeof players})'
+    'body': 'CreateDynamicCubeEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:priority = 0}, ${11:maxworlds = sizeof worlds}, ${12:maxinteriors = sizeof interiors}, ${13:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicPolygonEx':
     'prefix': 'CreateDynamicPolygonEx'
-    'body': 'CreateDynamicPolygonEx(${1:Float:points[]}, ${2:Float:minz = -FLOAT_INFINITY}, ${3:Float:maxz = FLOAT_INFINITY}, ${4:maxpoints = sizeof points}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:maxworlds = sizeof worlds}, ${9:maxinteriors = sizeof interiors}, ${10:maxplayers = sizeof players})'
+    'body': 'CreateDynamicPolygonEx(${1:Float:points[]}, ${2:Float:minz = -FLOAT_INFINITY}, ${3:Float:maxz = FLOAT_INFINITY}, ${4:maxpoints = sizeof points}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:priority = 0}, ${9:maxworlds = sizeof worlds}, ${10:maxinteriors = sizeof interiors}, ${11:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
