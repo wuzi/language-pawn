@@ -148,61 +148,61 @@
 
   'Streamer_UpdateEx':
     'prefix': 'Streamer_UpdateEx'
-    'body': 'Streamer_UpdateEx(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:type = -1})'
+    'body': 'Streamer_UpdateEx(${1:playerid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:type = -1}, ${8:compensatedtime = -1}, ${9:freezeplayer = 1})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'Streamer_GetFloatData':
     'prefix': 'Streamer_GetFloatData'
-    'body': 'Streamer_GetFloatData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:Float:result})'
+    'body': 'Streamer_GetFloatData(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:data}, ${4:Float:result})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'Streamer_SetFloatData':
     'prefix': 'Streamer_SetFloatData'
-    'body': 'Streamer_SetFloatData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:Float:value})'
+    'body': 'Streamer_SetFloatData(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:data}, ${4:Float:value})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'Streamer_GetIntData':
     'prefix': 'Streamer_GetIntData'
-    'body': 'Streamer_GetIntData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data})'
+    'body': 'Streamer_GetIntData(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:data})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'Streamer_SetIntData':
     'prefix': 'Streamer_SetIntData'
-    'body': 'Streamer_SetIntData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:value})'
+    'body': 'Streamer_SetIntData(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:data}, ${4:value})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'Streamer_GetArrayData':
     'prefix': 'Streamer_GetArrayData'
-    'body': 'Streamer_GetArrayData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:dest[]}, ${5:maxdest = sizeof dest})'
+    'body': 'Streamer_GetArrayData(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:data}, ${4:dest[]}, ${5:maxdest = sizeof dest})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'Streamer_SetArrayData':
     'prefix': 'Streamer_SetArrayData'
-    'body': 'Streamer_SetArrayData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:const src[]}, ${5:maxsrc = sizeof src})'
+    'body': 'Streamer_SetArrayData(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:data}, ${4:const src[]}, ${5:maxsrc = sizeof src})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'Streamer_IsInArrayData':
     'prefix': 'Streamer_IsInArrayData'
-    'body': 'Streamer_IsInArrayData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:value})'
+    'body': 'Streamer_IsInArrayData(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:data}, ${4:value})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'Streamer_AppendArrayData':
     'prefix': 'Streamer_AppendArrayData'
-    'body': 'Streamer_AppendArrayData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:value})'
+    'body': 'Streamer_AppendArrayData(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:data}, ${4:value})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'Streamer_RemoveArrayData':
     'prefix': 'Streamer_RemoveArrayData'
-    'body': 'Streamer_RemoveArrayData(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:data}, ${4:value})'
+    'body': 'Streamer_RemoveArrayData(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:data}, ${4:value})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -214,25 +214,25 @@
 
   'Streamer_GetDistanceToItem':
     'prefix': 'Streamer_GetDistanceToItem'
-    'body': 'Streamer_GetDistanceToItem(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:STREAMER_ALL_TAGS id}, ${6:Float:distance}, ${7:dimensions = 3})'
+    'body': 'Streamer_GetDistanceToItem(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:STREAMER_ALL_TAGS:id}, ${6:Float:distance}, ${7:dimensions = 3})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
-  'Streamer_ToggleStaticItem':
-    'prefix': 'Streamer_ToggleStaticItem'
-    'body': 'Streamer_ToggleStaticItem(${1:type}, ${2:STREAMER_ALL_TAGS id}, ${3:toggle})'
+  'Streamer_ToggleItemStatic':
+    'prefix': 'Streamer_ToggleItemStatic'
+    'body': 'Streamer_ToggleItemStatic(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:toggle})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
-  'Streamer_IsToggleStaticItem':
-    'prefix': 'Streamer_IsToggleStaticItem'
-    'body': 'Streamer_IsToggleStaticItem(${1:type}, ${2:STREAMER_ALL_TAGS id})'
+  'Streamer_IsToggleItemStatic':
+    'prefix': 'Streamer_IsToggleItemStatic'
+    'body': 'Streamer_IsToggleItemStatic(${1:type}, ${2:STREAMER_ALL_TAGS:id})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'Streamer_GetItemInternalID':
     'prefix': 'Streamer_GetItemInternalID'
-    'body': 'Streamer_GetItemInternalID(${1:playerid}, ${2:type}, ${3:STREAMER_ALL_TAGS streamerid})'
+    'body': 'Streamer_GetItemInternalID(${1:playerid}, ${2:type}, ${3:STREAMER_ALL_TAGS:streamerid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -244,7 +244,7 @@
 
   'Streamer_IsItemVisible':
     'prefix': 'Streamer_IsItemVisible'
-    'body': 'Streamer_IsItemVisible(${1:playerid}, ${2:type}, ${3:STREAMER_ALL_TAGS id})'
+    'body': 'Streamer_IsItemVisible(${1:playerid}, ${2:type}, ${3:STREAMER_ALL_TAGS:id})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -274,181 +274,181 @@
 
   'CreateDynamicObject':
     'prefix': 'CreateDynamicObject'
-    'body': 'CreateDynamicObject(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:worldid = -1}, ${9:interiorid = -1}, ${10:playerid = -1}, ${11:Float:streamdistance = STREAMER_OBJECT_SD}, ${12:Float:drawdistance = STREAMER_OBJECT_DD}, ${13:STREAMER_TAG_AREA areaid = STREAMER_TAG_AREA -1})'
+    'body': 'CreateDynamicObject(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:worldid = -1}, ${9:interiorid = -1}, ${10:playerid = -1}, ${11:Float:streamdistance = STREAMER_OBJECT_SD}, ${12:Float:drawdistance = STREAMER_OBJECT_DD}, ${13:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${14:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'DestroyDynamicObject':
     'prefix': 'DestroyDynamicObject'
-    'body': 'DestroyDynamicObject(${1:STREAMER_TAG_OBJECT objectid})'
+    'body': 'DestroyDynamicObject(${1:STREAMER_TAG_OBJECT:objectid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'IsValidDynamicObject':
     'prefix': 'IsValidDynamicObject'
-    'body': 'IsValidDynamicObject(${1:STREAMER_TAG_OBJECT objectid})'
+    'body': 'IsValidDynamicObject(${1:STREAMER_TAG_OBJECT:objectid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'SetDynamicObjectPos':
     'prefix': 'SetDynamicObjectPos'
-    'body': 'SetDynamicObjectPos(${1:STREAMER_TAG_OBJECT objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'body': 'SetDynamicObjectPos(${1:STREAMER_TAG_OBJECT:objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'GetDynamicObjectPos':
     'prefix': 'GetDynamicObjectPos'
-    'body': 'GetDynamicObjectPos(${1:STREAMER_TAG_OBJECT objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'body': 'GetDynamicObjectPos(${1:STREAMER_TAG_OBJECT:objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'SetDynamicObjectRot':
     'prefix': 'SetDynamicObjectRot'
-    'body': 'SetDynamicObjectRot(${1:STREAMER_TAG_OBJECT objectid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
+    'body': 'SetDynamicObjectRot(${1:STREAMER_TAG_OBJECT:objectid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'GetDynamicObjectRot':
     'prefix': 'GetDynamicObjectRot'
-    'body': 'GetDynamicObjectRot(${1:STREAMER_TAG_OBJECT objectid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
+    'body': 'GetDynamicObjectRot(${1:STREAMER_TAG_OBJECT:objectid}, ${2:Float:rx}, ${3:Float:ry}, ${4:Float:rz})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'SetDynamicObjectNoCameraCol':
     'prefix': 'SetDynamicObjectNoCameraCol'
-    'body': 'SetDynamicObjectNoCameraCol(${1:STREAMER_TAG_OBJECT objectid})'
+    'body': 'SetDynamicObjectNoCameraCol(${1:STREAMER_TAG_OBJECT:objectid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'GetDynamicObjectNoCameraCol':
     'prefix': 'GetDynamicObjectNoCameraCol'
-    'body': 'GetDynamicObjectNoCameraCol(${1:STREAMER_TAG_OBJECT objectid})'
+    'body': 'GetDynamicObjectNoCameraCol(${1:STREAMER_TAG_OBJECT:objectid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'MoveDynamicObject':
     'prefix': 'MoveDynamicObject'
-    'body': 'MoveDynamicObject(${1:STREAMER_TAG_OBJECT objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:speed}, ${6:Float:rx = -1000.0}, ${7:Float:ry = -1000.0}, ${8:Float:rz = -1000.0})'
+    'body': 'MoveDynamicObject(${1:STREAMER_TAG_OBJECT:objectid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:speed}, ${6:Float:rx = -1000.0}, ${7:Float:ry = -1000.0}, ${8:Float:rz = -1000.0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'StopDynamicObject':
     'prefix': 'StopDynamicObject'
-    'body': 'StopDynamicObject(${1:STREAMER_TAG_OBJECT objectid})'
+    'body': 'StopDynamicObject(${1:STREAMER_TAG_OBJECT:objectid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'IsDynamicObjectMoving':
     'prefix': 'IsDynamicObjectMoving'
-    'body': 'IsDynamicObjectMoving(${1:STREAMER_TAG_OBJECT objectid})'
+    'body': 'IsDynamicObjectMoving(${1:STREAMER_TAG_OBJECT:objectid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'AttachCameraToDynamicObject':
     'prefix': 'AttachCameraToDynamicObject'
-    'body': 'AttachCameraToDynamicObject(${1:playerid}, ${2:STREAMER_TAG_OBJECT objectid})'
+    'body': 'AttachCameraToDynamicObject(${1:playerid}, ${2:STREAMER_TAG_OBJECT:objectid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'AttachDynamicObjectToObject':
     'prefix': 'AttachDynamicObjectToObject'
-    'body': 'AttachDynamicObjectToObject(${1:STREAMER_TAG_OBJECT objectid}, ${2:attachtoid}, ${3:Float:offsetx}, ${4:Float:offsety}, ${5:Float:offsetz}, ${6:Float:rx}, ${7:Float:ry}, ${8:Float:rz}, ${9:syncrotation = 1})'
+    'body': 'AttachDynamicObjectToObject(${1:STREAMER_TAG_OBJECT:objectid}, ${2:attachtoid}, ${3:Float:offsetx}, ${4:Float:offsety}, ${5:Float:offsetz}, ${6:Float:rx}, ${7:Float:ry}, ${8:Float:rz}, ${9:syncrotation = 1})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'AttachDynamicObjectToPlayer':
     'prefix': 'AttachDynamicObjectToPlayer'
-    'body': 'AttachDynamicObjectToPlayer(${1:STREAMER_TAG_OBJECT objectid}, ${2:playerid}, ${3:Float:offsetx}, ${4:Float:offsety}, ${5:Float:offsetz}, ${6:Float:rx}, ${7:Float:ry}, ${8:Float:rz})'
+    'body': 'AttachDynamicObjectToPlayer(${1:STREAMER_TAG_OBJECT:objectid}, ${2:playerid}, ${3:Float:offsetx}, ${4:Float:offsety}, ${5:Float:offsetz}, ${6:Float:rx}, ${7:Float:ry}, ${8:Float:rz})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'AttachDynamicObjectToVehicle':
     'prefix': 'AttachDynamicObjectToVehicle'
-    'body': 'AttachDynamicObjectToVehicle(${1:STREAMER_TAG_OBJECT objectid}, ${2:vehicleid}, ${3:Float:offsetx}, ${4:Float:offsety}, ${5:Float:offsetz}, ${6:Float:rx}, ${7:Float:ry}, ${8:Float:rz})'
+    'body': 'AttachDynamicObjectToVehicle(${1:STREAMER_TAG_OBJECT:objectid}, ${2:vehicleid}, ${3:Float:offsetx}, ${4:Float:offsety}, ${5:Float:offsetz}, ${6:Float:rx}, ${7:Float:ry}, ${8:Float:rz})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'EditDynamicObject':
     'prefix': 'EditDynamicObject'
-    'body': 'EditDynamicObject(${1:playerid}, ${2:STREAMER_TAG_OBJECT objectid})'
+    'body': 'EditDynamicObject(${1:playerid}, ${2:STREAMER_TAG_OBJECT:objectid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'IsDynamicObjectMaterialUsed':
     'prefix': 'IsDynamicObjectMaterialUsed'
-    'body': 'IsDynamicObjectMaterialUsed(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex})'
+    'body': 'IsDynamicObjectMaterialUsed(${1:STREAMER_TAG_OBJECT:objectid}, ${2:materialindex})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'GetDynamicObjectMaterial':
     'prefix': 'GetDynamicObjectMaterial'
-    'body': 'GetDynamicObjectMaterial(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex}, ${3:modelid}, ${4:txdname[]}, ${5:texturename[]}, ${6:materialcolor}, ${7:maxtxdname = sizeof txdname}, ${8:maxtexturename = sizeof texturename})'
+    'body': 'GetDynamicObjectMaterial(${1:STREAMER_TAG_OBJECT:objectid}, ${2:materialindex}, ${3:modelid}, ${4:txdname[]}, ${5:texturename[]}, ${6:materialcolor}, ${7:maxtxdname = sizeof txdname}, ${8:maxtexturename = sizeof texturename})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'SetDynamicObjectMaterial':
     'prefix': 'SetDynamicObjectMaterial'
-    'body': 'SetDynamicObjectMaterial(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex}, ${3:modelid}, ${4:const txdname[]}, ${5:const texturename[]}, ${6:materialcolor = 0})'
+    'body': 'SetDynamicObjectMaterial(${1:STREAMER_TAG_OBJECT:objectid}, ${2:materialindex}, ${3:modelid}, ${4:const txdname[]}, ${5:const texturename[]}, ${6:materialcolor = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'IsDynamicObjectMaterialTextUsed':
     'prefix': 'IsDynamicObjectMaterialTextUsed'
-    'body': 'IsDynamicObjectMaterialTextUsed(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex})'
+    'body': 'IsDynamicObjectMaterialTextUsed(${1:STREAMER_TAG_OBJECT:objectid}, ${2:materialindex})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'GetDynamicObjectMaterialText':
     'prefix': 'GetDynamicObjectMaterialText'
-    'body': 'GetDynamicObjectMaterialText(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex}, ${3:text[]}, ${4:materialsize}, ${5:fontface[]}, ${6:fontsize}, ${7:bold}, ${8:fontcolor}, ${9:backcolor}, ${10:textalignment}, ${11:maxtext = sizeof text}, ${12:maxfontface = sizeof fontface})'
+    'body': 'GetDynamicObjectMaterialText(${1:STREAMER_TAG_OBJECT:objectid}, ${2:materialindex}, ${3:text[]}, ${4:materialsize}, ${5:fontface[]}, ${6:fontsize}, ${7:bold}, ${8:fontcolor}, ${9:backcolor}, ${10:textalignment}, ${11:maxtext = sizeof text}, ${12:maxfontface = sizeof fontface})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'SetDynamicObjectMaterialText':
     'prefix': 'SetDynamicObjectMaterialText'
-    'body': 'SetDynamicObjectMaterialText(${1:STREAMER_TAG_OBJECT objectid}, ${2:materialindex}, ${3:const text[]}, ${4:materialsize = OBJECT_MATERIAL_SIZE_256x128}, ${5:const fontface[] = \"Arial\"}, ${6:fontsize = 24}, ${7:bold = 1}, ${8:fontcolor = 0xFFFFFFFF}, ${9:backcolor = 0}, ${10:textalignment = 0})'
+    'body': 'SetDynamicObjectMaterialText(${1:STREAMER_TAG_OBJECT:objectid}, ${2:materialindex}, ${3:const text[]}, ${4:materialsize = OBJECT_MATERIAL_SIZE_256x128}, ${5:const fontface[] = \"Arial\"}, ${6:fontsize = 24}, ${7:bold = 1}, ${8:fontcolor = 0xFFFFFFFF}, ${9:backcolor = 0}, ${10:textalignment = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicPickup':
     'prefix': 'CreateDynamicPickup'
-    'body': 'CreateDynamicPickup(${1:modelid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1}, ${9:Float:streamdistance = STREAMER_PICKUP_SD}, ${10:STREAMER_TAG_AREA areaid = STREAMER_TAG_AREA -1})'
+    'body': 'CreateDynamicPickup(${1:modelid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1}, ${9:Float:streamdistance = STREAMER_PICKUP_SD}, ${10:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${11:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'DestroyDynamicPickup':
     'prefix': 'DestroyDynamicPickup'
-    'body': 'DestroyDynamicPickup(${1:STREAMER_TAG_PICKUP pickupid})'
+    'body': 'DestroyDynamicPickup(${1:STREAMER_TAG_PICKUP:pickupid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'IsValidDynamicPickup':
     'prefix': 'IsValidDynamicPickup'
-    'body': 'IsValidDynamicPickup(${1:STREAMER_TAG_PICKUP pickupid})'
+    'body': 'IsValidDynamicPickup(${1:STREAMER_TAG_PICKUP:pickupid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCP':
     'prefix': 'CreateDynamicCP'
-    'body': 'CreateDynamicCP(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1}, ${8:Float:streamdistance = STREAMER_CP_SD}, ${9:STREAMER_TAG_AREA areaid = STREAMER_TAG_AREA -1})'
+    'body': 'CreateDynamicCP(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1}, ${8:Float:streamdistance = STREAMER_CP_SD}, ${9:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${10:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'DestroyDynamicCP':
     'prefix': 'DestroyDynamicCP'
-    'body': 'DestroyDynamicCP(${1:STREAMER_TAG_CP checkpointid})'
+    'body': 'DestroyDynamicCP(${1:STREAMER_TAG_CP:checkpointid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'IsValidDynamicCP':
     'prefix': 'IsValidDynamicCP'
-    'body': 'IsValidDynamicCP(${1:STREAMER_TAG_CP checkpointid})'
+    'body': 'IsValidDynamicCP(${1:STREAMER_TAG_CP:checkpointid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'TogglePlayerDynamicCP':
     'prefix': 'TogglePlayerDynamicCP'
-    'body': 'TogglePlayerDynamicCP(${1:playerid}, ${2:STREAMER_TAG_CP checkpointid}, ${3:toggle})'
+    'body': 'TogglePlayerDynamicCP(${1:playerid}, ${2:STREAMER_TAG_CP:checkpointid}, ${3:toggle})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -460,7 +460,7 @@
 
   'IsPlayerInDynamicCP':
     'prefix': 'IsPlayerInDynamicCP'
-    'body': 'IsPlayerInDynamicCP(${1:playerid}, ${2:STREAMER_TAG_CP checkpointid})'
+    'body': 'IsPlayerInDynamicCP(${1:playerid}, ${2:STREAMER_TAG_CP:checkpointid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -472,25 +472,25 @@
 
   'CreateDynamicRaceCP':
     'prefix': 'CreateDynamicRaceCP'
-    'body': 'CreateDynamicRaceCP(${1:type}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:nextx}, ${6:Float:nexty}, ${7:Float:nextz}, ${8:Float:size}, ${9:worldid = -1}, ${10:interiorid = -1}, ${11:playerid = -1}, ${12:Float:streamdistance = STREAMER_RACE_CP_SD}, ${13:STREAMER_TAG_AREA areaid = STREAMER_TAG_AREA -1})'
+    'body': 'CreateDynamicRaceCP(${1:type}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:nextx}, ${6:Float:nexty}, ${7:Float:nextz}, ${8:Float:size}, ${9:worldid = -1}, ${10:interiorid = -1}, ${11:playerid = -1}, ${12:Float:streamdistance = STREAMER_RACE_CP_SD}, ${13:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${14:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'DestroyDynamicRaceCP':
     'prefix': 'DestroyDynamicRaceCP'
-    'body': 'DestroyDynamicRaceCP(${1:STREAMER_TAG_RACE_CP checkpointid})'
+    'body': 'DestroyDynamicRaceCP(${1:STREAMER_TAG_RACE_CP:checkpointid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'IsValidDynamicRaceCP':
     'prefix': 'IsValidDynamicRaceCP'
-    'body': 'IsValidDynamicRaceCP(${1:STREAMER_TAG_RACE_CP checkpointid})'
+    'body': 'IsValidDynamicRaceCP(${1:STREAMER_TAG_RACE_CP:checkpointid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'TogglePlayerDynamicRaceCP':
     'prefix': 'TogglePlayerDynamicRaceCP'
-    'body': 'TogglePlayerDynamicRaceCP(${1:playerid}, ${2:STREAMER_TAG_RACE_CP checkpointid}, ${3:toggle})'
+    'body': 'TogglePlayerDynamicRaceCP(${1:playerid}, ${2:STREAMER_TAG_RACE_CP:checkpointid}, ${3:toggle})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -502,7 +502,7 @@
 
   'IsPlayerInDynamicRaceCP':
     'prefix': 'IsPlayerInDynamicRaceCP'
-    'body': 'IsPlayerInDynamicRaceCP(${1:playerid}, ${2:STREAMER_TAG_RACE_CP checkpointid})'
+    'body': 'IsPlayerInDynamicRaceCP(${1:playerid}, ${2:STREAMER_TAG_RACE_CP:checkpointid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -514,121 +514,121 @@
 
   'CreateDynamicMapIcon':
     'prefix': 'CreateDynamicMapIcon'
-    'body': 'CreateDynamicMapIcon(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:color}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1}, ${9:Float:streamdistance = STREAMER_MAP_ICON_SD}, ${10:style = MAPICON_LOCAL}, ${11:STREAMER_TAG_AREA areaid = STREAMER_TAG_AREA -1})'
+    'body': 'CreateDynamicMapIcon(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:color}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1}, ${9:Float:streamdistance = STREAMER_MAP_ICON_SD}, ${10:style = MAPICON_LOCAL}, ${11:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${12:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'DestroyDynamicMapIcon':
     'prefix': 'DestroyDynamicMapIcon'
-    'body': 'DestroyDynamicMapIcon(${1:STREAMER_TAG_MAP_ICON iconid})'
+    'body': 'DestroyDynamicMapIcon(${1:STREAMER_TAG_MAP_ICON:iconid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'IsValidDynamicMapIcon':
     'prefix': 'IsValidDynamicMapIcon'
-    'body': 'IsValidDynamicMapIcon(${1:STREAMER_TAG_MAP_ICON iconid})'
+    'body': 'IsValidDynamicMapIcon(${1:STREAMER_TAG_MAP_ICON:iconid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamic3DTextLabel':
     'prefix': 'CreateDynamic3DTextLabel'
-    'body': 'CreateDynamic3DTextLabel(${1:const text[]}, ${2:color}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:drawdistance}, ${7:attachedplayer = INVALID_PLAYER_ID}, ${8:attachedvehicle = INVALID_VEHICLE_ID}, ${9:testlos = 0}, ${10:worldid = -1}, ${11:interiorid = -1}, ${12:playerid = -1}, ${13:Float:streamdistance = STREAMER_3D_TEXT_LABEL_SD}, ${14:STREAMER_TAG_AREA areaid = STREAMER_TAG_AREA -1})'
+    'body': 'CreateDynamic3DTextLabel(${1:const text[]}, ${2:color}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:drawdistance}, ${7:attachedplayer = INVALID_PLAYER_ID}, ${8:attachedvehicle = INVALID_VEHICLE_ID}, ${9:testlos = 0}, ${10:worldid = -1}, ${11:interiorid = -1}, ${12:playerid = -1}, ${13:Float:streamdistance = STREAMER_3D_TEXT_LABEL_SD}, ${14:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${15:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'DestroyDynamic3DTextLabel':
     'prefix': 'DestroyDynamic3DTextLabel'
-    'body': 'DestroyDynamic3DTextLabel(${1:STREAMER_TAG_3D_TEXT_LABEL id})'
+    'body': 'DestroyDynamic3DTextLabel(${1:STREAMER_TAG_3D_TEXT_LABEL:id})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'IsValidDynamic3DTextLabel':
     'prefix': 'IsValidDynamic3DTextLabel'
-    'body': 'IsValidDynamic3DTextLabel(${1:STREAMER_TAG_3D_TEXT_LABEL id})'
+    'body': 'IsValidDynamic3DTextLabel(${1:STREAMER_TAG_3D_TEXT_LABEL:id})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'GetDynamic3DTextLabelText':
     'prefix': 'GetDynamic3DTextLabelText'
-    'body': 'GetDynamic3DTextLabelText(${1:STREAMER_TAG_3D_TEXT_LABEL id}, ${2:text[]}, ${3:maxtext = sizeof text})'
+    'body': 'GetDynamic3DTextLabelText(${1:STREAMER_TAG_3D_TEXT_LABEL:id}, ${2:text[]}, ${3:maxtext = sizeof text})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'UpdateDynamic3DTextLabelText':
     'prefix': 'UpdateDynamic3DTextLabelText'
-    'body': 'UpdateDynamic3DTextLabelText(${1:STREAMER_TAG_3D_TEXT_LABEL id}, ${2:color}, ${3:const text[]})'
+    'body': 'UpdateDynamic3DTextLabelText(${1:STREAMER_TAG_3D_TEXT_LABEL:id}, ${2:color}, ${3:const text[]})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCircle':
     'prefix': 'CreateDynamicCircle'
-    'body': 'CreateDynamicCircle(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:worldid = -1}, ${5:interiorid = -1}, ${6:playerid = -1})'
+    'body': 'CreateDynamicCircle(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:worldid = -1}, ${5:interiorid = -1}, ${6:playerid = -1}, ${7:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCylinder':
     'prefix': 'CreateDynamicCylinder'
-    'body': 'CreateDynamicCylinder(${1:Float:x}, ${2:Float:y}, ${3:Float:minz}, ${4:Float:maxz}, ${5:Float:size}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1})'
+    'body': 'CreateDynamicCylinder(${1:Float:x}, ${2:Float:y}, ${3:Float:minz}, ${4:Float:maxz}, ${5:Float:size}, ${6:worldid = -1}, ${7:interiorid = -1}, ${8:playerid = -1}, ${9:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicSphere':
     'prefix': 'CreateDynamicSphere'
-    'body': 'CreateDynamicSphere(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1})'
+    'body': 'CreateDynamicSphere(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1}, ${8:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicRectangle':
     'prefix': 'CreateDynamicRectangle'
-    'body': 'CreateDynamicRectangle(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1})'
+    'body': 'CreateDynamicRectangle(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1}, ${8:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCuboid':
     'prefix': 'CreateDynamicCuboid'
-    'body': 'CreateDynamicCuboid(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worldid = -1}, ${8:interiorid = -1}, ${9:playerid = -1})'
+    'body': 'CreateDynamicCuboid(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worldid = -1}, ${8:interiorid = -1}, ${9:playerid = -1}, ${10:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCube':
     'prefix': 'CreateDynamicCube'
-    'body': 'CreateDynamicCube(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worldid = -1}, ${8:interiorid = -1}, ${9:playerid = -1})'
+    'body': 'CreateDynamicCube(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worldid = -1}, ${8:interiorid = -1}, ${9:playerid = -1}, ${10:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicPolygon':
     'prefix': 'CreateDynamicPolygon'
-    'body': 'CreateDynamicPolygon(${1:Float:points[]}, ${2:Float:minz = -FLOAT_INFINITY}, ${3:Float:maxz = FLOAT_INFINITY}, ${4:maxpoints = sizeof points}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1})'
+    'body': 'CreateDynamicPolygon(${1:Float:points[]}, ${2:Float:minz = -FLOAT_INFINITY}, ${3:Float:maxz = FLOAT_INFINITY}, ${4:maxpoints = sizeof points}, ${5:worldid = -1}, ${6:interiorid = -1}, ${7:playerid = -1}, ${8:priority = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'DestroyDynamicArea':
     'prefix': 'DestroyDynamicArea'
-    'body': 'DestroyDynamicArea(${1:STREAMER_TAG_AREA areaid})'
+    'body': 'DestroyDynamicArea(${1:STREAMER_TAG_AREA:areaid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'IsValidDynamicArea':
     'prefix': 'IsValidDynamicArea'
-    'body': 'IsValidDynamicArea(${1:STREAMER_TAG_AREA areaid})'
+    'body': 'IsValidDynamicArea(${1:STREAMER_TAG_AREA:areaid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'GetDynamicPolygonPoints':
     'prefix': 'GetDynamicPolygonPoints'
-    'body': 'GetDynamicPolygonPoints(${1:STREAMER_TAG_AREA areaid}, ${2:Float:points[]}, ${3:maxpoints = sizeof points})'
+    'body': 'GetDynamicPolygonPoints(${1:STREAMER_TAG_AREA:areaid}, ${2:Float:points[]}, ${3:maxpoints = sizeof points})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'GetDynamicPolygonNumberPoints':
     'prefix': 'GetDynamicPolygonNumberPoints'
-    'body': 'GetDynamicPolygonNumberPoints(${1:STREAMER_TAG_AREA areaid})'
+    'body': 'GetDynamicPolygonNumberPoints(${1:STREAMER_TAG_AREA:areaid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'TogglePlayerDynamicArea':
     'prefix': 'TogglePlayerDynamicArea'
-    'body': 'TogglePlayerDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA areaid}, ${3:toggle})'
+    'body': 'TogglePlayerDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA:areaid}, ${3:toggle})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -640,7 +640,7 @@
 
   'IsPlayerInDynamicArea':
     'prefix': 'IsPlayerInDynamicArea'
-    'body': 'IsPlayerInDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA areaid}, ${3:recheck = 0})'
+    'body': 'IsPlayerInDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA:areaid}, ${3:recheck = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -652,7 +652,7 @@
 
   'IsAnyPlayerInDynamicArea':
     'prefix': 'IsAnyPlayerInDynamicArea'
-    'body': 'IsAnyPlayerInDynamicArea(${1:STREAMER_TAG_AREA areaid}, ${2:recheck = 0})'
+    'body': 'IsAnyPlayerInDynamicArea(${1:STREAMER_TAG_AREA:areaid}, ${2:recheck = 0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -664,7 +664,7 @@
 
   'GetPlayerDynamicAreas':
     'prefix': 'GetPlayerDynamicAreas'
-    'body': 'GetPlayerDynamicAreas(${1:playerid}, ${2:STREAMER_TAG_AREA areas[]}, ${3:maxareas = sizeof areas})'
+    'body': 'GetPlayerDynamicAreas(${1:playerid}, ${2:STREAMER_TAG_AREA:areas[]}, ${3:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -676,7 +676,7 @@
 
   'IsPointInDynamicArea':
     'prefix': 'IsPointInDynamicArea'
-    'body': 'IsPointInDynamicArea(${1:STREAMER_TAG_AREA areaid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'body': 'IsPointInDynamicArea(${1:STREAMER_TAG_AREA:areaid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -688,7 +688,7 @@
 
   'GetDynamicAreasForPoint':
     'prefix': 'GetDynamicAreasForPoint'
-    'body': 'GetDynamicAreasForPoint(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:STREAMER_TAG_AREA areas[]}, ${5:maxareas = sizeof areas})'
+    'body': 'GetDynamicAreasForPoint(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:STREAMER_TAG_AREA:areas[]}, ${5:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -700,97 +700,97 @@
 
   'AttachDynamicAreaToObject':
     'prefix': 'AttachDynamicAreaToObject'
-    'body': 'AttachDynamicAreaToObject(${1:STREAMER_TAG_AREA areaid}, ${2:STREAMER_TAG_OBJECT_ALT objectid}, ${3:type = STREAMER_OBJECT_TYPE_DYNAMIC}, ${4:playerid = INVALID_PLAYER_ID}, ${5:Float:offsetx = 0.0}, ${6:Float:offsety = 0.0}, ${7:Float:offsetz = 0.0})'
+    'body': 'AttachDynamicAreaToObject(${1:STREAMER_TAG_AREA:areaid}, ${2:STREAMER_TAG_OBJECT_ALT objectid}, ${3:type = STREAMER_OBJECT_TYPE_DYNAMIC}, ${4:playerid = INVALID_PLAYER_ID}, ${5:Float:offsetx = 0.0}, ${6:Float:offsety = 0.0}, ${7:Float:offsetz = 0.0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'AttachDynamicAreaToPlayer':
     'prefix': 'AttachDynamicAreaToPlayer'
-    'body': 'AttachDynamicAreaToPlayer(${1:STREAMER_TAG_AREA areaid}, ${2:playerid}, ${3:Float:offsetx = 0.0}, ${4:Float:offsety = 0.0}, ${5:Float:offsetz = 0.0})'
+    'body': 'AttachDynamicAreaToPlayer(${1:STREAMER_TAG_AREA:areaid}, ${2:playerid}, ${3:Float:offsetx = 0.0}, ${4:Float:offsety = 0.0}, ${5:Float:offsetz = 0.0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'AttachDynamicAreaToVehicle':
     'prefix': 'AttachDynamicAreaToVehicle'
-    'body': 'AttachDynamicAreaToVehicle(${1:STREAMER_TAG_AREA areaid}, ${2:vehicleid}, ${3:Float:offsetx = 0.0}, ${4:Float:offsety = 0.0}, ${5:Float:offsetz = 0.0})'
+    'body': 'AttachDynamicAreaToVehicle(${1:STREAMER_TAG_AREA:areaid}, ${2:vehicleid}, ${3:Float:offsetx = 0.0}, ${4:Float:offsety = 0.0}, ${5:Float:offsetz = 0.0})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicObjectEx':
     'prefix': 'CreateDynamicObjectEx'
-    'body': 'CreateDynamicObjectEx(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:Float:streamdistance = STREAMER_OBJECT_SD}, ${9:Float:drawdistance = STREAMER_OBJECT_DD}, ${10:worlds[] = { -1 }}, ${11:interiors[] = { -1 }}, ${12:players[] = { -1 }}, ${13:STREAMER_TAG_AREA areas[] = { STREAMER_TAG_AREA -1 }}, ${14:maxworlds = sizeof worlds}, ${15:maxinteriors = sizeof interiors}, ${16:maxplayers = sizeof players}, ${17:maxareas = sizeof areas})'
+    'body': 'CreateDynamicObjectEx(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:rx}, ${6:Float:ry}, ${7:Float:rz}, ${8:Float:streamdistance = STREAMER_OBJECT_SD}, ${9:Float:drawdistance = STREAMER_OBJECT_DD}, ${10:worlds[] = { -1 }}, ${11:interiors[] = { -1 }}, ${12:players[] = { -1 }}, ${13:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${14:priority = 0}, ${15:maxworlds = sizeof worlds}, ${16:maxinteriors = sizeof interiors}, ${17:maxplayers = sizeof players}, ${18:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicPickupEx':
     'prefix': 'CreateDynamicPickupEx'
-    'body': 'CreateDynamicPickupEx(${1:modelid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:streamdistance = STREAMER_PICKUP_SD}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:STREAMER_TAG_AREA areas[] = { STREAMER_TAG_AREA -1 }}, ${11:maxworlds = sizeof worlds}, ${12:maxinteriors = sizeof interiors}, ${13:maxplayers = sizeof players}, ${14:maxareas = sizeof areas})'
+    'body': 'CreateDynamicPickupEx(${1:modelid}, ${2:type}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:streamdistance = STREAMER_PICKUP_SD}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${11:priority = 0}, ${12:maxworlds = sizeof worlds}, ${13:maxinteriors = sizeof interiors}, ${14:maxplayers = sizeof players}, ${15:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCPEx':
     'prefix': 'CreateDynamicCPEx'
-    'body': 'CreateDynamicCPEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:Float:streamdistance = STREAMER_CP_SD}, ${6:worlds[] = { -1 }}, ${7:interiors[] = { -1 }}, ${8:players[] = { -1 }}, ${9:STREAMER_TAG_AREA areas[] = { STREAMER_TAG_AREA -1 }}, ${10:maxworlds = sizeof worlds}, ${11:maxinteriors = sizeof interiors}, ${12:maxplayers = sizeof players}, ${13:maxareas = sizeof areas})'
+    'body': 'CreateDynamicCPEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:Float:streamdistance = STREAMER_CP_SD}, ${6:worlds[] = { -1 }}, ${7:interiors[] = { -1 }}, ${8:players[] = { -1 }}, ${9:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${10:priority = 0}, ${11:maxworlds = sizeof worlds}, ${12:maxinteriors = sizeof interiors}, ${13:maxplayers = sizeof players}, ${14:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicRaceCPEx':
     'prefix': 'CreateDynamicRaceCPEx'
-    'body': 'CreateDynamicRaceCPEx(${1:type}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:nextx}, ${6:Float:nexty}, ${7:Float:nextz}, ${8:Float:size}, ${9:Float:streamdistance = STREAMER_RACE_CP_SD}, ${10:worlds[] = { -1 }}, ${11:interiors[] = { -1 }}, ${12:players[] = { -1 }}, ${13:STREAMER_TAG_AREA areas[] = { STREAMER_TAG_AREA -1 }}, ${14:maxworlds = sizeof worlds}, ${15:maxinteriors = sizeof interiors}, ${16:maxplayers = sizeof players}, ${17:maxareas = sizeof areas})'
+    'body': 'CreateDynamicRaceCPEx(${1:type}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:nextx}, ${6:Float:nexty}, ${7:Float:nextz}, ${8:Float:size}, ${9:Float:streamdistance = STREAMER_RACE_CP_SD}, ${10:worlds[] = { -1 }}, ${11:interiors[] = { -1 }}, ${12:players[] = { -1 }}, ${13:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${14:priority = 0}, ${15:maxworlds = sizeof worlds}, ${16:maxinteriors = sizeof interiors}, ${17:maxplayers = sizeof players}, ${18:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicMapIconEx':
     'prefix': 'CreateDynamicMapIconEx'
-    'body': 'CreateDynamicMapIconEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:color}, ${6:style = MAPICON_LOCAL}, ${7:Float:streamdistance = STREAMER_MAP_ICON_SD}, ${8:worlds[] = { -1 }}, ${9:interiors[] = { -1 }}, ${10:players[] = { -1 }}, ${11:STREAMER_TAG_AREA areas[] = { STREAMER_TAG_AREA -1 }}, ${12:maxworlds = sizeof worlds}, ${13:maxinteriors = sizeof interiors}, ${14:maxplayers = sizeof players}, ${15:maxareas = sizeof areas})'
+    'body': 'CreateDynamicMapIconEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:color}, ${6:style = MAPICON_LOCAL}, ${7:Float:streamdistance = STREAMER_MAP_ICON_SD}, ${8:worlds[] = { -1 }}, ${9:interiors[] = { -1 }}, ${10:players[] = { -1 }}, ${11:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${12:priority = 0}, ${13:maxworlds = sizeof worlds}, ${14:maxinteriors = sizeof interiors}, ${15:maxplayers = sizeof players}, ${16:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamic3DTextLabelEx':
     'prefix': 'CreateDynamic3DTextLabelEx'
-    'body': 'CreateDynamic3DTextLabelEx(${1:const text[]}, ${2:color}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:drawdistance}, ${7:attachedplayer = INVALID_PLAYER_ID}, ${8:attachedvehicle = INVALID_VEHICLE_ID}, ${9:testlos = 0}, ${10:Float:streamdistance = STREAMER_3D_TEXT_LABEL_SD}, ${11:worlds[] = { -1 }}, ${12:interiors[] = { -1 }}, ${13:players[] = { -1 }}, ${14:STREAMER_TAG_AREA areas[] = { STREAMER_TAG_AREA -1 }}, ${15:maxworlds = sizeof worlds}, ${16:maxinteriors = sizeof interiors}, ${17:maxplayers = sizeof players}, ${18:maxareas = sizeof areas})'
+    'body': 'CreateDynamic3DTextLabelEx(${1:const text[]}, ${2:color}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z}, ${6:Float:drawdistance}, ${7:attachedplayer = INVALID_PLAYER_ID}, ${8:attachedvehicle = INVALID_VEHICLE_ID}, ${9:testlos = 0}, ${10:Float:streamdistance = STREAMER_3D_TEXT_LABEL_SD}, ${11:worlds[] = { -1 }}, ${12:interiors[] = { -1 }}, ${13:players[] = { -1 }}, ${14:STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${15:priority = 0}, ${16:maxworlds = sizeof worlds}, ${17:maxinteriors = sizeof interiors}, ${18:maxplayers = sizeof players}, ${19:maxareas = sizeof areas})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCircleEx':
     'prefix': 'CreateDynamicCircleEx'
-    'body': 'CreateDynamicCircleEx(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:worlds[] = { -1 }}, ${5:interiors[] = { -1 }}, ${6:players[] = { -1 }}, ${7:maxworlds = sizeof worlds}, ${8:maxinteriors = sizeof interiors}, ${9:maxplayers = sizeof players})'
+    'body': 'CreateDynamicCircleEx(${1:Float:x}, ${2:Float:y}, ${3:Float:size}, ${4:worlds[] = { -1 }}, ${5:interiors[] = { -1 }}, ${6:players[] = { -1 }}, ${7:priority = 0}, ${8:maxworlds = sizeof worlds}, ${9:maxinteriors = sizeof interiors}, ${10:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCylinderEx':
     'prefix': 'CreateDynamicCylinderEx'
-    'body': 'CreateDynamicCylinderEx(${1:Float:x}, ${2:Float:y}, ${3:Float:minz}, ${4:Float:maxz}, ${5:Float:size}, ${6:worlds[] = { -1 }}, ${7:interiors[] = { -1 }}, ${8:players[] = { -1 }}, ${9:maxworlds = sizeof worlds}, ${10:maxinteriors = sizeof interiors}, ${11:maxplayers = sizeof players})'
+    'body': 'CreateDynamicCylinderEx(${1:Float:x}, ${2:Float:y}, ${3:Float:minz}, ${4:Float:maxz}, ${5:Float:size}, ${6:worlds[] = { -1 }}, ${7:interiors[] = { -1 }}, ${8:players[] = { -1 }}, ${9:priority = 0}, ${10:maxworlds = sizeof worlds}, ${11:maxinteriors = sizeof interiors}, ${12:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicSphereEx':
     'prefix': 'CreateDynamicSphereEx'
-    'body': 'CreateDynamicSphereEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:maxworlds = sizeof worlds}, ${9:maxinteriors = sizeof interiors}, ${10:maxplayers = sizeof players})'
+    'body': 'CreateDynamicSphereEx(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:Float:size}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:priority = 0}, ${9:maxworlds = sizeof worlds}, ${10:maxinteriors = sizeof interiors}, ${11:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicRectangleEx':
     'prefix': 'CreateDynamicRectangleEx'
-    'body': 'CreateDynamicRectangleEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:maxworlds = sizeof worlds}, ${9:maxinteriors = sizeof interiors}, ${10:maxplayers = sizeof players})'
+    'body': 'CreateDynamicRectangleEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:maxx}, ${4:Float:maxy}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:priority = 0}, ${9:maxworlds = sizeof worlds}, ${10:maxinteriors = sizeof interiors}, ${11:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCuboidEx':
     'prefix': 'CreateDynamicCuboidEx'
-    'body': 'CreateDynamicCuboidEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:maxworlds = sizeof worlds}, ${11:maxinteriors = sizeof interiors}, ${12:maxplayers = sizeof players})'
+    'body': 'CreateDynamicCuboidEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:priority = 0}, ${11:maxworlds = sizeof worlds}, ${12:maxinteriors = sizeof interiors}, ${13:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicCubeEx':
     'prefix': 'CreateDynamicCubeEx'
-    'body': 'CreateDynamicCubeEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:maxworlds = sizeof worlds}, ${11:maxinteriors = sizeof interiors}, ${12:maxplayers = sizeof players})'
+    'body': 'CreateDynamicCubeEx(${1:Float:minx}, ${2:Float:miny}, ${3:Float:minz}, ${4:Float:maxx}, ${5:Float:maxy}, ${6:Float:maxz}, ${7:worlds[] = { -1 }}, ${8:interiors[] = { -1 }}, ${9:players[] = { -1 }}, ${10:priority = 0}, ${11:maxworlds = sizeof worlds}, ${12:maxinteriors = sizeof interiors}, ${13:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
   'CreateDynamicPolygonEx':
     'prefix': 'CreateDynamicPolygonEx'
-    'body': 'CreateDynamicPolygonEx(${1:Float:points[]}, ${2:Float:minz = -FLOAT_INFINITY}, ${3:Float:maxz = FLOAT_INFINITY}, ${4:maxpoints = sizeof points}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:maxworlds = sizeof worlds}, ${9:maxinteriors = sizeof interiors}, ${10:maxplayers = sizeof players})'
+    'body': 'CreateDynamicPolygonEx(${1:Float:points[]}, ${2:Float:minz = -FLOAT_INFINITY}, ${3:Float:maxz = FLOAT_INFINITY}, ${4:maxpoints = sizeof points}, ${5:worlds[] = { -1 }}, ${6:interiors[] = { -1 }}, ${7:players[] = { -1 }}, ${8:priority = 0}, ${9:maxworlds = sizeof worlds}, ${10:maxinteriors = sizeof interiors}, ${11:maxplayers = sizeof players})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
@@ -914,72 +914,408 @@
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
 
+  'Streamer_IsToggleChunkStream':
+    'prefix': 'Streamer_IsToggleChunkStream'
+    'body': 'Streamer_IsToggleChunkStream()'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'Streamer_GetLastUpdateTime':
+    'prefix': 'Streamer_GetLastUpdateTime'
+    'body': 'Streamer_GetLastUpdateTime(${1:&Float:time})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'Streamer_GetChunkSize':
+    'prefix': 'Streamer_GetChunkSize'
+    'body': 'Streamer_GetChunkSize(${1:type})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'Streamer_GetPlayerTickRate':
+    'prefix': 'Streamer_GetPlayerTickRate'
+    'body': 'Streamer_GetPlayerTickRate(${1:playerid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'DestroyDynamicActor':
+    'prefix': 'DestroyDynamicActor'
+    'body': 'DestroyDynamicActor(${1:STREAMER_TAG_ACTOR:actorid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'IsValidDynamicActor':
+    'prefix': 'IsValidDynamicActor'
+    'body': 'IsValidDynamicActor(${1:STREAMER_TAG_ACTOR:actorid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'GetDynamicActorVirtualWorld':
+    'prefix': 'GetDynamicActorVirtualWorld'
+    'body': 'GetDynamicActorVirtualWorld(${1:STREAMER_TAG_ACTOR:actorid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'ClearDynamicActorAnimations':
+    'prefix': 'ClearDynamicActorAnimations'
+    'body': 'ClearDynamicActorAnimations(${1:STREAMER_TAG_ACTOR:actorid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'IsDynamicActorInvulnerable':
+    'prefix': 'IsDynamicActorInvulnerable'
+    'body': 'IsDynamicActorInvulnerable(${1:STREAMER_TAG_ACTOR:actorid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'GetPlayerTargetDynamicActor':
+    'prefix': 'GetPlayerTargetDynamicActor'
+    'body': 'GetPlayerTargetDynamicActor(${1:playerid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'GetPlayerCameraTargetDynActor':
+    'prefix': 'GetPlayerCameraTargetDynActor'
+    'body': 'GetPlayerCameraTargetDynActor(${1:playerid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'IsToggleDynAreaSpectateMode':
+    'prefix': 'IsToggleDynAreaSpectateMode'
+    'body': 'IsToggleDynAreaSpectateMode(${1:STREAMER_TAG_AREA:areaid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'GetPlayerCameraTargetDynObject':
+    'prefix': 'GetPlayerCameraTargetDynObject'
+    'body': 'GetPlayerCameraTargetDynObject(${1:playerid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'Streamer_ToggleChunkStream':
+    'prefix': 'Streamer_ToggleChunkStream'
+    'body': 'Streamer_ToggleChunkStream(${1:toggle})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'GetDynamicAreaType':
+    'prefix': 'GetDynamicAreaType'
+    'body': 'GetDynamicAreaType(${1:STREAMER_TAG_AREA:areaid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'Streamer_AmxUnloadDestroyItems':
+    'prefix': 'Streamer_AmxUnloadDestroyItems'
+    'body': 'Streamer_AmxUnloadDestroyItems(${1:toggle})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'Streamer_IsToggleItemInvAreas':
+    'prefix': 'Streamer_IsToggleItemInvAreas'
+    'body': 'Streamer_IsToggleItemInvAreas(${1:type}, ${2:STREAMER_ALL_TAGS:id})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'Streamer_GetChunkTickRate':
+    'prefix': 'Streamer_GetChunkTickRate'
+    'body': 'Streamer_GetChunkTickRate(${1:type}, ${2:playerid = -1})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+
+  'Streamer_SetChunkSize':
+    'prefix': 'Streamer_SetChunkSize'
+    'body': 'Streamer_SetChunkSize(${1:type}, ${2:size})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_SetPlayerTickRate':
+    'prefix': 'Streamer_SetPlayerTickRate'
+    'body': 'Streamer_SetPlayerTickRate(${1:playerid}, ${2:rate})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'IsDynamicActorStreamedIn':
+    'prefix': 'IsDynamicActorStreamedIn'
+    'body': 'IsDynamicActorStreamedIn(${1:STREAMER_TAG_ACTOR:actorid}, ${2:forplayerid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'SetDynamicActorVirtualWorld':
+    'prefix': 'SetDynamicActorVirtualWorld'
+    'body': 'SetDynamicActorVirtualWorld(${1:STREAMER_TAG_ACTOR:actorid}, ${2:vworld})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'GetDynamicActorFacingAngle':
+    'prefix': 'GetDynamicActorFacingAngle'
+    'body': 'GetDynamicActorFacingAngle(${1:STREAMER_TAG_ACTOR:actorid}, ${2:&Float:ang})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'SetDynamicActorFacingAngle':
+    'prefix': 'SetDynamicActorFacingAngle'
+    'body': 'SetDynamicActorFacingAngle(${1:STREAMER_TAG_ACTOR:actorid}, ${2:Float:ang})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'GetDynamicActorHealth':
+    'prefix': 'GetDynamicActorHealth'
+    'body': 'GetDynamicActorHealth(${1:STREAMER_TAG_ACTOR:actorid}, ${2:&Float:health})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'SetDynamicActorHealth':
+    'prefix': 'SetDynamicActorHealth'
+    'body': 'SetDynamicActorHealth(${1:STREAMER_TAG_ACTOR:actorid}, ${2:Float:health})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'SetDynamicActorInvulnerable':
+    'prefix': 'SetDynamicActorInvulnerable'
+    'body': 'SetDynamicActorInvulnerable(${1:STREAMER_TAG_ACTOR:actorid}, ${2:invulnerable = true})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'ToggleDynAreaSpectateMode':
+    'prefix': 'ToggleDynAreaSpectateMode'
+    'body': 'ToggleDynAreaSpectateMode(${1:STREAMER_TAG_AREA:areaid}, ${2:toggle})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_ToggleItemInvAreas':
+    'prefix': 'Streamer_ToggleItemInvAreas'
+    'body': 'Streamer_ToggleItemInvAreas(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:toggle})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_IsToggleItem':
+    'prefix': 'Streamer_IsToggleItem'
+    'body': 'Streamer_IsToggleItem(${1:playerid}, ${2:type}, ${3:STREAMER_ALL_TAGS:id})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_SetChunkTickRate':
+    'prefix': 'Streamer_SetChunkTickRate'
+    'body': 'Streamer_SetChunkTickRate(${1:type}, ${2:rate}, ${3:playerid = -1})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_ToggleItemCallbacks':
+    'prefix': 'Streamer_ToggleItemCallbacks'
+    'body': 'Streamer_ToggleItemCallbacks(${1:type}, ${2:id}, ${3:toggle})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_GetArrayDataLength':
+    'prefix': 'Streamer_GetArrayDataLength'
+    'body': 'Streamer_GetArrayDataLength(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:data})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_ToggleItem':
+    'prefix': 'Streamer_ToggleItem'
+    'body': 'Streamer_ToggleItem(${1:playerid}, ${2:type}, ${3:STREAMER_ALL_TAGS:id}, ${4:toggle})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'GetDynamicActorPos':
+    'prefix': 'GetDynamicActorPos'
+    'body': 'GetDynamicActorPos(${1:STREAMER_TAG_ACTOR:actorid}, ${2:&Float:x}, ${3:&Float:y}, ${4:&Float:z})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'SetDynamicActorPos':
+    'prefix': 'SetDynamicActorPos'
+    'body': 'SetDynamicActorPos(${1:STREAMER_TAG_ACTOR:actorid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_GetAllVisibleItems':
+    'prefix': 'Streamer_GetAllVisibleItems'
+    'body': 'Streamer_GetAllVisibleItems(${1:playerid}, ${2:type}, ${3:STREAMER_ALL_TAGS:items[]}, ${4:maxitems = sizeof items})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_ToggleAllItems':
+    'prefix': 'Streamer_ToggleAllItems'
+    'body': 'Streamer_ToggleAllItems(${1:playerid}, ${2:type}, ${3:toggle}, ${4:const exceptions[] = { -1 }}, ${5:maxexceptions = sizeof exceptions})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_GetItemOffset':
+    'prefix': 'Streamer_GetItemOffset'
+    'body': 'Streamer_GetItemOffset(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_SetItemOffset':
+    'prefix': 'Streamer_SetItemOffset'
+    'body': 'Streamer_SetItemOffset(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_GetItemPos':
+    'prefix': 'Streamer_GetItemPos'
+    'body': 'Streamer_GetItemPos(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:&Float:x}, ${4:&Float:y}, ${5:&Float:z})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_SetItemPos':
+    'prefix': 'Streamer_SetItemPos'
+    'body': 'Streamer_SetItemPos(${1:type}, ${2:STREAMER_ALL_TAGS:id}, ${3:Float:x}, ${4:Float:y}, ${5:Float:z})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'IsLineInAnyDynamicArea':
+    'prefix': 'IsLineInAnyDynamicArea'
+    'body': 'IsLineInAnyDynamicArea(${1:Float:x1}, ${2:Float:y1}, ${3:Float:z1}, ${4:Float:x2}, ${5:Float:y2}, ${6:Float:z2})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'GetNumberDynamicAreasForLine':
+    'prefix': 'GetNumberDynamicAreasForLine'
+    'body': 'GetNumberDynamicAreasForLine(${1:Float:x1}, ${2:Float:y1}, ${3:Float:z1}, ${4:Float:x2}, ${5:Float:y2}, ${6:Float:z2})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'IsLineInDynamicArea':
+    'prefix': 'IsLineInDynamicArea'
+    'body': 'IsLineInDynamicArea(${1:STREAMER_TAG_AREA:areaid}, ${2:Float:x1}, ${3:Float:y1}, ${4:Float:z1}, ${5:Float:x2}, ${6:Float:y2}, ${7:Float:z2})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'GetDynamicAreasForLine':
+    'prefix': 'GetDynamicAreasForLine'
+    'body': 'GetDynamicAreasForLine(${1:Float:x1}, ${2:Float:y1}, ${3:Float:z1}, ${4:Float:x2}, ${5:Float:y2}, ${6:Float:z2}, ${7:STREAMER_TAG_AREA:areas[]}, ${8:maxareas = sizeof areas})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_GetNearbyItems':
+    'prefix': 'Streamer_GetNearbyItems'
+    'body': 'Streamer_GetNearbyItems(${1:Float:x}, ${2:Float:y}, ${3:Float:z}, ${4:type}, ${5:STREAMER_ALL_TAGS:items[]}, ${6:maxitems = sizeof items}, ${7:Float:range = 300.0}, ${8:worldid = -1})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'ApplyDynamicActorAnimation':
+    'prefix': 'ApplyDynamicActorAnimation'
+    'body': 'ApplyDynamicActorAnimation(${1:STREAMER_TAG_ACTOR:actorid}, ${2:const animlib[]}, ${3:const animname[]}, ${4:Float:fdelta}, ${5:loop}, ${6:lockx}, ${7:locky}, ${8:freeze}, ${9:time})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'GetDynamicActorAnimation':
+    'prefix': 'GetDynamicActorAnimation'
+    'body': 'GetDynamicActorAnimation(${1:STREAMER_TAG_ACTOR:actorid}, ${2:animlib[]}, ${3:animname[]}, ${4:&Float:fdelta}, ${5:&loop}, ${6:&lockx}, ${7:&locky}, ${8:&freeze}, ${9:&time}, ${10:maxanimlib = sizeof animlib}, ${11:maxanimname = sizeof animname})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'CreateDynamicActor':
+    'prefix': 'CreateDynamicActor'
+    'body': 'CreateDynamicActor(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:r}, ${6:invulnerable = true}, ${7:Float:health = 100.0}, ${8:worldid = -1}, ${9:interiorid = -1}, ${10:playerid = -1}, ${11:Float:streamdistance = STREAMER_ACTOR_SD}, ${12:STREAMER_TAG_AREA:areaid = STREAMER_TAG_AREA:-1}, ${13:priority = 0})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'CreateDynamicActorEx':
+    'prefix': 'CreateDynamicActorEx'
+    'body': 'CreateDynamicActorEx(${1:modelid}, ${2:Float:x}, ${3:Float:y}, ${4:Float:z}, ${5:Float:r}, ${6:invulnerable = 1}, ${7:Float:health = 100.0}, ${8:Float:streamdistance = STREAMER_ACTOR_SD}, ${9:const worlds[] = { -1 }}, ${10:const interiors[] = { -1 }}, ${11:const players[] = { -1 }}, ${12:const STREAMER_TAG_AREA:areas[] = { STREAMER_TAG_AREA:-1 }}, ${13:priority = 0}, ${14:maxworlds = sizeof worlds}, ${15:maxinteriors = sizeof interiors}, ${16:maxplayers = sizeof players}, ${17:maxareas = sizeof areas})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
   'OnDynamicObjectMoved':
     'prefix': 'OnDynamicObjectMoved'
-    'body': 'OnDynamicObjectMoved(${1:STREAMER_TAG_OBJECT objectid})'
+    'body': 'OnDynamicObjectMoved(${1:STREAMER_TAG_OBJECT:objectid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
-
+    
   'OnPlayerEditDynamicObject':
     'prefix': 'OnPlayerEditDynamicObject'
-    'body': 'OnPlayerEditDynamicObject(${1:playerid}, ${2:STREAMER_TAG_OBJECT objectid}, ${3:response}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:Float:rx}, ${8:Float:ry}, ${9:Float:rz})'
+    'body': 'OnPlayerEditDynamicObject(${1:playerid}, ${2:STREAMER_TAG_OBJECT:objectid}, ${3:response}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z}, ${7:Float:rx}, ${8:Float:ry}, ${9:Float:rz})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
-
+    
   'OnPlayerSelectDynamicObject':
     'prefix': 'OnPlayerSelectDynamicObject'
-    'body': 'OnPlayerSelectDynamicObject(${1:playerid}, ${2:STREAMER_TAG_OBJECT objectid}, ${3:modelid}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z})'
+    'body': 'OnPlayerSelectDynamicObject(${1:playerid}, ${2:STREAMER_TAG_OBJECT:objectid}, ${3:modelid}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
-
+    
   'OnPlayerShootDynamicObject':
     'prefix': 'OnPlayerShootDynamicObject'
-    'body': 'OnPlayerShootDynamicObject(${1:playerid}, ${2:weaponid}, ${3:STREAMER_TAG_OBJECT objectid}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z})'
+    'body': 'OnPlayerShootDynamicObject(${1:playerid}, ${2:weaponid}, ${3:STREAMER_TAG_OBJECT:objectid}, ${4:Float:x}, ${5:Float:y}, ${6:Float:z})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
-
+    
   'OnPlayerPickUpDynamicPickup':
     'prefix': 'OnPlayerPickUpDynamicPickup'
-    'body': 'OnPlayerPickUpDynamicPickup(${1:playerid}, ${2:STREAMER_TAG_PICKUP pickupid})'
+    'body': 'OnPlayerPickUpDynamicPickup(${1:playerid}, ${2:STREAMER_TAG_PICKUP:pickupid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
-
+    
   'OnPlayerEnterDynamicCP':
     'prefix': 'OnPlayerEnterDynamicCP'
-    'body': 'OnPlayerEnterDynamicCP(${1:playerid}, ${2:STREAMER_TAG_CP checkpointid})'
+    'body': 'OnPlayerEnterDynamicCP(${1:playerid}, ${2:STREAMER_TAG_CP:checkpointid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
-
+    
   'OnPlayerLeaveDynamicCP':
     'prefix': 'OnPlayerLeaveDynamicCP'
-    'body': 'OnPlayerLeaveDynamicCP(${1:playerid}, ${2:STREAMER_TAG_CP checkpointid})'
+    'body': 'OnPlayerLeaveDynamicCP(${1:playerid}, ${2:STREAMER_TAG_CP:checkpointid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
-
+    
   'OnPlayerEnterDynamicRaceCP':
     'prefix': 'OnPlayerEnterDynamicRaceCP'
-    'body': 'OnPlayerEnterDynamicRaceCP(${1:playerid}, ${2:STREAMER_TAG_RACE_CP checkpointid})'
+    'body': 'OnPlayerEnterDynamicRaceCP(${1:playerid}, ${2:STREAMER_TAG_RACE_CP:checkpointid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
-
+    
   'OnPlayerLeaveDynamicRaceCP':
     'prefix': 'OnPlayerLeaveDynamicRaceCP'
-    'body': 'OnPlayerLeaveDynamicRaceCP(${1:playerid}, ${2:STREAMER_TAG_RACE_CP checkpointid})'
+    'body': 'OnPlayerLeaveDynamicRaceCP(${1:playerid}, ${2:STREAMER_TAG_RACE_CP:checkpointid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
-
+    
   'OnPlayerEnterDynamicArea':
     'prefix': 'OnPlayerEnterDynamicArea'
-    'body': 'OnPlayerEnterDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA areaid})'
+    'body': 'OnPlayerEnterDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA:areaid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
-
+    
   'OnPlayerLeaveDynamicArea':
     'prefix': 'OnPlayerLeaveDynamicArea'
-    'body': 'OnPlayerLeaveDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA areaid})'
+    'body': 'OnPlayerLeaveDynamicArea(${1:playerid}, ${2:STREAMER_TAG_AREA:areaid})'
     'description': 'Function from: Streamer'
     'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
-
+    
+  'Streamer_OnItemStreamIn':
+    'prefix': 'Streamer_OnItemStreamIn'
+    'body': 'Streamer_OnItemStreamIn(${1:type}, ${2:id})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'Streamer_OnItemStreamOut':
+    'prefix': 'Streamer_OnItemStreamOut'
+    'body': 'Streamer_OnItemStreamOut(${1:type}, ${2:id})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'OnDynamicActorStreamIn':
+    'prefix': 'OnDynamicActorStreamIn'
+    'body': 'OnDynamicActorStreamIn(${1:STREAMER_TAG_ACTOR:actorid}, ${2:forplayerid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'OnDynamicActorStreamOut':
+    'prefix': 'OnDynamicActorStreamOut'
+    'body': 'OnDynamicActorStreamOut(${1:STREAMER_TAG_ACTOR:actorid}, ${2:forplayerid})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
+  'OnPlayerGiveDamageDynamicActor':
+    'prefix': 'OnPlayerGiveDamageDynamicActor'
+    'body': 'OnPlayerGiveDamageDynamicActor(${1:playerid}, ${2:STREAMER_TAG_ACTOR:actorid}, ${3:Float:amount}, ${4:weaponid}, ${5:bodypart})'
+    'description': 'Function from: Streamer'
+    'descriptionMoreURL': 'https://github.com/samp-incognito/samp-streamer-plugin/wiki'
+    
   'Streamer_OnPluginError':
     'prefix': 'Streamer_OnPluginError'
     'body': 'Streamer_OnPluginError(${1:error[]})'
